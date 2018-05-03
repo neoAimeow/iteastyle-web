@@ -4,13 +4,13 @@
       <div class="home-head">
         <div class="head-left">杭式下午茶</div>
         <ul class="head-middle">
-          <li class="head-middle-list">首页</li>
-          <li class="head-middle-list">公司故事</li>
-          <li class="head-middle-list">产品展示</li>
-          <li class="head-middle-list">服务内容</li>
-          <li class="head-middle-list">经典案例</li>
-          <li class="head-middle-list">茶式动态</li>
-          <li class="head-middle-list">联系我们</li>
+          <li class="head-middle-list"><a href="#">首页</a></li>
+          <li class="head-middle-list"><a href="#">公司故事</a></li>
+          <li class="head-middle-list"><a href="#">产品展示</a></li>
+          <li class="head-middle-list"><a href="#">服务内容</a></li>
+          <li class="head-middle-list"><a href="#">经典案例</a></li>
+          <li class="head-middle-list"><a href="#">茶式动态</a></li>
+          <li class="head-middle-list"><a href="#">联系我们</a></li>
         </ul>
         <div class="head-right">微信</div>
       </div>
@@ -72,22 +72,22 @@
         <div class="bottom-footer">
           <div class="bottom-footer-left">
             <p style="font-size: 12px;">联系我们</p>
-            <hr style="width: 1px;height: 10px; background-color: black;margin-top: 16px;margin-left: 10px;">
+            <p style="margin-left: 10px;">|</p>
             <p style="font-size: 12px;margin-left: 10px;">使用条款</p>
-            <hr style="width: 1px;height: 10px; background-color: black;margin-top: 16px;margin-left: 10px;">
+            <p style="margin-left: 10px;">|</p>
             <p style="font-size: 12px;margin-left: 10px;">法律声明</p>
           </div>
           <ul class="bottom-footer-right">
               <li class="bottom-footer-right-list">Company</li>
-              <hr style="width: 1px;height: 10px; background-color: black;margin-top: 3px;margin-left: 10px;">
+              <li class="bottom-footer-right-list">|</li>
               <li class="bottom-footer-right-list">Product</li>
-              <hr style="width: 1px;height: 10px; background-color: black;margin-top: 3px;margin-left: 10px;">
+              <li class="bottom-footer-right-list">|</li>
               <li class="bottom-footer-right-list">Service</li>
-              <hr style="width: 1px;height: 10px; background-color: black;margin-top: 3px;margin-left: 10px;">
+              <li class="bottom-footer-right-list">|</li>
               <li class="bottom-footer-right-list">Classic case</li>
-              <hr style="width: 1px;height: 10px; background-color: black;margin-top: 3px;margin-left: 10px;">
+              <li class="bottom-footer-right-list">|</li>
               <li class="bottom-footer-right-list">News</li>
-              <hr style="width: 1px;height: 10px; background-color: black;margin-top: 3px;margin-left: 10px;">
+              <li class="bottom-footer-right-list">|</li>
               <li class="bottom-footer-right-list">Contact</li>
           </ul>
         </div>
