@@ -4,13 +4,9 @@
       <div class="home-head">
         <div class="head-left">杭式下午茶</div>
         <ul class="head-middle">
-          <li class="head-middle-list"><a href="#">首页</a></li>
-          <li class="head-middle-list"><a href="#">公司故事</a></li>
-          <li class="head-middle-list"><a href="#">产品展示</a></li>
-          <li class="head-middle-list"><a href="#">服务内容</a></li>
-          <li class="head-middle-list"><a href="#">经典案例</a></li>
-          <li class="head-middle-list"><a href="#">茶式动态</a></li>
-          <li class="head-middle-list"><a href="#">联系我们</a></li>
+          <li class="head-middle-list" v-for="(data,key) in menus" :key="key" :label="key">
+            <router-link :to="data.path">{{data.title}}</router-link>
+          </li>
         </ul>
         <div class="head-right">微信</div>
       </div>
@@ -33,7 +29,7 @@
             <ul>
               <li><b>产品展示</b></li>
               <li>茶饮茶点</li>
-              <li>百态效果</li>
+              <li>摆拍效果</li>
             </ul>
             <ul>
               <li><b>服务内容</b></li>
@@ -97,8 +93,17 @@
 </template>
 
 <script>
+import menus from './common/menus'
 export default {
-  name: 'App'
+  name: 'App',
+  data () {
+    return {
+      menus: []
+    }
+  },
+  created () {
+    this.menus = menus
+  }
 }
 </script>
 

@@ -1,0 +1,3 @@
+<template>
+  <h1>产品展示</h1>
+</template>
