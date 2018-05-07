@@ -20,7 +20,9 @@
       <div class="home-bottom">
         <div class="bottom-top">
           <ul class="bottom-top-left" v-for="(data,key) in bottommenus" :key="key" :lable="key">
-            <li class="bottom-top-left-list" v-for="(menu,index) in data" :style="menu.style" :key="index"><span>{{menu.title}}</span></li>
+            <li class="bottom-top-left-list" v-for="(menu,index) in data" :style="menu.style" :key="index">
+               <router-link :to="menu.path"><span>{{menu.title}}</span></router-link>
+              </li>
           </ul>
           <div class="bottom-top-right">
             <p style="font-size: 12px;">全国订购电话</p>
