@@ -178,7 +178,7 @@ export default {
     justify-content: flex-start;
     align-items: flex-end;
     background-color: tomato;
-    margin-left: 50px;asasd
+    margin-left: 50px;
   }
   .bottom-footer{
     display: flex;
