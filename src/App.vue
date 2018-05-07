@@ -19,44 +19,9 @@
       </div>
       <div class="home-bottom">
         <div class="bottom-top">
-          <div class="bottom-top-left">
-            <ul>
-              <li><b>公司故事</b></li>
-              <li>公司简介</li>
-              <li>联系我们</li>
-              <li>在线预约</li>
-            </ul>
-            <ul>
-              <li><b>产品展示</b></li>
-              <li>茶饮茶点</li>
-              <li>摆拍效果</li>
-            </ul>
-            <ul>
-              <li><b>服务内容</b></li>
-              <li>茶歇服务</li>
-              <li>茶艺表演</li>
-              <li>DIY活动</li>
-              <li>茶文化讲座</li>
-              <li>杭州伴手礼</li>
-            </ul>
-            <ul>
-              <li><b>经典案例</b></li>
-              <li>茶歇服务</li>
-              <li>茶艺表演</li>
-              <li>茶文化讲座</li>
-              <li>DIY活动</li>
-              <li>私茗定制</li>
-            </ul>
-            <ul>
-              <li><b>茶式动态</b></li>
-              <li>新闻动态</li>
-            </ul>
-            <ul>
-              <li><b>关注我们</b></li>
-              <li>微博</li>
-              <li>微信</li>
-            </ul>
-          </div>
+          <ul class="bottom-top-left" v-for="(data,key) in bottommenus" :key="key" :lable="key">
+            <li v-for="(menu,index) in data" :key="index"><span>{{menu.title}}</span></li>
+          </ul>
           <div class="bottom-top-right">
             <p style="font-size: 12px;">全国订购电话</p>
             <p style="font-size:27px;margin-top: -10px;">400 688 6888</p>
@@ -94,15 +59,18 @@
 
 <script>
 import menus from './common/menus'
+import homebottommenus from './common/homebottommenus'
 export default {
   name: 'App',
   data () {
     return {
-      menus: []
+      menus: [],
+      homebottommenus: []
     }
   },
   created () {
     this.menus = menus
+    this.bottommenus = homebottommenus
   }
 }
 </script>
@@ -161,16 +129,11 @@ export default {
   .bottom-top{
     display: flex;
     flex-direction: row;
-    // justify-content: space-between;
     justify-content: center;
   }
   .bottom-top-left{
     background-color: red;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     font-size: 12px;
-    // margin-left: 300px;
   }
   .bottom-top-right{
     display: flex;
