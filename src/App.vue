@@ -20,12 +20,12 @@
       <div class="home-bottom">
         <div class="bottom-top">
           <ul class="bottom-top-left" v-for="(data,key) in bottommenus" :key="key" :lable="key">
-            <li v-for="(menu,index) in data" :key="index"><span>{{menu.title}}</span></li>
+            <li class="bottom-top-left-list" v-for="(menu,index) in data" :style="menu.style" :key="index"><span>{{menu.title}}</span></li>
           </ul>
           <div class="bottom-top-right">
             <p style="font-size: 12px;">全国订购电话</p>
-            <p style="font-size:27px;margin-top: -10px;">400 688 6888</p>
-            <button style="margin-top: -20px;height: 30px;">在线客服</button>
+            <p style="font-size:27px;">400 688 6888</p>
+            <button style="height: 30px;">在线客服</button>
             <div class="bottom-top-right-footer"></div>
           </div>
         </div>
@@ -134,6 +134,13 @@ export default {
   .bottom-top-left{
     background-color: red;
     font-size: 12px;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 10px;
+  }
+  .bottom-top-left-list{
+    margin-top: 10px;
   }
   .bottom-top-right{
     display: flex;

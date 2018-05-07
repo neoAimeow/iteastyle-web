@@ -2,7 +2,8 @@ const homebottommenus = [
     [
         {
             title: '公司故事',
-            path: '/homepage/company-profile'
+            path: '/homepage/company-profile',
+            style: 'font-weight:bold'
         },
         {
             title: '公司简介',
@@ -20,7 +21,8 @@ const homebottommenus = [
     [
         {
             title: '产品展示',
-            path: '/homepage/product-display'
+            path: '/homepage/product-display',
+            style: 'font-weight:bold'
         },
         {
             title: '茶饮茶点',
@@ -34,7 +36,8 @@ const homebottommenus = [
     [
         {
             title: '经典案例',
-            path: '/homepage/classic-case'
+            path: '/homepage/classic-case',
+            style: 'font-weight:bold'
         },
         {
             title: '茶歇服务',
@@ -60,7 +63,8 @@ const homebottommenus = [
     [
         {
             title: '茶式动态',
-            path: '/homepage/tea-state'
+            path: '/homepage/tea-state',
+            style: 'font-weight:bold'
         },
         {
             title: '新闻动态',
@@ -70,7 +74,8 @@ const homebottommenus = [
     [
         {
             title: '关注我们',
-            path: '/'
+            path: '/',
+            style: 'font-weight:bold'
         },
         {
             title: '微博',
