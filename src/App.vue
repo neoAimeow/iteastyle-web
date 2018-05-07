@@ -161,14 +161,16 @@ export default {
   .bottom-top{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    // justify-content: space-between;
+    justify-content: center;
   }
   .bottom-top-left{
+    background-color: red;
     display: flex;
     flex-direction: row;
     justify-content: center;
     font-size: 12px;
-    margin-left: 300px;
+    // margin-left: 300px;
   }
   .bottom-top-right{
     display: flex;
@@ -176,7 +178,7 @@ export default {
     justify-content: flex-start;
     align-items: flex-end;
     background-color: tomato;
-    margin-right: 300px;
+    margin-left: 50px;
   }
   .bottom-footer{
     display: flex;
