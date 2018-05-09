@@ -11,11 +11,7 @@
         <div class="head-right">微信</div>
       </div>
       <div class="home-center">
-        <router-view>
-        <div class="center-top"></div>
-        <div class="center-middle"></div>
-        <div class="center-footer"></div>
-        </router-view>
+        <router-view></router-view>
       </div>
       <div class="home-bottom">
         <div class="bottom-top">
@@ -52,9 +48,7 @@
               <li class="bottom-footer-right-list">News</li>
               <li class="bottom-footer-right-list">|</li>
               <li class="bottom-footer-right-list">Contact</li>
-              
           </ul>
-
         </div>
       </div>
     </div>

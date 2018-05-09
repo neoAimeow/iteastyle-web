@@ -1,6 +1,6 @@
 const menus = [{
   title: '首页',
-  path: '/homepage/home-index'
+  path: '/'
 },
 {
   title: '公司故事',

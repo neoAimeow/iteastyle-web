@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from '@/components/Home'
 
 import HomeIndex from '@/components/homepage/index.vue'
 import CompanyProfile from '@/components/homepage/CompanyProfile.vue'
@@ -15,11 +14,6 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Home',
-      component: Home
-    },
-    {
-      path: '/homepage/home-index',
       name: 'home-index',
       component: HomeIndex
     },
