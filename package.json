@@ -14,9 +14,11 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "element-ui": "^2.3.7",
     "vue": "^2.5.2",
-    "vue-blu": "^0.1.9",
-    "vue-router": "^3.0.1"
+    "vue-progressive-image": "^2.5.0",
+    "vue-router": "^3.0.1",
+    "vue-silentbox": "^0.1.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

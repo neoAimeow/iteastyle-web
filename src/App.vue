@@ -2,12 +2,12 @@
   <div id="app">
     <div class="home-container">
       <div class="home-head">
-        <div class="head-left">杭式下午茶</div>
-        <ul class="head-middle">
-          <li class="head-middle-list" v-for="(data,key) in menus" :key="key" :label="key">
+        <img src="./assets/logo.png" alt="" class="head-left">
+        <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
+          <el-menu-item index="1" v-for="(data,key) in menus" :key="key" :label="key">
             <router-link :to="data.path">{{data.title}}</router-link>
-          </li>
-        </ul>
+          </el-menu-item>
+        </el-menu>
         <div class="head-right">微信</div>
       </div>
       <div class="home-center">
@@ -52,7 +52,9 @@
               <li class="bottom-footer-right-list">News</li>
               <li class="bottom-footer-right-list">|</li>
               <li class="bottom-footer-right-list">Contact</li>
+              
           </ul>
+
         </div>
       </div>
     </div>
@@ -77,15 +79,14 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
   ul{
     list-style: none;
   }
   html,
   body,
   #app {
-    height: 100%;
-    width: 100%;
+    margin: 0;
   }
 /*页面无法使用百分比来设定分部占比*/
   .home-container{
@@ -103,15 +104,6 @@ export default {
   }
   .head-left{
     margin-left: 50px;
-  }
-  .head-middle{
-    display: flex;
-    flex-direction: row;
-  }
-  .head-middle-list{
-    margin-left: 20px;
-    color: rgb(34, 33, 33);
-    font-size: 12px;
   }
   .head-right{
     margin-right: 50px;
