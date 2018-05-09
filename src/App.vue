@@ -3,9 +3,9 @@
     <div class="home-container">
       <div class="home-head">
         <img src="./assets/logo.png" alt="" class="head-left">
-        <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
-          <el-menu-item index="1" v-for="(data,key) in menus" :key="key" :label="key">
-            <router-link :to="data.path">{{data.title}}</router-link>
+        <el-menu default-active="首页" class="el-menu-demo" :router="true" mode="horizontal" >
+          <el-menu-item :index="data.title" v-for="(data,key) in menus" :key="key" :label="key" :route="data.path">
+            {{data.title}}
           </el-menu-item>
         </el-menu>
         <div class="head-right">微信</div>
@@ -15,7 +15,7 @@
       </div>
       <div class="home-bottom">
         <div class="bottom-top">
-          <ul class="bottom-top-left" v-for="(data,key) in bottommenus" :key="key" :lable="key">
+          <ul class="bottom-top-left" v-for="(data,key) in bottommenus" :key="key" :label="key">
             <li class="bottom-top-left-list" v-for="(menu,index) in data" :style="menu.style" :key="index">
                <router-link :to="menu.path"><span>{{menu.title}}</span></router-link>
               </li>
@@ -93,11 +93,13 @@ export default {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: red;
+    // background-color: red;
     width: 100%;
   }
   .head-left{
     margin-left: 50px;
+    height: 55px;
+    width: 211px;
   }
   .head-right{
     margin-right: 50px;
