@@ -5,7 +5,7 @@
       <progressive-img :src="item" alt="" style="width:100%;" />
     </el-carousel-item>
   </el-carousel>
-  <div class="service">
+  <div>
     <img src="../../assets/Tea-break-service.png" alt="">
     <img src="../../assets/Tea-gift-service.png" alt="">
     <img src="../../assets/Tea-art-service.png" alt="">
