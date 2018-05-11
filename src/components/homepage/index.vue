@@ -5,11 +5,11 @@
       <progressive-img :src="item" alt="" style="width:100%;" />
     </el-carousel-item>
   </el-carousel>
-  <div>
-    <img src="../../assets/Tea-break-service.png" alt="">
-    <img src="../../assets/Tea-gift-service.png" alt="">
-    <img src="../../assets/Tea-art-service.png" alt="">
-  </div>
+  <el-row type="flex" class="row-bg" justify="center">
+    <img src="../../assets/Tea-break-service.png" alt="" style="height:183px;width:280px;">
+    <img src="../../assets/Tea-gift-service.png" alt="" style="height:183px;width:280px;margin-left:10px;">
+    <img src="../../assets/Tea-art-service.png" alt="" style="height:183px;width:280px;margin-left:10px;">
+  </el-row>
   </div>
 </template>
 <script>

@@ -1,15 +1,20 @@
 <template>
   <div id="app">
     <div class="home-container">
-      <div class="home-head">
-        <img src="./assets/logo.png" alt="" class="head-left">
-        <el-menu default-active="首页" class="el-menu-demo" :router="true" mode="horizontal" >
+      <el-row type="flex" justify="center" >
+        <el-col style="max-height:55px;min-width:211px;text-align:right;" 
+         :span="8" >
+        <img src="./assets/logo.png" alt="">
+        </el-col>
+        <el-col :push="1"
+          :span="14">
+          <el-menu active-text-color="#81b316" default-active="首页" class="el-menu-demo" :router="true" mode="horizontal" >
           <el-menu-item :index="data.title" v-for="(data,key) in menus" :key="key" :label="key" :route="data.path">
             {{data.title}}
           </el-menu-item>
         </el-menu>
-        <div class="head-right">微信</div>
-      </div>
+        </el-col>
+      </el-row>
       <div class="home-center">
         <router-view></router-view>
       </div>
@@ -81,6 +86,7 @@ export default {
   body,
   #app {
     margin: 0;
+    min-width: 950px;
   }
 /*页面无法使用百分比来设定分部占比*/
   .home-container{
