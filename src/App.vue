@@ -15,7 +15,7 @@
         </el-menu>
         </el-col>
       </el-row>
-      <div class="home-center">
+      <div>
         <router-view></router-view>
       </div>
       <div class="home-bottom">
@@ -28,7 +28,7 @@
           <div class="bottom-top-right">
             <p style="font-size: 12px;">全国订购电话</p>
             <p style="font-size:27px;">400 688 6888</p>
-            <button style="height: 30px;">在线客服</button>
+            <button style="height: 30px; width:90px; background-color:#81b316; color:white;">在线客服</button>
             <div class="bottom-top-right-footer"></div>
           </div>
         </div>
@@ -93,8 +93,6 @@ export default {
   }
 /*页面无法使用百分比来设定分部占比*/
   .home-container{
-    display: flex;
-    flex-direction: column;
     width: 100%;
     height: 100%;
   }
@@ -113,15 +111,9 @@ export default {
   .head-right{
     margin-right: 50px;
   }
-  .home-center{
-    display: flex;
-    flex-direction: column;
-    height: 650px;
-    width: 100%;
-    background-color: yellow;
-  }
+
   .home-bottom{
-    background-color: turquoise;
+    //background-color: turquoise;
     height: 190px;
     width: 100%;
   }
@@ -131,7 +123,7 @@ export default {
     justify-content: center;
   }
   .bottom-top-left{
-    background-color: red;
+    //background-color: red;
     font-size: 12px;
     display:flex;
     flex-direction: column;

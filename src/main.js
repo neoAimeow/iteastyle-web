@@ -5,8 +5,14 @@ import router from './router'
 import Vue from 'vue'
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
-import VueProgressiveImage from 'vue-progressive-image'
+import VueProgressiveImage from 'vue-progressive-image';
+import VueVideoPlayer from 'vue-video-player';
+import 'video.js/dist/video-js.css'
 
+Vue.use(VueVideoPlayer, /* {
+  options: global default options,
+  events: global videojs events
+} */)
 Vue.use(VueProgressiveImage)
 Vue.use(ElementUI);
 Vue.config.productionTip = false
