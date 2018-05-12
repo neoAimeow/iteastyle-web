@@ -6,13 +6,13 @@
     </el-carousel-item>
   </el-carousel>
   <el-row type="flex" class="row-bg" justify="center" style="margin:30px;">
-    <img src="../../assets/Tea-break-service.png" alt="" style="height:125px;width:191px;">
+    <img src="../../assets/Tea-break-service.png" alt="" style="height:125px;width:191px;" >
     <img src="../../assets/Tea-gift-service.png" alt="" style="height:125px;width:191px;margin-left:15px;">
     <img src="../../assets/Tea-art-service.png" alt="" style="height:125px;width:191px;margin-left:15px;">
   </el-row>
   <el-row>
     <el-col :span="3" v-for="dessert in dessert" :key="dessert">
-      <img :src="dessert" alt="" style="max-height:55px;min-width:100%">
+      <progressive-img :src="dessert" alt="" style="max-height:55px;min-width:100%"/>
     </el-col>
     <el-col :span="12" style="background-color:#81b316; max-height: 55px;">
       <img src="../../assets/Online-shopping.png" alt="" style="margin-left: 20px; max-height: 55px;">
