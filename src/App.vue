@@ -8,7 +8,7 @@
         </el-col>
         <el-col :push="1"
           :span="14">
-          <el-menu active-text-color="#81b316" default-active="首页" class="el-menu-demo" :router="true" mode="horizontal" >
+          <el-menu active-text-color="#81b316" default-active="首页" class="el-menu-demo" :router="true" mode="horizontal">
           <el-menu-item :index="data.title" v-for="(data,key) in menus" :key="key" :label="key" :route="data.path">
             {{data.title}}
           </el-menu-item>

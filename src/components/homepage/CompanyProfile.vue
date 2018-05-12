@@ -2,8 +2,7 @@
   <div class="story-container">
     <div class="story">
       <div class="story-title">
-        <div>OUR STORY</div>
-        <hr style="height:2px; border:none; border-top:2px dotted #81b316; width:90px;"/>
+        <img src="../../assets/Our-story.png" alt="">
         <div>杭式下午茶</div>
       </div>
       <div class="story-content">
@@ -77,10 +76,11 @@ p{
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 70%;
+  width: 60%;
   margin: 0 auto;
   margin-top: 35px;
   margin-bottom: 50px;
+  background-color: rgba(39, 1, 37, 0.3);
 }
 
 .story-title{

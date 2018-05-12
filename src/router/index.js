@@ -7,6 +7,7 @@ import ProductDisplay from '@/components/homepage/ProductDisplay.vue'
 import ClassicCase from '@/components/homepage/ClassicCase.vue'
 import TeaState from '@/components/homepage/TeaState.vue'
 import ContactUs from '@/components/homepage/ContactUs.vue'
+import DisplayInsidePage from '@/components/homepage/DisplayInsidePage.vue'
 
 Vue.use(Router)
 
@@ -41,6 +42,11 @@ export default new Router({
       path: '/homepage/contact-us',
       name: 'contact-us',
       component: ContactUs
+    },
+    {
+      path: '/homepage/display-insidepage',
+      name: '/display-insidepage',
+      component: DisplayInsidePage
     }
   ]
 })
