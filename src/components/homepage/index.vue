@@ -1,6 +1,6 @@
 <template>
 <div>
-  <el-carousel>
+  <el-carousel height="1000px">
     <el-carousel-item v-for="item in items" :key="item">
       <progressive-img :src="item" alt="" style="width:100%;" />
     </el-carousel-item>
