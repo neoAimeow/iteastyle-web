@@ -79,6 +79,9 @@ export default {
 </script>
 
 <style lang="scss">
+  a {
+    text-decoration: none;
+    }
   ul{
     list-style: none;
   }
@@ -139,23 +142,21 @@ export default {
     margin-top: 10px;
   }
   .bottom-top-right{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-end;
-    background-color: tomato;
     margin-left: 50px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
   }
   .bottom-footer{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
   }
   .bottom-footer-left{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-left: 337px;
   }
   .bottom-footer-right{
     margin-right: 100px;
