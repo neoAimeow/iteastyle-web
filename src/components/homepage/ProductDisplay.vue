@@ -4,7 +4,7 @@
     <img src="../../assets/Small-Logo.png" alt="">
     </div>
     <div class="body">
-      <router-link to="./DisplayInsidePage.vue" class="body-img">
+      <router-link to="/homepage/display-insidepage" class="body-img">
         <img src="../../assets/Tea-break-service.png" alt="">
         <p>好吃的</p>
       </router-link>
@@ -46,6 +46,7 @@
   justify-content: center;
   width: 60%;
   margin: 0 auto;
+  margin-top: 30px;
 }
 .body-img{
   text-align: center;

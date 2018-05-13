@@ -7,14 +7,16 @@ import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 import VueProgressiveImage from 'vue-progressive-image';
 import VueVideoPlayer from 'vue-video-player';
-import 'video.js/dist/video-js.css'
+import 'video.js/dist/video-js.css';
+import VueSilentbox from 'vue-silentbox'
 
+Vue.use(VueSilentbox)
 Vue.use(VueVideoPlayer, /* {
   options: global default options,
   events: global videojs events
 } */)
 Vue.use(VueProgressiveImage)
-Vue.use(ElementUI);
+Vue.use(ElementUI)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
