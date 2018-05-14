@@ -1,0 +1,10 @@
+<template>
+<div>
+  <div class="head">
+      
+  </div>
+  <div class="body">
+
+  </div>
+</div>
+</template>

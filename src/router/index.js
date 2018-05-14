@@ -8,6 +8,9 @@ import ClassicCase from '@/components/homepage/ClassicCase.vue'
 import TeaState from '@/components/homepage/TeaState.vue'
 import ContactUs from '@/components/homepage/ContactUs.vue'
 import DisplayInsidePage from '@/components/homepage/DisplayInsidePage.vue'
+import CaseInsidePage1 from '@/components/homepage/CaseInsidePage1.vue'
+import CaseInsidePage2 from '@/components/homepage/CaseInsidePage2.vue'
+import StateInsidePage from '@/components/homepage/StateInsidePage.vue'
 
 Vue.use(Router)
 
@@ -47,6 +50,21 @@ export default new Router({
       path: '/homepage/display-insidepage',
       name: '/display-insidepage',
       component: DisplayInsidePage
+    },
+    {
+      path: '/homepage/case-insidepage1',
+      name: '/case-insidepage1',
+      component: CaseInsidePage1
+    },
+    {
+      path: '/homepage/case-insidepage2',
+      name: '/case-insidepage2',
+      component: CaseInsidePage2
+    },
+    {
+      path: '/homepage/state-insidepage',
+      name: '/state-insidepage',
+      component: StateInsidePage
     }
   ]
 })
