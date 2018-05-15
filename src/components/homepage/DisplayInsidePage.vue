@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div class="head">
+  <div class="dip-container">
+    <div class="dip-head">
       <p>产品展示</p>
     </div>
     <silentbox-group class="dessert-img">
@@ -37,7 +37,7 @@
   text-indent: none;
 }
 
-.head{
+.dip-head{
   background-color: #81b316;
   height: 150px;
   text-align: center;

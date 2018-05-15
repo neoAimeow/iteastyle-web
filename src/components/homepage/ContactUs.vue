@@ -1,6 +1,6 @@
 <template>
-  <div class="contact">
-    <div class="contact-head">
+  <div class="cu-container">
+    <div class="cu-head">
       <img src="../../assets/Small-Logo.png" alt="">
       <p>杭式下午茶 创意茶歇 健康食尚</p>
       <pre>
@@ -13,11 +13,11 @@
          网址:www.iteastyle.com
       </pre>
     </div>
-    <div class="contact-bottom">
-      <div class="bottom-left">
+    <div class="cu-bottom">
+      <div class="cu-bottom-left">
 
       </div>
-      <div class="bottom-right">
+      <div class="cu-bottom-right">
         <img src="*" alt="二维码">
         <img src="*" alt="二维码" style="margin-top: 20px;">
       </div>
@@ -28,7 +28,7 @@
 <style lang="scss">
 
 
-.contact-head{
+.cu-head{
   display: flex;
   flex-direction: column;
   width: 250px;
@@ -36,7 +36,7 @@
   margin: 0 auto;
 }
 
-.contact-bottom{
+.cu-bottom{
   display: flex;
   flex-direction: row;
   width: 700px;
@@ -47,13 +47,13 @@
   height: 300px;
 }
 
-.bottom-left{
+.cu-bottom-left{
   background-color: red;
   width: 500px;
   height: 200px;
 }
 
-.bottom-right{
+.cu-bottom-right{
   display: flex;
   flex-direction: column;
   align-items: center;
