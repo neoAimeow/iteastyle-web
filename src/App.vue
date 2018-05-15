@@ -28,19 +28,18 @@
           <div class="bottom-top-right">
             <p style="font-size: 12px;">全国订购电话</p>
             <p style="font-size:27px;">400 688 6888</p>
-            <button style="height: 30px; width:90px; background-color:#81b316; color:white;">在线客服</button>
             <div class="bottom-top-right-footer"></div>
           </div>
         </div>
-        <hr style="height: 1px;background-color: black;">
+        <div style="height:0.5px;background-color:#aeaeae;"></div>
         <div class="bottom-footer">
-          <div class="bottom-footer-left">
-            <p style="font-size: 12px;">联系我们</p>
-            <p style="margin-left: 10px;">|</p>
-            <p style="font-size: 12px;margin-left: 10px;">使用条款</p>
-            <p style="margin-left: 10px;">|</p>
-            <p style="font-size: 12px;margin-left: 10px;">法律声明</p>
-          </div>
+          <ul class="bottom-footer-left">
+           <li class="bottom-footer-right-list">联系我们</li>
+              <li class="bottom-footer-right-list">|</li>
+              <li class="bottom-footer-right-list">使用条款</li>
+              <li class="bottom-footer-right-list">|</li>
+              <li class="bottom-footer-right-list">法律声明</li>
+          </ul>
           <ul class="bottom-footer-right">
               <li class="bottom-footer-right-list">Company</li>
               <li class="bottom-footer-right-list">|</li>
@@ -90,6 +89,8 @@ export default {
   #app {
     margin: 0;
     min-width: 950px;
+    font-family:"Lantinghei SC";
+    color:#626262;
   }
 /*页面无法使用百分比来设定分部占比*/
   .home-container{
@@ -113,7 +114,7 @@ export default {
   }
 
   .home-bottom{
-    //background-color: turquoise;
+    background-color: #f0f0f0;
     height: 190px;
     width: 100%;
   }
@@ -144,17 +145,20 @@ export default {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    background-color:#f0f0f0;
   }
   .bottom-footer-left{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
+    background-color: aqua;
   }
   .bottom-footer-right{
-    margin-right: 100px;
+    margin-right:0px;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    background-color:aquamarine;
   }
   .bottom-footer-right-list{
     margin-left: 10px;
