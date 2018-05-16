@@ -14,8 +14,8 @@
     <div  style="width:160px" v-for="(dessert,key) in desserts" :key="key">
       <img :src="dessert" alt="" style="height:100px;width:160px;margin-top:5px"/>
     </div>
-    <div class="" style="background-color:#81b316; max-height: 70px;">
-      <img src="../../assets/Online-shopping.png" alt="" style="margin-left: 50px; max-height: 70px;background-color:red;" />
+    <div class="" style="background-color:#9bc248; max-height: 70px;">
+      <img src="../../assets/Online-shopping.png" alt="" style="margin-left: 50px; max-height: 70px;" />
     </div>
   </div>
 </div>
