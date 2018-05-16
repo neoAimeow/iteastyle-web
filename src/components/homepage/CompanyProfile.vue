@@ -70,6 +70,8 @@ p{
   align-items: center;
   justify-content: center;
 
+  height: 1000px;
+  background:url(../../assets/cp-background.png);
 }
 
 .story{
@@ -80,7 +82,7 @@ p{
   margin: 0 auto;
   margin-top: 35px;
   margin-bottom: 50px;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.4);
 }
 
 .story-title{
