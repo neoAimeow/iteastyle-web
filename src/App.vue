@@ -2,12 +2,12 @@
   <div id="app">
     <div class="home-container">
       <el-row type="flex" justify="center" >
-        <el-col style="max-height:55px;min-width:211px;text-align:right;" 
+        <el-col style="max-height:55px;text-align:right;" 
          :span="8" >
         <img src="./assets/logo.png" alt="">
         </el-col>
         <el-col :push="1"
-          :span="14">
+          :span="15">
           <el-menu active-text-color="#81b316" default-active="首页" class="el-menu-demo" :router="true" mode="horizontal">
           <el-menu-item :index="data.title" v-for="(data,key) in menus" :key="key" :label="key" :route="data.path">
             {{data.title}}
@@ -21,24 +21,23 @@
       <div class="home-bottom">
         <div class="bottom-top">
           <ul class="bottom-top-left" v-for="(data,key) in bottommenus" :key="key" :label="key">
-            <li class="bottom-top-left-list" v-for="(menu,index) in data" :style="menu.style" :key="index">
-               <router-link :to="menu.path"><span>{{menu.title}}</span></router-link>
+            <li class="bottom-top-left-list" v-for="(menu,index) in data" :key="index">
+               <router-link :to="menu.path" :style="menu.style"><span>{{menu.title}}</span></router-link>
               </li>
           </ul>
           <div class="bottom-top-right">
             <p style="font-size: 12px;">全国订购电话</p>
-            <p style="font-size:27px;">400 688 6888</p>
-            <div class="bottom-top-right-footer"></div>
+            <p style="font-size:27px;margin-top:10px">400 688 6888</p>
           </div>
         </div>
         <div style="height:0.5px;background-color:#aeaeae;"></div>
         <div class="bottom-footer">
           <ul class="bottom-footer-left">
-           <li class="bottom-footer-right-list">联系我们</li>
-              <li class="bottom-footer-right-list">|</li>
-              <li class="bottom-footer-right-list">使用条款</li>
-              <li class="bottom-footer-right-list">|</li>
-              <li class="bottom-footer-right-list">法律声明</li>
+           <li class="bottom-footer-left-list">联系我们</li>
+              <li class="bottom-footer-left-list">|</li>
+              <li class="bottom-footer-left-list">使用条款</li>
+              <li class="bottom-footer-left-list">|</li>
+              <li class="bottom-footer-left-list">法律声明</li>
           </ul>
           <ul class="bottom-footer-right">
               <li class="bottom-footer-right-list">Company</li>
@@ -114,28 +113,39 @@ export default {
   }
 
   .home-bottom{
-    background-color: #f0f0f0;
-    height: 190px;
+    background-color:#f0f0f0;
+    height: 350px;
     width: 100%;
   }
   .bottom-top{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    height:250px;
+    //background-color:blue;
+
   }
   .bottom-top-left{
-    //background-color: red;
+    font-weight: normal;
     font-size: 12px;
     display:flex;
     flex-direction: column;
     justify-content: flex-start;
     margin-left: 10px;
+    margin-top:30px;
+    //background-color:red;
+
   }
   .bottom-top-left-list{
     margin-top: 10px;
+
   }
+
+  .bottom-top-left-list a{
+    color:#aeaeae;
+  }
+  
   .bottom-top-right{
-    margin-left: 50px;
     display: inline-flex;
     flex-direction: column;
     align-items: flex-end;
@@ -146,19 +156,26 @@ export default {
     flex-direction: row;
     justify-content: center;
     background-color:#f0f0f0;
+    margin-top:10px;
   }
   .bottom-footer-left{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    background-color: aqua;
+    //background-color:red;
+    width: 230px;
+  }
+
+   .bottom-footer-left-list{
+    margin-left: 10px;
+    font-size: 12px;
   }
   .bottom-footer-right{
-    margin-right:0px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    background-color:aquamarine;
+    margin-left:80px;
+    color:#866450;
+      //background-color:red;
+      width:430px;
   }
   .bottom-footer-right-list{
     margin-left: 10px;

@@ -6,16 +6,16 @@
     </el-carousel-item>
   </el-carousel>
   <el-row type="flex" justify="center" style="margin:30px;">
-    <img src="../../assets/Tea-break-service.png" alt="" style="height:125px;width:191px;" />
-    <img src="../../assets/Tea-gift-service.png" alt="" style="height:125px;width:191px;margin-left:15px;" />
-    <img src="../../assets/Tea-art-service.png" alt="" style="height:125px;width:191px;margin-left:15px;" />
+    <img src="../../assets/Tea-break-service.png" alt="" style="height:170px;width:250px;" />
+    <img src="../../assets/Tea-gift-service.png" alt="" style="height:170px;width:250px;margin-left:25px;" />
+    <img src="../../assets/Tea-art-service.png" alt="" style="height:170px;width:250px;margin-left:25px;" />
   </el-row>
   <div class="dessert">
-    <div style="height:90px;width:200px;" v-for="(dessert,key) in desserts" :key="key">
-      <img :src="dessert" alt="" style="height:90px;width:200px;"/>
+    <div  style="width:160px" v-for="(dessert,key) in desserts" :key="key">
+      <img :src="dessert" alt="" style="height:100px;width:160px;margin-top:5px"/>
     </div>
     <div class="" style="background-color:#81b316; max-height: 55px;">
-      <img src="../../assets/Online-shopping.png" alt="" style="margin-left: 20px; max-height: 55px;" />
+      <img src="../../assets/Online-shopping.png" alt="" style="margin-left: 50px; max-height: 70px;background-color:red;" />
     </div>
   </div>
 </div>
@@ -42,12 +42,13 @@ export default {
 
 <style lang="scss">
 .dessert{ 
-  height: 90px;
+  height:100px;
   display: flex;
   flex-direction: row;
   align-items: center;
   // justify-content: center;
   width: 100%;
   background-color: #81b316;
+  margin-top:45px;
 }
 </style>
