@@ -3,87 +3,114 @@ const homebottommenus = [
         {
             title: '公司故事',
             path: '/homepage/company-profile',
-            style: 'font-weight:bold'
+            style: 'color:#626262;'
         },
         {
             title: '公司简介',
-            path: '/'
+            path: ''
         },
         {
             title: '联系我们',
-            path: '/homepage/contact-us'
+            path: ''
         },
         {
             title: '在线预约',
-            path: '/'
+            path: ''
         }
     ],
     [
         {
             title: '产品展示',
             path: '/homepage/product-display',
-            style: 'font-weight:bold'
+            style: 'color:#626262;'
         },
         {
             title: '茶饮茶点',
-            path: '/'
+            path: ''
         },
         {
             title: '摆台效果',
-            path: '/'
+            path: ''
+        }
+    ],
+    [
+        {
+            title: '服务内容',
+            path: '/homepage/classic-case',
+            style: 'color:#626262;'
+        },
+        {
+            title: '茶歇服务',
+            path: ''
+        },
+        {
+            title: '茶艺表演',
+            path: ''
+        },
+        {
+            title: 'DIY活动',
+            path: ''
+        },
+        {
+            title: '茶文化讲座',
+            path: ''
+        },
+        {
+            title: '杭州伴手礼',
+            path: ''
         }
     ],
     [
         {
             title: '经典案例',
             path: '/homepage/classic-case',
-            style: 'font-weight:bold'
+            style: 'color:#626262;'
         },
         {
             title: '茶歇服务',
-            path: '/'
+            path: ''
         },
         {
             title: '茶艺表演',
-            path: '/'
+            path: ''
         },
         {
             title: '茶文化讲座',
-            path: '/'
+            path: ''
         },
         {
             title: 'DIY活动',
-            path: '/'
+            path: ''
         },
         {
             title: '私茗定制',
-            path: '/'
+            path: ''
         }
     ],
     [
         {
             title: '茶式动态',
             path: '/homepage/tea-state',
-            style: 'font-weight:bold'
+            style: 'color:#626262;'
         },
         {
             title: '新闻动态',
-            path: '/'
+            path: ''
         }
     ],
     [
         {
             title: '关注我们',
-            path: '/',
-            style: 'font-weight:bold'
+            path: '',
+            style: 'color:#626262;'
         },
         {
             title: '微博',
-            path: '/'
+            path: ''
         },
         {
             title: '微信',
-            path: '/'
+            path: ''
         }
     ]
 ]
