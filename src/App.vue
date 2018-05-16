@@ -7,8 +7,8 @@
         <img src="./assets/logo.png" alt="">
         </el-col>
         <el-col :push="1"
-          :span="15">
-          <el-menu active-text-color="#9bc248" default-active="首页" class="el-menu-demo" :router="true" mode="horizontal">
+          :span="14">
+          <el-menu active-text-color="#81b316" default-active="首页" class="el-menu-demo" :router="true" mode="horizontal">
           <el-menu-item :index="data.title" v-for="(data,key) in menus" :key="key" :label="key" :route="data.path">
             {{data.title}}
           </el-menu-item>
@@ -20,7 +20,6 @@
       </div>
       <div class="home-bottom">
         <div class="bottom-top">
-          <div style="display:flex;justify-content:space-between;width:810px;">
           <ul class="bottom-top-left" v-for="(data,key) in bottommenus" :key="key" :label="key">
             <li class="bottom-top-left-list" v-for="(menu,index) in data" :key="index">
                <router-link :to="menu.path" :style="menu.style"><span>{{menu.title}}</span></router-link>
@@ -30,11 +29,9 @@
             <p style="font-size: 12px;">全国订购电话</p>
             <p style="font-size:27px;margin-top:10px">400 688 6888</p>
           </div>
-          </div>
         </div>
         <div style="height:0.5px;background-color:#aeaeae;"></div>
         <div class="bottom-footer">
-          <div style="display:flex;justify-content:space-between;width:825px;">
           <ul class="bottom-footer-left">
            <li class="bottom-footer-left-list">联系我们</li>
               <li class="bottom-footer-left-list">|</li>
@@ -55,7 +52,6 @@
               <li class="bottom-footer-right-list">|</li>
               <li class="bottom-footer-right-list">Contact</li>
           </ul>
-          </div>
         </div>
       </div>
     </div>
@@ -98,26 +94,6 @@ export default {
     color:#626262;
   }
 /*页面无法使用百分比来设定分部占比*/
-  .home-container{
-    width: 100%;
-    height: 100%;
-  }
-  .home-head{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    // background-color: red;
-    width: 100%;
-  }
-  .head-left{
-    margin-left: 50px;
-    height: 55px;
-    width: 211px;
-  }
-  .head-right{
-    margin-right: 50px;
-  }
-
   .home-bottom{
     background-color:#f0f0f0;
     height: 350px;
@@ -137,13 +113,12 @@ export default {
     display:flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin-right:35px;
+    margin-left: 10px;
     margin-top:30px;
     //background-color:red;
   }
   .bottom-top-left-list{
     margin-top: 10px;
-    //background-color:yellow;
   }
 
   .bottom-top-left-list a{
@@ -155,14 +130,13 @@ export default {
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
-    margin-left:50px;
   }
   .bottom-footer{
     display: flex;
     flex-direction: row;
     justify-content: center;
     background-color:#f0f0f0;
-    margin-top:30px;
+    margin-top:10px;
   }
   .bottom-footer-left{
     display: flex;
