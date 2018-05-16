@@ -80,8 +80,10 @@ export default {
   a {
     text-decoration: none;
     }
-  ul{
+  ul,li{
     list-style: none;
+    padding: 0;
+    margin: 0;
   }
   html,
   body,
@@ -134,11 +136,9 @@ export default {
     margin-left: 10px;
     margin-top:30px;
     //background-color:red;
-
   }
   .bottom-top-left-list{
     margin-top: 10px;
-
   }
 
   .bottom-top-left-list a{
@@ -162,7 +162,7 @@ export default {
     display: flex;
     flex-direction: row;
     //background-color:red;
-    width: 230px;
+    width: 210px;
   }
 
    .bottom-footer-left-list{
@@ -174,8 +174,8 @@ export default {
     flex-direction: row;
     margin-left:80px;
     color:#866450;
-      //background-color:red;
-      width:430px;
+    //background-color:red;
+    width:430px;
   }
   .bottom-footer-right-list{
     margin-left: 10px;

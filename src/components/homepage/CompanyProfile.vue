@@ -64,12 +64,12 @@
 p{
   text-indent: 1.5em;
 }
-.story-contaniner{
+.story-container{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  //background:url(../../assets/cp-background.png);
+
 }
 
 .story{
