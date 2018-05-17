@@ -73,19 +73,16 @@
 }
 
 .cu-bottom-left{
-  width: 370px;
-  height: 200px;
+  width: 360px;
+  height: 190px;
   margin-left:125px;
-  background-color:#d2e1b0;
-  display:flex;
-  justify-content: center;
-  align-items: center;
+  border:solid 5px rgba(155,194,72,0.6);
 }
 
 .map{
   width:360px;
   height:190px;
-  //background-color:black;
+  background-color:black;
   
 }
 .cu-bottom-right{
@@ -100,11 +97,8 @@
 }
 
 .bottom-right-imgs{
-  width:85px;
-  height:85px;
-  background-color:#d2e1b0;
-  display:flex;
-  justify-content: center;
-  align-items: center;
+  width:75px;
+  height:75px;
+  border:solid 5px rgba(155,194,72,0.6);
 }
 </style>
