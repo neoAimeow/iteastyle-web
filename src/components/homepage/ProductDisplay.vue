@@ -8,27 +8,27 @@
       <div class="pd-picture">
         <div class="pd">
           <div class="picture"><img src="../../assets/Tea-break-service.png" class="img-style"></div>
-          <p style="margin-top:3px;font-size:20px;margin-left:65px">抹茶费南雪</p>
+          <div style=" text-align:center;font-size:20px;margin-top:5px;">抹茶费南雪</div>
         </div>
         <div class="pd">
           <div class="picture"><img src="../../assets/Tea-break-service.png" class="img-style"></div>
-          <p style="margin-top:3px;font-size:20px;margin-left:65px">抹茶费南雪</p>
+          <div style=" text-align:center;font-size:20px;margin-top:5px;">抹茶费南雪</div>
         </div>
         <div class="pd">
           <div class="picture"><img src="../../assets/Tea-break-service.png" class="img-style"></div>
-          <p style="margin-top:3px;font-size:20px;margin-left:65px">抹茶费南雪</p>
+          <div style=" text-align:center;font-size:20px;margin-top:5px;">抹茶费南雪</div>
         </div>
         <div class="pd">
           <div class="picture"><img src="../../assets/Tea-break-service.png" class="img-style"></div>
-          <p style="margin-top:3px;font-size:20px;margin-left:65px">抹茶费南雪</p>
+          <div style=" text-align:center;font-size:20px;margin-top:5px;">抹茶费南雪</div>
         </div>
         <div class="pd">
           <div class="picture"><img src="../../assets/Tea-break-service.png" class="img-style"></div>
-          <p style="margin-top:3px;font-size:20px;margin-left:65px">抹茶费南雪</p>
+          <div style=" text-align:center;font-size:20px;margin-top:5px;">抹茶费南雪</div>
         </div>
         <div class="pd">
           <div class="picture"><img src="../../assets/Tea-break-service.png" class="img-style"></div>
-          <p style="margin-top:3px;font-size:20px;margin-left:65px">抹茶费南雪</p>
+          <div style=" text-align:center;font-size:20px;margin-top:5px;">抹茶费南雪</div>
         </div>
       </div>
       <img src="../../assets/right.jpeg">

@@ -14,7 +14,7 @@
           每天下午她都会差遣女仆为她准备一壶红茶和点心，她觉得这种感觉真好，便邀请友人共享。很快，
           下午茶便在英国上流社会流行起来。</p>
       </div>
-      <el-button type="success" style="margin-bottom: 35px;margin-top:10px;background-color:#9bc248;border-color:#9bc248">立即预约>></el-button>
+      <!--<el-button type="success" style="margin-bottom: 35px;margin-top:10px;background-color:#9bc248;border-color:#9bc248">立即预约>></el-button>-->
     </div>
     <div class="video">
       <video-player  class="video-player-box"
@@ -78,6 +78,7 @@ p{
   display: flex;
   flex-direction: column;
   align-items: center;
+  height:400px;
   width: 60%;
   margin: 0 auto;
   margin-top: 35px;
