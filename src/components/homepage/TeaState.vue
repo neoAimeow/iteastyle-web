@@ -33,7 +33,10 @@
 
 <style lang="scss">
 .state-container{
-  background-image: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1526405507178&di=6bb6f14a042f490b6201074140b14f12&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01702e568643f66ac7251bb6e5d788.jpg%401280w_1l_2o_100sh.jpg);
+  background:url("../../assets/DT-background.png");
+  background-repeat:no-repeat;
+  background-position:center;
+  background-color: #23201f;
   width: 100%;
   height: 800px;
   display: flex;

@@ -71,7 +71,10 @@ p{
   justify-content: center;
 
   height: 1000px;
-  background:url(../../assets/cp-background.png);
+  background:url("../../assets/cp-background.png");
+  background-repeat:no-repeat;
+  background-position:center;
+  background-color: #2f1b23;
 }
 
 .story{
