@@ -82,7 +82,7 @@ p{
   margin: 0 auto;
   margin-top: 35px;
   margin-bottom: 50px;
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(17,14,30,0.5);
 }
 
 .story-title{
