@@ -1,7 +1,7 @@
 <template>
   <div class="cu-container">
     <div class="contactus">
-      <img src="../../assets/Our-story.png" alt="">
+      <img src="../../assets/Contact-Us.png" alt="">
       <div>联系我们</div>     
       <span style="margin-top:30px;">杭式下午茶&nbsp;&nbsp;创意茶歇&nbsp;&nbsp;健康食尚</span> 
 
@@ -39,6 +39,7 @@
   background-image:url('../../assets/CU-background.png');
   background-repeat:no-repeat;
   background-position:center;
+  background-color: #3a3a2d;
   color:white;
 }
 
@@ -68,6 +69,7 @@
   margin: 0 auto;
   //background-color: blue;
   margin-top:30px;
+  padding-bottom: 50px;
 }
 
 .cu-bottom-left{
@@ -84,6 +86,7 @@
   width:360px;
   height:190px;
   //background-color:black;
+  
 }
 .cu-bottom-right{
   display: flex;
