@@ -22,19 +22,11 @@ Vue.use(VueVideoPlayer, /* {
 Vue.use(VueProgressiveImage)
 Vue.use(ElementUI)
 Vue.config.productionTip = false
-Vue.use(VueApollo)
 
-/* eslint-disable no-new */
-new Vue({
-  el: '#app',
-  router,
-  components: { App },
-  render: h => h(App)
-})
 
 const httpLink = new HttpLink({
   // You should use an absolute URL here
-  uri: 'http://localhost:3020/graphql',
+  uri: 'http://localhost:3000/graphql',
 })
 
 // Create the apollo client
@@ -43,3 +35,21 @@ const apolloClient = new ApolloClient({
   cache: new InMemoryCache(),
   connectToDevTools: true,
 })
+
+const apolloProvider = new VueApollo({
+  defaultClient: apolloClient,
+})
+
+// Install the vue plugin
+Vue.use(VueApollo)
+
+
+/* eslint-disable no-new */
+new Vue({
+  el: '#app',
+  router,
+  provide: apolloProvider.provide(),
+  components: { App },
+  render: h => h(App)
+})
+
