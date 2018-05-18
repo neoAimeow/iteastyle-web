@@ -1,7 +1,7 @@
 <template>
   <div class="sip-container">
         <div class="sip-head">
-            <img src="../../assets/teacase-light-logo.png" style="width:80px；" alt="">
+            <img src="../../assets/state-logo.png" style="height:50%;" alt="">
         </div>
 
         <div class="sip-body-title">
@@ -33,7 +33,7 @@
     align-items: center;
 }
 .sip-head{
-    background:url(../../assets/DT-background.png) no-repeat center;
+    background:url(../../assets/state-background.png) no-repeat center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,18 +56,18 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width:700px;
+    width:650px;
     margin-top:10px;
-    background-color:black;
+    //background-color:black;
 
 }
 .sip-content-left{
-    width: 300px;
-    background-color:yellow;
+    width: 280px;
+    //background-color:yellow;
 }
 .sip-content-right{
-    width: 300px;
-    background-color: red;
+    width: 280px;
+    //background-color: red;
     font-size:15px;
 }
 </style>
