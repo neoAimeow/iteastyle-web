@@ -70,7 +70,7 @@ p{
   align-items: center;
   justify-content: center;
 
-  height: 1000px;
+  //height: 1000px;这个好像无意义
   background:url("../../assets/cp-background.png");
   background-repeat:no-repeat;
   background-position:center;
@@ -81,7 +81,7 @@ p{
   display: flex;
   flex-direction: column;
   align-items: center;
-  height:400px;
+  //height:400px;这个好像无意义
   width: 60%;
   margin: 0 auto;
   margin-top: 35px;
