@@ -32,30 +32,6 @@
         </div>
       </div>
       <img src="../../assets/right.jpeg">
-      <!--<router-link to="/homepage/display-insidepage" class="body-img">
-        <img src="../../assets/Tea-break-service.png" alt="">
-        <p>好吃的</p>
-      </router-link>
-      <a href="*" class="body-img">
-        <img src="../../assets/Tea-break-service.png" alt="">
-        <p>好吃的</p>
-      </a>
-      <a href="*" class="body-img">
-        <img src="../../assets/Tea-break-service.png" alt="">
-        <p>好吃的</p>
-      </a>
-      <a href="*" class="body-img">
-        <img src="../../assets/Tea-break-service.png" alt="">
-        <p>好吃的</p>
-      </a>
-      <a href="*" class="body-img">
-        <img src="../../assets/Tea-break-service.png" alt="">
-        <p>好吃的</p>
-      </a>
-      <a href="*" class="body-img">
-        <img src="../../assets/Tea-break-service.png" alt="">
-        <p>好吃的</p>
-      </a>-->
     </div>
   </div>
 </template>
@@ -77,9 +53,6 @@
   margin: 0 auto;
   //background-color:black;
 }
-//.body-img{
-  //text-align: center;
-//}
 
 .pd-picture{
   //background:blue;

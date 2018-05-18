@@ -33,33 +33,7 @@ const homebottommenus = [
             path: ''
         }
     ],
-    [
-        {
-            title: '服务内容',
-            path: '/homepage/classic-case',
-            style: 'color:#626262;'
-        },
-        {
-            title: '茶歇服务',
-            path: ''
-        },
-        {
-            title: '茶艺表演',
-            path: ''
-        },
-        {
-            title: 'DIY活动',
-            path: ''
-        },
-        {
-            title: '茶文化讲座',
-            path: ''
-        },
-        {
-            title: '杭州伴手礼',
-            path: ''
-        }
-    ],
+    
     [
         {
             title: '经典案例',
