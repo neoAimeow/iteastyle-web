@@ -1,11 +1,12 @@
 <template>
   <div class="sip-container">
       <div class="sip-head">
-          <img src="../../assets/Small-Logo.png" alt="">
+          <img src="../../assets/teacase-light-logo.png" alt="">
       </div>
       <div class="sip-body">
           <div class="sip-body-title">
-              <p>这份小确幸，您想要吗？</p>
+              <p >这份小确幸，您想要吗？</p>
+              <div style="height:0.5px;background-color:#f0f0f0;"></div>
           </div>
           <div class="sip-body-content">
               <div class="sip-content-left">
@@ -23,16 +24,20 @@
 
 <style lang="scss">
 .sip-head{
-    background-color: #81b316;
+    background:url(../../assets/DT-background.png);
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 150px;
+
 }
 .sip-body{
-    width: 500px;
+    width: 800px;
     margin: 0 auto;
 }
 .sip-body-title{
     text-align: center;
+    margin-top:30px;
 }
 .sip-body-content{
     display: flex;
