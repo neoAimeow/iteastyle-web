@@ -20,7 +20,7 @@
       </div>
       <div class="home-bottom">
         <div class="bottom-top">
-          <div style="width:800px;height:250px;display:flex;justify-content:space-between">
+          <div style="width:800px;height:250px;display:flex;justify-content:space-between;">
           <ul class="bottom-top-left" v-for="(data,key) in bottommenus" :key="key" :label="key">
             <li class="bottom-top-left-list" v-for="(menu,index) in data" :key="index">
                <router-link :to="menu.path" :style="menu.style"><span>{{menu.title}}</span></router-link>
@@ -117,7 +117,6 @@ export default {
     display:flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin-right: 10px;
     margin-top:30px;
     //background-color:red;
   }
@@ -134,6 +133,7 @@ export default {
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
+    margin-left:100px;
   }
   .bottom-footer{
     display: flex;
