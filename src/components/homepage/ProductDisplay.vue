@@ -49,15 +49,17 @@
   align-items: center;
   justify-content: space-between;
   width:80%;
-  height:630px;
+  //height:630px;
   margin: 0 auto;
   //background-color:black;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .pd-picture{
   //background:blue;
   width:900px;
-  height:500px;
+  //height:500px;
   display: flex;
   flex-wrap: wrap;
   justify-content:space-around;
@@ -69,20 +71,24 @@
   margin-top:25px;
 }
 .picture{
-  width:250px;
-  height:165px;
+  //width:250px;
+  //height:165px;
   border:solid 1px #aeaeae;
+  text-align: center;
 }
 
 .img-style{
 width:95%;
-margin-top:5px;
-margin-left:5px;
+//margin-top:5px;
+//margin-left:5px;
+display: inline-block;
+vertical-align: middle;
 }
 
+/*好像是多余的
 .picture-name{
   width:250px;
   height:50px;
   background-color:blueviolet;
-}
+}*/
 </style>

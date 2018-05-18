@@ -1,8 +1,8 @@
 <template>
 <div>
-  <el-carousel>
+  <el-carousel :height="bannerHeight + 'px'">
     <el-carousel-item v-for="item in items" :key="item">
-      <progressive-img :src="item" alt="" style="width:100%;" />
+      <progressive-img :src="item" alt="" class="bannerImg" />
     </el-carousel-item>
   </el-carousel>
   <el-row type="flex" justify="center" style="margin:30px;">
@@ -38,11 +38,25 @@ export default {
         'https://gss3.bdstatic.com/7Po3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike150%2C5%2C5%2C150%2C50/sign=bff7b854c3fdfc03f175ebeab556ecf1/83025aafa40f4bfb8ce6d0fe034f78f0f7361861.jpg'
       ]
     }
-  }
+  },
+  //这段看不出效果
+  setSize: function () {
+    this.bannerHeight = 740 / 2560 * this.screenWidth
+    if(this.bannerHeight > 740) this.bannerHeight = 740
+    if(this.bannerHeight < 360) this.bannerHeight = 360
+  },
+  
 }
 </script>
 
 <style lang="scss">
+//bannerimg看不出效果，需要修改
+.bannerImg{
+    width: 100%;
+    height: inherit;
+    min-height: 360px;
+    min-width: 1400px;
+  }
 .dessert{ 
   height:100px;
   display: flex;
