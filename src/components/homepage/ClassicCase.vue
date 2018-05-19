@@ -1,20 +1,23 @@
 <template>
   <div class="cc-container">
 
+
     <router-link to="/homepage/case-insidepage1">
     <div style="width:200px;height:450px;">
-
-      <div style="width:200px;height:300px;background='../../assets/tea-case-images.png';">
+      
+      <div style="width:200px;height:300px;background-img:url(../../assets/tea-case-images.png);">
+    
         <img src="../../assets/teacase-light-logo.png" style="width:40%;z-index:1;">
       </div>
       
-      <div class="case-foot">
+      <div calss="case-foot" style="width:200px;height:150px;display:flex;align-items:center;justify-content:center;background-color:yellow;">
         <img src="../../assets/case-tea-dessert.png" style="width:50%">
       </div>
 
     </div>      
     </router-link>
-    
+    {{cases}}
+
     
   </div>
 
@@ -41,6 +44,27 @@
   
 </template>
 
+<script>
+  import {
+    casesGQL
+  } from '@/graphql/Case';
+
+  export default {
+  
+    apollo: {
+      cases: {
+        query() {
+          return casesGQL;
+        }
+      },
+    },
+    data() {
+      return {
+        cases: {},
+      }
+    },
+  }
+</script>
 <style lang="scss">
 .cc-container{
   display: flex;
@@ -55,11 +79,6 @@
   //height: 400px;
 //}
 .case-foot{
-width:200px;
-height:150px;
-display:flex;
-align-items:center;
-justify-content:center;
-background-color:yellow;
+
 }
 </style>

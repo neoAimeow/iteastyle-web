@@ -1,46 +1,54 @@
 <template>
   <div class="state-container">
   <div style="margin-top:100px;wdith:1000px;height:1000px">
-    <div class="tea-state">     
-      <img class="images" src="../../assets/state-image.png" alt="">
-      <div class="state">
-        <div style="display:flex;flex-direction:column;align-content:center;justify-content:center;width:700px;height:120px;margin-left:90px">
-        <span style="color:#9bc348;font-size:16px;width:600px">这份小确幸，您想要吗？</span>
-        <span style="color:white;font-size:13px;margin-top:10px;width:600px">转眼夏至 这一年已过去一半 正值夏天 闷热、阵雨、烈日 似乎是个不太好的季节 却也有人喜欢夏天的激情 阳光、海滩、冷饮 激情的夏日 一切活动仿佛充满了干劲...</span>
+    <router-link to="state-insidepage">
+      <div class="tea-state">     
+        <img class="images" src="../../assets/state-image.png" alt="">
+        <div class="state">
+          <div style="display:flex;flex-direction:column;align-content:center;justify-content:center;width:700px;height:120px;margin-left:90px">
+          <span style="color:#9bc348;font-size:16px;width:600px">这份小确幸，您想要吗？</span>
+          <span style="color:white;font-size:13px;margin-top:10px;width:600px">转眼夏至 这一年已过去一半 正值夏天 闷热、阵雨、烈日 似乎是个不太好的季节 却也有人喜欢夏天的激情 阳光、海滩、冷饮 激情的夏日 一切活动仿佛充满了干劲...</span>
         </div>
-        <router-link to="state-insidepage"><img src="../../assets/+.png" style="margin-top:97.5px;"></router-link>
-      </div>
-    </div> 
-    <div class="tea-state">     
-      <img class="images" src="../../assets/state-image.png" alt="">
-      <div class="state">
-        <div style="display:flex;flex-direction:column;align-content:center;justify-content:center;width:700px;height:120px;margin-left:90px">
-        <span style="color:#9bc348;font-size:16px;width:600px">这份小确幸，您想要吗？</span>
-        <span style="color:white;font-size:13px;margin-top:10px;width:600px">转眼夏至 这一年已过去一半 正值夏天 闷热、阵雨、烈日 似乎是个不太好的季节 却也有人喜欢夏天的激情 阳光、海滩、冷饮 激情的夏日 一切活动仿佛充满了干劲...</span>
+          <img src="../../assets/+.png" style="margin-top:97.5px;">
         </div>
-        <router-link to="state-insidepage"><img src="../../assets/+.png" style="margin-top:97.5px;"></router-link>
       </div>
-    </div>
-    <div class="tea-state">     
-      <img class="images" src="../../assets/state-image.png" alt="">
-      <div class="state">
-        <div style="display:flex;flex-direction:column;align-content:center;justify-content:center;width:700px;height:120px;margin-left:90px">
-        <span style="color:#9bc348;font-size:16px;width:600px">这份小确幸，您想要吗？</span>
-        <span style="color:white;font-size:13px;margin-top:10px;width:600px">转眼夏至 这一年已过去一半 正值夏天 闷热、阵雨、烈日 似乎是个不太好的季节 却也有人喜欢夏天的激情 阳光、海滩、冷饮 激情的夏日 一切活动仿佛充满了干劲...</span>
+    </router-link>
+    <router-link to="state-insidepage">
+      <div class="tea-state">     
+        <img class="images" src="../../assets/state-image.png" alt="">
+        <div class="state">
+          <div style="display:flex;flex-direction:column;align-content:center;justify-content:center;width:700px;height:120px;margin-left:90px">
+          <span style="color:#9bc348;font-size:16px;width:600px">这份小确幸，您想要吗？</span>
+          <span style="color:white;font-size:13px;margin-top:10px;width:600px">转眼夏至 这一年已过去一半 正值夏天 闷热、阵雨、烈日 似乎是个不太好的季节 却也有人喜欢夏天的激情 阳光、海滩、冷饮 激情的夏日 一切活动仿佛充满了干劲...</span>
         </div>
-        <router-link to="state-insidepage"><img src="../../assets/+.png" style="margin-top:97.5px;"></router-link>
-      </div>
-    </div>
-    <div class="tea-state">     
-      <img class="images" src="../../assets/state-image.png" alt="">
-      <div class="state">
-        <div style="display:flex;flex-direction:column;align-content:center;justify-content:center;width:700px;height:120px;margin-left:90px">
-        <span style="color:#9bc348;font-size:16px;width:600px">这份小确幸，您想要吗？</span>
-        <span style="color:white;font-size:13px;margin-top:10px;width:600px">转眼夏至 这一年已过去一半 正值夏天 闷热、阵雨、烈日 似乎是个不太好的季节 却也有人喜欢夏天的激情 阳光、海滩、冷饮 激情的夏日 一切活动仿佛充满了干劲...</span>
+          <img src="../../assets/+.png" style="margin-top:97.5px;">
         </div>
-        <router-link to="state-insidepage"><img src="../../assets/+.png" style="margin-top:97.5px;"></router-link>
       </div>
-    </div>
+    </router-link>
+    <router-link to="state-insidepage">
+      <div class="tea-state">     
+        <img class="images" src="../../assets/state-image.png" alt="">
+        <div class="state">
+          <div style="display:flex;flex-direction:column;align-content:center;justify-content:center;width:700px;height:120px;margin-left:90px">
+          <span style="color:#9bc348;font-size:16px;width:600px">这份小确幸，您想要吗？</span>
+          <span style="color:white;font-size:13px;margin-top:10px;width:600px">转眼夏至 这一年已过去一半 正值夏天 闷热、阵雨、烈日 似乎是个不太好的季节 却也有人喜欢夏天的激情 阳光、海滩、冷饮 激情的夏日 一切活动仿佛充满了干劲...</span>
+        </div>
+          <img src="../../assets/+.png" style="margin-top:97.5px;">
+        </div>
+      </div>
+    </router-link>
+    <router-link to="state-insidepage">
+      <div class="tea-state">     
+        <img class="images" src="../../assets/state-image.png" alt="">
+        <div class="state">
+          <div style="display:flex;flex-direction:column;align-content:center;justify-content:center;width:700px;height:120px;margin-left:90px">
+          <span style="color:#9bc348;font-size:16px;width:600px">这份小确幸，您想要吗？</span>
+          <span style="color:white;font-size:13px;margin-top:10px;width:600px">转眼夏至 这一年已过去一半 正值夏天 闷热、阵雨、烈日 似乎是个不太好的季节 却也有人喜欢夏天的激情 阳光、海滩、冷饮 激情的夏日 一切活动仿佛充满了干劲...</span>
+        </div>
+          <img src="../../assets/+.png" style="margin-top:97.5px;">
+        </div>
+      </div>
+    </router-link>
   </div>
   </div>
 </template>
