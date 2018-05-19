@@ -1,7 +1,6 @@
 <template>
   <div class="cc-container">
 
-
     <router-link to="/homepage/case-insidepage1">
     <div style="width:200px;height:450px;">    
       <div class="case-top">
