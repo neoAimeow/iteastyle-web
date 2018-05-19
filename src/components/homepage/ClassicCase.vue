@@ -2,42 +2,66 @@
   <div class="cc-container">
 
     <router-link to="/homepage/case-insidepage1">
-    <div style="width:200px;height:450px;">
-
-      <div style="width:200px;height:300px;background='../../assets/tea-case-images.png';">
-        <img src="../../assets/teacase-light-logo.png" style="width:40%;z-index:1;">
-      </div>
-      
+    <div style="width:200px;height:450px;">    
+      <div class="case-top">
+        <img class="cc-container-img" src="../../assets/tea-case-images.png">      
+        <div class="cc-container-img-logo"><img class="cc-container-logo" src="../../assets/teacase-light-logo.png" ></div>
+      </div>      
       <div class="case-foot">
         <img src="../../assets/case-tea-dessert.png" style="width:50%">
       </div>
-
     </div>      
     </router-link>
     
+    <router-link to="/homepage/case-insidepage1">
+    <div style="width:200px;height:450px;">    
+      <div class="case-top">
+        <img class="cc-container-img" src="../../assets/tea-case-images.png">      
+        <div class="cc-container-img-logo"><img class="cc-container-logo" src="../../assets/teacase-light-logo.png" ></div>
+      </div>      
+      <div class="case-foot">
+        <img src="../../assets/case-tea-culture-seminar.png" style="width:58%">
+      </div>
+    </div>      
+    </router-link>
+
+    <router-link to="/homepage/case-insidepage1">
+    <div style="width:200px;height:450px;">    
+      <div class="case-top">
+        <img class="cc-container-img" src="../../assets/tea-case-images.png">      
+        <div class="cc-container-img-logo"><img class="cc-container-logo" src="../../assets/teacase-light-logo.png" ></div>
+      </div>      
+      <div class="case-foot">
+        <img src="../../assets/case-DIY-activities.png" style="width:47%">
+      </div>
+    </div>      
+    </router-link>
+
+    <router-link to="/homepage/case-insidepage1">
+    <div style="width:200px;height:450px;">    
+      <div class="case-top">
+        <img class="cc-container-img" src="../../assets/tea-case-images.png">      
+        <div class="cc-container-img-logo"><img class="cc-container-logo" src="../../assets/teacase-light-logo.png" ></div>
+      </div>      
+      <div class="case-foot">
+        <img src="../../assets/case-private-tea-customisation.png" style="width:65%">
+      </div>
+    </div>      
+    </router-link>
+
+    <router-link to="/homepage/case-insidepage1">
+    <div style="width:200px;height:450px;">    
+      <div class="case-top">
+        <img class="cc-container-img" src="../../assets/tea-case-images.png">      
+        <div class="cc-container-img-logo"><img class="cc-container-logo" src="../../assets/teacase-light-logo.png" ></div>
+      </div>      
+      <div class="case-foot">
+        <img src="../../assets/case-tea-performance.png" style="width:50%">
+      </div>
+    </div>      
+    </router-link>
     
   </div>
-
-
-
-
-
-
-    <!--<router-link to="/homepage/case-insidepage1">
-    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1526403898400&di=dadaeaf28bc0df9132c5953a4a8c70c3&imgtype=0&src=http%3A%2F%2Fgb.cri.cn%2Fmmsource%2Fimages%2F2007%2F04%2F11%2Fwc070411032.jpg" alt="">
-    </router-link>
-    <router-link to="/homepage/case-insidepage1">
-    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1526403898400&di=dadaeaf28bc0df9132c5953a4a8c70c3&imgtype=0&src=http%3A%2F%2Fgb.cri.cn%2Fmmsource%2Fimages%2F2007%2F04%2F11%2Fwc070411032.jpg" alt="">
-    </router-link>
-    <router-link to="/homepage/case-insidepage1">
-    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1526403898400&di=dadaeaf28bc0df9132c5953a4a8c70c3&imgtype=0&src=http%3A%2F%2Fgb.cri.cn%2Fmmsource%2Fimages%2F2007%2F04%2F11%2Fwc070411032.jpg" alt="">
-    </router-link>
-    <router-link to="/homepage/case-insidepage1">
-    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1526403898400&di=dadaeaf28bc0df9132c5953a4a8c70c3&imgtype=0&src=http%3A%2F%2Fgb.cri.cn%2Fmmsource%2Fimages%2F2007%2F04%2F11%2Fwc070411032.jpg" alt="">
-    </router-link>
-    <router-link to="/homepage/case-insidepage1">
-    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1526403898400&di=dadaeaf28bc0df9132c5953a4a8c70c3&imgtype=0&src=http%3A%2F%2Fgb.cri.cn%2Fmmsource%2Fimages%2F2007%2F04%2F11%2Fwc070411032.jpg" alt="">
-    </router-link>-->
   
 </template>
 
@@ -50,16 +74,34 @@
   margin-top: 30px;
   margin: 0 auto;
 }
-//.cc-container img{
-  //width: 200px;
-  //height: 400px;
-//}
+.case-top{
+  width:200px;
+  height:300px;
+  display: flex;
+  flex-direction: column;
+}
+.cc-container-img{
+  width:200px;
+  height:300px;
+  position:absolute;
+  z-index:-1;
+}
+.cc-container-img-logo{
+display:flex;
+justify-content:center;
+width:200px;
+height:300px;
+}
+.cc-container-logo{
+  padding-top:200px;
+  height:25%;
+}
 .case-foot{
 width:200px;
 height:150px;
 display:flex;
 align-items:center;
 justify-content:center;
-background-color:yellow;
+//background-color:yellow;
 }
 </style>
