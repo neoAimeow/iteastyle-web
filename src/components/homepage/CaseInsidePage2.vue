@@ -4,21 +4,29 @@
       <img src="../../assets/state-logo.png" style="height:50%;" alt="">
   </div>
   <div class="cip2-body">
-    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1526404857574&di=1100e5b2187a931d93cc371424c0758c&imgtype=0&src=http%3A%2F%2Fimg4.duitang.com%2Fuploads%2Fitem%2F201407%2F18%2F20140718152158_a323Q.jpeg" alt="">
-    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1526404857574&di=1100e5b2187a931d93cc371424c0758c&imgtype=0&src=http%3A%2F%2Fimg4.duitang.com%2Fuploads%2Fitem%2F201407%2F18%2F20140718152158_a323Q.jpeg" alt="">
-    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1526404857574&di=1100e5b2187a931d93cc371424c0758c&imgtype=0&src=http%3A%2F%2Fimg4.duitang.com%2Fuploads%2Fitem%2F201407%2F18%2F20140718152158_a323Q.jpeg" alt="">
-    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1526404857574&di=1100e5b2187a931d93cc371424c0758c&imgtype=0&src=http%3A%2F%2Fimg4.duitang.com%2Fuploads%2Fitem%2F201407%2F18%2F20140718152158_a323Q.jpeg" alt="">
-    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1526404857574&di=1100e5b2187a931d93cc371424c0758c&imgtype=0&src=http%3A%2F%2Fimg4.duitang.com%2Fuploads%2Fitem%2F201407%2F18%2F20140718152158_a323Q.jpeg" alt="">
-    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1526404857574&di=1100e5b2187a931d93cc371424c0758c&imgtype=0&src=http%3A%2F%2Fimg4.duitang.com%2Fuploads%2Fitem%2F201407%2F18%2F20140718152158_a323Q.jpeg" alt="">
+    <img src="../../assets/tea-case-images.png" alt="">
+    <div class="cip2-body-title">
+      <img src="../../assets/case-title.png" style="width:50%;height:auto;">
+      <span style="color:white;margin-top:10px">英菲尼迪国博车展茶歇</span>
+    </div>
+    <img src="../../assets/tea-case-images.png" alt="">
+    <img src="../../assets/tea-case-images.png" alt="">
+    <img src="../../assets/tea-case-images.png" alt="">
+    <img src="../../assets/tea-case-images.png" alt="">
   </div>
 </div>
 </template>
 
 <style lang="scss">
 .cip2-head{
-    background-color: #81b316;
+    background:url(../../assets/state-background.png) no-repeat center;
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 100%;
+    margin-bottom:60px;
+
 }
 .cip2-body{
   display: flex;
@@ -27,10 +35,19 @@
   width: 800px;
   margin: 0 auto;
   margin-top: 30px;
+  margin-bottom: 60px;
+}
+.cip2-body-title{
+width: 240px;
+height: 150px;
+background-color:#9bc248;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
 }
 .cip2-body img{
-  width: 200px;
+  width: 240px;
   height: 150px;
-  margin: 20px;
 }
 </style>

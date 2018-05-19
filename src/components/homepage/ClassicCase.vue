@@ -4,12 +4,11 @@
     <router-link to="/homepage/case-insidepage1">
     <div style="width:200px;height:450px;">
 
-      <div style="width:200px;height:300px;background-img:url(../../assets/tea-case-images.png);">
-    
+      <div style="width:200px;height:300px;background='../../assets/tea-case-images.png';">
         <img src="../../assets/teacase-light-logo.png" style="width:40%;z-index:1;">
       </div>
       
-      <div calss="case-foot" style="width:200px;height:150px;display:flex;align-items:center;justify-content:center;background-color:yellow;">
+      <div class="case-foot">
         <img src="../../assets/case-tea-dessert.png" style="width:50%">
       </div>
 
@@ -56,6 +55,11 @@
   //height: 400px;
 //}
 .case-foot{
-
+width:200px;
+height:150px;
+display:flex;
+align-items:center;
+justify-content:center;
+background-color:yellow;
 }
 </style>
