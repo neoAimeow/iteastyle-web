@@ -1,6 +1,7 @@
 <template>
   <div class="cc-container">
 
+
     <router-link to="/homepage/case-insidepage1">
     <div style="width:200px;height:450px;">    
       <div class="case-top">
@@ -65,6 +66,27 @@
   
 </template>
 
+<script>
+  import {
+    casesGQL
+  } from '@/graphql/Case';
+
+  export default {
+  
+    apollo: {
+      cases: {
+        query() {
+          return casesGQL;
+        }
+      },
+    },
+    data() {
+      return {
+        cases: {},
+      }
+    },
+  }
+</script>
 <style lang="scss">
 .cc-container{
   display: flex;
