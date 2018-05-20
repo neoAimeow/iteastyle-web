@@ -1,5 +1,5 @@
 <template>
-  <div class="dip-container"><!--class空-->
+  <div class="dip-container">
     <div class="dip-head">
       <img src="../../assets/state-logo.png" style="height:50%;" alt="">
     </div>

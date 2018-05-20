@@ -70,7 +70,6 @@
 .body{
   display: flex;
   align-items: center;
-  //justify-content: space-between;
   width:80%;
   height:630px;
   margin: 0 auto;

@@ -58,6 +58,7 @@
     justify-content: space-between;
     width:650px;
     margin-top:10px;
+    margin-bottom: 60px;
     //background-color:black;
 
 }

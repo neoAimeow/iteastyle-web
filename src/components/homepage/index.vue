@@ -62,7 +62,6 @@ export default {
   display: flex;
   flex-direction: row;
   align-items: center;
-  // justify-content: center;
   width: 100%;
   background-color: #9bc248;
   margin-top:45px;
