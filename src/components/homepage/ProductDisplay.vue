@@ -1,35 +1,58 @@
 <template>
   <div class="pd-container">
+
     <div class="head">
     <img src="../../assets/Small-Logo2.png">
     </div>
+
     <div class="body">
+
       <img src="../../assets/left.jpeg">
+
       <div class="pd-picture">
+        
+        <router-link to="/homepage/display-insidepage">
         <div class="pd">
           <div class="picture"><img src="../../assets/Tea-break-service.png" class="img-style"></div>
-          <div style=" text-align:center;font-size:20px;margin-top:5px;">抹茶费南雪</div>
+          <div class="picture-name">抹茶费南雪</div>
         </div>
+        </router-link>
+
+        <router-link to="/homepage/display-insidepage">
         <div class="pd">
           <div class="picture"><img src="../../assets/Tea-break-service.png" class="img-style"></div>
-          <div style=" text-align:center;font-size:20px;margin-top:5px;">抹茶费南雪</div>
+          <div class="picture-name">抹茶费南雪</div>
         </div>
+        </router-link>
+
+        <router-link to="/homepage/display-insidepage">
         <div class="pd">
           <div class="picture"><img src="../../assets/Tea-break-service.png" class="img-style"></div>
-          <div style=" text-align:center;font-size:20px;margin-top:5px;">抹茶费南雪</div>
+          <div class="picture-name">抹茶费南雪</div>
         </div>
+        </router-link>
+
+        <router-link to="/homepage/display-insidepage">
         <div class="pd">
           <div class="picture"><img src="../../assets/Tea-break-service.png" class="img-style"></div>
-          <div style=" text-align:center;font-size:20px;margin-top:5px;">抹茶费南雪</div>
+          <div class="picture-name">抹茶费南雪</div>
         </div>
+        </router-link>
+
+        <router-link to="/homepage/display-insidepage">
         <div class="pd">
           <div class="picture"><img src="../../assets/Tea-break-service.png" class="img-style"></div>
-          <div style=" text-align:center;font-size:20px;margin-top:5px;">抹茶费南雪</div>
+          <div class="picture-name">抹茶费南雪</div>
         </div>
+        </router-link>
+
+        <router-link to="/homepage/display-insidepage">
         <div class="pd">
           <div class="picture"><img src="../../assets/Tea-break-service.png" class="img-style"></div>
-          <div style=" text-align:center;font-size:20px;margin-top:5px;">抹茶费南雪</div>
+          <div class="picture-name">抹茶费南雪</div>
         </div>
+        </router-link>
+
       </div>
       <img src="../../assets/right.jpeg">
     </div>
@@ -47,9 +70,9 @@
 .body{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  //justify-content: space-between;
   width:80%;
-  //height:630px;
+  height:630px;
   margin: 0 auto;
   //background-color:black;
   margin-top: 30px;
@@ -59,7 +82,7 @@
 .pd-picture{
   //background:blue;
   width:900px;
-  //height:500px;
+  height:500px;
   display: flex;
   flex-wrap: wrap;
   justify-content:space-around;
@@ -71,24 +94,23 @@
   margin-top:25px;
 }
 .picture{
-  //width:250px;
-  //height:165px;
+  width:250px;
+  height:165px;
   border:solid 1px #aeaeae;
-  text-align: center;
+  display:flex;
+  align-items:center;
+  justify-content:center; 
 }
 
 .img-style{
 width:95%;
-//margin-top:5px;
-//margin-left:5px;
-display: inline-block;
-vertical-align: middle;
 }
 
-/*好像是多余的
 .picture-name{
-  width:250px;
-  height:50px;
-  background-color:blueviolet;
-}*/
+  //background-color:red;
+  text-align:center;
+  font-size:20px;
+  margin-top:5px;
+  color:#626262;
+}
 </style>
