@@ -1,10 +1,25 @@
 pipeline {
-  agent any
+  agent {
+    node {
+      label 'node'
+    }
+
+  }
   stages {
     stage('Initializing') {
+      agent {
+        node {
+          label 'node'
+        }
+
+      }
       steps {
-        sh '''        echo \'Building dependencies...\'
-        sh \'npm i\''''
+        sh '''    env.NODEJS_HOME = "${tool \'8.9.10\'}"
+    // on linux / mac
+    env.PATH="${env.NODEJS_HOME}/bin:${env.PATH}"
+    // on windows
+    env.PATH="${env.NODEJS_HOME};${env.PATH}"
+    sh \'npm --version\''''
       }
     }
   }
