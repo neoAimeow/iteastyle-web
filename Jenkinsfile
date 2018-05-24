@@ -1,10 +1,5 @@
 pipeline {
-  agent {
-    node {
-      label '8.11.2'
-    }
-
-  }
+  agent none
   stages {
     stage('Initializing') {
       agent {
