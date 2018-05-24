@@ -2,12 +2,6 @@ pipeline {
   agent none
   stages {
     stage('Initializing') {
-      agent {
-        node {
-          label 'node'
-        }
-
-      }
       steps {
         sh '''    env.NODEJS_HOME = "${tool \'8.11.2\'}"
     // on linux / mac
