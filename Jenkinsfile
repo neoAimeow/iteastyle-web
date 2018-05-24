@@ -3,8 +3,8 @@ pipeline {
   stages {
     stage('build') {
       agent {
-        node {
-          label '8.11.2'
+        docker {
+          image '8.11.2-alpine'
         }
 
       }
