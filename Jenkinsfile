@@ -1,10 +1,10 @@
 pipeline {
   agent any
   stages {
-    stage('error') {
+    stage('build') {
       agent {
         node {
-          label 'node'
+          label '8.11.2'
         }
 
       }
