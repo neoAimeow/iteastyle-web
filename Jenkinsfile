@@ -3,8 +3,8 @@ pipeline {
   stages {
     stage('Initializing') {
       steps {
-        sh '''        echo \'Initializing...\'
-        env.PATH = "${node}/bin:${env.PATH}"'''
+        sh '''        echo \'Building dependencies...\'
+        sh \'npm i\''''
       }
     }
   }
