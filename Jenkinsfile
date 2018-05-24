@@ -1,10 +1,10 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('error') {
       agent {
-        docker {
-          image '8.11.2-alpine'
+        node {
+          label 'node'
         }
 
       }
