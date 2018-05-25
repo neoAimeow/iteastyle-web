@@ -4,7 +4,7 @@ pipeline {
     stage('build') {
       agent {
         docker {
-          image '8.11.2-alpine'
+          image 'docker.io/node:8.11.2-alpine'
         }
 
       }
