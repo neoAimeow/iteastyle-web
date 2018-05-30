@@ -9,13 +9,17 @@ pipeline {
 
       }
       steps {
-        sh 'npm -v'
+        echo 'Starting build the app.....'
         sh '''npm config set registry https://registry.npm.taobao.org
 '''
         sh 'npm install'
-        sh 'npm run build'
-        sh '''ls -a
-'''
+        sh '''npm run clean
+npm run build'''
+      }
+    }
+    stage('publish') {
+      steps {
+        echo 'Starting publish the app.......'
       }
     }
   }
