@@ -4,7 +4,6 @@ web:
   image: nginx
   container_name: iteastyle_web
   volumes:
-   - ./mysite.template:/etc/nginx/conf.d/mysite.template
    - ./:/usr/share/nginx/html:ro
   expose:
    - "443"
