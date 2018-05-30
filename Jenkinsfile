@@ -14,6 +14,8 @@ pipeline {
 '''
         sh 'npm install'
         sh 'npm run build'
+        sh '''ls -a
+'''
       }
     }
   }
