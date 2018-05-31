@@ -28,3 +28,6 @@ npm test
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+
+docker run --name iteastyle-nginx -v /some/content:/usr/share/nginx/html:ro -d nginx -e "VIRTUAL_HOST=iteastyle.aimeow.com" -e "LETSENCRYPT_HOST=iteastyle.aimeow.com" -e "LETSENCRYPT_EMAIL=a18814888787@gmail.com" 
