@@ -19,6 +19,11 @@ pipeline {
     stage('publish') {
       steps {
         echo 'Starting publish the app.......'
+        sh '''ssh root@118.178.131.105 rm -rf /root/service/iteastyle-web
+'''
+        sh '''ssh root@118.178.131.105 mkdir /root/service/iteastyle-web
+'''
+        sh 'scp docker-compose.yml root@118.178.131.105:/root/service/iteastyle-web/docker-compose.yml'
       }
     }
   }
