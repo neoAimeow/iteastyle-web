@@ -10,9 +10,8 @@ pipeline {
       }
       steps {
         echo 'Starting build the app.....'
-        sh '''npm config set registry https://registry.npm.taobao.org
-'''
-        sh 'npm install'
+        sh 'npm i cnpm -g --registry=http://registry.npm.taobao.org'
+        sh 'cnpm install'
         sh 'npm run clean'
         sh 'npm run build'
       }
