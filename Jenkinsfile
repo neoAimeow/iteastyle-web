@@ -16,6 +16,8 @@ pipeline {
         sh 'npm run build'
         sh 'ls -al'
         echo 'Starting publish the app.......'
+        sh 'apk update'
+        sh 'apk add --update openssh'
         sh '''ssh root@118.178.131.105 rm -rf /root/service/iteastyle-web
 '''
         sh '''ssh root@118.178.131.105 mkdir /root/service/iteastyle-web
