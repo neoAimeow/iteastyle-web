@@ -15,11 +15,6 @@ pipeline {
         sh 'npm run clean'
         sh 'npm run build'
         sh 'ls -al'
-      }
-    }
-    stage('publish') {
-      steps {
-        sh 'ls -al'
         echo 'Starting publish the app.......'
         sh '''ssh root@118.178.131.105 rm -rf /root/service/iteastyle-web
 '''
