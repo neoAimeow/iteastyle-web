@@ -14,7 +14,8 @@ pipeline {
 '''
         sh 'npm install'
         sh '''npm run clean
-npm run build'''
+'''
+        sh 'npm run build'
       }
     }
     stage('publish') {
