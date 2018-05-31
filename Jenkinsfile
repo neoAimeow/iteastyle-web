@@ -5,6 +5,7 @@ pipeline {
       steps {
         sh 'ls -al'
         echo 'Starting prepare the app.......'
+        sh 'rm -rf /root/tmp && mkdir /root/tmp'
       }
     }
     stage('build') {
@@ -25,7 +26,7 @@ pipeline {
     }
     stage('publisher') {
       steps {
-        sh 'ls -al'
+        sh 'cd /root/tmp && ls'
         echo 'Starting publish the app.......'
         sh '''ssh root@118.178.131.105 rm -rf /root/service/iteastyle-web
 '''
