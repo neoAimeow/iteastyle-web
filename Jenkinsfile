@@ -1,6 +1,12 @@
 pipeline {
   agent any
   stages {
+    stage('prepare') {
+      steps {
+        sh 'ls -al'
+        echo 'Starting prepare the app.......'
+      }
+    }
     stage('build') {
       agent {
         docker {
