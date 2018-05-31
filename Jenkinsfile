@@ -24,6 +24,7 @@ pipeline {
         sh '''ssh root@118.178.131.105 mkdir /root/service/iteastyle-web
 '''
         sh 'scp docker-compose.yml root@118.178.131.105:/root/service/iteastyle-web/docker-compose.yml'
+        sh 'scp ./dist/ root@118.178.131.105:/root/service/iteastyle-web/'
       }
     }
   }
