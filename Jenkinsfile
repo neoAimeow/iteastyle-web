@@ -5,6 +5,7 @@ pipeline {
       agent {
         docker {
           image 'docker.io/node:8.11.2-alpine'
+          args '-v /root/tmp:/usr/src/app'
         }
 
       }
@@ -14,10 +15,12 @@ pipeline {
         sh 'cnpm install'
         sh 'npm run clean'
         sh 'npm run build'
+      }
+    }
+    stage('publisher') {
+      steps {
         sh 'ls -al'
         echo 'Starting publish the app.......'
-        sh 'apk update'
-        sh 'apk add --update openssh'
         sh '''ssh root@118.178.131.105 rm -rf /root/service/iteastyle-web
 '''
         sh '''ssh root@118.178.131.105 mkdir /root/service/iteastyle-web
