@@ -21,7 +21,7 @@ pipeline {
           sh 'sshpass -p $PASSWORD scp -v -o StrictHostKeyChecking=no docker-compose.yml $USERNAME@118.178.131.105:/root/service/iteastyle-web/docker-compose.yml'
           sh 'sshpass -p $PASSWORD scp -v -o StrictHostKeyChecking=no -r dist/* $USERNAME@118.178.131.105:/root/service/iteastyle-web/'
           sh 'sshpass -p $PASSWORD ssh -v -o StrictHostKeyChecking=no $USERNAME@118.178.131.105 docker-compose -f /root/service/iteastyle-web/docker-compose.yml stop '
-          sh 'sshpass -p $PASSWORD ssh -v -o StrictHostKeyChecking=no $USERNAME@118.178.131.105 docker-compose -f /root/service/iteastyle-web/docker-compose.yml rm -y '
+          sh 'sshpass -p $PASSWORD ssh -v -o StrictHostKeyChecking=no $USERNAME@118.178.131.105 docker-compose -f /root/service/iteastyle-web/docker-compose.yml rm -f '
           sh 'sshpass -p $PASSWORD ssh -v -o StrictHostKeyChecking=no $USERNAME@118.178.131.105 docker-compose -f /root/service/iteastyle-web/docker-compose.yml up -d'
         }
 
