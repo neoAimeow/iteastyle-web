@@ -22,7 +22,7 @@ pipeline {
         sh 'cnpm install'
         sh 'npm run clean'
         sh 'npm run build'
-        withCredentials([usernamePassword(credentialsId: 'server-118.178.131.105', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
+        withCredentials(bindings: [usernamePassword(credentialsId: 'server-118.178.131.105', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
           sh 'echo $PASSWORD'
           echo USERNAME
           echo "username is $USERNAME"
@@ -31,6 +31,7 @@ pipeline {
           sh 'sshpass -p $PASSWORD scp -v -o StrictHostKeyChecking=no docker-compose.yml $USERNAME@118.178.131.105:/root/service/iteastyle-web/docker-compose.yml'
           sh 'sshpass -p $PASSWORD scp -v -o StrictHostKeyChecking=no -r dist $USERNAME@118.178.131.105:/root/service/iteastyle-web/'
         }
+
       }
     }
   }
