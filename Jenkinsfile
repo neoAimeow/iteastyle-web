@@ -5,7 +5,6 @@ pipeline {
       agent {
         docker {
           image 'docker.io/node:8.11.2-alpine'
-          args '-v /root/tmp:/home/node/app'
         }
 
       }
