@@ -1,4 +1,4 @@
-version: '1'
+version: '2'
 
 services:
   web:
@@ -13,4 +13,3 @@ services:
       VIRTUAL_PORT: 80
       LETSENCRYPT_HOST: iteastyle.aimeow.com
       LETSENCRYPT_EMAIL: a18814888787@gmail.com
-      
