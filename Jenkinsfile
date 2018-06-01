@@ -22,7 +22,6 @@ pipeline {
         sh 'cnpm install'
         sh 'npm run clean'
         sh 'npm run build'
-        
       }
     }
     stage('publisher') {
