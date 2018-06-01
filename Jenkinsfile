@@ -22,6 +22,7 @@ pipeline {
         sh 'cnpm install'
         sh 'npm run clean'
         sh 'npm run build'
+        sh 'apk add --no-cache openssh'
         sshagent(credentials: ["ssh-118.178.131.105"]) {
           sh 'ssh root@118.178.131.105 rm -rf /root/service/iteastyle-web'
           sh 'ssh root@118.178.131.105 mkdir /root/service/iteastyle-web'
@@ -29,7 +30,6 @@ pipeline {
           sh 'scp -r dist root@118.178.131.105:/root/service/iteastyle-web/'
         }
 
-        sh 'apk add --no-cache openssh'
       }
     }
   }
