@@ -12,7 +12,7 @@ pipeline {
       agent {
         docker {
           image 'docker.io/node:8.11.2-alpine'
-          args '-v /root/tmp:/usr/src/app'
+          args '-v /root/tmp:/home/node/app'
         }
 
       }
@@ -22,6 +22,7 @@ pipeline {
         sh 'cnpm install'
         sh 'npm run clean'
         sh 'npm run build'
+        
       }
     }
     stage('publisher') {
