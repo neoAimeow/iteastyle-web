@@ -23,7 +23,7 @@ pipeline {
         sh 'npm run clean'
         sh 'npm run build'
         sh 'apk add --update --no-cache openssh sshpass'
-        withCredentials([usernamePassword(credentialsId: 'server-118.178.131.105', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
+        withCredentials(bindings: [usernamePassword(credentialsId: 'server-118.178.131.105', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
           sh 'echo $PASSWORD'
           echo USERNAME
           echo "username is $USERNAME"
