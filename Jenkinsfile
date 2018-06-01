@@ -1,13 +1,6 @@
 pipeline {
   agent any
   stages {
-    stage('prepare') {
-      steps {
-        sh 'ls -al'
-        echo 'Starting prepare the app.......'
-        sh 'rm -rf /root/tmp'
-      }
-    }
     stage('build') {
       agent {
         docker {
