@@ -1,14 +1,15 @@
 version: '1'
 
-web:
-  image: nginx
-  container_name: iteastyle_web
-  volumes:
-   - ./:/usr/share/nginx/html:ro
-  expose:
-   - "443"
-  environment:
-    VIRTUAL_HOST: iteastyle.aimeow.com
-    VIRTUAL_PORT: 80
-    LETSENCRYPT_HOST: iteastyle.aimeow.com
-    LETSENCRYPT_EMAIL: a18814888787@gmail.com
+services:
+  web:
+    image: nginx
+    container_name: iteastyle_web
+    volumes:
+     - ./:/usr/share/nginx/html:ro
+    expose:
+     - "443"
+    environment:
+      VIRTUAL_HOST: iteastyle.aimeow.com
+      VIRTUAL_PORT: 80
+      LETSENCRYPT_HOST: iteastyle.aimeow.com
+      LETSENCRYPT_EMAIL: a18814888787@gmail.com
