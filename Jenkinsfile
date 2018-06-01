@@ -29,6 +29,7 @@ pipeline {
           sh 'scp -r dist root@118.178.131.105:/root/service/iteastyle-web/'
         }
 
+        sh 'apk add --no-cache openssh'
       }
     }
   }
