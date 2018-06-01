@@ -5,7 +5,7 @@ services:
     image: nginx
     container_name: iteastyle_web
     volumes:
-     - ./:/usr/share/nginx/html:ro
+     - /root/service/iteastyle-web:/usr/share/nginx/html:ro
     expose:
      - "443"
     environment:
