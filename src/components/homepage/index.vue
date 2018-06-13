@@ -1,3 +1,3 @@
 <template>
-    <h1>111111</h1>
+    <h1>首页</h1>
 </template>
