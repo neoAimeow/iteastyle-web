@@ -14,6 +14,7 @@ pipeline {
         sh 'cnpm install'
         sh 'npm run clean'
         sh 'npm run build'
+        sh 'sed -i "s/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g" /etc/apk/repositories'
         sh 'apk add --update --no-cache openssh sshpass'
         withCredentials(bindings: [usernamePassword(credentialsId: 'server-118.178.131.105', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
           sh 'sshpass -p $PASSWORD ssh -v -o StrictHostKeyChecking=no $USERNAME@118.178.131.105 rm -rf /root/service/iteastyle-web'
