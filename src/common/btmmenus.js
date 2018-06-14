@@ -2,7 +2,8 @@ const btmmenus = [
     [
         {
             title: '公司故事',
-            path: ''
+            path: '/homepage/companyStory',
+            style: 'color:#626262;'
         },
         {
             title: '公司简介',
@@ -20,7 +21,8 @@ const btmmenus = [
     [
         {
             title: '产品展示',
-            path: ''
+            path: '/homepage/productDisplay',
+            style: 'color:#626262;'
         },
         {
             title: '茶饮茶点',
@@ -34,7 +36,7 @@ const btmmenus = [
     [
         {
             title: '经典案例',
-            path: '',
+            path: '/homepage/classicCase',
             style: 'color:#626262;'
         },
         {
@@ -61,7 +63,7 @@ const btmmenus = [
     [
         {
             title: '茶式动态',
-            path: '',
+            path: '/homepage/teaState',
             style: 'color:#626262;'
         },
         {

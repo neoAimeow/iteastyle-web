@@ -107,6 +107,7 @@ body,
   flex-direction: row;
   justify-content: center;
   margin-right: 20px;
+  width: 1000px;
 }
 .home-btm-top-left{
   margin-right: 40px;
@@ -118,6 +119,7 @@ body,
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  width: 1000px;
 }
 .home-btm-foot-left{
   display: flex;

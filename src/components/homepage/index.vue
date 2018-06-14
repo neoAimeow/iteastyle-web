@@ -22,6 +22,7 @@
 }
 .index-main{
     margin-top: 40px;
+    width: 1400px;
 }
 .index-head img{
     width: auto;
