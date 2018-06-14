@@ -9,7 +9,6 @@
     "start": "npm run dev",
     "build": "node build/build.js",
     "clean": "rimraf ./dist && mkdir dist"
-
   },
   "dependencies": {
     "element-ui": "^2.4.1",
