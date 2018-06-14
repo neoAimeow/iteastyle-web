@@ -4,7 +4,7 @@ const menus = [{
 },
 {
     title: '公司故事',
-    path: '/homepage/company-profile'
+    path: '/homepage/company'
 },
 {
     title: '产品展示',

@@ -90,6 +90,7 @@ body,
   flex-direction: row;
   justify-content: space-around;
   min-width: 1000px;
+  margin-top: 20px;
 }
 .home-head-left{
   background-color: red;
