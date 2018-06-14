@@ -1,5 +1,90 @@
 <template>
-    <div>
-        <h1>产品展示</h1>
+    <body>
+
+    <div class="pd-title">
+        <img src="http://pa74otoy6.bkt.clouddn.com/%E6%A0%87%E9%A2%98%E5%9B%BE%E4%B8%8A%E7%9A%84logo.png">
     </div>
+    <div class="pd-ct">
+        <div class="tr-left"></div>
+        <div class="pd">
+            <div class="pd-top">
+                <div class="product-name"><div class="pd-picture-border"><img src="http://pa74otoy6.bkt.clouddn.com/%E4%BA%A7%E5%93%81%E7%BD%91%E7%BB%9C%E5%9B%BE.jpg"></div><span>抹茶费南雪</span></div>
+                <div class="product-name"><div class="pd-picture-border"><img src="http://pa74otoy6.bkt.clouddn.com/%E4%BA%A7%E5%93%81%E7%BD%91%E7%BB%9C%E5%9B%BE.jpg"></div><span>抹茶费南雪</span></div>
+                <div class="product-name"><div class="pd-picture-border"><img src="http://pa74otoy6.bkt.clouddn.com/%E4%BA%A7%E5%93%81%E7%BD%91%E7%BB%9C%E5%9B%BE.jpg"></div><span>抹茶费南雪</span></div>
+            </div>
+            <div class="pd-bottom">
+                <div class="product-name"><div class="pd-picture-border"><img src="http://pa74otoy6.bkt.clouddn.com/%E4%BA%A7%E5%93%81%E7%BD%91%E7%BB%9C%E5%9B%BE.jpg"></div><span>抹茶费南雪</span></div>
+                <div class="product-name"><div class="pd-picture-border"><img src="http://pa74otoy6.bkt.clouddn.com/%E4%BA%A7%E5%93%81%E7%BD%91%E7%BB%9C%E5%9B%BE.jpg"></div><span>抹茶费南雪</span></div>
+                <div class="product-name"><div class="pd-picture-border"><img src="http://pa74otoy6.bkt.clouddn.com/%E4%BA%A7%E5%93%81%E7%BD%91%E7%BB%9C%E5%9B%BE.jpg"></div><span>抹茶费南雪</span></div>
+            </div>
+        </div>
+        <div class="tr-right"></div>          
+    </div>
+
+
+    
+</body>
 </template>
+<style>
+    body{
+        margin:0;
+        padding:0;
+
+
+    }
+    .pd-title{
+        background-image: url(http://pa74otoy6.bkt.clouddn.com/%E4%BA%A7%E5%93%81%E5%B1%95%E7%A4%BA%E6%A0%87%E9%A2%98%E8%83%8C%E6%99%AF%E5%9B%BE.png);
+        background-position:center center;
+        height:230px;
+display: flex;
+align-items:center;
+justify-content:center;
+    }
+    .pd-ct{
+        margin:0 auto;
+        width:1000px;
+        height: 500px;
+        /*background-color: red;*/
+        display:flex;
+        flex-direction: row;
+        justify-content:center;
+        align-items:center;
+        margin-top:40px;
+    }
+    .tr-left{
+        width: 0px;
+        height:0px;
+        border-top:solid 50px transparent;
+        border-right:solid 30px green;
+        border-bottom:solid 50px transparent;
+        border-left:solid 30px transparent;
+    }   
+   .tr-right{
+        width: 0px;
+        height:0px;
+        border-top:solid 50px transparent ;
+        border-right:solid 30px transparent;
+        border-bottom:solid 50px transparent;
+        border-left:solid 30px green ;
+    }
+
+    .pd-top,.pd-bottom{
+        display:flex;
+        flex-direction: row;
+    }
+    .pd-picture-border{
+        border:1px solid grey;
+        margin-bottom:15px;
+
+    } 
+    .pd img{
+        width:270px;
+        padding:5px;
+        
+    }
+    .product-name{
+        text-align: center;
+        margin:15px;
+    }
+    
+</style>
