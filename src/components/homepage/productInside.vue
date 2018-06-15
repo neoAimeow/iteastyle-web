@@ -1,5 +1,5 @@
 <template>
-    <body>
+    <div class="productinside">
     <div class="introduction-title">
         <img src="http://pa74otoy6.bkt.clouddn.com/%E6%A0%87%E9%A2%98%E5%9B%BE%E4%B8%8A%E7%9A%84logo.png">
     </div>
@@ -13,10 +13,10 @@
         <span>抹茶费南雪是一种小糕点<br>就爱这一抹绿啊<br>高油高糖什么的就是好吃<br>抹茶控溺爱的小宠物～</span>
     </div>
 
-</body>
+</div>
 </template>
 <style>
-    body{
+    .productinside{
         margin:0;
         padding:0;
 
