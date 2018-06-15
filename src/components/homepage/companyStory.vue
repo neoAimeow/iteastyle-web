@@ -1,5 +1,5 @@
 <template>
-<body>
+<div class="company-story">
     <div class="story">
         <div class="story-title">
             <span>OUR STORY</span>
@@ -12,10 +12,10 @@
 
     <video src="" controls></video>
 
-</body>
+</div>
 </template>
 <style>
-    body{      
+    .company-story{      
         margin:0;
         padding:0;
         color:white;
@@ -30,7 +30,7 @@
         margin:0 auto;
         width:1000px;
         margin-top:50px;
-        background-color:rgba(225,0,0,0.2)
+        background-color:rgba(17,14,30,0.5)
     }
     
     .story-title{

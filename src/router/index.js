@@ -8,6 +8,8 @@ import ClassicCase from '@/components/homepage/classicCase.vue'
 import TeaState from '@/components/homepage/teaState.vue'
 import ContactUs from '@/components/homepage/contactUs.vue'
 
+import ProductInside from '@/components/homepage/productInside.vue'
+
 Vue.use(Router)
 
 export default new Router({
@@ -41,6 +43,11 @@ export default new Router({
       path: '/homepage/contactUs',
       name: 'contactUs',
       component: ContactUs
+    },
+    {
+      path: '/homepage/productInside',
+      name: 'productInside',
+      component: ProductInside
     }
   ]
 })

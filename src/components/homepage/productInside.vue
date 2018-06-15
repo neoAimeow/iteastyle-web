@@ -42,7 +42,7 @@
     .pd-name{
         width:340px;
         height:220px;
-        background-color:green;
+        background-color:#9bc248;
         display:flex;
         flex-direction: column;
         justify-content: center;
@@ -58,7 +58,7 @@
 
     }
     .pd-introduction{
-        border:1px solid #ddd;
+        border:1px solid #f0f0f0;
         width:1020px;
 
         margin:0 auto;

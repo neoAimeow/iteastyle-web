@@ -1,5 +1,5 @@
 <template>
-    <body>
+    <div class="productDisplay">
 
     <div class="pd-title">
         <img src="http://pa74otoy6.bkt.clouddn.com/%E6%A0%87%E9%A2%98%E5%9B%BE%E4%B8%8A%E7%9A%84logo.png">
@@ -8,14 +8,14 @@
         <div class="tr-left"></div>
         <div class="pd">
             <div class="pd-top">
-                <div class="product-name"><div class="pd-picture-border"><img src="http://pa74otoy6.bkt.clouddn.com/%E4%BA%A7%E5%93%81%E7%BD%91%E7%BB%9C%E5%9B%BE.jpg"></div><span>抹茶费南雪</span></div>
-                <div class="product-name"><div class="pd-picture-border"><img src="http://pa74otoy6.bkt.clouddn.com/%E4%BA%A7%E5%93%81%E7%BD%91%E7%BB%9C%E5%9B%BE.jpg"></div><span>抹茶费南雪</span></div>
-                <div class="product-name"><div class="pd-picture-border"><img src="http://pa74otoy6.bkt.clouddn.com/%E4%BA%A7%E5%93%81%E7%BD%91%E7%BB%9C%E5%9B%BE.jpg"></div><span>抹茶费南雪</span></div>
+                <router-link to="/homepage/productInside"><div class="product-name"><div class="pd-picture-border"><img src="http://pa74otoy6.bkt.clouddn.com/%E4%BA%A7%E5%93%81%E7%BD%91%E7%BB%9C%E5%9B%BE.jpg"></div><span>抹茶费南雪</span></div></router-link>
+                <router-link to="/homepage/productInside"><div class="product-name"><div class="pd-picture-border"><img src="http://pa74otoy6.bkt.clouddn.com/%E4%BA%A7%E5%93%81%E7%BD%91%E7%BB%9C%E5%9B%BE.jpg"></div><span>抹茶费南雪</span></div></router-link>
+                <router-link to="/homepage/productInside"><div class="product-name"><div class="pd-picture-border"><img src="http://pa74otoy6.bkt.clouddn.com/%E4%BA%A7%E5%93%81%E7%BD%91%E7%BB%9C%E5%9B%BE.jpg"></div><span>抹茶费南雪</span></div></router-link>
             </div>
             <div class="pd-bottom">
-                <div class="product-name"><div class="pd-picture-border"><img src="http://pa74otoy6.bkt.clouddn.com/%E4%BA%A7%E5%93%81%E7%BD%91%E7%BB%9C%E5%9B%BE.jpg"></div><span>抹茶费南雪</span></div>
-                <div class="product-name"><div class="pd-picture-border"><img src="http://pa74otoy6.bkt.clouddn.com/%E4%BA%A7%E5%93%81%E7%BD%91%E7%BB%9C%E5%9B%BE.jpg"></div><span>抹茶费南雪</span></div>
-                <div class="product-name"><div class="pd-picture-border"><img src="http://pa74otoy6.bkt.clouddn.com/%E4%BA%A7%E5%93%81%E7%BD%91%E7%BB%9C%E5%9B%BE.jpg"></div><span>抹茶费南雪</span></div>
+                <router-link to="/homepage/productInside"><div class="product-name"><div class="pd-picture-border"><img src="http://pa74otoy6.bkt.clouddn.com/%E4%BA%A7%E5%93%81%E7%BD%91%E7%BB%9C%E5%9B%BE.jpg"></div><span>抹茶费南雪</span></div></router-link>
+                <router-link to="/homepage/productInside"><div class="product-name"><div class="pd-picture-border"><img src="http://pa74otoy6.bkt.clouddn.com/%E4%BA%A7%E5%93%81%E7%BD%91%E7%BB%9C%E5%9B%BE.jpg"></div><span>抹茶费南雪</span></div></router-link>
+                <router-link to="/homepage/productInside"><div class="product-name"><div class="pd-picture-border"><img src="http://pa74otoy6.bkt.clouddn.com/%E4%BA%A7%E5%93%81%E7%BD%91%E7%BB%9C%E5%9B%BE.jpg"></div><span>抹茶费南雪</span></div></router-link>
             </div>
         </div>
         <div class="tr-right"></div>          
@@ -23,12 +23,14 @@
 
 
     
-</body>
+</div>
 </template>
 <style>
-    body{
+    .productDisplay{
         margin:0;
         padding:0;
+        margin-bottom: 30px;
+        
 
 
     }
@@ -73,8 +75,12 @@ justify-content:center;
         flex-direction: row;
     }
     .pd-picture-border{
-        border:1px solid grey;
+        border:1px solid #aeaeae;
         margin-bottom:15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
 
     } 
     .pd img{
@@ -85,6 +91,7 @@ justify-content:center;
     .product-name{
         text-align: center;
         margin:15px;
+        color:#626262;
     }
     
 </style>
