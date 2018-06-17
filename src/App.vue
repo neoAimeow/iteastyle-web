@@ -2,14 +2,14 @@
   <div id="app">
     <div class="home-container">
       <div class="home-head">
-        <div class="home-head-left"><img src="*" alt="公司logo"></div>
+        <div class="home-head-left"><img src="http://pa74otoy6.bkt.clouddn.com/case-light-logo.png" alt="公司logo" style="height:50px;"></div>
         <div class="home-head-right">
           <router-link class="home-head-right-list" :index="data.title" v-for="(data,key) in menus" :key="key" :label="key" :to="data.path">
             {{data.title}}
           </router-link>
         </div>
       </div>
-      <div><router-view></router-view></div>
+      <div class="home-main"><router-view></router-view></div>
       <div class="home-bottom">
         <div class="home-btm-top">
           <ul class="home-btm-top-left" v-for="(data,key) in btmmenus" :key="key" :aria-label="key">
@@ -89,25 +89,31 @@ body,
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  min-width: 1000px;
-  margin-top: 20px;
+  //min-width: 1000px;
+  //margin-top: 20px;
+  margin: 0 auto;
 }
 .home-head-left{
-  background-color: red;
+  //background-color: red;
 }
 .home-head-right{
   display: flex;
   flex-direction: row;
+  margin-top: 25px;
 }
 .home-head-right-list{
   margin-left: 20px;
+}
+.home-main{
+  height: 1000px;
 }
 .home-btm-top{
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-right: 20px;
-  width: 1000px;
+  //width: 1000px;
+  margin: 0 auto;
 }
 .home-btm-top-left{
   margin-right: 40px;
@@ -119,7 +125,8 @@ body,
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 1000px;
+  //width: 1000px;
+  margin: 0 auto;
 }
 .home-btm-foot-left{
   display: flex;
