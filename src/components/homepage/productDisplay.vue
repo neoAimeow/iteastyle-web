@@ -58,7 +58,7 @@
     .pd-ct{
         margin:0 auto;
         width:1000px;
-        height: 500px;
+        
         /*background-color: red;*/
         display:flex;
         flex-direction: row;

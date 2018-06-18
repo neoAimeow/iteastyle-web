@@ -10,6 +10,9 @@ import ContactUs from '@/components/homepage/contactUs.vue'
 
 import ProductInside from '@/components/homepage/productInside.vue'
 import TeaStateInside from '@/components/homepage/teaStateInside.vue'
+import ClassicCaseInside1 from '@/components/homepage/classicCaseInside1.vue'
+import ClassicCaseInside2 from '@/components/homepage/classicCaseInside2.vue'
+
 
 Vue.use(Router)
 
@@ -54,6 +57,15 @@ export default new Router({
       path: '/homepage/teaStateInside',
       name: 'teaStateInside',
       component: TeaStateInside
+    },
+    { 
+      path: '/homepage/classicCaseInside1',
+      name: 'classicCaseInside1',
+      component: ClassicCaseInside1},
+    {
+      path: '/homepage/classicCaseInside2',
+      name: 'classicCaseInside2',
+      component: ClassicCaseInside2
     }
   ]
 })
