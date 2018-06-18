@@ -32,11 +32,10 @@
 
 <style lang="scss">
 .cu-container{
-
+    height: 1000px;
 }
 .cu-bgimg{
     height: 1000px;
-    width: 100%;
     position: absolute;
     z-index: -1;
 }
@@ -49,6 +48,9 @@
     //justify-content: center;
     position: absolute;
     color: white;
+}
+.cu-main-title{
+    text-align: center;
 }
 .cu-main-content{
     display: flex;
@@ -63,8 +65,8 @@
     margin-top: 500px;
     margin-left: 700px;
 }
-.cu-foot-left{
-}
+/*.cu-foot-left{
+}*/
 .cu-foot-right{
     margin-left: 20px;
     display: flex;

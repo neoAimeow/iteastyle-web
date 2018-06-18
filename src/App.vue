@@ -93,9 +93,9 @@ body,
   //margin-top: 20px;
   margin: 0 auto;
 }
-.home-head-left{
+/*.home-head-left{
   //background-color: red;
-}
+}*/
 .home-head-right{
   display: flex;
   flex-direction: row;
@@ -105,7 +105,7 @@ body,
   margin-left: 20px;
 }
 .home-main{
-  height: 1000px;
+  //height: 1000px;
 }
 .home-btm-top{
   display: flex;

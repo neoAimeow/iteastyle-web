@@ -40,7 +40,13 @@
 
 
 <style lang="scss">
+.ts-container{
+    height: 1000px;
+    width: 500px;
+}
 .ts-bgimg{
+    height: 1000px;
+    width: 100%;
     position: absolute;
     z-index: -1;
 }
