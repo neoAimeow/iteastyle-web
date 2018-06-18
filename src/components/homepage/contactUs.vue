@@ -36,15 +36,16 @@
 }
 .cu-bgimg{
     height: 1000px;
+    width: 100%;
     position: absolute;
     z-index: -1;
 }
 .cu-main{
     margin-top: 200px;
     margin-left: 700px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    //display: flex;
+    //flex-direction: column;
+    //align-items: center;
     //justify-content: center;
     position: absolute;
     color: white;
@@ -65,12 +66,16 @@
     margin-top: 500px;
     margin-left: 700px;
 }
-/*.cu-foot-left{
-}*/
+.cu-foot-left{
+    margin-top: 10px;
+}
 .cu-foot-right{
     margin-left: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.cu-foot-right img{
+    margin-top: 10px;
 }
 </style>

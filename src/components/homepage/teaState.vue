@@ -1,39 +1,39 @@
 <template>
     <div class="ts-container">
-        <img class="ts-bgimg" src="http://pa74otoy6.bkt.clouddn.com/pd-case-DT-Details-background.png" alt="">
+        <img class="ts-bgimg" src="http://pa74otoy6.bkt.clouddn.com/tea-news-background.png" alt="">
         <div class="ts-main">
-            <div class="ts-main-center">
+            <router-link to="./teaStateInside" class="ts-main-center">
                 <div class="ts-main-center-left"><img src="http://pa74otoy6.bkt.clouddn.com/case-light-logo.png" alt=""></div>
                 <div class="ts-main-center-right">
                     <span>这跟小确幸，您想要么？</span>
                     <span>转眼夏至</span>
                 </div>
                 <div class="ts-main-center-conner"><img src="" alt=""></div>
-            </div>
-            <div class="ts-main-center">
+            </router-link>
+            <router-link to="./teaStateInside" class="ts-main-center">
                 <div class="ts-main-center-left"><img src="http://pa74otoy6.bkt.clouddn.com/case-light-logo.png" alt=""></div>
                 <div class="ts-main-center-right">
                     <span>这跟小确幸，您想要么？</span>
                     <span>转眼夏至</span>
                 </div>
                 <div class="ts-main-center-conner"><img src="" alt=""></div>
-            </div>
-            <div class="ts-main-center">
+            </router-link>
+            <router-link to="./teaStateInside" class="ts-main-center">
                 <div class="ts-main-center-left"><img src="http://pa74otoy6.bkt.clouddn.com/case-light-logo.png" alt=""></div>
                 <div class="ts-main-center-right">
                     <span>这跟小确幸，您想要么？</span>
                     <span>转眼夏至</span>
                 </div>
                 <div class="ts-main-center-conner"><img src="" alt=""></div>
-            </div>
-            <div class="ts-main-center">
+            </router-link>
+            <router-link to="./teaStateInside" class="ts-main-center">
                 <div class="ts-main-center-left"><img src="http://pa74otoy6.bkt.clouddn.com/case-light-logo.png" alt=""></div>
                 <div class="ts-main-center-right">
                     <span>这跟小确幸，您想要么？</span>
                     <span>转眼夏至</span>
                 </div>
                 <div class="ts-main-center-conner"><img src="" alt=""></div>
-            </div>
+            </router-link>
         </div>
     </div>
 </template>
@@ -41,11 +41,11 @@
 
 <style lang="scss">
 .ts-container{
-    height: 1000px;
+    height: 800px;
     width: 500px;
 }
 .ts-bgimg{
-    height: 1000px;
+    height: 800px;
     width: 100%;
     position: absolute;
     z-index: -1;

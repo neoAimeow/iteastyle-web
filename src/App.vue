@@ -136,4 +136,10 @@ body,
   display: flex;
   justify-content: center;
 }
+.home-btm-foot-left li{
+  margin-left: 10px;
+}
+.home-btm-foot-right li{
+  margin-right: 10px;
+}
 </style>

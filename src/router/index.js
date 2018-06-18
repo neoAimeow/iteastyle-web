@@ -9,6 +9,7 @@ import TeaState from '@/components/homepage/teaState.vue'
 import ContactUs from '@/components/homepage/contactUs.vue'
 
 import ProductInside from '@/components/homepage/productInside.vue'
+import TeaStateInside from '@/components/homepage/teaStateInside.vue'
 
 Vue.use(Router)
 
@@ -48,6 +49,11 @@ export default new Router({
       path: '/homepage/productInside',
       name: 'productInside',
       component: ProductInside
+    },
+    {
+      path: '/homepage/teaStateInside',
+      name: 'teaStateInside',
+      component: TeaStateInside
     }
   ]
 })
