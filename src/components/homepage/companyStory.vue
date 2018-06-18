@@ -35,8 +35,7 @@
 
        
     }
-    .story{
-      
+    .story{    
         width:1000px;
         margin-top:50px;
         background-color:rgba(17,14,30,0.5)
