@@ -1,5 +1,6 @@
 <template>
 <div class="company-story">
+    <img class="companystory-background" src="http://pa74otoy6.bkt.clouddn.com/%E5%85%AC%E5%8F%B8%E6%95%85%E4%BA%8B%E8%83%8C%E6%99%AF%E5%9B%BE.png" alt="">
     <div class="story">
         <div class="story-title">
             <span>OUR STORY</span>
@@ -19,15 +20,23 @@
         margin:0;
         padding:0;
         color:white;
-        background-image: url(http://pa74otoy6.bkt.clouddn.com/%E5%85%AC%E5%8F%B8%E6%95%85%E4%BA%8B%E8%83%8C%E6%99%AF%E5%9B%BE.png);
-        background-position:center center;
-        background-repeat: no-repeat;
         height:1000px;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
         
+        
+    }
+    .companystory-background{
+        height:1000px;
+        position:absolute;
+        z-index: -1;
 
+       
     }
     .story{
-        margin:0 auto;
+      
         width:1000px;
         margin-top:50px;
         background-color:rgba(17,14,30,0.5)
@@ -49,8 +58,8 @@
         padding-bottom: 30px;
     }
     video{
-        display: block;
-        margin:0 auto;
+        
+      
         width:1000px;
         height:600px;
         background-color:black;

@@ -2,7 +2,8 @@
     <div class="productDisplay">
 
     <div class="pd-title">
-        <img src="http://pa74otoy6.bkt.clouddn.com/%E6%A0%87%E9%A2%98%E5%9B%BE%E4%B8%8A%E7%9A%84logo.png">
+        <img class="pd-title-bakcground" src="http://pa74otoy6.bkt.clouddn.com/%E4%BA%A7%E5%93%81%E5%B1%95%E7%A4%BA%E6%A0%87%E9%A2%98%E8%83%8C%E6%99%AF%E5%9B%BE.png" alt="">
+        <div class="pd-title-logo"><img src="http://pa74otoy6.bkt.clouddn.com/%E6%A0%87%E9%A2%98%E5%9B%BE%E4%B8%8A%E7%9A%84logo.png"></div>
     </div>
     <div class="pd-ct">
         <div class="tr-left"></div>
@@ -35,12 +36,19 @@
 
     }
     .pd-title{
-        background-image: url(http://pa74otoy6.bkt.clouddn.com/%E4%BA%A7%E5%93%81%E5%B1%95%E7%A4%BA%E6%A0%87%E9%A2%98%E8%83%8C%E6%99%AF%E5%9B%BE.png);
-        background-position:center center;
+        
         height:230px;
-display: flex;
-align-items:center;
-justify-content:center;
+
+    }
+    .pd-title-background{
+        height:230px;
+        position:absolute;
+        z-index: -1;
+    }
+    .pd-title-logo{
+        text-align: center;
+        
+        
     }
     .pd-ct{
         margin:0 auto;
