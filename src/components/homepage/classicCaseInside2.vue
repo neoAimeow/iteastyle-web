@@ -35,12 +35,12 @@
         z-index: -1;
     }
     .pd-picture{
+        display: flex;
+        flex-wrap:wrap;
         width:1020px;
-        height:220px;
-        display:flex;
-        flex-direction: row;
-        margin:0 auto;
-        margin-top:80px;
+        margin: 0 auto;
+        margin-bottom: 80px;
+        margin-top:80px;  
 
     }
     .pd-name{

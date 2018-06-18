@@ -76,7 +76,7 @@
     flex-wrap:wrap;
     justify-content:space-between;
     margin: 0 auto;
-    margin-bottom: 45px;
+    margin-bottom: 40px;
     margin-top:40px;  
 }
 
