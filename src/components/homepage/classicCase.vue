@@ -1,7 +1,8 @@
 <template>
     <div class="classicCase">
+    
     <router-link to="/homepage/classicCaseInside1">
-    <div class="case">
+    <div class="case">       
         <div class="case-picture">
             <img class="picture" src="http://pa74otoy6.bkt.clouddn.com/%E7%BB%8F%E5%85%B8%E6%A1%88%E4%BE%8B%E7%BD%91%E7%BB%9C%E5%9B%BE.jpeg">
             <div class="picture-logo"> <img src="http://pa74otoy6.bkt.clouddn.com/title-logo.png"></div>
@@ -17,7 +18,7 @@
     </router-link>
 
     <router-link to="/homepage/classicCaseInside1">
-    <div class="case">
+    <div class="case">       
         <div class="case-picture">
             <img class="picture" src="http://pa74otoy6.bkt.clouddn.com/%E7%BB%8F%E5%85%B8%E6%A1%88%E4%BE%8B%E7%BD%91%E7%BB%9C%E5%9B%BE.jpeg">
             <div class="picture-logo"> <img src="http://pa74otoy6.bkt.clouddn.com/title-logo.png"></div>
@@ -28,12 +29,12 @@
                 <span class="C-title">茶文化讲座</span>
                 <span class="E-title">TEA CULTURE SEMINAR</span>
             </div>
-        </div>
+        </div>        
     </div>
     </router-link>
-    
+
     <router-link to="/homepage/classicCaseInside1">
-    <div class="case">
+    <div class="case">       
         <div class="case-picture">
             <img class="picture" src="http://pa74otoy6.bkt.clouddn.com/%E7%BB%8F%E5%85%B8%E6%A1%88%E4%BE%8B%E7%BD%91%E7%BB%9C%E5%9B%BE.jpeg">
             <div class="picture-logo"> <img src="http://pa74otoy6.bkt.clouddn.com/title-logo.png"></div>
@@ -44,12 +45,12 @@
                 <span class="C-title">DIY活动</span>
                 <span class="E-title">DIY ACTIVITES</span>
             </div>
-        </div>
+        </div>       
     </div>
     </router-link>
 
     <router-link to="/homepage/classicCaseInside1">
-    <div class="case">
+    <div class="case">       
         <div class="case-picture">
             <img class="picture" src="http://pa74otoy6.bkt.clouddn.com/%E7%BB%8F%E5%85%B8%E6%A1%88%E4%BE%8B%E7%BD%91%E7%BB%9C%E5%9B%BE.jpeg">
             <div class="picture-logo"> <img src="http://pa74otoy6.bkt.clouddn.com/title-logo.png"></div>
@@ -60,7 +61,7 @@
                 <span class="C-title">私茗定制</span>
                 <span class="E-title">PRIVATE TEA CUSTOMISATION</span>
             </div>
-        </div>
+        </div>        
     </div>
     </router-link>
 
@@ -79,7 +80,6 @@
         </div>
     </div>
     </router-link>
-
     
 </div>
 </template>
