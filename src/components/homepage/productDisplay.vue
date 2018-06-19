@@ -1,32 +1,31 @@
 <template>
-    <div class="productDisplay">
+<div class="productDisplay">
 
     <div class="pd-title">
         <img class="pd-title-picture" src="http://pa74otoy6.bkt.clouddn.com/%E4%BA%A7%E5%93%81%E5%B1%95%E7%A4%BA%E6%A0%87%E9%A2%98%E8%83%8C%E6%99%AF%E5%9B%BE.png" alt="">
         <div class="title-logo"><img src="http://pa74otoy6.bkt.clouddn.com/opaque-logo.png"></div>
     </div>
-    <div class="pd-ct">
-        <div class="tr-left"></div>
-        <div class="pd">
-            <div class="pd-top">
+    <div class="pd-ct">           
+            
+                <router-link to="/homepage/productInside"><div class="product-name"><div class="pd-picture-border"><img src="http://pa74otoy6.bkt.clouddn.com/proudct-picture1.png"></div><span>抹茶费南雪</span></div></router-link>
+                <router-link to="/homepage/productInside"><div class="product-name"><div class="pd-picture-border"><img src="http://pa74otoy6.bkt.clouddn.com/product-picture2.png"></div><span>抹茶费南雪</span></div></router-link>
+                <router-link to="/homepage/productInside"><div class="product-name"><div class="pd-picture-border"><img src="http://pa74otoy6.bkt.clouddn.com/product-picture3.png"></div><span>抹茶费南雪</span></div></router-link>           
                 <router-link to="/homepage/productInside"><div class="product-name"><div class="pd-picture-border"><img src="http://pa74otoy6.bkt.clouddn.com/proudct-picture1.png"></div><span>抹茶费南雪</span></div></router-link>
                 <router-link to="/homepage/productInside"><div class="product-name"><div class="pd-picture-border"><img src="http://pa74otoy6.bkt.clouddn.com/product-picture2.png"></div><span>抹茶费南雪</span></div></router-link>
                 <router-link to="/homepage/productInside"><div class="product-name"><div class="pd-picture-border"><img src="http://pa74otoy6.bkt.clouddn.com/product-picture3.png"></div><span>抹茶费南雪</span></div></router-link>
-            </div>
-            <div class="pd-bottom">
-                <router-link to="/homepage/productInside"><div class="product-name"><div class="pd-picture-border"><img src="http://pa74otoy6.bkt.clouddn.com/proudct-picture1.png"></div><span>抹茶费南雪</span></div></router-link>
-                <router-link to="/homepage/productInside"><div class="product-name"><div class="pd-picture-border"><img src="http://pa74otoy6.bkt.clouddn.com/product-picture2.png"></div><span>抹茶费南雪</span></div></router-link>
-                <router-link to="/homepage/productInside"><div class="product-name"><div class="pd-picture-border"><img src="http://pa74otoy6.bkt.clouddn.com/product-picture3.png"></div><span>抹茶费南雪</span></div></router-link>
-            </div>
-        </div>
-        <div class="tr-right"></div>          
+                          
     </div>
-
+   <div class="pd-page">
+        <el-pagination
+            layout="prev, pager, next"
+            :total="50">
+        </el-pagination>
+   </div>
 
     
 </div>
 </template>
-<style>
+<style scoped>
     .productDisplay{
         margin:0;
         padding:0;
@@ -61,32 +60,16 @@
         
         /*background-color: red;*/
         display:flex;
-        flex-direction: row;
+        
+        flex-wrap:wrap;
         justify-content:center;
         align-items:center;
         margin-top:40px;
+        margin-bottom: 10px;
     }
-    .tr-left{
-        width: 0px;
-        height:0px;
-        border-top:solid 50px transparent;
-        border-right:solid 30px #9bc248;
-        border-bottom:solid 50px transparent;
-        border-left:solid 30px transparent;
-    }   
-   .tr-right{
-        width: 0px;
-        height:0px;
-        border-top:solid 50px transparent ;
-        border-right:solid 30px transparent;
-        border-bottom:solid 50px transparent;
-        border-left:solid 30px #9bc248 ;
-    }
+    
 
-    .pd-top,.pd-bottom{
-        display:flex;
-        flex-direction: row;
-    }
+    
     .pd-picture-border{
         border:1px solid #aeaeae;
         margin-bottom:15px;
@@ -96,7 +79,7 @@
 
 
     } 
-    .pd img{
+    .pd-ct img{
         width:265px;
         height:170px;
         padding:5px;
@@ -106,6 +89,12 @@
         text-align: center;
         margin:15px;
         color:#626262;
+    }
+    .pd-page{
+       
+        display: flex;
+        justify-content: center;
+
     }
     
 </style>
