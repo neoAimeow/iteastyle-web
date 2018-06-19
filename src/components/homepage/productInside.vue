@@ -72,6 +72,10 @@
         align-items: center;
         margin-bottom: 10px;
     }
+    .title img{
+        width:40px;
+        height:auto;
+    }
     .title span{
         margin-left:5px;
     }

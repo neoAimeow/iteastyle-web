@@ -8,42 +8,42 @@
        
         <router-link to="/homepage/classicCaseInside2">
         <div class="picture">   
-           <img class="case-picture" src="http://pa74otoy6.bkt.clouddn.com/%E6%8A%B9%E8%8C%B6%E8%B4%B9%E5%8D%97%E9%9B%AA%E4%BA%A7%E5%93%81%E5%86%85%E9%A1%B5%E7%BD%91%E7%BB%9C%E5%9B%BE%E7%89%87.jpg" alt="">
+           <img class="case-picture" src="http://pa74otoy6.bkt.clouddn.com/case-inside-picture1.png" alt="">
            <div class="case-title"><span>绍兴玛莎拉蒂“双十一”活动</span></div>
         </div>
         </router-link>
 
         <router-link to="/homepage/classicCaseInside2">
         <div class="picture">   
-           <img class="case-picture" src="http://pa74otoy6.bkt.clouddn.com/%E6%8A%B9%E8%8C%B6%E8%B4%B9%E5%8D%97%E9%9B%AA%E4%BA%A7%E5%93%81%E5%86%85%E9%A1%B5%E7%BD%91%E7%BB%9C%E5%9B%BE%E7%89%87.jpg" alt="">
+           <img class="case-picture" src="http://pa74otoy6.bkt.clouddn.com/case-inside-picture1.png" alt="">
            <div class="case-title"><span>绍兴玛莎拉蒂“双十一”活动</span></div>
         </div>
         </router-link>
 
         <router-link to="/homepage/classicCaseInside2">
         <div class="picture">   
-           <img class="case-picture" src="http://pa74otoy6.bkt.clouddn.com/%E6%8A%B9%E8%8C%B6%E8%B4%B9%E5%8D%97%E9%9B%AA%E4%BA%A7%E5%93%81%E5%86%85%E9%A1%B5%E7%BD%91%E7%BB%9C%E5%9B%BE%E7%89%87.jpg" alt="">
+           <img class="case-picture" src="http://pa74otoy6.bkt.clouddn.com/case-inside-picture1.png" alt="">
            <div class="case-title"><span>绍兴玛莎拉蒂“双十一”活动</span></div>
         </div>
         </router-link>
 
         <router-link to="/homepage/classicCaseInside2">
         <div class="picture">   
-           <img class="case-picture" src="http://pa74otoy6.bkt.clouddn.com/%E6%8A%B9%E8%8C%B6%E8%B4%B9%E5%8D%97%E9%9B%AA%E4%BA%A7%E5%93%81%E5%86%85%E9%A1%B5%E7%BD%91%E7%BB%9C%E5%9B%BE%E7%89%87.jpg" alt="">
+           <img class="case-picture" src="http://pa74otoy6.bkt.clouddn.com/case-inside-picture1.png" alt="">
            <div class="case-title"><span>绍兴玛莎拉蒂“双十一”活动</span></div>
         </div>
         </router-link>
 
         <router-link to="/homepage/classicCaseInside2">
         <div class="picture">   
-           <img class="case-picture" src="http://pa74otoy6.bkt.clouddn.com/%E6%8A%B9%E8%8C%B6%E8%B4%B9%E5%8D%97%E9%9B%AA%E4%BA%A7%E5%93%81%E5%86%85%E9%A1%B5%E7%BD%91%E7%BB%9C%E5%9B%BE%E7%89%87.jpg" alt="">
+           <img class="case-picture" src="http://pa74otoy6.bkt.clouddn.com/case-inside-picture1.png" alt="">
            <div class="case-title"><span>绍兴玛莎拉蒂“双十一”活动</span></div>
         </div>
         </router-link>
 
         <router-link to="/homepage/classicCaseInside2">
         <div class="picture">   
-           <img class="case-picture" src="http://pa74otoy6.bkt.clouddn.com/%E6%8A%B9%E8%8C%B6%E8%B4%B9%E5%8D%97%E9%9B%AA%E4%BA%A7%E5%93%81%E5%86%85%E9%A1%B5%E7%BD%91%E7%BB%9C%E5%9B%BE%E7%89%87.jpg" alt="">
+           <img class="case-picture" src="http://pa74otoy6.bkt.clouddn.com/case-inside-picture1.png" alt="">
            <div class="case-title"><span>绍兴玛莎拉蒂“双十一”活动</span></div>
         </div>
         </router-link>       
@@ -90,10 +90,10 @@
     width:305px;
     height:45px;
     background-color: rgba(174,203,87, 0.83);
-  
+    text-align: center;
     color: white;
     line-height: 45px;
     position: relative;
-    top: 150px;
+    top: 160px;
 }
 </style>
