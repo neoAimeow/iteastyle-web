@@ -83,20 +83,26 @@
     
 </div>
 </template>
-<style>
+<style scoped>
     .classicCase{
         margin:0;
         padding:0;
         display: flex;
         flex-direction: row;
+        margin: 0 auto;
+
     }
     .case{
         width:320px;
         height:840px;
+        
+       
     }
     .case-picture{
         width:320px;
         height:560px;
+
+
     }
     .picture{
         width:320px;
@@ -106,7 +112,7 @@
    
     }
     .picture-logo{
-        padding-top:300px;
+        padding-top:400px;
         text-align: center;
     }
     
@@ -117,12 +123,14 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        background-color: aquamarine;
+       
 
         
     }
     .logo{
         width:40px;
-        height:40px;
+        height:auto;
     }
     .title{
         display: flex;

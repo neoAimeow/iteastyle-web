@@ -7,17 +7,23 @@
     </div>
 
     <div class="pd-picture">
-        <img class="pd-img" src="http://pa74otoy6.bkt.clouddn.com/%E6%8A%B9%E8%8C%B6%E8%B4%B9%E5%8D%97%E9%9B%AA%E4%BA%A7%E5%93%81%E5%86%85%E9%A1%B5%E7%BD%91%E7%BB%9C%E5%9B%BE%E7%89%87.jpg" alt="">
-        <div class="pd-name"><img src="" alt=""><span>英菲尼迪国博车展茶歇</span></div>
-        <img class="pd-img" src="http://pa74otoy6.bkt.clouddn.com/%E6%8A%B9%E8%8C%B6%E8%B4%B9%E5%8D%97%E9%9B%AA%E4%BA%A7%E5%93%81%E5%86%85%E9%A1%B5%E7%BD%91%E7%BB%9C%E5%9B%BE%E7%89%87.jpg" alt="">
-        <img class="pd-img" src="http://pa74otoy6.bkt.clouddn.com/%E6%8A%B9%E8%8C%B6%E8%B4%B9%E5%8D%97%E9%9B%AA%E4%BA%A7%E5%93%81%E5%86%85%E9%A1%B5%E7%BD%91%E7%BB%9C%E5%9B%BE%E7%89%87.jpg" alt="">
-        <img class="pd-img" src="http://pa74otoy6.bkt.clouddn.com/%E6%8A%B9%E8%8C%B6%E8%B4%B9%E5%8D%97%E9%9B%AA%E4%BA%A7%E5%93%81%E5%86%85%E9%A1%B5%E7%BD%91%E7%BB%9C%E5%9B%BE%E7%89%87.jpg" alt="">
-        <img class="pd-img" src="http://pa74otoy6.bkt.clouddn.com/%E6%8A%B9%E8%8C%B6%E8%B4%B9%E5%8D%97%E9%9B%AA%E4%BA%A7%E5%93%81%E5%86%85%E9%A1%B5%E7%BD%91%E7%BB%9C%E5%9B%BE%E7%89%87.jpg" alt="">
+        <img class="pd-img" src="http://pa74otoy6.bkt.clouddn.com/case-inside2-picture1.png" alt="">
+        <div class="pd-name">
+            <div class="title">
+                <img src="http://pa74otoy6.bkt.clouddn.com/opaque-logo.png" alt="" class="logo">
+                <span>茶歇服务</span>
+            </div>
+            <span>英菲尼迪国博车展茶歇</span>
+        </div>
+        <img class="pd-img" src="http://pa74otoy6.bkt.clouddn.com/case-inside2-picture1.png" alt="">
+        <img class="pd-img" src="http://pa74otoy6.bkt.clouddn.com/case-inside2-picture2.png" alt="">
+        <img class="pd-img" src="http://pa74otoy6.bkt.clouddn.com/case-inside2-picture1.png" alt="">
+        <img class="pd-img" src="http://pa74otoy6.bkt.clouddn.com/case-inside2-picture2.png" alt="">
     </div>
     
 </div>
 </template>
-<style>
+<style scoped>
     .productinside{
         margin:0;
         padding:0;
@@ -46,7 +52,7 @@
     .pd-name{
         width:340px;
         height:220px;
-        background-color:#9bc248;
+        background-color:#9dc135;
         display:flex;
         flex-direction: column;
         justify-content: center;
@@ -54,6 +60,23 @@
         font-size: 20px;
         color:white;
 
+    }
+    .title{
+        width:205px;
+        height:50px;
+        border:1px dotted white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .title span{
+        margin-left:5px;
+    }
+    .title img{
+        width:40px;
+        height:auto;
     }
     .pd-img{
         width:340px;
