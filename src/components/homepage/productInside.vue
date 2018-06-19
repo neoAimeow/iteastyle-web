@@ -23,7 +23,7 @@
 
 </div>
 </template>
-<style>
+<style scoped>
     .productinside{
         margin:0;
         padding:0;
@@ -43,10 +43,10 @@
     }
     .pd-picture{
         width:1020px;
-        height:220px;
         display:flex;
         flex-direction: row;
-        
+        margin:0 auto;
+        margin-bottom: 20px;
         
 
     }
@@ -78,6 +78,7 @@
     .pd-img{
         width:340px;
         height:220px;
+
 
 
     }
