@@ -46,8 +46,14 @@
            <img class="case-picture" src="http://pa74otoy6.bkt.clouddn.com/case-inside-picture1.png" alt="">
            <div class="case-title"><span>绍兴玛莎拉蒂“双十一”活动</span></div>
         </div>
-        </router-link>       
+        </router-link>    
     </div> 
+    <div class="case-foot">
+        <el-pagination
+            layout="prev, pager, next"
+            :total="50">
+        </el-pagination>
+    </div>
 </div>
 </template>
 <style>
@@ -76,8 +82,8 @@
     flex-wrap:wrap;
     justify-content:space-between;
     margin: 0 auto;
-    margin-bottom: 40px;
-    margin-top:40px;  
+    margin-top:40px; 
+    
 }
 
 .case-picture{
@@ -95,5 +101,9 @@
     line-height: 45px;
     position: relative;
     top: 160px;
+}
+.case-foot{
+    margin: 0 auto;
+    margin-bottom: 40px;
 }
 </style>
