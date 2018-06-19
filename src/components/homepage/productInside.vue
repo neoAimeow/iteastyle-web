@@ -6,10 +6,17 @@
     </div>
 
     <div class="pd-picture">
-        <img class="pd-img" src="http://pa74otoy6.bkt.clouddn.com/%E6%8A%B9%E8%8C%B6%E8%B4%B9%E5%8D%97%E9%9B%AA%E4%BA%A7%E5%93%81%E5%86%85%E9%A1%B5%E7%BD%91%E7%BB%9C%E5%9B%BE%E7%89%87.jpg" alt="">
-        <div class="pd-name"><img src="" alt=""><span>抹茶费南雪</span></div>
-        <img class="pd-img" src="http://pa74otoy6.bkt.clouddn.com/%E6%8A%B9%E8%8C%B6%E8%B4%B9%E5%8D%97%E9%9B%AA%E4%BA%A7%E5%93%81%E5%86%85%E9%A1%B5%E7%BD%91%E7%BB%9C%E5%9B%BE%E7%89%87.jpg" alt="">
+        <img class="pd-img" src="http://pa74otoy6.bkt.clouddn.com/product-inside-picture1.png" alt="">
+        <div class="pd-name">
+            <div class="title">
+                <img src="http://pa74otoy6.bkt.clouddn.com/opaque-logo.png" alt="" class="logo">
+                <span>茶饮茶点</span>
+            </div>
+            <span>抹茶费南雪</span>
+        </div>
+        <img class="pd-img" src="http://pa74otoy6.bkt.clouddn.com/product-inside-picture2.png" alt="">
     </div>
+
     <div class="pd-introduction">
         <span>抹茶费南雪是一种小糕点<br>就爱这一抹绿啊<br>高油高糖什么的就是好吃<br>抹茶控溺爱的小宠物～</span>
     </div>
@@ -27,6 +34,7 @@
         display: flex;
         align-items:center;
         justify-content:center;
+        margin-bottom: 80px;
     }
     .title-background{
         height:220px;
@@ -38,14 +46,14 @@
         height:220px;
         display:flex;
         flex-direction: row;
-        margin:0 auto;
-        margin-top:80px;
+        
+        
 
     }
     .pd-name{
         width:340px;
         height:220px;
-        background-color:#9bc248;
+        background-color:#9dc135;
         display:flex;
         flex-direction: column;
         justify-content: center;
@@ -54,6 +62,19 @@
         color:white;
 
     }
+    .title{
+        width:205px;
+        height:50px;
+        border:1px dotted white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .title span{
+        margin-left:5px;
+    }
     .pd-img{
         width:340px;
         height:220px;
@@ -61,11 +82,11 @@
 
     }
     .pd-introduction{
-        border:1px solid #f0f0f0;
+        border:1px dotted #f0f0f0;
         width:1020px;
 
         margin:0 auto;
-        margin-top:20px;
+        
         margin-bottom:85px;
         
         
@@ -76,6 +97,7 @@
        justify-content: center;
        margin-top:10px;
        margin-bottom: 10px;
+       text-align: center;
 
     }
     
