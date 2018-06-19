@@ -1,6 +1,6 @@
 <template>
     <div class="cu-container">
-        <img class="cu-bgimg" src="http://pa74otoy6.bkt.clouddn.com/contactus-background.png" alt="">
+        <progressive-img class="cu-bgimg" src="http://pa74otoy6.bkt.clouddn.com/contactus-background.png" alt="" />
         <div class="cu-main">
             <div class="cu-main-title">
                 <span>CONTACT US</span>
@@ -21,28 +21,30 @@
             </div>
         </div>
         <div class="cu-foot">
-            <div class="cu-foot-left"><img src="http://pa74otoy6.bkt.clouddn.com/case-light-logo.png" alt=""></div>
+            <div class="cu-foot-left"><el-amap vid="amapDemo" :zoom="zoom" :center="center"></el-amap></div>
             <div class="cu-foot-right">
-                <img src="http://pa74otoy6.bkt.clouddn.com/contactus-QRcode.png" alt="">
-                <img src="http://pa74otoy6.bkt.clouddn.com/contactus-QRcode.png" alt="">
+                <progressive-img class="cu-foot-right-img" src="http://pa74otoy6.bkt.clouddn.com/contactus-QRcode.png" alt="" />
+                <progressive-img class="cu-foot-right-img" src="http://pa74otoy6.bkt.clouddn.com/contactus-QRcode.png" alt="" />
             </div>
         </div>
     </div>
 </template>
 
+
 <style lang="scss">
 .cu-container{
-    height: 1000px;
+    height: 700px;
+    width: 100%;
 }
 .cu-bgimg{
-    height: 1000px;
+    height: 700px;
     width: 100%;
     position: absolute;
     z-index: -1;
 }
 .cu-main{
-    margin-top: 200px;
-    margin-left: 700px;
+    margin-top: -40%;
+    margin-left: 45%;
     //display: flex;
     //flex-direction: column;
     //align-items: center;
@@ -63,8 +65,8 @@
     display: flex;
     flex-direction: row;
     position: absolute;
-    margin-top: 500px;
-    margin-left: 700px;
+    margin-top: -20%;//这几个负数的设置都存在疑问
+    margin-left: 45%;
 }
 .cu-foot-left{
     margin-top: 10px;
@@ -75,7 +77,9 @@
     flex-direction: column;
     align-items: center;
 }
-.cu-foot-right img{
+.cu-foot-right-img{
     margin-top: 10px;
+    height: 100px;
+    width: 100px;
 }
 </style>
