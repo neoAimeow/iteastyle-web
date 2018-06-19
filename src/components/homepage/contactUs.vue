@@ -31,7 +31,7 @@
 </template>
 
 
-<style lang="scss">
+<style lang="scss" scoped>
 .cu-container{
     height: 700px;
     width: 100%;
@@ -43,7 +43,7 @@
     z-index: -1;
 }
 .cu-main{
-    margin-top: -40%;
+    margin-top: 20px;
     margin-left: 45%;
     //display: flex;
     //flex-direction: column;
@@ -65,12 +65,12 @@
     display: flex;
     flex-direction: row;
     position: absolute;
-    margin-top: -20%;//这几个负数的设置都存在疑问
-    margin-left: 45%;
+    margin-top: 20%;//这几个负数的设置都存在疑问
+    margin-left: 35%;
 }
 .cu-foot-left{
     margin-top: 10px;
-    height: 500px;
+    height: 350px;
     width: 400px;
 }
 .cu-foot-right{

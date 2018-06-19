@@ -2,8 +2,8 @@
     <div class="index-container">
         <div class="index-head">
             <el-carousel>
-                <el-carousel-item v-for="item in items" :key="item">
-                    <progressive-img src="item" alt="" class="index-head-img" />
+                <el-carousel-item v-for="(item,key) in items" :key="key">
+                    <progressive-img :src="item" alt="" class="index-head-img" />
                 </el-carousel-item>
             </el-carousel>
         </div>
@@ -27,7 +27,7 @@
 <script>
 
 export default {
-    date(){
+    data(){
         return {
             items:[
                 'http://pa74otoy6.bkt.clouddn.com/%E6%8A%B9%E8%8C%B6%E8%B4%B9%E5%8D%97%E9%9B%AA%E4%BA%A7%E5%93%81%E5%86%85%E9%A1%B5%E7%BD%91%E7%BB%9C%E5%9B%BE%E7%89%87.jpg',
