@@ -89,7 +89,7 @@ body,
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  //min-width: 1000px;
+  min-width: 1000px;
   //margin-top: 20px;
   margin: 0 auto;
 }
@@ -104,8 +104,8 @@ body,
 .home-head-right-list{
   margin-left: 20px;
 }
-.home-main{
-  //height: 1000px;
+.home-bottom{
+  min-width: 1000px;
 }
 .home-btm-top{
   display: flex;

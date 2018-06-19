@@ -41,17 +41,17 @@
 
 <style lang="scss">
 .ts-container{
-    height: 800px;
+    height: 700px;
     width: 500px;
 }
 .ts-bgimg{
-    height: 800px;
+    height: 700px;
     width: 100%;
     position: absolute;
     z-index: -1;
 }
 .ts-main{
-    margin-left: 700px;
+    margin-left: 40%;
     margin-top: 50px;
     position: absolute;
 }
@@ -71,9 +71,6 @@
 .ts-main-center-right{
     height: 100px;
     background-color: rgba(32, 11, 32, 0.5);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     position: absolute;
     z-index: -1;
     width: 500px;
