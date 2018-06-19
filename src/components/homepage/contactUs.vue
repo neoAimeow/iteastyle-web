@@ -21,7 +21,7 @@
             </div>
         </div>
         <div class="cu-foot">
-            <div class="cu-foot-left"><el-amap vid="amapDemo" :zoom="zoom" :center="center"></el-amap></div>
+            <el-amap class="cu-foot-left" vid="amapDemo"></el-amap>
             <div class="cu-foot-right">
                 <progressive-img class="cu-foot-right-img" src="http://pa74otoy6.bkt.clouddn.com/contactus-QRcode.png" alt="" />
                 <progressive-img class="cu-foot-right-img" src="http://pa74otoy6.bkt.clouddn.com/contactus-QRcode.png" alt="" />
@@ -70,6 +70,8 @@
 }
 .cu-foot-left{
     margin-top: 10px;
+    height: 500px;
+    width: 400px;
 }
 .cu-foot-right{
     margin-left: 20px;
