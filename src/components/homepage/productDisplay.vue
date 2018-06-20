@@ -26,76 +26,67 @@
 </div>
 </template>
 <style scoped>
-    .productDisplay{
-        margin:0;
-        padding:0;
-        margin-bottom: 30px;
-        
+.productDisplay {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+}
 
+.pd-title {
+  height: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-    }
-    .pd-title{
-        
-        height:230px;
-        display: flex;
-        align-items:center;
-        justify-content:center;
-        
-    }
-    .pd-title-picture{
-        width: 100%;
-        height:230px;
-        position:absolute;
-        z-index: -1;
+.pd-title-picture {
+  width: 100%;
+  height: 230px;
+  position: absolute;
+  z-index: -1;
+}
 
-    }
-    .pd-title-logo{
-        text-align: center;
-    }
-        
-        
-   
-    .pd-ct{
-        margin:0 auto;
-        max-width:1000px;
-        
-        /*background-color: red;*/
-        display:flex;
-        
-        flex-wrap:wrap;
-        justify-content:center;
-        align-items:center;
-        margin-top:40px;
-        margin-bottom: 10px;
-    }
-    
+.pd-title-logo {
+  text-align: center;
+}
 
-    
-    .pd-picture-border{
-        border:1px solid #aeaeae;
-        margin-bottom:15px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+.pd-ct {
+  margin: 0 auto;
+  max-width: 1000px;
 
+  /*background-color: red;*/
+  display: flex;
 
-    } 
-    .pd-ct img{
-        width:265px;
-        height:170px;
-        padding:5px;
-        
-    }
-    .product-name{
-        text-align: center;
-        margin:15px;
-        color:#626262;
-    }
-    .pd-page{
-       
-        display: flex;
-        justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
 
-    }
-    
+.pd-picture-border {
+  border: 1px solid #aeaeae;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pd-ct img {
+  width: 265px;
+  height: 170px;
+  padding: 5px;
+}
+
+.product-name {
+  text-align: center;
+  margin: 15px;
+  color: #626262;
+}
+
+.pd-page {
+  display: flex;
+  justify-content: center;
+}
+
 </style>
