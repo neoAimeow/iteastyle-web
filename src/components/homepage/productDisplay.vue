@@ -6,14 +6,9 @@
         <div class="title-logo"><img src="http://pa74otoy6.bkt.clouddn.com/opaque-logo.png"></div>
     </div>
     <div class="pd-ct">           
-            
-                <router-link to="/homepage/productInside"><div class="product-name"><div class="pd-picture-border"><img src="http://pa74otoy6.bkt.clouddn.com/proudct-picture1.png"></div><span>抹茶费南雪</span></div></router-link>
-                <router-link to="/homepage/productInside"><div class="product-name"><div class="pd-picture-border"><img src="http://pa74otoy6.bkt.clouddn.com/product-picture2.png"></div><span>抹茶费南雪</span></div></router-link>
-                <router-link to="/homepage/productInside"><div class="product-name"><div class="pd-picture-border"><img src="http://pa74otoy6.bkt.clouddn.com/product-picture3.png"></div><span>抹茶费南雪</span></div></router-link>           
-                <router-link to="/homepage/productInside"><div class="product-name"><div class="pd-picture-border"><img src="http://pa74otoy6.bkt.clouddn.com/proudct-picture1.png"></div><span>抹茶费南雪</span></div></router-link>
-                <router-link to="/homepage/productInside"><div class="product-name"><div class="pd-picture-border"><img src="http://pa74otoy6.bkt.clouddn.com/product-picture2.png"></div><span>抹茶费南雪</span></div></router-link>
-                <router-link to="/homepage/productInside"><div class="product-name"><div class="pd-picture-border"><img src="http://pa74otoy6.bkt.clouddn.com/product-picture3.png"></div><span>抹茶费南雪</span></div></router-link>
-                          
+                <div class="product-name" v-for="(item,key) in items" :key="key">
+                    <router-link to="/homepage/productInside"><div class="pd-picture-border"><img :src="item.imageUrl"></div><span>{{item.name}}</span></router-link>
+                </div>
     </div>
    <div class="pd-page">
         <el-pagination
@@ -22,9 +17,45 @@
         </el-pagination>
    </div>
 
-    
 </div>
 </template>
+
+<script>
+export default {
+    data() {
+        return {
+            items:[
+                    {
+                        "name":"抹茶费南雪123",
+                        "imageUrl":"http://pa74otoy6.bkt.clouddn.com/proudct-picture1.png"
+                    },
+                            {
+                        "name":"抹茶费南雪123",
+                        "imageUrl":"http://pa74otoy6.bkt.clouddn.com/product-picture2.png"
+                    },
+                            {
+                        "name":"抹茶费南雪",
+                        "imageUrl":"http://pa74otoy6.bkt.clouddn.com/product-picture3.png"
+                    },
+                            {
+                        "name":"抹茶费南雪123",
+                        "imageUrl":"http://pa74otoy6.bkt.clouddn.com/proudct-picture1.png"
+                    },
+                            {
+                        "name":"抹茶费南雪",
+                        "imageUrl":"http://pa74otoy6.bkt.clouddn.com/product-picture2.png"
+                    },
+                            {
+                        "name":"抹茶费南雪12",
+                        "imageUrl":"http://pa74otoy6.bkt.clouddn.com/product-picture3.png"
+                    }
+                ]
+        }
+    }
+}
+</script>
+
+
 <style scoped>
 .productDisplay {
   margin: 0;
