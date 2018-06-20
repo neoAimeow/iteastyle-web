@@ -22,7 +22,7 @@
             <p>400 688 6888</p>
           </div>
         </div>
-        <hr/>
+        <hr style="height:1px;border:none;border-top:1px solid #9dc135;" />
         <div class="home-btm-foot">
           <ul class="home-btm-foot-left">
             <li>联系我们</li>

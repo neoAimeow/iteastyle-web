@@ -2,7 +2,7 @@
     <div class="tsI-container">
         <div class="tsI-head">
             <progressive-img class="tsI-head-bgimg" src="http://pa74otoy6.bkt.clouddn.com/pd-case-DT-Details-background.png" alt="" />
-            <progressive-img class="tsI-head-logo" src="http://pa74otoy6.bkt.clouddn.com/case-light-logo.png" alt="" />
+            <img class="tsI-head-logo" src="http://pa74otoy6.bkt.clouddn.com/case-light-logo.png" alt="" />
         </div>
         <div class="tsI-main">
             <div class="tsI-main-head">
@@ -12,21 +12,51 @@
             </div>
             <div class="tsI-main-body">
                 <div class="tsI-main-body-left">
-                    <progressive-img class="tsI-main-body-left-img" src="http://pa74otoy6.bkt.clouddn.com/%E6%8A%B9%E8%8C%B6%E8%B4%B9%E5%8D%97%E9%9B%AA%E4%BA%A7%E5%93%81%E5%B1%95%E7%A4%BA%E7%BD%91%E7%BB%9C%E5%9B%BE.jpg" alt="" />
-                    <progressive-img class="tsI-main-body-left-img" src="http://pa74otoy6.bkt.clouddn.com/%E6%8A%B9%E8%8C%B6%E8%B4%B9%E5%8D%97%E9%9B%AA%E4%BA%A7%E5%93%81%E5%B1%95%E7%A4%BA%E7%BD%91%E7%BB%9C%E5%9B%BE.jpg" alt="" />
-                    <progressive-img class="tsI-main-body-left-img" src="http://pa74otoy6.bkt.clouddn.com/%E6%8A%B9%E8%8C%B6%E8%B4%B9%E5%8D%97%E9%9B%AA%E4%BA%A7%E5%93%81%E5%B1%95%E7%A4%BA%E7%BD%91%E7%BB%9C%E5%9B%BE.jpg" alt="" />
+                    <progressive-img class="tsI-main-body-left-img" src="http://pa74otoy6.bkt.clouddn.com/teaStateInside1.png" alt="" />
+                    <progressive-img class="tsI-main-body-left-img" src="http://pa74otoy6.bkt.clouddn.com/teaStateInside2.png" alt="" />
+                    <progressive-img class="tsI-main-body-left-img" src="http://pa74otoy6.bkt.clouddn.com/teaStateInside3.png" alt="" />
                 </div>
                 <div class="tsI-main-body-right">
-                    <span></span>
+                    <span>最近还好吗？</span>
+                    <span>"还好吧。"</span>
+                    <span>也许</span>
+                    <span>忙碌中</span>
+                    <span>你忽视了很多小确幸</span>
+                    <span>如果你用心体会</span>
+                    <span>你会发现许多小确幸</span>
+                    <br>
+                    <span>匆匆出门</span>
+                    <span>正好赶上一班车</span>
+                    <span>是小确幸</span>
+                    <br>
+                    <span>高温之时</span>
+                    <span>吃一个甜筒</span>
+                    <span>是小确幸</span>
+                    <br>
+                    <span>遭遇坏事</span>
+                    <span>朋友及时的安慰</span>
+                    <span>是小确幸</span>
+                    <br>
+                    <span>而今天</span>
+                    <span>小TEA也有一份“小确幸”</span>
+                    <span>想邀请各位一起分享</span>
+                    <br>
+                    <span>夏日昼长</span>
+                    <span>工作之余</span>
+                    <span>尝一口曲奇</span>
+                    <span>品一杯清茶</span>
+                    <span>补充体力</span>
+                    <span>恢复能量</span>
+                    <span>这是你我的小确幸</span>
                 </div>
             </div>
         </div>
     </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .tsI-container{
-    height: 800px;
+    height: 900px;
     width: 100%;
 }
 .tsI-head{
@@ -43,7 +73,7 @@
     height: 100px;
     width: 100px;
     margin-left: 50%;
-    margin-top: -10%;
+    margin-top: 3%;
 }
 .tsI-main-head{
     width: 30%;
@@ -51,12 +81,16 @@
     text-align: center;
 }
 .tsI-main-body{
-    height: 500px;
+    height: 600px;
     width: 600px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    //background-color: blue;
+    margin-top: 10px;
 }
 .tsI-main-body-left{
-    margin-top: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -65,8 +99,16 @@
     //background-color: red;
 }
 .tsI-main-body-left-img{
-    height: 160px;
+    height: 200px;
     width: 250px;
-    margin-top: 5px;
+    margin-top: 15px;
+}
+.tsI-main-body-right{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.tsI-main-body-right span{
+    font-size: 5px;
+    //text-align: center;
 }
 </style>
