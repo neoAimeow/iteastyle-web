@@ -43,6 +43,7 @@
         
     }
     .pd-title-picture{
+        width: 100%;
         height:230px;
         position:absolute;
         z-index: -1;
@@ -56,7 +57,7 @@
    
     .pd-ct{
         margin:0 auto;
-        width:1000px;
+        max-width:1000px;
         
         /*background-color: red;*/
         display:flex;
