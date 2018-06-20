@@ -72,7 +72,7 @@
 .tsI-head-logo{
     height: 100px;
     width: 100px;
-    margin-left: 50%;
+    margin-left: 46%;
     margin-top: 3%;
 }
 .tsI-main-head{
@@ -86,7 +86,7 @@
     margin: 0 auto;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     //background-color: blue;
     margin-top: 10px;
 }
