@@ -12,7 +12,6 @@ pipeline {
         echo 'Starting build the app.....'
         sh 'npm i cnpm -g --registry=https://registry.npm.taobao.org'
         sh 'cnpm install'
-        sh 'npm run clean'
         sh 'npm run build'
         sh 'sed -i "s/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g" /etc/apk/repositories'
         sh 'apk add --update --no-cache openssh sshpass'
