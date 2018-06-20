@@ -8,7 +8,7 @@
             <div class="tsI-main-head">
                 <span>这份小确信，您想要么？</span>
                 <hr style="height:1px;border:none;border-top:1px solid #555555; width: 400px;" />
-                <span style="font-size:5px;">来源：杭式下午茶 发布时间：xxxx</span>
+                <span style="font-size:5px;color:#626262;">来源：杭式下午茶 发布时间：xxxx</span>
             </div>
             <div class="tsI-main-body">
                 <div class="tsI-main-body-left">

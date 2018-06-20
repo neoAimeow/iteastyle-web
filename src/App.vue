@@ -13,8 +13,8 @@
       <div class="home-bottom">
         <div class="home-btm-top">
           <ul class="home-btm-top-left" v-for="(data,key) in btmmenus" :key="key" :aria-label="key">
-            <li class="home-btm-top-left-list" v-for="(menu,index) in data" :key="index">
-              <router-link :to="menu.path" :style="menu.style">{{menu.title}}</router-link>
+            <li v-for="(menu,index) in data" :key="index">
+              <router-link :to="menu.path" class="home-btm-top-left-list" :style="menu.style">{{menu.title}}</router-link>
             </li>
           </ul>
           <div class="home-btm-top-right">
@@ -72,9 +72,6 @@ export default {
 a {
   text-decoration: none;
 }
-.router-link-active {
-  text-decoration: none;
-}
 ul,li{
   list-style: none;
   margin: 0;
@@ -103,6 +100,7 @@ body,
 }
 .home-head-right-list{
   margin-left: 20px;
+  color: #626262;
 }
 .home-bottom{
   min-width: 1000px;
@@ -118,8 +116,13 @@ body,
 .home-btm-top-left{
   margin-right: 40px;
 }
+.home-btm-top-left-list{
+  color: #aeaeae;
+}
 .home-btm-top-right{
   margin-left: 100px;
+  color: #626262;
+
 }
 .home-btm-foot{
   display: flex;
@@ -138,8 +141,10 @@ body,
 }
 .home-btm-foot-left li{
   margin-left: 10px;
+  color: #626262;
 }
 .home-btm-foot-right li{
   margin-right: 10px;
+  color: #626262;
 }
 </style>

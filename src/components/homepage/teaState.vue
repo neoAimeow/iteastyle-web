@@ -5,34 +5,30 @@
             <router-link to="./teaStateInside" class="ts-main-center">
                 <progressive-img class="ts-main-center-left-img" src="http://pa74otoy6.bkt.clouddn.com/state-portrait.png" alt="" />
                 <div class="ts-main-center-right">
-                    <span>这跟小确幸，您想要么？</span>
+                    <span style="color:#9dc135;">这份小确幸，您想要么？</span>
                     <span>转眼夏至</span>
                 </div>
-                <div class="ts-main-center-conner"><progressive-img src="" alt="" /></div>
             </router-link>
             <router-link to="./teaStateInside" class="ts-main-center">
                 <progressive-img class="ts-main-center-left-img" src="http://pa74otoy6.bkt.clouddn.com/state-portrait.png" alt="" />
                 <div class="ts-main-center-right">
-                    <span>这跟小确幸，您想要么？</span>
+                    <span style="color:#9dc135;">这份小确幸，您想要么？</span>
                     <span>转眼夏至</span>
                 </div>
-                <div class="ts-main-center-conner"><progressive-img src="" alt="" /></div>
             </router-link>
             <router-link to="./teaStateInside" class="ts-main-center">
                 <progressive-img class="ts-main-center-left-img" src="http://pa74otoy6.bkt.clouddn.com/state-portrait.png" alt="" />
                 <div class="ts-main-center-right">
-                    <span>这跟小确幸，您想要么？</span>
+                    <span style="color:#9dc135;">这份小确幸，您想要么？</span>
                     <span>转眼夏至</span>
                 </div>
-                <div class="ts-main-center-conner"><progressive-img src="" alt="" /></div>
             </router-link>
             <router-link to="./teaStateInside" class="ts-main-center">
                 <progressive-img class="ts-main-center-left-img" src="http://pa74otoy6.bkt.clouddn.com/state-portrait.png" alt="" />
                 <div class="ts-main-center-right">
-                    <span>这跟小确幸，您想要么？</span>
+                    <span style="color:#9dc135;">这份小确幸，您想要么？</span>
                     <span>转眼夏至</span>
                 </div>
-                <div class="ts-main-center-conner"><progressive-img src="" alt="" /></div>
             </router-link>
         </div>
     </div>
