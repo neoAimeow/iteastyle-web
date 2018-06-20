@@ -8,18 +8,18 @@
             </el-carousel>
         </div>
         <div class="index-main">
-            <progressive-img class="index-main-img" src="http://pa74otoy6.bkt.clouddn.com/%E6%8A%B9%E8%8C%B6%E8%B4%B9%E5%8D%97%E9%9B%AA%E4%BA%A7%E5%93%81%E5%86%85%E9%A1%B5%E7%BD%91%E7%BB%9C%E5%9B%BE%E7%89%87.jpg" />
-            <progressive-img class="index-main-img" src="http://pa74otoy6.bkt.clouddn.com/%E6%8A%B9%E8%8C%B6%E8%B4%B9%E5%8D%97%E9%9B%AA%E4%BA%A7%E5%93%81%E5%86%85%E9%A1%B5%E7%BD%91%E7%BB%9C%E5%9B%BE%E7%89%87.jpg" />
-            <progressive-img class="index-main-img" src="http://pa74otoy6.bkt.clouddn.com/%E6%8A%B9%E8%8C%B6%E8%B4%B9%E5%8D%97%E9%9B%AA%E4%BA%A7%E5%93%81%E5%86%85%E9%A1%B5%E7%BD%91%E7%BB%9C%E5%9B%BE%E7%89%87.jpg" />
+            <progressive-img class="index-main-img" src="http://pa74otoy6.bkt.clouddn.com/index-TeaBreak.png" />
+            <progressive-img class="index-main-img" src="http://pa74otoy6.bkt.clouddn.com/index-TeaCeremony.png" />
+            <progressive-img class="index-main-img" src="http://pa74otoy6.bkt.clouddn.com/index-TeaArt.png" />
         </div>
         <div class="index-foot">
             <div class="index-foot-left">
-                <progressive-img class="index-foot-img" src="http://pa74otoy6.bkt.clouddn.com/%E6%8A%B9%E8%8C%B6%E8%B4%B9%E5%8D%97%E9%9B%AA%E4%BA%A7%E5%93%81%E5%B1%95%E7%A4%BA%E7%BD%91%E7%BB%9C%E5%9B%BE.jpg" alt="" />
-                <progressive-img class="index-foot-img" src="http://pa74otoy6.bkt.clouddn.com/%E6%8A%B9%E8%8C%B6%E8%B4%B9%E5%8D%97%E9%9B%AA%E4%BA%A7%E5%93%81%E5%B1%95%E7%A4%BA%E7%BD%91%E7%BB%9C%E5%9B%BE.jpg" alt="" />
-                <progressive-img class="index-foot-img" src="http://pa74otoy6.bkt.clouddn.com/%E6%8A%B9%E8%8C%B6%E8%B4%B9%E5%8D%97%E9%9B%AA%E4%BA%A7%E5%93%81%E5%B1%95%E7%A4%BA%E7%BD%91%E7%BB%9C%E5%9B%BE.jpg" alt="" />
-                <progressive-img class="index-foot-img" src="http://pa74otoy6.bkt.clouddn.com/%E6%8A%B9%E8%8C%B6%E8%B4%B9%E5%8D%97%E9%9B%AA%E4%BA%A7%E5%93%81%E5%B1%95%E7%A4%BA%E7%BD%91%E7%BB%9C%E5%9B%BE.jpg" alt="" />
+                <img class="index-foot-img" src="http://pa74otoy6.bkt.clouddn.com/index-foot-img1.png" alt="" />
+                <img class="index-foot-img" src="http://pa74otoy6.bkt.clouddn.com/index-foot-img2.png" alt="" />
+                <img class="index-foot-img" src="http://pa74otoy6.bkt.clouddn.com/index-foot-img3.png" alt="" />
+                <img class="index-foot-img" src="http://pa74otoy6.bkt.clouddn.com/index-foot-img4.png" alt="" />
             </div>
-            <progressive-img class="index-foot-right" src="http://pa74otoy6.bkt.clouddn.com/case-light-logo.png" alt="" />
+            <img class="index-foot-right" src="http://pa74otoy6.bkt.clouddn.com/index-foot-right.png" alt="" />
         </div>
     </div>
 </template>
@@ -71,11 +71,12 @@ export default {
     flex-direction: row;
     justify-content: flex-start;
     margin-top: 20px;
-    background-color: greenyellow;
+    background-color: #9dc135;
+    height: 100px;
 }
 .index-foot-img{
-    height: 120px;
-    width: 200px;
+    height: 100px;
+    width: 180px;
 }
 .index-foot-left{
     display: flex;
@@ -85,7 +86,6 @@ export default {
 .index-foot-right{
     margin-left: 50px;
     height: 100px;
-    width: 100px;
-    margin-top: 10px;
+    width: 250px;
 }
 </style>

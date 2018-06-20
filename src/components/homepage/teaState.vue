@@ -3,7 +3,7 @@
         <progressive-img class="ts-bgimg" src="http://pa74otoy6.bkt.clouddn.com/tea-news-background.png" alt="" />
         <div class="ts-main">
             <router-link to="./teaStateInside" class="ts-main-center">
-                <progressive-img class="ts-main-center-left-img" src="http://pa74otoy6.bkt.clouddn.com/case-light-logo.png" alt="" />
+                <progressive-img class="ts-main-center-left-img" src="http://pa74otoy6.bkt.clouddn.com/state-portrait.png" alt="" />
                 <div class="ts-main-center-right">
                     <span>这跟小确幸，您想要么？</span>
                     <span>转眼夏至</span>
@@ -11,7 +11,7 @@
                 <div class="ts-main-center-conner"><progressive-img src="" alt="" /></div>
             </router-link>
             <router-link to="./teaStateInside" class="ts-main-center">
-                <progressive-img class="ts-main-center-left-img" src="http://pa74otoy6.bkt.clouddn.com/case-light-logo.png" alt="" />
+                <progressive-img class="ts-main-center-left-img" src="http://pa74otoy6.bkt.clouddn.com/state-portrait.png" alt="" />
                 <div class="ts-main-center-right">
                     <span>这跟小确幸，您想要么？</span>
                     <span>转眼夏至</span>
@@ -19,7 +19,7 @@
                 <div class="ts-main-center-conner"><progressive-img src="" alt="" /></div>
             </router-link>
             <router-link to="./teaStateInside" class="ts-main-center">
-                <progressive-img class="ts-main-center-left-img" src="http://pa74otoy6.bkt.clouddn.com/case-light-logo.png" alt="" />
+                <progressive-img class="ts-main-center-left-img" src="http://pa74otoy6.bkt.clouddn.com/state-portrait.png" alt="" />
                 <div class="ts-main-center-right">
                     <span>这跟小确幸，您想要么？</span>
                     <span>转眼夏至</span>
@@ -27,7 +27,7 @@
                 <div class="ts-main-center-conner"><progressive-img src="" alt="" /></div>
             </router-link>
             <router-link to="./teaStateInside" class="ts-main-center">
-                <progressive-img class="ts-main-center-left-img" src="http://pa74otoy6.bkt.clouddn.com/case-light-logo.png" alt="" />
+                <progressive-img class="ts-main-center-left-img" src="http://pa74otoy6.bkt.clouddn.com/state-portrait.png" alt="" />
                 <div class="ts-main-center-right">
                     <span>这跟小确幸，您想要么？</span>
                     <span>转眼夏至</span>
@@ -39,7 +39,7 @@
 </template>
 
 
-<style lang="scss">
+<style lang="scss" scoped>
 .ts-container{
     height: 1000px;
     width: 100%;
@@ -54,7 +54,7 @@
     height: 600px;
     width: 600px;
     margin-left: 35%;
-    margin-top: -800px;//这块的设置存疑
+    margin-top: 15%;
     position: absolute;
     //background-color: red;
 }
@@ -65,11 +65,12 @@
     margin-top: 20px;
 }
 .ts-main-center-left-img{
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-    //margin-right: -50px;
-    //position: absolute;
+    width: 90px;
+    height: 90px;
+    border-radius: 45px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #9dc135;
 }
 .ts-main-center-right{
     height: 100px;

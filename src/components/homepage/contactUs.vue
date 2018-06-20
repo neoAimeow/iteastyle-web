@@ -4,7 +4,7 @@
         <div class="cu-main">
             <div class="cu-main-title">
                 <span>CONTACT US</span>
-                <img src="" alt="">
+                <img src="http://pa74otoy6.bkt.clouddn.com/plus.png" alt="">
                 <span>联系我们</span>
             </div>
             <div class="cu-main-title">
