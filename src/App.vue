@@ -72,6 +72,9 @@ export default {
 a {
   text-decoration: none;
 }
+a:hover{
+  color: #9dc135;
+}
 ul,li{
   list-style: none;
   margin: 0;

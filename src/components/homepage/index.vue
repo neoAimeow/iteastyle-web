@@ -70,7 +70,6 @@ export default {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    margin-top: 20px;
     background-color: #9dc135;
     height: 100px;
 }
