@@ -2,7 +2,7 @@
 <div class="productDisplay">
 
     <div class="pd-title">
-        <img class="pd-title-picture" src="http://pa74otoy6.bkt.clouddn.com/%E4%BA%A7%E5%93%81%E5%B1%95%E7%A4%BA%E6%A0%87%E9%A2%98%E8%83%8C%E6%99%AF%E5%9B%BE.png" alt="">
+        <img class="pd-title-picture" src="http://pa74otoy6.bkt.clouddn.com/pd-title-background.png" alt="">
         <div class="title-logo"><img src="http://pa74otoy6.bkt.clouddn.com/opaque-logo.png"></div>
     </div>
     <div class="pd-ct">           
