@@ -1,6 +1,6 @@
 <template>
     <div class="cu-container">
-        <img class="cu-bgimg" src="http://pa74otoy6.bkt.clouddn.com/contactus-background.png" alt="" />
+        <progressive-img class="cu-bgimg" src="http://pa74otoy6.bkt.clouddn.com/contactus-background.png" />
         <div class="cu-main">
             <div class="cu-main-title">
                 <span>CONTACT US</span>
@@ -17,14 +17,15 @@
                 <span>邮箱：iteastyle@126.com</span>
                 <span>网址：www.iteastyle.com</span>
             </div>
-        </div>
-        <div class="cu-foot">
+                    <div class="cu-foot">
             <el-amap  class="cu-foot-left" vid="amapDemo"></el-amap>
             <div class="cu-foot-right">
                 <progressive-img class="cu-foot-right-img" src="http://pa74otoy6.bkt.clouddn.com/contactus-QRcode.png" alt="" />
                 <progressive-img class="cu-foot-right-img" src="http://pa74otoy6.bkt.clouddn.com/contactus-QRcode.png" alt="" />
             </div>
         </div>
+        </div>
+
     </div>
 </template>
 
@@ -38,17 +39,21 @@
     align-items: center;
 }
 .cu-bgimg{
+    width: 100%;
+    min-width: 1440px;
     height: 700px;
     position: absolute;
     z-index: -1;
 }
 .cu-main{
+        position: absolute;
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .cu-main-title{
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
