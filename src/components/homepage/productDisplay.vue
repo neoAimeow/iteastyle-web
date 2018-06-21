@@ -64,7 +64,7 @@ export default {
 }
 
 .pd-title {
-  height: 230px;
+  height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -72,7 +72,7 @@ export default {
 
 .pd-title-picture {
   width: 100%;
-  height: 230px;
+  height: 200px;
   position: absolute;
   z-index: -1;
 }
@@ -119,5 +119,6 @@ export default {
   display: flex;
   justify-content: center;
 }
+
 
 </style>

@@ -15,7 +15,7 @@
 
 </div>
 </template>
-<style>
+<style scoped>
     .company-story{      
         margin:0;
         padding:0;

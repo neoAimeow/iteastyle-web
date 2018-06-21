@@ -30,7 +30,7 @@
 
     }
     .introduction-title{
-        height:220px;
+        height:200px;
         display: flex;
         align-items:center;
         justify-content:center;
@@ -38,9 +38,9 @@
     }
     .title-background{
         height: 200px;
-    width: 100%;
-    position: absolute;
-    z-index: -1;
+        width: 100%;
+        position: absolute;
+        z-index: -1;
     }
     .pd-picture{
         width:1020px;
