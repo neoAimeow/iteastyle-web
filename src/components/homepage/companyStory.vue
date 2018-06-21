@@ -25,8 +25,6 @@
         flex-direction: column;
         justify-content:center;
         align-items: center;
-        
-        
     }
     .companystory-background{
         height:1000px;
@@ -67,8 +65,6 @@
         padding-bottom: 40px;
     }
     video{
-        
-      
         width:1000px;
         height:600px;
         background-color:black;

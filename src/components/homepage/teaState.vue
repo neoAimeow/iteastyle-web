@@ -1,6 +1,6 @@
 <template>
     <div class="ts-container">
-        <img class="ts-bgimg" src="http://pa74otoy6.bkt.clouddn.com/tea-news-background.png" alt="" />
+        <progressive-img class="ts-bgimg" src="http://pa74otoy6.bkt.clouddn.com/tea-news-background.png"/>
         <div class="ts-main">
             <router-link to="./teaStateInside" class="ts-main-center">
                 <progressive-img class="ts-main-center-left-img" src="http://pa74otoy6.bkt.clouddn.com/state-portrait.png" alt="" />
@@ -44,6 +44,7 @@
     align-items: center;
 }
 .ts-bgimg{
+    min-width: 1440px;
     height: 1000px;
     width: 100%;//progressive-img不设置宽度整个图片就消失了
     position: absolute;
