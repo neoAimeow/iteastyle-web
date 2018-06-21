@@ -35,7 +35,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    //align-items: center;
 }
 .cu-bgimg{
     height: 700px;
@@ -66,7 +66,9 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 800px;
+    height: 300px;
+    margin-top: 40px;
+    //width: 800px;
     //background-color: red;
 }
 .cu-foot-left{
