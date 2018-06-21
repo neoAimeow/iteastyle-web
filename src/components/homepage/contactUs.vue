@@ -35,7 +35,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    //align-items: center;
+    align-items: center;
 }
 .cu-bgimg{
     height: 700px;
