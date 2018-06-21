@@ -1,16 +1,16 @@
 <template>
     <div class="index-container">
         <div class="index-head">
-            <el-carousel>
+            <el-carousel height="650px">
                 <el-carousel-item v-for="(item,key) in items" :key="key">
-                    <progressive-img :src="item" alt="" class="index-head-img" />
+                    <progressive-img :src="item" alt="" />
                 </el-carousel-item>
             </el-carousel>
         </div>
         <div class="index-main">
-            <img class="index-main-img" src="http://pa74otoy6.bkt.clouddn.com/index-TeaBreak.png" />
-            <img class="index-main-img" src="http://pa74otoy6.bkt.clouddn.com/index-TeaCeremony.png" />
-            <img class="index-main-img" src="http://pa74otoy6.bkt.clouddn.com/index-TeaArt.png" />
+            <progressive-img class="index-main-img" src="http://pa74otoy6.bkt.clouddn.com/index-TeaBreak.png" />
+            <progressive-img class="index-main-img" src="http://pa74otoy6.bkt.clouddn.com/index-TeaCeremony.png" />
+            <progressive-img class="index-main-img" src="http://pa74otoy6.bkt.clouddn.com/index-TeaArt.png" />
         </div>
         <div class="index-foot">
             <div class="index-foot-left">
@@ -46,28 +46,21 @@ export default {
 <style lang="scss">
 .index-head{
     margin-top: 20px;
-    text-align: center;
-    //background-color: red;
-}
-.index-head-img{
-    height: 800px;
-    width: 800px;
 }
 .index-main{
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-top: 40px;
-    background-color: blue;
-    width: 100%;
+    //background-color: blue;
 }
 .index-main-img{
-    height: 150px;
-    width: 200px;
+    margin-top: 10px;
+    height: 170px;
+    width: 250px;
     margin-left: 20px;
 }
 .index-foot{
-    //width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -86,7 +79,8 @@ export default {
 }
 .index-foot-right{
     margin-left: 50px;
-    height: 100px;
-    width: 250px;
+    margin-top: 10px;
+    height: 80px;
+    width: 180px;
 }
 </style>

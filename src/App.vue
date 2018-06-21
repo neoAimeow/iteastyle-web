@@ -15,18 +15,18 @@
       <div class="home-bottom">
         <div class="home-btm-top">
           <div class="home-btm-top-left" >
-            <ul class="home-btm-top-left-list" v-for="(data,key) in btmmenus" :key="key" :aria-label="key">
+            <ul v-for="(data,key) in btmmenus" :key="key" :aria-label="key">
               <li v-for="(menu,index) in data" :key="index">
-                <router-link :to="menu.path" :style="menu.style">{{menu.title}}</router-link>
+                <router-link class="home-btm-top-left-list" :to="menu.path" :style="menu.style">{{menu.title}}</router-link>
               </li>
             </ul>
           </div>
           <div class="home-btm-top-right">
-            <p>全国订购电话</p>
-            <p>400 688 6888</p>
+            <p style="font-size:12px;">全国订购电话</p>
+            <p style="font-size:27px;">400 688 6888</p>
           </div>
         </div>
-        <hr style="height:1px;border:none;border-top:1px solid #9dc135;margin-top:30px;" />
+        <div style="height:0.5px;background-color:#aeaeae;margin-top:40px;"></div>
         <div class="home-btm-foot">
           <ul class="home-btm-foot-left">
             <li>联系我们</li>
@@ -113,7 +113,8 @@ body,
 }
 .home-btm-top-left-list{
   color: #aeaeae;
-  margin-left: 20px;
+  margin-left: 40px;
+  font-size: 15px;
 }
 .home-btm-top-right{
   margin-left: 100px;
@@ -125,14 +126,17 @@ body,
   flex-direction: row;
   justify-content: space-around;
   height: 50px;
+  margin-top: 20px;
 }
 .home-btm-foot-left{
   display: flex;
   justify-content: center;
+  font-size: 15px;
 }
 .home-btm-foot-right{
   display: flex;
   justify-content: center;
+  font-size: 15px;
 }
 .home-btm-foot-left li{
   margin-left: 10px;

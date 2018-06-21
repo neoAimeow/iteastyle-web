@@ -1,6 +1,6 @@
 <template>
     <div class="ts-container">
-        <progressive-img class="ts-bgimg" src="http://pa74otoy6.bkt.clouddn.com/tea-news-background.png" alt="" />
+        <img class="ts-bgimg" src="http://pa74otoy6.bkt.clouddn.com/tea-news-background.png" alt="" />
         <div class="ts-main">
             <router-link to="./teaStateInside" class="ts-main-center">
                 <progressive-img class="ts-main-center-left-img" src="http://pa74otoy6.bkt.clouddn.com/state-portrait.png" alt="" />
@@ -38,7 +38,6 @@
 <style lang="scss" scoped>
 .ts-container{
     height: 1000px;
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -46,17 +45,15 @@
 }
 .ts-bgimg{
     height: 1000px;
-    width: 100%;
+    width: 100%;//progressive-img不设置宽度整个图片就消失了
     position: absolute;
     z-index: -1;
 }
 .ts-main{
-    height: 600px;
-    width: 600px;
-    //margin-left: 35%;
-    //margin-top: 15%;
-    position: absolute;
+    width: 500px;
     //background-color: red;
+    display: flex;
+    flex-direction: column;
 }
 .ts-main-center{
     display: flex;
@@ -79,13 +76,16 @@
     z-index: -1;
     width: 500px;
     margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .ts-main-center-right span{
     margin-left: 80px;
     color: white;
 }
 .ts-main-center-conner{
-    background-color: greenyellow;
+    background-color: #9dc135;
     height: 25px;
     width: 25px;
     margin-top: 75px;
