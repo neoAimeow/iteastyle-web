@@ -2,7 +2,7 @@
 <div class="productDisplay">
 
     <div class="pd-title">
-        <img class="pd-title-picture" src="http://pa74otoy6.bkt.clouddn.com/pd-title-background.png" alt="">
+        <progressive-img class="pd-title-picture" src="http://pa74otoy6.bkt.clouddn.com/pd-title-background.png" />
         <div class="title-logo"><img src="http://pa74otoy6.bkt.clouddn.com/opaque-logo.png"></div>
     </div>
     <div class="pd-ct">           
@@ -64,17 +64,18 @@ export default {
 }
 
 .pd-title {
-  height: 200px;
+  height: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .pd-title-picture {
-  width: 100%;
-  height: 200px;
-  position: absolute;
-  z-index: -1;
+    min-width: 1300px;
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    z-index: -1;
 }
 
 .pd-title-logo {

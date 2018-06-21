@@ -3,7 +3,7 @@
         <div class="index-head">
             <el-carousel :height="screenWidth/3+'px'">
                 <el-carousel-item v-for="(item,key) in items" :key="key">
-                    <progressive-img :src="item" alt="" />
+                    <progressive-img :src="item" />
                 </el-carousel-item>
             </el-carousel>
         </div>
@@ -14,12 +14,12 @@
         </div>
         <div class="index-foot">
             <div class="index-foot-left">
-                <img class="index-foot-img" src="http://pa74otoy6.bkt.clouddn.com/index-foot-img1.png" alt="" />
-                <img class="index-foot-img" src="http://pa74otoy6.bkt.clouddn.com/index-foot-img2.png" alt="" />
-                <img class="index-foot-img" src="http://pa74otoy6.bkt.clouddn.com/index-foot-img3.png" alt="" />
-                <img class="index-foot-img" src="http://pa74otoy6.bkt.clouddn.com/index-foot-img4.png" alt="" />
+                <img class="index-foot-img" src="http://pa74otoy6.bkt.clouddn.com/index-foot-img1.png" />
+                <img class="index-foot-img" src="http://pa74otoy6.bkt.clouddn.com/index-foot-img2.png"  />
+                <img class="index-foot-img" src="http://pa74otoy6.bkt.clouddn.com/index-foot-img3.png"  />
+                <img class="index-foot-img" src="http://pa74otoy6.bkt.clouddn.com/index-foot-img4.png"  />
             </div>
-            <img class="index-foot-right" src="http://pa74otoy6.bkt.clouddn.com/index-foot-right.png" alt="" />
+            <img class="index-foot-right" src="http://pa74otoy6.bkt.clouddn.com/index-foot-right.png" />
         </div>
     </div>
 </template>
@@ -53,8 +53,6 @@ export default {
         this.timer = true;
         let that = this;
         setTimeout(function() {
-          // that.screenWidth = that.$store.state.canvasWidth
-          that.init();
           that.timer = false;
         }, 400);
       }
@@ -73,6 +71,8 @@ export default {
   flex-direction: row;
   justify-content: center;
   margin-top: 40px;
+  height:180px;
+  width: 100%;
   //background-color: blue;
 }
 .index-main-img {
