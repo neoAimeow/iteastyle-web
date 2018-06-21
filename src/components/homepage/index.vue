@@ -1,7 +1,7 @@
 <template>
     <div class="index-container">
         <div class="index-head">
-            <el-carousel height="650px">
+            <el-carousel :height="screenWidth/5+'px'">
                 <el-carousel-item v-for="(item,key) in items" :key="key">
                     <progressive-img :src="item" alt="" />
                 </el-carousel-item>
@@ -25,62 +25,83 @@
 </template>
 
 <script>
-
 export default {
-    data(){
-        return {
-            items:[
-                'http://pa74otoy6.bkt.clouddn.com/%E6%8A%B9%E8%8C%B6%E8%B4%B9%E5%8D%97%E9%9B%AA%E4%BA%A7%E5%93%81%E5%86%85%E9%A1%B5%E7%BD%91%E7%BB%9C%E5%9B%BE%E7%89%87.jpg',
-                'http://pa74otoy6.bkt.clouddn.com/%E6%8A%B9%E8%8C%B6%E8%B4%B9%E5%8D%97%E9%9B%AA%E4%BA%A7%E5%93%81%E5%86%85%E9%A1%B5%E7%BD%91%E7%BB%9C%E5%9B%BE%E7%89%87.jpg',
-                'http://pa74otoy6.bkt.clouddn.com/%E6%8A%B9%E8%8C%B6%E8%B4%B9%E5%8D%97%E9%9B%AA%E4%BA%A7%E5%93%81%E5%86%85%E9%A1%B5%E7%BD%91%E7%BB%9C%E5%9B%BE%E7%89%87.jpg'
-            ]
-        }
-    },
-    components: {
-        
+  data() {
+    return {
+      items: [
+        "http://pa74otoy6.bkt.clouddn.com/%E6%8A%B9%E8%8C%B6%E8%B4%B9%E5%8D%97%E9%9B%AA%E4%BA%A7%E5%93%81%E5%86%85%E9%A1%B5%E7%BD%91%E7%BB%9C%E5%9B%BE%E7%89%87.jpg",
+        "http://pa74otoy6.bkt.clouddn.com/%E6%8A%B9%E8%8C%B6%E8%B4%B9%E5%8D%97%E9%9B%AA%E4%BA%A7%E5%93%81%E5%86%85%E9%A1%B5%E7%BD%91%E7%BB%9C%E5%9B%BE%E7%89%87.jpg",
+        "http://pa74otoy6.bkt.clouddn.com/%E6%8A%B9%E8%8C%B6%E8%B4%B9%E5%8D%97%E9%9B%AA%E4%BA%A7%E5%93%81%E5%86%85%E9%A1%B5%E7%BD%91%E7%BB%9C%E5%9B%BE%E7%89%87.jpg"
+      ],
+      screenWidth: document.body.clientWidth
+    };
+  },
+  components: {},
+  mounted() {
+    const that = this;
+    window.onresize = () => {
+      return (() => {
+        window.screenWidth = document.body.clientWidth;
+        that.screenWidth = window.screenWidth;
+      })();
+    };
+  },
+  watch: {
+    screenWidth(val) {
+      if (!this.timer) {
+        this.screenWidth = val;
+        this.timer = true;
+        let that = this;
+        setTimeout(function() {
+          // that.screenWidth = that.$store.state.canvasWidth
+          that.init();
+          that.timer = false;
+        }, 400);
+      }
     }
-}
+  }
+};
 </script>
 
 
 <style lang="scss">
-.index-head{
-    margin-top: 20px;
+.index-head {
+  margin-top: 20px;
 }
-.index-main{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 40px;
-    //background-color: blue;
+.index-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 40px;
+  //background-color: blue;
 }
-.index-main-img{
-    margin-top: 10px;
-    height: 170px;
-    width: 250px;
-    margin-left: 20px;
+.index-main-img {
+  margin-top: 10px;
+  height: 170px;
+  width: 250px;
+  margin-left: 20px;
 }
-.index-foot{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    background-color: #9dc135;
-    height: 100px;
-    margin-top: 40px;
+.index-foot {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: #9dc135;
+  height: 100px;
+  margin-top: 40px;
 }
-.index-foot-img{
-    height: 100px;
-    width: 180px;
+.index-foot-img {
+  height: 100px;
+  width: 180px;
 }
-.index-foot-left{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.index-foot-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
-.index-foot-right{
-    margin-left: 50px;
-    margin-top: 10px;
-    height: 80px;
-    width: 180px;
+.index-foot-right {
+  margin-left: 50px;
+  margin-top: 10px;
+  height: 80px;
+  width: 180px;
 }
 </style>
