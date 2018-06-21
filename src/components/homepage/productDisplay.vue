@@ -84,8 +84,6 @@ export default {
 .pd-ct {
   margin: 0 auto;
   max-width: 1000px;
-
-  /*background-color: red;*/
   display: flex;
 
   flex-wrap: wrap;
