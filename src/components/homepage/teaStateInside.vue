@@ -1,7 +1,7 @@
 <template>
     <div class="tsI-container">
         <div class="tsI-head">
-            <progressive-img class="tsI-head-bgimg" src="http://pa74otoy6.bkt.clouddn.com/pd-case-DT-Details-background.png" alt="" />
+            <img class="tsI-head-bgimg" src="http://pa74otoy6.bkt.clouddn.com/pd-case-DT-Details-background.png" alt="" />
             <img class="tsI-head-logo" src="http://pa74otoy6.bkt.clouddn.com/case-light-logo.png" alt="" />
         </div>
         <div class="tsI-main">
@@ -57,11 +57,12 @@
 <style lang="scss" scoped>
 .tsI-container{
     height: 900px;
-    width: 100%;
 }
 .tsI-head{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     height: 200px;
-    width: 100%;
 }
 .tsI-head-bgimg{
     height: 200px;
@@ -72,18 +73,15 @@
 .tsI-head-logo{
     height: 100px;
     width: 100px;
-    margin-left: 46%;
-    margin-top: 3%;
+    margin-top: 50px;
 }
 .tsI-main-head{
-    width: 30%;
-    margin: 0 auto;
     text-align: center;
 }
 .tsI-main-body{
-    height: 600px;
-    width: 600px;
-    margin: 0 auto;
+    //height: 600px;
+    //width: 600px;
+    //margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -104,6 +102,8 @@
     margin-top: 15px;
 }
 .tsI-main-body-right{
+    display: flex;
+    flex-direction: column;
     margin-top: 30px;
     margin-left: 20px;
 }
