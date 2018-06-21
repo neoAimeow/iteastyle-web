@@ -66,13 +66,13 @@
 }
 .case-top{
     height:200px;  
-    
-        display: flex;
-        align-items:center;
-        justify-content:center;     
+    display: flex;
+    align-items:center;
+    justify-content:center;     
 }
 
 .top-background{
+    min-width: 1300px;
     height: 200px;
     width: 100%;
     position: absolute;

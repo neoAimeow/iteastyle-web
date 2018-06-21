@@ -37,6 +37,7 @@
        
     }
     .title-background{
+        min-width: 1300px;
         height:200px;
         width: 100%;
         position:absolute;

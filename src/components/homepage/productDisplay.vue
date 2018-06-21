@@ -87,7 +87,7 @@ a{
 
 .pd-ct {
   margin: 0 auto;
-  width: 1000px;
+  max-width: 1000px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
