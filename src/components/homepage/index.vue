@@ -1,7 +1,7 @@
 <template>
     <div class="index-container">
         <div class="index-head">
-            <el-carousel :height="screenWidth/5+'px'">
+            <el-carousel :height="screenWidth/3+'px'">
                 <el-carousel-item v-for="(item,key) in items" :key="key">
                     <progressive-img :src="item" alt="" />
                 </el-carousel-item>
