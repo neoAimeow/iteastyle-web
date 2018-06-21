@@ -84,6 +84,9 @@
 </div>
 </template>
 <style scoped>
+a{
+    color:black;
+}
     .classicCase{
         margin:0;
         padding:0;
@@ -145,4 +148,5 @@
         font-size:10px;
         line-height: 0.8;
     }
+     
 </style>
