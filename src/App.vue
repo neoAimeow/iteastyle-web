@@ -5,7 +5,7 @@
         <div class="home-head-left">
           <img class="home-head-left-img" src="http://pa74otoy6.bkt.clouddn.com/logo.png" alt="公司logo">
         </div>
-        <el-menu class="el-menu-demo" active-text-color="#81b316" default-active="首页" :router="true" mode="horizontal" >
+        <el-menu class="el-menu-demo" active-text-color="#81b316" background-color="#ffffff" default-active="首页" :router="true" mode="horizontal" >
           <el-menu-item :index="data.title" v-for="(data,key) in menus" :key="key" :label="key" :route="data.path">
               {{data.title}}
           </el-menu-item>
