@@ -39,6 +39,10 @@
 .ts-container{
     height: 1000px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .ts-bgimg{
     height: 1000px;
@@ -49,8 +53,8 @@
 .ts-main{
     height: 600px;
     width: 600px;
-    margin-left: 35%;
-    margin-top: 15%;
+    //margin-left: 35%;
+    //margin-top: 15%;
     position: absolute;
     //background-color: red;
 }

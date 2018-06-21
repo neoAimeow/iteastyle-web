@@ -8,9 +8,9 @@
             </el-carousel>
         </div>
         <div class="index-main">
-            <progressive-img class="index-main-img" src="http://pa74otoy6.bkt.clouddn.com/index-TeaBreak.png" />
-            <progressive-img class="index-main-img" src="http://pa74otoy6.bkt.clouddn.com/index-TeaCeremony.png" />
-            <progressive-img class="index-main-img" src="http://pa74otoy6.bkt.clouddn.com/index-TeaArt.png" />
+            <img class="index-main-img" src="http://pa74otoy6.bkt.clouddn.com/index-TeaBreak.png" />
+            <img class="index-main-img" src="http://pa74otoy6.bkt.clouddn.com/index-TeaCeremony.png" />
+            <img class="index-main-img" src="http://pa74otoy6.bkt.clouddn.com/index-TeaArt.png" />
         </div>
         <div class="index-foot">
             <div class="index-foot-left">
@@ -58,20 +58,22 @@ export default {
     flex-direction: row;
     justify-content: center;
     margin-top: 40px;
-    //background-color: blue;
+    background-color: blue;
+    width: 100%;
 }
 .index-main-img{
-    height: 180px;
+    height: 150px;
     width: 200px;
     margin-left: 20px;
 }
 .index-foot{
-    width: 100%;
+    //width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     background-color: #9dc135;
     height: 100px;
+    margin-top: 40px;
 }
 .index-foot-img{
     height: 100px;

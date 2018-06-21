@@ -34,17 +34,25 @@
 <style lang="scss" scoped>
 .cu-container{
     height: 700px;
-    width: 100%;
+    //width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .cu-bgimg{
     height: 700px;
     width: 100%;
     position: absolute;
     z-index: -1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 .cu-main{
-    margin-top: 20px;
-    margin-left: 45%;
+    top: 100px;
+    left: 45%;
     //display: flex;
     //flex-direction: column;
     //align-items: center;
@@ -64,9 +72,11 @@
 .cu-foot{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    margin-top: 20%;//这几个负数的设置都存在疑问
-    margin-left: 35%;
+    top: 45%;
+    //left: 35%;
 }
 .cu-foot-left{
     margin-top: 10px;

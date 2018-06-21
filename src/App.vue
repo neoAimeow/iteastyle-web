@@ -2,27 +2,31 @@
   <div id="app">
     <div class="home-container">
       <div class="home-head">
-        <div class="home-head-left"><img src="http://pa74otoy6.bkt.clouddn.com/case-light-logo.png" alt="公司logo" style="height:50px;"></div>
-        <div class="home-head-right">
-          <router-link class="home-head-right-list" :index="data.title" v-for="(data,key) in menus" :key="key" :label="key" :to="data.path">
-            {{data.title}}
-          </router-link>
+        <div class="home-head-left">
+          <img class="home-head-left-img" src="http://pa74otoy6.bkt.clouddn.com/case-light-logo.png" alt="公司logo">
         </div>
+        <el-menu class="el-menu-demo" active-text-color="#81b316" default-active="首页" :router="true" mode="horizontal" >
+          <el-menu-item :index="data.title" v-for="(data,key) in menus" :key="key" :label="key" :route="data.path">
+              {{data.title}}
+          </el-menu-item>
+        </el-menu>
       </div>
       <div class="home-main"><router-view></router-view></div>
       <div class="home-bottom">
         <div class="home-btm-top">
-          <ul class="home-btm-top-left" v-for="(data,key) in btmmenus" :key="key" :aria-label="key">
-            <li v-for="(menu,index) in data" :key="index">
-              <router-link :to="menu.path" class="home-btm-top-left-list" :style="menu.style">{{menu.title}}</router-link>
-            </li>
-          </ul>
+          <div class="home-btm-top-left" >
+            <ul class="home-btm-top-left-list" v-for="(data,key) in btmmenus" :key="key" :aria-label="key">
+              <li v-for="(menu,index) in data" :key="index">
+                <router-link :to="menu.path" :style="menu.style">{{menu.title}}</router-link>
+              </li>
+            </ul>
+          </div>
           <div class="home-btm-top-right">
             <p>全国订购电话</p>
             <p>400 688 6888</p>
           </div>
         </div>
-        <hr style="height:1px;border:none;border-top:1px solid #9dc135;" />
+        <hr style="height:1px;border:none;border-top:1px solid #9dc135;margin-top:30px;" />
         <div class="home-btm-foot">
           <ul class="home-btm-foot-left">
             <li>联系我们</li>
@@ -72,9 +76,6 @@ export default {
 a {
   text-decoration: none;
 }
-a:hover{
-  color: #9dc135;
-}
 ul,li{
   list-style: none;
   margin: 0;
@@ -84,43 +85,35 @@ html,
 body,
 #app{
   margin:0;
+  min-width: 1000px;
 }
 .home-head{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  min-width: 1000px;
-  //margin-top: 20px;
-  margin: 0 auto;
+  height: 60px;
 }
-/*.home-head-left{
-  //background-color: red;
-}*/
-.home-head-right{
-  display: flex;
-  flex-direction: row;
-  margin-top: 25px;
+.home-head-left{
+  height: 60px;
 }
-.home-head-right-list{
-  margin-left: 20px;
-  color: #626262;
-}
-.home-bottom{
-  min-width: 1000px;
+.home-head-left-img{
+  height: 60px;
 }
 .home-btm-top{
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-right: 20px;
-  //width: 1000px;
-  margin: 0 auto;
+  margin-top: 50px;
 }
 .home-btm-top-left{
-  margin-right: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 .home-btm-top-left-list{
   color: #aeaeae;
+  margin-left: 20px;
 }
 .home-btm-top-right{
   margin-left: 100px;
@@ -131,8 +124,7 @@ body,
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  //width: 1000px;
-  margin: 0 auto;
+  height: 50px;
 }
 .home-btm-foot-left{
   display: flex;
