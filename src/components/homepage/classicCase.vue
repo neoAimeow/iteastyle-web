@@ -1,6 +1,6 @@
 <template>
     <div class="classicCase">
-    <div>
+    
     <router-link to="/homepage/classicCaseInside1">
     <div class="case">       
         <div class="case-picture">
@@ -81,7 +81,7 @@
     </div>
     </router-link>
     </div>
-</div>
+
 </template>
 <style scoped>
 a{
@@ -92,6 +92,7 @@ a{
         padding:0;
         display: flex;
         flex-direction: row;
+       
         margin: 0 auto;
 
     }
