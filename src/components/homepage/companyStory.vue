@@ -1,6 +1,6 @@
 <template>
 <div class="company-story">
-    <img class="companystory-background" src="http://pa74otoy6.bkt.clouddn.com/%E5%85%AC%E5%8F%B8%E6%95%85%E4%BA%8B%E8%83%8C%E6%99%AF%E5%9B%BE.png" alt="">
+    <progressive-img class="companystory-background" src="http://pa74otoy6.bkt.clouddn.com/%E5%85%AC%E5%8F%B8%E6%95%85%E4%BA%8B%E8%83%8C%E6%99%AF%E5%9B%BE.png" />
     <div class="story">
         <div class="story-title">
             <span class="title-english">OUR STORY</span>
@@ -34,7 +34,8 @@
         z-index: -1;
         margin-left:0px;
         margin-top:0px;
-
+        width: 100%;
+        min-width: 1440px;
        
     }
     .story{    
