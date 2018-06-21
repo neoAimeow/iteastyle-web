@@ -71,15 +71,13 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 300px;
+    height: 230px;
     margin-top: 40px;
-    //width: 800px;
-    //background-color: red;
+    margin-left:100px;
 }
 .cu-foot-left{
     border: 8px solid #9dc135;
     margin-top: 10px;
-    height: 350px;
     width: 400px;
 }
 .cu-foot-right{
