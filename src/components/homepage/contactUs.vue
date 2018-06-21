@@ -17,8 +17,8 @@
                 <span>邮箱：iteastyle@126.com</span>
                 <span>网址：www.iteastyle.com</span>
             </div>
-                    <div class="cu-foot">
-            <el-amap  class="cu-foot-left" vid="amapDemo"></el-amap>
+            <div class="cu-foot">
+            <el-amap class="cu-foot-left" vid="amapDemo"></el-amap>
             <div class="cu-foot-right">
                 <progressive-img class="cu-foot-right-img" src="http://pa74otoy6.bkt.clouddn.com/contactus-QRcode.png" alt="" />
                 <progressive-img class="cu-foot-right-img" src="http://pa74otoy6.bkt.clouddn.com/contactus-QRcode.png" alt="" />
@@ -31,65 +31,64 @@
 
 
 <style lang="scss">
-.cu-container{
-    height: 700px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.cu-container {
+  height: 700px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.cu-bgimg{
-    width: 100%;
-    min-width: 1440px;
-    height: 700px;
-    position: absolute;
-    z-index: -1;
+.cu-bgimg {
+  width: 100%;
+  min-width: 1440px;
+  height: 700px;
+  position: absolute;
+  z-index: -1;
 }
-.cu-main{
-        position: absolute;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.cu-main {
+  position: absolute;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.cu-main-title{
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin-top: 40px;
+.cu-main-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 40px;
 }
-.cu-main-content{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 20px;
+.cu-main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 20px;
 }
-.cu-foot{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    height: 230px;
-    margin-top: 40px;
-    margin-left:100px;
+.cu-foot {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 230px;
+  margin-top: 40px;
+  margin-left: 100px;
 }
-.cu-foot-left{
-    border: 8px solid #9dc135;
-    margin-top: 10px;
-    width: 400px;
+.cu-foot-left {
+  border: 8px solid #9dc135;
+  margin-top: 10px;
+  width: 400px;
 }
-.cu-foot-right{
-    margin-left: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.cu-foot-right {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.cu-foot-right-img{
-    border: 8px solid #9dc135;
-    margin-top: 10px;
-    height: 100px;
-    width: 100px;
+.cu-foot-right-img {
+  border: 8px solid #9dc135;
+  margin-top: 10px;
+  height: 100px;
+  width: 100px;
 }
 </style>

@@ -64,7 +64,6 @@ export default {
 
 <style lang="scss">
 .index-head {
-  margin-top: 20px;
 }
 .index-main {
   display: flex;
