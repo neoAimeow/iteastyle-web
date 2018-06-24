@@ -2,7 +2,7 @@
     <div class="index-container">
         <div class="index-head">
             <el-carousel :height="screenWidth/3+'px'">
-                <el-carousel-item v-for="(item,key) in items" :key="key">
+                <el-carousel-item v-for="(item,key) in items.headerImages" :key="key">
                     <progressive-img :src="item" />
                 </el-carousel-item>
             </el-carousel>
@@ -35,11 +35,7 @@
 export default {
   data() {
     return {
-      items: [
-        "http://pa74otoy6.bkt.clouddn.com/AfternoonTea.jpeg",
-        "http://pa74otoy6.bkt.clouddn.com/AfternoonTea.jpeg",
-        "http://pa74otoy6.bkt.clouddn.com/AfternoonTea.jpeg"
-      ],
+      items: {},
       screenWidth: document.body.clientWidth
     };
   },
@@ -64,6 +60,20 @@ export default {
         }, 400);
       }
     }
+  },
+  created: function() {
+    var that = this;
+     this.$ajax.get('/homepage', {
+
+    })
+    .then(function (response) {
+      console.log(response.data);
+      that.info = response.data.model;
+      that.center = [response.data.model.longitude , response.data.model.latitude]
+    })
+    .catch(function (response) {
+      console.log(response);
+    });
   }
 };
 </script>
