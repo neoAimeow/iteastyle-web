@@ -13,7 +13,7 @@
                     <img src="http://pa74otoy6.bkt.clouddn.com/opaque-logo.png" alt="" class="logo">
                     <span>茶歇服务</span>
                 </div>
-                <span>英菲尼迪国博车展茶歇</span>    
+                <span class="name">英菲尼迪国博车展茶歇</span>    
             </div>
             <img  class="pd-img" :src="img" alt="">  
         </div>
@@ -97,5 +97,8 @@ export default {
         width:340px;
         height:220px;
     }
-    
+    .name{
+        width:200px;
+        text-align: center;
+    }
 </style>
