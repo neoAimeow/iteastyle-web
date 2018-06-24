@@ -13,7 +13,8 @@
    <div class="pd-page">
         <el-pagination
             layout="prev, pager, next"
-            :total="50" :page-size="6">
+            :total="totalCount" :page-size="pageSize" :current-page="currentPage" @current-change="currentPageChanged"
+>
         </el-pagination>
    </div>
 
@@ -27,26 +28,40 @@ export default {
             items:[
 
             ],
-            headerImageUrl:''
+            headerImageUrl:'',
+            currentPage:1,
+            totalCount:0,
+            pageSize:6
         }
  },
 created: function() {
-    var that = this;
-     this.$ajax.get('/productShower', {
-        params: {
-            page:1,
-            pageSize:6
-        }
+    this.request();
+  },
+  methods: {
+      currentPageChanged(val) {
+          this.currentPage = val;
+              this.request();
+        console.log(`当前页: ${val}`);
+      },
+      request() {
+              var that = this;
+            this.$ajax.get('/productShower', {
+                params: {
+                    page:this.currentPage,
+                    pageSize:this.pageSize
+                }
 
-    })
-    .then(function (response) {
-      console.log(response);
-      that.items = response.data.model.products;
-      that.headerImageUrl = response.data.model.headerImageUrl
-    })
-    .catch(function (response) {
-      console.log(response);
-    });
+            })
+            .then(function (response) {
+            console.log(response);
+            that.items = response.data.model.products;
+            that.totalCount = response.data.model.totalCount
+            that.headerImageUrl = response.data.model.headerImageUrl
+            })
+            .catch(function (response) {
+            console.log(response);
+            });
+      }
   }
 }
 </script>
