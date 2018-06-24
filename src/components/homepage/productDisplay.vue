@@ -111,6 +111,7 @@ a{
 }
 
 .product-name {
+  width:265px;
   text-align: center;
   margin: 15px;
   color: #626262;
