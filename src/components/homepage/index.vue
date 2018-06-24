@@ -2,22 +2,19 @@
     <div class="index-container">
         <div class="index-head">
             <el-carousel :height="screenWidth/3+'px'">
-                <el-carousel-item v-for="(item,key) in items.headerImages" :key="key">
-                    <progressive-img :src="item" />
+                <el-carousel-item v-for="(item1,key) in items.headerImages" :key="key">
+                    <progressive-img :src="item1" />
                 </el-carousel-item>
             </el-carousel>
         </div>
         <div class="index-main">
-            <progressive-img class="index-main-img" src="http://pa74otoy6.bkt.clouddn.com/index-TeaBreak.png" />
-            <progressive-img class="index-main-img" src="http://pa74otoy6.bkt.clouddn.com/index-TeaCeremony.png" />
-            <progressive-img class="index-main-img" src="http://pa74otoy6.bkt.clouddn.com/index-TeaArt.png" />
+          <div v-for="(item2,key) in items.serviceImages" :key="key">
+            <progressive-img class="index-main-img" :src="item2" />
+          </div>
         </div>
         <div class="index-foot">
-            <div class="index-foot-left">
-                <img class="index-foot-img" src="http://pa74otoy6.bkt.clouddn.com/index-foot-img1.png" />
-                <img class="index-foot-img" src="http://pa74otoy6.bkt.clouddn.com/index-foot-img2.png"  />
-                <img class="index-foot-img" src="http://pa74otoy6.bkt.clouddn.com/index-foot-img3.png"  />
-                <img class="index-foot-img" src="http://pa74otoy6.bkt.clouddn.com/index-foot-img4.png"  />
+            <div class="index-foot-left" v-for="(item3,key) in items.showerImages" :key="key">
+                <img class="index-foot-img" :src="item3" />
             </div>
             <div class="index-foot-right">
               <span>杭式下午茶，有初恋的温度</span><br>
