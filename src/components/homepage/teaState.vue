@@ -44,7 +44,7 @@ export default {
       },
       request() {
            var that = this;
-            this.$ajax.get('/getPosts?page=1&pageSize=10', {
+            this.$ajax.get('/getPosts', {
                 params: {
                     page:this.currentPage,
                     pageSize:this.pageSize
