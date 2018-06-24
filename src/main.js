@@ -5,6 +5,7 @@ import App from './App'
 import router from './router'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css';
+import axios from 'axios'
 
 import VueProgressiveImage from 'vue-progressive-image'
 import VueAMap from 'vue-amap';
@@ -13,6 +14,13 @@ Vue.config.productionTip = false
 Vue.use(ElementUI)
 Vue.use(VueProgressiveImage)
 Vue.use(VueAMap)
+
+let request = axios.create({
+  baseURL: 'https://iteastyle-api.aimeow.com/service',
+  timeout: 1000
+});
+
+Vue.prototype.$ajax = request
 
 /* eslint-disable no-new */
 VueAMap.initAMapApiLoader({

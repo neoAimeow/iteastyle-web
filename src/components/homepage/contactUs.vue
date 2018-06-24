@@ -29,6 +29,28 @@
     </div>
 </template>
 
+<script>
+export default {
+  data() {
+    return {
+
+    }
+  },
+  mounted: function() {
+     this.$ajax.post('/contactUsData', {
+       
+    })
+    .then(function (response) {
+      console.log(response);
+    })
+    .catch(function (response) {
+      console.log(response);
+    });
+  }
+}
+</script>
+
+
 
 <style lang="scss">
 .cu-container {
