@@ -39,7 +39,7 @@ export default {
       zoom:14
     }
   },
-  mounted: function() {
+  created: function() {
     var that = this;
      this.$ajax.get('/contactUsData', {
 
