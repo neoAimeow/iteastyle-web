@@ -1,27 +1,27 @@
 <template>
 <div class="productinside">
-    <div class="introduction-title">
+    <div class="pdinside-title">
         <progressive-img class="title-background" src="http://pa74otoy6.bkt.clouddn.com/pd-case-DT-Details-background.png" alt="" />
         <img src="http://pa74otoy6.bkt.clouddn.com/case-light-logo.png">
     </div>
-<div class="pd">
-    <div class="pd-picture">
-        <div class="pd-img" v-for="(img,key) in imgs" :key="key" >          
-            <div v-if="key==1" class="pd-name">
-                <div class="title">
-                    <img src="http://pa74otoy6.bkt.clouddn.com/opaque-logo.png" alt="" class="logo">
-                    <span>茶饮茶点</span>
+
+    <div class="pdinside-body">
+        <div class="body-img" v-for="(img,key) in imgs" :key="key" >          
+            <div v-if="key==1" class="body-name" >
+                <div class="name-top">
+                    <img class="logo" src="http://pa74otoy6.bkt.clouddn.com/opaque-logo.png" alt="">
+                    <span class="name-bottom">茶饮茶点</span>
                 </div>
-                <span class="name">抹茶费南雪</span>
+                <span class="pd-name">抹茶费南雪</span>
             </div>
-            <img  class="pd-img" :src="img" alt="">   
-        </div>     
+            <img  class="body-img" :src="img" alt="">
+        </div>
     </div>
-       
+
     <div class="pd-introduction">
         <span>抹茶费南雪是一种小糕点<br>就爱这一抹绿啊<br>高油高糖什么的就是好吃<br>抹茶控溺爱的小宠物～</span>
     </div>
-</div>
+    
 </div>
 </template>
 
@@ -32,11 +32,11 @@ export default {
             imgs:[
                     "http://pa74otoy6.bkt.clouddn.com/product-inside-picture1.png",
                     "http://pa74otoy6.bkt.clouddn.com/product-inside-picture2.png",
-                    "http://pa74otoy6.bkt.clouddn.com/product-inside-picture1.png",
                     "http://pa74otoy6.bkt.clouddn.com/product-inside-picture2.png",
                     "http://pa74otoy6.bkt.clouddn.com/product-inside-picture1.png",
-                    "http://pa74otoy6.bkt.clouddn.com/product-inside-picture2.png"
-
+                    "http://pa74otoy6.bkt.clouddn.com/product-inside-picture2.png",
+                    "http://pa74otoy6.bkt.clouddn.com/product-inside-picture1.png"
+                    
                   ]
         }
     }
@@ -49,7 +49,7 @@ export default {
         padding:0;
     }
 
-    .introduction-title{
+    .pdinside-title{
         height:200px;
         display: flex;
         align-items:center;
@@ -65,16 +65,15 @@ export default {
         z-index: -1;
     }
 
-    .pd-picture{
+    .pdinside-body{
         width:1020px;       
         display:flex;
         flex-direction: row;
         flex-wrap: wrap;
-        margin-bottom: 20px;
-
+        margin:0 auto;  
     }
 
-    .pd-name{
+    .body-name{
         width:340px;
         height:220px;       
         font-size: 20px;
@@ -87,12 +86,12 @@ export default {
 
     }
     
-    .name{
+    .pd-name{
         width:200px;
         text-align: center;
     }
 
-    .title{
+    .name-top{
         width:205px;
         height:50px;
         border:1px dotted white;
@@ -103,16 +102,16 @@ export default {
         margin-bottom: 10px;
     }
 
-    .title img{
+    .logo{
         width:40px;
         height:auto;
     }
 
-    .title span{
+    .name-bottom{
         margin-left:5px;
     }
 
-    .pd-img{
+    .body-img{
         width:340px;
         height:220px;
     }
@@ -121,7 +120,8 @@ export default {
         border:1px dotted #e0e0e0;
         width:1020px;
         margin:0 auto;       
-        margin-bottom:40px;        
+        margin-bottom:40px; 
+        margin-top:40px;       
     }
 
     .pd-introduction span{
@@ -133,11 +133,4 @@ export default {
        text-align: center;
     }
     
-    .pd{
-        
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
 </style>
