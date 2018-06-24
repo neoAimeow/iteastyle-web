@@ -87,8 +87,6 @@ export default {
 span {
   font-family: iconfont;
 }
-.index-head {
-}
 .index-main {
   display: flex;
   flex-direction: row;

@@ -1,39 +1,44 @@
 <template>
     <div class="ts-container">
-        <progressive-img class="ts-bgimg" src="http://pa74otoy6.bkt.clouddn.com/tea-news-background.png"/>
+        <progressive-img class="ts-bgimg" :src="backgroundImageUrl"/>
         <div class="ts-main">
-            <router-link to="./teaStateInside" class="ts-main-center">
-                <progressive-img class="ts-main-center-left-img" src="http://pa74otoy6.bkt.clouddn.com/state-portrait.png" alt="" />
-                <div class="ts-main-center-right">
-                    <span style="color:#9dc135;">这份小确幸，您想要么？</span>
-                    <span>转眼夏至</span>
-                </div>
-            </router-link>
-            <router-link to="./teaStateInside" class="ts-main-center">
-                <progressive-img class="ts-main-center-left-img" src="http://pa74otoy6.bkt.clouddn.com/state-portrait.png" alt="" />
-                <div class="ts-main-center-right">
-                    <span style="color:#9dc135;">这份小确幸，您想要么？</span>
-                    <span>转眼夏至</span>
-                </div>
-            </router-link>
-            <router-link to="./teaStateInside" class="ts-main-center">
-                <progressive-img class="ts-main-center-left-img" src="http://pa74otoy6.bkt.clouddn.com/state-portrait.png" alt="" />
-                <div class="ts-main-center-right">
-                    <span style="color:#9dc135;">这份小确幸，您想要么？</span>
-                    <span>转眼夏至</span>
-                </div>
-            </router-link>
-            <router-link to="./teaStateInside" class="ts-main-center">
-                <progressive-img class="ts-main-center-left-img" src="http://pa74otoy6.bkt.clouddn.com/state-portrait.png" alt="" />
-                <div class="ts-main-center-right">
-                    <span style="color:#9dc135;">这份小确幸，您想要么？</span>
-                    <span>转眼夏至</span>
-                </div>
-            </router-link>
+            <div class="ts-main-center" v-for="(item,key) in items" :key="key">
+                <router-link to="./teaStateInside">
+                    <div class="ts-main-center-right">
+                        <span style="color:#9dc135;">{{item.title}}</span>
+                        <span style="color:white;">{{item.content}}</span>
+                    </div>
+                </router-link>
+            </div>
         </div>
     </div>
 </template>
 
+
+<script>
+export default {
+  data() {
+    return {
+      items: [],
+      backgroundImageUrl:''
+    };
+  },
+  created: function() {
+    var that = this;
+     this.$ajax.get('/getPosts?page=1&pageSize=10', {
+
+    })
+    .then(function (response) {
+      console.log(response.data);
+      that.items = response.data.model.posts;
+      that.backgroundImageUrl = response.data.model.postBackgroundImage;
+    })
+    .catch(function (response) {
+      console.log(response);
+    });
+  }
+};
+</script>
 
 <style lang="scss" scoped>
 .ts-container{
@@ -52,44 +57,19 @@
 }
 .ts-main{
     width: 500px;
-    //background-color: red;
+    //height: 1000px;
+    background-color: red;
     display: flex;
     flex-direction: column;
 }
 .ts-main-center{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    margin-top: 20px;
-}
-.ts-main-center-left-img{
-    width: 90px;
-    height: 90px;
-    border-radius: 45px;
-    border-style: solid;
-    border-width: 5px;
-    border-color: #9dc135;
+    margin-top: 30px;
+    background-color: red;
 }
 .ts-main-center-right{
-    height: 100px;
     background-color: rgba(32, 11, 32, 0.5);
-    position: absolute;
-    z-index: -1;
-    width: 500px;
-    margin-left: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-.ts-main-center-right span{
-    margin-left: 80px;
-    color: white;
-}
-.ts-main-center-conner{
-    background-color: #9dc135;
-    height: 25px;
-    width: 25px;
-    margin-top: 75px;
-    margin-left: 425px;
 }
 </style>
