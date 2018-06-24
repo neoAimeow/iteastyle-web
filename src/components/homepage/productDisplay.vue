@@ -49,9 +49,28 @@ export default {
                         "name":"抹茶费南雪",
                         "imageUrl":"http://pa74otoy6.bkt.clouddn.com/proudct-picture1.png"
                     }
-                ]
+                ],
+            info:{}    
         }
-    }
+ },
+created: function() {
+    var that = this;
+     this.$ajax.get('/productShower', {
+        params: {
+            page:1,
+            pageSize:6
+        }
+
+    })
+    .then(function (response) {
+      console.log(response);
+      that.info = response.data.model;
+      that.center = [response.data.model.longitude , response.data.model.latitude]
+    })
+    .catch(function (response) {
+      console.log(response);
+    });
+  }
 }
 </script>
 
