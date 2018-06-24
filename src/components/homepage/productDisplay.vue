@@ -2,18 +2,18 @@
 <div class="productDisplay">
 
     <div class="pd-title">
-        <progressive-img class="pd-title-picture" src="http://pa74otoy6.bkt.clouddn.com/pd-title-background.png" />
+        <progressive-img class="pd-title-picture" :src="headerImageUrl" />
         <div class="title-logo"><img src="http://pa74otoy6.bkt.clouddn.com/opaque-logo.png"></div>
     </div>
     <div class="pd-ct">           
                 <div class="product-name" v-for="(item,key) in items" :key="key">
-                    <router-link to="/homepage/productInside"><div class="pd-picture-border"><img class="pd-img" :src="item.imageUrl"></div><span>{{item.name}}</span></router-link>
+                    <router-link to="/homepage/productInside"><div class="pd-picture-border"><img class="pd-img" :src="item.imageArr[0]"></div><span>{{item.title}}</span></router-link>
                 </div>
     </div>
    <div class="pd-page">
         <el-pagination
             layout="prev, pager, next"
-            :total="50">
+            :total="50" :page-size="6">
         </el-pagination>
    </div>
 
@@ -25,32 +25,9 @@ export default {
     data() {
         return {
             items:[
-                    {
-                        "name":"抹茶费南雪",
-                        "imageUrl":"http://pa74otoy6.bkt.clouddn.com/proudct-picture1.png"
-                    },
-                            {
-                        "name":"抹茶费南雪",
-                        "imageUrl":"http://pa74otoy6.bkt.clouddn.com/product-picture2.png"
-                    },
-                            {
-                        "name":"抹茶费南雪",
-                        "imageUrl":"http://pa74otoy6.bkt.clouddn.com/proudct-picture1.png"
-                    },
-                            {
-                        "name":"抹茶费南雪",
-                        "imageUrl":"http://pa74otoy6.bkt.clouddn.com/proudct-picture1.png"
-                    },
-                            {
-                        "name":"抹茶费南雪",
-                        "imageUrl":"http://pa74otoy6.bkt.clouddn.com/product-picture2.png"
-                    },
-                            {
-                        "name":"抹茶费南雪",
-                        "imageUrl":"http://pa74otoy6.bkt.clouddn.com/proudct-picture1.png"
-                    }
-                ],
-            info:{}    
+
+            ],
+            headerImageUrl:''
         }
  },
 created: function() {
@@ -64,8 +41,8 @@ created: function() {
     })
     .then(function (response) {
       console.log(response);
-      that.info = response.data.model;
-      that.center = [response.data.model.longitude , response.data.model.latitude]
+      that.items = response.data.model.products;
+      that.headerImageUrl = response.data.model.headerImageUrl
     })
     .catch(function (response) {
       console.log(response);
