@@ -37,8 +37,8 @@ export default {
     }
   },
   mounted: function() {
-     this.$ajax.post('/contactUsData', {
-       
+     this.$ajax.get('/contactUsData', {
+
     })
     .then(function (response) {
       console.log(response);
