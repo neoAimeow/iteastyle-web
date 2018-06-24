@@ -45,7 +45,7 @@ export default {
 
     })
     .then(function (response) {
-      console.log(response.data);
+      console.log(response);
       that.info = response.data.model;
       that.center = [response.data.model.longitude , response.data.model.latitude]
     })
