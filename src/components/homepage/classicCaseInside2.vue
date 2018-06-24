@@ -29,7 +29,6 @@ export default {
             imgs:[
                     "http://pa74otoy6.bkt.clouddn.com/case-inside2-picture1.png",
                     "http://pa74otoy6.bkt.clouddn.com/case-inside2-picture1.png",
-                    "http://pa74otoy6.bkt.clouddn.com/case-inside2-picture1.png",
                     "http://pa74otoy6.bkt.clouddn.com/case-inside2-picture2.png",
                     "http://pa74otoy6.bkt.clouddn.com/case-inside2-picture1.png",
                     "http://pa74otoy6.bkt.clouddn.com/case-inside2-picture2.png"

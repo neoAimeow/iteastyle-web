@@ -3,10 +3,10 @@
         <progressive-img class="cu-bgimg" :src="info.contactUsBackgroundImage" />
         <div class="cu-main">
             <div class="cu-main-title">
-                <span>CONTACT US</span>
+                <span class="title-english">CONTACT US</span>
                 <img src="http://pa74otoy6.bkt.clouddn.com/plus.png" alt="">
-                <span>联系我们</span>
-                <span style="margin-top:20px;">{{info.contactUsTitle}}</span>
+                <span class="titile-chinese">联系我们</span>
+                <span style="margin-top:20px">{{info.contactUsTitle}}</span>
             </div>
             <div class="cu-main-content">
                 <span>{{info.companyName}}</span>
@@ -83,15 +83,25 @@ export default {
 .cu-main-title {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  margin-top: 40px;
+  align-items: center;
+  margin-top: 50px;
+  font-size: 17px;
+}
+.title-english{
+  font-family:'Times New Roman';
+  font-size:25px;
+}
+.titile-chinese{
+  font-size:18px;
+  margin-bottom: 10px;
 }
 .cu-main-content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin-top: 20px;
+  font-size: 14px;
+  line-height: 2;
 }
 .cu-foot {
   display: flex;
@@ -103,7 +113,7 @@ export default {
   margin-left: 100px;
 }
 .cu-foot-left {
-  border: 8px solid #9dc135;
+  border: 8px solid rgba(157,193,53,0.6);
   margin-top: 10px;
   width: 400px;
 }
@@ -114,7 +124,7 @@ export default {
   align-items: center;
 }
 .cu-foot-right-img {
-  border: 8px solid #9dc135;
+  border: 8px solid rgba(157,193,53,0.6);
   margin-top: 10px;
   height: 100px;
   width: 100px;
