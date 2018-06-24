@@ -68,8 +68,7 @@ export default {
     })
     .then(function (response) {
       console.log(response.data);
-      that.info = response.data.model;
-      that.center = [response.data.model.longitude , response.data.model.latitude]
+      that.items = response.data.model;
     })
     .catch(function (response) {
       console.log(response);
