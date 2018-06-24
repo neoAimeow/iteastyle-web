@@ -107,7 +107,7 @@ a{
 }
 
 .pd-picture-border {
-  border: 1px solid #aeaeae;
+  border: 1px solid #e0e0e0;
   margin-bottom: 15px;
   display: flex;
   align-items: center;
