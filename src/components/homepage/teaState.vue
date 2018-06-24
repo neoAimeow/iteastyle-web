@@ -14,7 +14,8 @@
         <div class="ts-page">
         <el-pagination
             layout="prev, pager, next"
-            :total="totalCount" :page-size="pagesize" :page="page" @current-change="currentPageChanged">
+            :total="totalCount" :page-size="pageSize" :current-page="currentPage" @current-change="currentPageChanged"
+        >
         </el-pagination>
    </div>
     </div>
@@ -27,26 +28,40 @@ export default {
     return {
       items: [],
       backgroundImageUrl:'',
-      page:1,
-      pagesize:5,
-      totalCount:20,
+      currentPage:1,
+        totalCount:0,
+        pageSize:4
     };
   },
   created: function() {
-    var that = this;
-     this.$ajax.get('/getPosts?page=1&pageSize=10', {
-
-    })
-    .then(function (response) {
-      console.log(response.data);
-      that.items = response.data.model.posts;
-      that.backgroundImageUrl = response.data.model.postBackgroundImage;
-    })
-    .catch(function (response) {
-      console.log(response);
-    });
-  }
-};
+    this.request();
+  },
+    methods: {
+        currentPageChanged(val) {
+          this.currentPage = val;
+              this.request();
+        console.log(`当前页: ${val}`);
+      },
+      request() {
+           var that = this;
+            this.$ajax.get('/getPosts?page=1&pageSize=10', {
+                params: {
+                    page:this.currentPage,
+                    pageSize:this.pageSize
+                }
+            })
+        .then(function (response) {
+        console.log(response.data);
+        that.items = response.data.model.posts;
+        that.backgroundImageUrl = response.data.model.postBackgroundImage;
+        that.totalCount = response.data.model.totalCount
+        })
+        .catch(function (response) {
+        console.log(response);
+        });
+    }
+    }
+}
 </script>
 
 <style lang="scss" scoped>
