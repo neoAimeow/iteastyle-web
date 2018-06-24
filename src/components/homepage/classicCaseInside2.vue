@@ -7,7 +7,7 @@
     </div>
 
     <div class="pd-picture">
-        <div class="pd-img" v-for="(img,key) in imgs" :key="key" > 
+        <div style="display:flex;" v-for="(img,key) in imgs" :key="key" > 
             <div v-if="key==1" class="pd-name">
                 <div class="title">
                     <img src="http://pa74otoy6.bkt.clouddn.com/opaque-logo.png" alt="" class="logo">
