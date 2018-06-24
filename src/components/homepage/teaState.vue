@@ -3,7 +3,7 @@
         <progressive-img class="ts-bgimg" :src="backgroundImageUrl"/>
         <div class="ts-main">
             <div class="ts-main-center" v-for="(item,key) in items" :key="key">
-                <router-link to="./teaStateInside">
+                <router-link :to="{path:'./teaStateInside',query: {id: item.id}}">
                     <div class="ts-main-center-right">
                         <span style="color:#9dc135;">{{item.title}}</span>
                         <span style="color:white;">{{item.content}}</span>
@@ -82,13 +82,13 @@ export default {
 .ts-main{
     width: 500px;
     //height: 1000px;
-    background-color: red;
+    //background-color: red;
     display: flex;
     flex-direction: column;
 }
 .ts-main-center{
     margin-top: 30px;
-    background-color: red;
+    //background-color: red;
 }
 .ts-main-center-right{
     background-color: rgba(32, 11, 32, 0.5);

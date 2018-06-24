@@ -6,7 +6,7 @@
         </div>
         <div class="tsI-main">
             <div class="tsI-main-head">
-                <span>这份小确信，您想要么？</span>
+                <span>{{title}}</span>
                 <hr style="height:1px;border:none;border-top:1px solid #555555; width: 400px;" />
                 <span style="font-size:5px;color:#626262;">来源：杭式下午茶 发布时间：xxxx</span>
             </div>
@@ -17,42 +17,40 @@
                     <progressive-img class="tsI-main-body-left-img" src="http://pa74otoy6.bkt.clouddn.com/teaStateInside3.png" alt="" />
                 </div>
                 <div class="tsI-main-body-right">
-                    <span>最近还好吗？</span>
-                    <span>"还好吧。"</span>
-                    <span>也许</span>
-                    <span>忙碌中</span>
-                    <span>你忽视了很多小确幸</span>
-                    <span>如果你用心体会</span>
-                    <span>你会发现许多小确幸</span>
-                    <br>
-                    <span>匆匆出门</span>
-                    <span>正好赶上一班车</span>
-                    <span>是小确幸</span>
-                    <br>
-                    <span>高温之时</span>
-                    <span>吃一个甜筒</span>
-                    <span>是小确幸</span>
-                    <br>
-                    <span>遭遇坏事</span>
-                    <span>朋友及时的安慰</span>
-                    <span>是小确幸</span>
-                    <br>
-                    <span>而今天</span>
-                    <span>小TEA也有一份“小确幸”</span>
-                    <span>想邀请各位一起分享</span>
-                    <br>
-                    <span>夏日昼长</span>
-                    <span>工作之余</span>
-                    <span>尝一口曲奇</span>
-                    <span>品一杯清茶</span>
-                    <span>补充体力</span>
-                    <span>恢复能量</span>
-                    <span>这是你我的小确幸</span>
+                    <span>{{content}}</span>
                 </div>
             </div>
         </div>
     </div>
 </template>
+
+<script>
+export default {
+    data() {
+        return {
+            title:'',
+            content:''
+        }
+    },
+created: function() {
+    console.log(this.$route.query.id);
+    var that = this;
+     this.$ajax.get('/getPostById', {
+        params:{
+            postId:this.$route.query.id
+        }
+    })
+    .then(function (response) {
+      console.log(response);
+      that.content = response.data.model.content;
+      that.title = response.data.model.title;
+    })
+    .catch(function (response) {
+      console.log(response);
+    });
+  }
+}
+</script>
 
 <style lang="scss" scoped>
 .tsI-container{
@@ -80,8 +78,8 @@
 }
 .tsI-main-body{
     //height: 600px;
-    //width: 600px;
-    //margin: 0 auto;
+    width: 600px;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
