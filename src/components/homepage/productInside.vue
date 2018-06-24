@@ -30,16 +30,25 @@ export default {
     data() {
         return {
             imgs:[
-                    "http://pa74otoy6.bkt.clouddn.com/product-inside-picture1.png",
-                    "http://pa74otoy6.bkt.clouddn.com/product-inside-picture2.png",
-                    "http://pa74otoy6.bkt.clouddn.com/product-inside-picture2.png",
-                    "http://pa74otoy6.bkt.clouddn.com/product-inside-picture1.png",
-                    "http://pa74otoy6.bkt.clouddn.com/product-inside-picture2.png",
-                    "http://pa74otoy6.bkt.clouddn.com/product-inside-picture1.png"
                     
-                  ]
+                  ],
+            
         }
-    }
+    },
+created: function() {
+    var that = this;
+     this.$ajax.get('/cproductShowerDetail', {
+
+    })
+    .then(function (response) {
+      console.log(response);
+      that.info = response.data.model;
+      that.center = [response.data.model.longitude , response.data.model.latitude]
+    })
+    .catch(function (response) {
+      console.log(response);
+    });
+  }
 }
 </script>
 
