@@ -6,12 +6,14 @@
     </div>
     <div class="case-body">
                
-        <div classs="picture" v-for="(item,key) in items" :key="key">   
+        <div v-for="(item,key) in items" :key="key">   
            <router-link to="/homepage/classicCaseInside2">
+            <div class="picture"> 
                <img class="case-picture" :src="item.imageUrl" alt="">
                <div class="case-title">
-               <span>{{item.name}}</span>
-               </div>   
+                   <span>{{item.name}}</span>
+               </div> 
+            </div>  
             </router-link>
         </div>
           
