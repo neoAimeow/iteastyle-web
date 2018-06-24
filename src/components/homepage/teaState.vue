@@ -11,6 +11,12 @@
                 </router-link>
             </div>
         </div>
+        <div class="ts-page">
+        <el-pagination
+            layout="prev, pager, next"
+            :total="totalCount" :page-size="pagesize" :page="page" @current-change="currentPageChanged">
+        </el-pagination>
+   </div>
     </div>
 </template>
 
@@ -20,7 +26,10 @@ export default {
   data() {
     return {
       items: [],
-      backgroundImageUrl:''
+      backgroundImageUrl:'',
+      page:1,
+      pagesize:5,
+      totalCount:20,
     };
   },
   created: function() {
