@@ -6,15 +6,15 @@
     </div>
     <div class="case-body">
                
-        <div class="picture" v-for="(item,key) in items" :key="key">   
+        <div classs="picture" v-for="(item,key) in items" :key="key">   
            <router-link to="/homepage/classicCaseInside2">
                <img class="case-picture" :src="item.imageUrl" alt="">
                <div class="case-title">
                <span>{{item.name}}</span>
-               </div>
+               </div>   
             </router-link>
         </div>
-           
+          
     </div> 
     <div class="case-foot">
         <el-pagination
@@ -91,6 +91,11 @@ export default {
     margin: 0 auto;
     margin-top:40px; 
     
+}
+
+.picture{
+    width:305px;
+    height: 220px;
 }
 
 .case-picture{

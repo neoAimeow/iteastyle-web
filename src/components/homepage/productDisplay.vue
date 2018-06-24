@@ -108,7 +108,7 @@ a{
 .pd-img {
   width: 265px;
   height: 170px;
-  margin:5px;
+  
 }
 
 .product-name {
