@@ -13,6 +13,7 @@
         </div>
         <div class="ts-page">
         <el-pagination
+            background
             layout="prev, pager, next"
             :total="totalCount" :page-size="pageSize" :current-page="currentPage" @current-change="currentPageChanged"
         >
