@@ -90,8 +90,7 @@ a{
   max-width: 1000px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  
+  justify-content: center; 
   margin-top: 40px;
   margin-bottom: 10px;
 }
@@ -102,6 +101,8 @@ a{
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 275px;
+  height: 180px;
 }
 
 .pd-img {

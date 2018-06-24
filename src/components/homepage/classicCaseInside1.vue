@@ -5,48 +5,16 @@
         <img src="http://pa74otoy6.bkt.clouddn.com/case-light-logo.png" >
     </div>
     <div class="case-body">
-       
-        <router-link to="/homepage/classicCaseInside2">
-        <div class="picture">   
-           <img class="case-picture" src="http://pa74otoy6.bkt.clouddn.com/case-inside-picture1.png" alt="">
-           <div class="case-title"><span>绍兴玛莎拉蒂“双十一”活动</span></div>
+               
+        <div class="picture" v-for="(item,key) in items" :key="key">   
+           <router-link to="/homepage/classicCaseInside2">
+               <img class="case-picture" :src="item.imageUrl" alt="">
+               <div class="case-title">
+               <span>{{item.name}}</span>
+               </div>
+            </router-link>
         </div>
-        </router-link>
-
-        <router-link to="/homepage/classicCaseInside2">
-        <div class="picture">   
-           <img class="case-picture" src="http://pa74otoy6.bkt.clouddn.com/case-inside-picture1.png" alt="">
-           <div class="case-title"><span>绍兴玛莎拉蒂“双十一”活动</span></div>
-        </div>
-        </router-link>
-
-        <router-link to="/homepage/classicCaseInside2">
-        <div class="picture">   
-           <img class="case-picture" src="http://pa74otoy6.bkt.clouddn.com/case-inside-picture1.png" alt="">
-           <div class="case-title"><span>绍兴玛莎拉蒂“双十一”活动</span></div>
-        </div>
-        </router-link>
-
-        <router-link to="/homepage/classicCaseInside2">
-        <div class="picture">   
-           <img class="case-picture" src="http://pa74otoy6.bkt.clouddn.com/case-inside-picture1.png" alt="">
-           <div class="case-title"><span>绍兴玛莎拉蒂“双十一”活动</span></div>
-        </div>
-        </router-link>
-
-        <router-link to="/homepage/classicCaseInside2">
-        <div class="picture">   
-           <img class="case-picture" src="http://pa74otoy6.bkt.clouddn.com/case-inside-picture1.png" alt="">
-           <div class="case-title"><span>绍兴玛莎拉蒂“双十一”活动</span></div>
-        </div>
-        </router-link>
-
-        <router-link to="/homepage/classicCaseInside2">
-        <div class="picture">   
-           <img class="case-picture" src="http://pa74otoy6.bkt.clouddn.com/case-inside-picture1.png" alt="">
-           <div class="case-title"><span>绍兴玛莎拉蒂“双十一”活动</span></div>
-        </div>
-        </router-link>    
+           
     </div> 
     <div class="case-foot">
         <el-pagination
@@ -56,6 +24,42 @@
     </div>
 </div>
 </template>
+
+<script>
+export default {
+    data() {
+        return {
+            items:[
+                    {
+                        "name":"绍兴玛莎拉蒂“双十一”活动",
+                        "imageUrl":"http://pa74otoy6.bkt.clouddn.com/case-inside-picture1.png"
+                    },
+                    {
+                        "name":"绍兴玛莎拉蒂“双十一”活动",
+                        "imageUrl":"http://pa74otoy6.bkt.clouddn.com/case-inside-picture1.png"
+                    },
+                    {
+                        "name":"绍兴玛莎拉蒂“双十一”活动",
+                        "imageUrl":"http://pa74otoy6.bkt.clouddn.com/case-inside-picture1.png"
+                    },
+                    {
+                        "name":"绍兴玛莎拉蒂“双十一”活动",
+                        "imageUrl":"http://pa74otoy6.bkt.clouddn.com/case-inside-picture1.png"
+                    },
+                    {
+                        "name":"绍兴玛莎拉蒂“双十一”活动",
+                        "imageUrl":"http://pa74otoy6.bkt.clouddn.com/case-inside-picture1.png"
+                    },
+                    {
+                        "name":"绍兴玛莎拉蒂“双十一”活动",
+                        "imageUrl":"http://pa74otoy6.bkt.clouddn.com/case-inside-picture1.png"
+                    }
+                ]
+        }
+    }
+}
+</script>
+
 <style scoped>
 .classinside-one{
     margin: 0;
@@ -96,14 +100,16 @@
     z-index: -1;
 }
 .case-title{
-    width:305px;
-    height:45px;
+    width:305px;   
     background-color: rgba(174,203,87, 0.83);
     text-align: center;
     color: white;
     line-height: 45px;
     position: relative;
     top: 160px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
 }
 .case-foot{
     margin: 0 auto;
