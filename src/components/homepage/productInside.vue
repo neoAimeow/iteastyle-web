@@ -32,7 +32,8 @@ export default {
             imgs:{
                     
             },
-            content:''
+            content:'',
+            title: ''
         }
     },
 created: function() {
