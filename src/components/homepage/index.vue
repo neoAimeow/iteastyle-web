@@ -19,7 +19,14 @@
                 <img class="index-foot-img" src="http://pa74otoy6.bkt.clouddn.com/index-foot-img3.png"  />
                 <img class="index-foot-img" src="http://pa74otoy6.bkt.clouddn.com/index-foot-img4.png"  />
             </div>
-            <img class="index-foot-right" src="http://pa74otoy6.bkt.clouddn.com/index-foot-right.png" />
+            <div class="index-foot-right">
+              <span>杭式下午茶，有初恋的温度</span><br>
+              <span style="font-size:12px;">茶为国饮，杭为茶都，一份伴手礼，遥遥西湖情</span><br>
+              <div class="index-foot-right-font">
+                <div><span style="font-size:30px; border:solid 3px white;border-radius:5px;">&#xe6cf;</span></div>
+                <div style="margin-left:5px;">ONLINE SHOPPING</div>
+              </div>
+            </div>
         </div>
     </div>
 </template>
@@ -63,6 +70,17 @@ export default {
 
 
 <style lang="scss">
+@font-face {
+  font-family: 'iconfont';  /* project id 718738 */
+  src: url('//at.alicdn.com/t/font_718738_jpis7s1zgd.eot');
+  src: url('//at.alicdn.com/t/font_718738_jpis7s1zgd.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_718738_jpis7s1zgd.woff') format('woff'),
+  url('//at.alicdn.com/t/font_718738_jpis7s1zgd.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_718738_jpis7s1zgd.svg#iconfont') format('svg');
+}
+span {
+  font-family: iconfont;
+}
 .index-head {
 }
 .index-main {
@@ -101,6 +119,15 @@ export default {
   margin-left: 50px;
   margin-top: 10px;
   height: 80px;
-  width: 180px;
+  color: white;
+}
+.index-foot-right-font{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 10px;
+  height: 30px;
+  //background-color: red;
 }
 </style>
