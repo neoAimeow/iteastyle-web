@@ -8,13 +8,11 @@
             <div class="tsI-main-head">
                 <span>{{title}}</span>
                 <hr style="height:1px;border:none;border-top:1px solid #555555; width: 400px;" />
-                <span style="font-size:5px;color:#626262;">来源：杭式下午茶 发布时间：xxxx</span>
+                <span style="font-size:5px;color:#626262;">来源：     发布时间：   </span>
             </div>
             <div class="tsI-main-body">
                 <div class="tsI-main-body-left">
-                    <progressive-img class="tsI-main-body-left-img" src="http://pa74otoy6.bkt.clouddn.com/teaStateInside1.png" alt="" />
-                    <progressive-img class="tsI-main-body-left-img" src="http://pa74otoy6.bkt.clouddn.com/teaStateInside2.png" alt="" />
-                    <progressive-img class="tsI-main-body-left-img" src="http://pa74otoy6.bkt.clouddn.com/teaStateInside3.png" alt="" />
+                    <progressive-img />
                 </div>
                 <div class="tsI-main-body-right">
                     <span>{{content}}</span>
@@ -64,6 +62,7 @@ created: function() {
 }
 .tsI-head-bgimg{
     height: 200px;
+    min-width: 1300px;
     width: 100%;
     position: absolute;
     z-index: -1;
@@ -74,6 +73,7 @@ created: function() {
     margin-top: 50px;
 }
 .tsI-main-head{
+    margin-top: 20px;
     text-align: center;
 }
 .tsI-main-body{
