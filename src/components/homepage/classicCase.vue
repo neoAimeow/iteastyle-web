@@ -5,14 +5,14 @@
     <router-link to="/homepage/classicCaseInside1">
     <div class="case" >
         <div class="case-picture">
-            <img class="picture" :src="item.imageUrl">
+            <img class="picture" :src="item.typeImage">
             <img class="picture-logo" src="http://pa74otoy6.bkt.clouddn.com/title-logo.png">
         </div>
         <div class="case-name">
-            <img class="logo" src="http://pa74otoy6.bkt.clouddn.com/opaque-logo.png">
+            <img class="logo" :src="item.typeIcon">
             <div class="title">
-                <span class="C-title">{{item.nameC}}</span>
-                <span class="E-title">{{item.nameE}}</span>
+                <span class="C-title">{{item.typeName}}</span>
+                <span class="E-title">{{item.typeNameEn}}</span>
             </div>
         </div>
     </div>
@@ -23,37 +23,24 @@
 
 <script>
 export default {
-    data() {
-        return {
-            items:[
-                    {
-                        "nameC":"茶点茶饮",
-                        "nameE":"TEA DESSERT",
-                        "imageUrl":"http://pa74otoy6.bkt.clouddn.com/%E7%BB%8F%E5%85%B8%E6%A1%88%E4%BE%8B%E7%BD%91%E7%BB%9C%E5%9B%BE.jpeg"
-                    },
-                    {
-                        "nameC":"茶文化讲座",
-                        "nameE":"TEA CULTURE SEMINAR",
-                        "imageUrl":"http://pa74otoy6.bkt.clouddn.com/%E7%BB%8F%E5%85%B8%E6%A1%88%E4%BE%8B%E7%BD%91%E7%BB%9C%E5%9B%BE.jpeg"
-                    },
-                    {
-                        "nameC":"DIY活动",
-                        "nameE":"DIY ACTIVITES",
-                        "imageUrl":"http://pa74otoy6.bkt.clouddn.com/%E7%BB%8F%E5%85%B8%E6%A1%88%E4%BE%8B%E7%BD%91%E7%BB%9C%E5%9B%BE.jpeg"
-                    },
-                    {
-                        "nameC":"私茗定制",
-                        "nameE":"PRIVATE TEA CUSTOMISATION",
-                        "imageUrl":"http://pa74otoy6.bkt.clouddn.com/%E7%BB%8F%E5%85%B8%E6%A1%88%E4%BE%8B%E7%BD%91%E7%BB%9C%E5%9B%BE.jpeg"
-                    },
-                    {
-                        "nameC":"茶艺表演",
-                        "nameE":"TEA PERFORMANCE",
-                        "imageUrl":"http://pa74otoy6.bkt.clouddn.com/%E7%BB%8F%E5%85%B8%E6%A1%88%E4%BE%8B%E7%BD%91%E7%BB%9C%E5%9B%BE.jpeg"
-                    }
-                ]
-        }
+  data() {
+    return {
+      items:{}
     }
+  },
+  created: function() {
+    var that = this;
+     this.$ajax.get('/getCaseTypes', {
+
+    })
+    .then(function (response) {
+      console.log(response);
+      that.items = response.data.model;
+    })
+    .catch(function (response) {
+      console.log(response);
+    });
+  }
 }
 </script>
 
