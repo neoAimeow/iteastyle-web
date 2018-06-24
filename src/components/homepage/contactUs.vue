@@ -1,24 +1,25 @@
 <template>
     <div class="cu-container">
-        <progressive-img class="cu-bgimg" src="http://pa74otoy6.bkt.clouddn.com/contactus-background.png" />
+        <progressive-img class="cu-bgimg" :src="info.contactUsBackgroundImage" />
         <div class="cu-main">
             <div class="cu-main-title">
                 <span>CONTACT US</span>
                 <img src="http://pa74otoy6.bkt.clouddn.com/plus.png" alt="">
                 <span>联系我们</span>
-                <span style="margin-top:20px;">杭式下午茶 创意茶歇 健康食尚</span>
+                <span style="margin-top:20px;">{{info.contactUsTitle}}</span>
             </div>
             <div class="cu-main-content">
-                <span>杭州执贝科技有限公司</span>
-                <span>地址：杭州民和路525号三宏国际8楼</span>
-                <span>电话：(86)0571-83731743</span>
-                <span>手机：159-0663-1121(滕)</span>
-                <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;158-5823-2263(李)</span>
-                <span>邮箱：iteastyle@126.com</span>
-                <span>网址：www.iteastyle.com</span>
+                <span>{{info.companyName}}</span>
+                <span>地址：{{info.companyAddress}}</span>
+                <span>电话：{{info.telephoneNumber}}</span>
+                <span>手机：{{info.phoneNumber}}</span>
+                <span>邮箱：{{info.mailAddress}}</span>
+                <span>网址：{{info.siteAddress}}</span>
             </div>
             <div class="cu-foot">
-            <el-amap class="cu-foot-left" vid="amapDemo"></el-amap>
+            <el-amap class="cu-foot-left" vid="amapDemo" :zoom="zoom" :center="center">
+              <el-amap-marker :position="center"></el-amap-marker>
+            </el-amap>
             <div class="cu-foot-right">
                 <progressive-img class="cu-foot-right-img" src="http://pa74otoy6.bkt.clouddn.com/contactus-QRcode.png" alt="" />
                 <progressive-img class="cu-foot-right-img" src="http://pa74otoy6.bkt.clouddn.com/contactus-QRcode.png" alt="" />
@@ -33,15 +34,20 @@
 export default {
   data() {
     return {
-
+      info:{},
+      center: [0,0],
+      zoom:14
     }
   },
   mounted: function() {
+    var that = this;
      this.$ajax.get('/contactUsData', {
 
     })
     .then(function (response) {
-      console.log(response);
+      console.log(response.data);
+      that.info = response.data.model;
+      that.center = [response.data.model.longitude , response.data.model.latitude]
     })
     .catch(function (response) {
       console.log(response);
