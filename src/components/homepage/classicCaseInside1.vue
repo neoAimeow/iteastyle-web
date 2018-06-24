@@ -7,11 +7,11 @@
     <div class="case-body">
                
         <div v-for="(item,key) in items" :key="key">   
-           <router-link to="/homepage/classicCaseInside2">
+           <router-link  :to="{path:'/homepage/classicCaseInside2',query: {id: item.id}}">
             <div class="picture"> 
-               <img class="case-picture" :src="item.imageUrl" alt="">
+               <img class="case-picture" :src="item.imageArr[0]" alt="">
                <div class="case-title">
-                   <span>{{item.name}}</span>
+                   <span>{{item.title}}</span>
                </div> 
             </div>  
             </router-link>
@@ -21,7 +21,8 @@
     <div class="case-foot">
         <el-pagination
             layout="prev, pager, next"
-            :total="50">
+            :total="totalCount" :page-size="pageSize" :current-page="currentPage" @current-change="currentPageChanged"
+        >
         </el-pagination>
     </div>
 </div>
@@ -32,35 +33,47 @@ export default {
     data() {
         return {
             items:[
-                    {
-                        "name":"绍兴玛莎拉蒂“双十一”活动",
-                        "imageUrl":"http://pa74otoy6.bkt.clouddn.com/case-inside-picture1.png"
-                    },
-                    {
-                        "name":"绍兴玛莎拉蒂“双十一”活动",
-                        "imageUrl":"http://pa74otoy6.bkt.clouddn.com/case-inside-picture1.png"
-                    },
-                    {
-                        "name":"绍兴玛莎拉蒂“双十一”活动",
-                        "imageUrl":"http://pa74otoy6.bkt.clouddn.com/case-inside-picture1.png"
-                    },
-                    {
-                        "name":"绍兴玛莎拉蒂“双十一”活动",
-                        "imageUrl":"http://pa74otoy6.bkt.clouddn.com/case-inside-picture1.png"
-                    },
-                    {
-                        "name":"绍兴玛莎拉蒂“双十一”活动",
-                        "imageUrl":"http://pa74otoy6.bkt.clouddn.com/case-inside-picture1.png"
-                    },
-                    {
-                        "name":"绍兴玛莎拉蒂“双十一”活动",
-                        "imageUrl":"http://pa74otoy6.bkt.clouddn.com/case-inside-picture1.png"
-                    }
-                ]
+
+            ],
+            currentPage:1,
+            totalCount:0,
+            pageSize:6
         }
-    }
+ },
+created: function() {
+    this.request();
+  },
+  methods: {
+      currentPageChanged(val) {
+          this.currentPage = val;
+              this.request();
+        console.log(`当前页: ${val}`);
+      },
+      request() {
+              var that = this;
+              
+            this.$ajax.get('/cases', {
+                params: {
+                    type:this.$route.query.type,
+                    page:this.currentPage,
+                    pageSize:this.pageSize
+                }
+
+            })
+            .then(function (response) {
+            console.log(response);
+            that.items = response.data.model.cases;
+            that.totalCount = response.data.model.totalCount
+            
+            })
+            .catch(function (response) {
+            console.log(response);
+            });
+      }
+  }
 }
 </script>
+
 
 <style scoped>
 .classinside-one{

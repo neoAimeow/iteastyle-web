@@ -11,9 +11,9 @@
             <div v-if="key==1" class="pd-name">
                 <div class="title">
                     <img src="http://pa74otoy6.bkt.clouddn.com/opaque-logo.png" alt="" class="logo">
-                    <span>茶歇服务</span>
+                    <span>{{typeName}}</span>
                 </div>
-                <span class="name">英菲尼迪国博车展茶歇</span>    
+                <span class="name">{{title}}</span>    
             </div>
             <img  class="pd-img" :src="img" alt="">  
         </div>
@@ -26,15 +26,32 @@
 export default {
     data() {
         return {
-            imgs:[
-                    "http://pa74otoy6.bkt.clouddn.com/case-inside2-picture1.png",
-                    "http://pa74otoy6.bkt.clouddn.com/case-inside2-picture1.png",
-                    "http://pa74otoy6.bkt.clouddn.com/case-inside2-picture2.png",
-                    "http://pa74otoy6.bkt.clouddn.com/case-inside2-picture1.png",
-                    "http://pa74otoy6.bkt.clouddn.com/case-inside2-picture2.png"
-                  ]
+            imgs:{
+                    
+            },
+            title: '',
+            tyoeName:''
         }
-    }
+    },
+created: function() {
+    console.log(this.$route.query.id);
+    var that = this;
+     this.$ajax.get('/getCaseById', {
+        params:{
+            caseId:this.$route.query.id
+        }
+    })
+    .then(function (response) {
+      console.log(response);
+      that.imgs = response.data.model.imageArr;
+      that.title = response.data.model.title;
+      that.typeName = response.data.model.typeName
+
+    })
+    .catch(function (response) {
+      console.log(response);
+    });
+  }
 }
 </script>
 

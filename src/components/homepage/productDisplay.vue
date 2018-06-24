@@ -7,7 +7,12 @@
     </div>
     <div class="pd-ct">           
                 <div class="product-name" v-for="(item,key) in items" :key="key">
-                    <router-link :to="{path:'/homepage/productInside',query: {id: item.id}}"><div class="pd-picture-border"><img class="pd-img" :src="item.imageArr[0]"></div><span>{{item.title}}</span></router-link>
+                    <router-link :to="{path:'/homepage/productInside',query: {id: item.id}}">
+                        <div class="pd-picture-border">
+                            <img class="pd-img" :src="item.imageArr[0]">
+                        </div>
+                        <span>{{item.title}}</span>
+                    </router-link>
                 </div>
     </div>
    <div class="pd-page">

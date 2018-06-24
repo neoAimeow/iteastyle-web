@@ -2,7 +2,7 @@
 <div class="classicCase">
 
 <div v-for="(item,key) in items" :key="key" >
-    <router-link to="/homepage/classicCaseInside1">
+    <router-link :to="{path:'/homepage/classicCaseInside1', query: {type: item.type}}">
     <div class="case" >
         <div class="case-picture">
             <img class="picture" :src="item.typeImage">
