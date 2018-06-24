@@ -6,20 +6,20 @@
     </div>
 
     <div class="pdinside-body">
-        <div class="body-img" v-for="(img,key) in imgs" :key="key" >          
+        <div style="display:flex;" v-for="(img,key) in imgs" :key="key" >          
             <div v-if="key==1" class="body-name" >
                 <div class="name-top">
                     <img class="logo" src="http://pa74otoy6.bkt.clouddn.com/opaque-logo.png" alt="">
                     <span class="name-bottom">茶饮茶点</span>
                 </div>
-                <span class="pd-name">抹茶费南雪</span>
+                <span class="pd-name">{{title}}</span>
             </div>
             <img  class="body-img" :src="img" alt="">
         </div>
     </div>
 
     <div class="pd-introduction">
-        <span>抹茶费南雪是一种小糕点<br>就爱这一抹绿啊<br>高油高糖什么的就是好吃<br>抹茶控溺爱的小宠物～</span>
+        <span>{{content}}</span>
     </div>
     
 </div>
@@ -29,21 +29,25 @@
 export default {
     data() {
         return {
-            imgs:[
+            imgs:{
                     
-                  ],
-            
+            },
+            content:''
         }
     },
 created: function() {
+    console.log(this.$route.query.id);
     var that = this;
-     this.$ajax.get('/cproductShowerDetail', {
-
+     this.$ajax.get('/productShowerDetail', {
+        params:{
+            productShowerId:this.$route.query.id
+        }
     })
     .then(function (response) {
       console.log(response);
-      that.info = response.data.model;
-      that.center = [response.data.model.longitude , response.data.model.latitude]
+      that.content = response.data.model.content;
+      that.imgs = response.data.model.imageArr;
+      that.title = response.data.model.title;
     })
     .catch(function (response) {
       console.log(response);
