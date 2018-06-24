@@ -9,7 +9,7 @@
             <img class="picture-logo" src="http://pa74otoy6.bkt.clouddn.com/title-logo.png">
         </div>
         <div class="case-name">
-            <img class="logo" src="http://pa74otoy6.bkt.clouddn.com/title-logo.png">
+            <img class="logo" src="http://pa74otoy6.bkt.clouddn.com/opaque-logo.png">
             <div class="title">
                 <span class="C-title">{{item.nameC}}</span>
                 <span class="E-title">{{item.nameE}}</span>

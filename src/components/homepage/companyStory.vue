@@ -7,7 +7,7 @@
             <img src="http://pa74otoy6.bkt.clouddn.com/plus.png">
             <span class="titile-chinese">{{info.storyTitle}}</span>
        </div>
-    <span class="story-ct">&nbsp;&nbsp;{{info.storyContent}}</span>
+    <span class="story-ct">{{info.storyContent}}</span>
     </div>
 
     <video :src="info.videoUrl" controls></video>
