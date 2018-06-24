@@ -7,7 +7,7 @@
             <img src="http://pa74otoy6.bkt.clouddn.com/plus.png">
             <span class="titile-chinese">{{info.storyTitle}}</span>
        </div>
-    <span class="story-ct">{{info.storyContent}}</span>
+    <span class="story-ct">&nbsp;&nbsp;{{info.storyContent}}</span>
     </div>
 
     <video :src="info.videoUrl" controls></video>
@@ -68,7 +68,7 @@ export default {
     
     .story-title{
         text-align:center;
-        padding-top:40px;
+        padding-top:30px;
     }
     span{
         display:block;
@@ -84,16 +84,16 @@ export default {
         margin-top:20px;
         padding-left:125px;
         padding-right:125px;
-        margin-bottom:40px;
+        margin-bottom:30px;
     }
-    .story-ct1{
+    /* .story-ct1{
         padding-bottom: 40px;
-    }
+    } */
     video{
         width:1000px;
         height:600px;
         background-color:black;
-        margin-top:50px;
-        margin-bottom:50px;
+        margin-top:30px;
+        margin-bottom:100px;
     }
 </style>
