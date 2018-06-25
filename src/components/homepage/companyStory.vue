@@ -10,7 +10,7 @@
     <span class="story-ct">{{info.storyContent}}</span>
     </div>
 
-    <video :src="info.videoUrl" controls></video>
+    <video v-if="info.videoUrl != null" :src="info.videoUrl" controls></video>
 </div>
 </template>
 
