@@ -102,7 +102,7 @@ body,
   margin-top:5px;
 }
 .home-bottom{
-  background-color: #f8f5f5;
+  background-color: #f0f0f0;
 }
 .home-btm-top{
   display: flex;
@@ -117,7 +117,7 @@ body,
   
 }
 .home-btm-top-left-list{
-  color: #cfcfcf;
+  color: #c0c0c0;
   margin-left: 40px;
   font-size: 15px;
 }

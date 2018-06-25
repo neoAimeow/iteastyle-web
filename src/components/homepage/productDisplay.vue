@@ -77,17 +77,16 @@ a{
     color:black;
 }
 .productDisplay {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 30px;
-  border-bottom:2px solid #9dc135;
+    margin: 0;
+    padding: 0;
+    border-bottom:2px solid #9dc135;
 }
 
 .pd-title {
-  height: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .pd-title-picture {

@@ -60,7 +60,7 @@ export default {
 
 <style lang="scss">
 .cu-container {
-  height: 700px;
+  height: 680px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -70,7 +70,7 @@ export default {
 .cu-bgimg {
   width: 100%;
   min-width: 1440px;
-  height: 700px;
+  height: 680px;
   position: absolute;
   z-index: -1;
 }
