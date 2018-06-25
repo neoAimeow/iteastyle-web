@@ -5,8 +5,8 @@
             <div class="ts-main-center" v-for="(item,key) in items" :key="key">
                 <router-link :to="{path:'./teaStateInside',query: {id: item.id}}">
                     <div class="ts-main-center-right">
-                        <div style="color:#9dc135;margin-bottom:20px;"><span>{{item.title}}</span></div>
-                        <div style="color:white;font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width:300px;"><span>{{item.content}}</span></div>
+                        <div style="color:#9dc135;margin-bottom:20px;margin-left:40px;"><span>{{item.title}}</span></div>
+                        <div style="color:white;font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width:300px;margin-left:40px;"><span>{{item.content}}</span></div>
                     </div>
                 </router-link>
             </div>

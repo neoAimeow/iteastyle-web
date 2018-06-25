@@ -102,6 +102,7 @@ created: function() {
 .tsI-main-body-right{
     display: flex;
     flex-direction: column;
+    width: 300px;
     margin-top: 30px;
     margin-left: 20px;
 }
