@@ -67,7 +67,7 @@ export default {
 
 <style lang="scss" scoped>
 .ts-container{
-    height: 1000px;
+    height: 950px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -76,7 +76,7 @@ export default {
 }
 .ts-bgimg{
     min-width: 1440px;
-    height: 1000px;
+    height: 950px;
     width: 100%;//progressive-img不设置宽度整个图片就消失了
     position: absolute;
     z-index: -1;

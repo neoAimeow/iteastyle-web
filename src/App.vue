@@ -15,7 +15,7 @@
       <div class="home-bottom">
         <div class="home-btm-top">
           <div class="home-btm-top-left" >
-            <ul v-for="(data,key) in btmmenus" :key="key" :aria-label="key">
+            <ul v-for="(data,key) in btmmenus" :key="key" :aria-label="key" style="margin-top:50px;">
               <li v-for="(menu,index) in data" :key="index">
                 <router-link class="home-btm-top-left-list" :to="menu.path" :style="menu.style">{{menu.title}}</router-link>
               </li>
@@ -101,12 +101,14 @@ body,
   height: 50px;
   margin-top:5px;
 }
+.home-bottom{
+  background-color: #f8f5f5;
+}
 .home-btm-top{
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-right: 20px;
-  margin-top: 50px;
 }
 .home-btm-top-left{
   display: flex;
@@ -125,7 +127,7 @@ body,
   align-items: flex-end;
   color: #626262;
   margin-left:220px;
-
+  margin-top: 50px;
 }
 .home-btm-foot{
   display: flex;
