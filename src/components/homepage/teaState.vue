@@ -72,6 +72,7 @@ export default {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-bottom:2px solid #9dc135;
 }
 .ts-bgimg{
     min-width: 1440px;

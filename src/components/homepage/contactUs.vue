@@ -65,6 +65,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-bottom:2px solid #9dc135;
 }
 .cu-bgimg {
   width: 100%;

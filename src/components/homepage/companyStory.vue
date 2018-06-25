@@ -48,7 +48,7 @@ export default {
         flex-direction: column;
         justify-content:center;
         align-items: center;
-        border-bottom:3px solid #9dc135;
+        border-bottom:2px solid #9dc135;
     }
     .companystory-background{
         height:1000px;

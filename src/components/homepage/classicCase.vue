@@ -53,7 +53,7 @@ a{
         display: flex;
         flex-direction: row;
         justify-content: center;      
-        
+        border-bottom:2px solid #9dc135;
 
     }
     .case{

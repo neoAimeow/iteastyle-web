@@ -80,6 +80,7 @@ a{
   margin: 0;
   padding: 0;
   margin-bottom: 30px;
+  border-bottom:2px solid #9dc135;
 }
 
 .pd-title {
@@ -108,7 +109,7 @@ a{
   flex-wrap: wrap;
   justify-content: center; 
   margin-top: 40px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .pd-picture-border {
@@ -137,6 +138,7 @@ a{
 .pd-page {
   display: flex;
   justify-content: center;
+  margin-bottom: 40px;
 }
 
 

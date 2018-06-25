@@ -82,6 +82,7 @@ created: function() {
     display: flex;
     flex-direction: column;
     justify-content:center;
+    border-bottom:2px solid #9dc135;
 }
 .case-top{
     height:200px;  

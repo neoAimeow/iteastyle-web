@@ -48,9 +48,10 @@ created: function() {
 </script>
 
 <style lang="scss" scoped>
-/*.tsI-container{
+.tsI-container{
     //height: 900px;
-}*/
+    border-bottom:2px solid #9dc135;
+}
 .tsI-head{
     display: flex;
     flex-direction: row;
@@ -83,6 +84,7 @@ created: function() {
     align-items: center;
     //background-color: blue;
     margin-top: 10px;
+    margin-bottom: 40px;
 }
 .tsI-main-body-content{
     width: 250px;
