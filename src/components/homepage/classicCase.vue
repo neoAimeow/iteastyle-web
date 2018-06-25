@@ -53,6 +53,8 @@ a{
         display: flex;
         flex-direction: row;
         justify-content: center;      
+        
+
     }
     .case{
         width:250px;

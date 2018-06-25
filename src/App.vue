@@ -22,7 +22,7 @@
             </ul>
           </div>
           <div class="home-btm-top-right">
-            <p style="font-size:12px;">全国订购电话</p>
+            <p >全国订购电话</p>
             <p style="font-size:27px;">400 688 6888</p>
           </div>
         </div>
@@ -86,7 +86,7 @@ body,
 #app{
   margin:0;
   min-width: 1000px;
-  font-family: Microsoft Yahei,Lantinghei SC;
+  font-family: 14px/1.5 'Microsoft Yahei',Arial,'Hiragino Sans GB';
 }
 .home-head{
   display: flex;

@@ -79,12 +79,14 @@ export default {
     }
     .titile-chinese{
         font-size:18px;
+        letter-spacing:normal;
     }
     .story-ct{
         margin-top:20px;
         padding-left:125px;
         padding-right:125px;
         margin-bottom:30px;
+        
         
     }
     /* .story-ct1{

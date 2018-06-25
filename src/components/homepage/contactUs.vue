@@ -94,6 +94,7 @@ export default {
 .titile-chinese{
   font-size:18px;
   margin-bottom: 10px;
+  letter-spacing:5px;
 }
 .cu-main-content {
   display: flex;
