@@ -1,5 +1,5 @@
 const menus = [{
-    title: '首页',
+    title: '首 页',
     path: '/'
 },
 {
