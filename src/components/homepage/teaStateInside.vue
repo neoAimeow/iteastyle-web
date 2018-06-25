@@ -51,9 +51,9 @@ created: function() {
 </script>
 
 <style lang="scss" scoped>
-.tsI-container{
-    height: 900px;
-}
+/*.tsI-container{
+    //height: 900px;
+}*/
 .tsI-head{
     display: flex;
     flex-direction: row;

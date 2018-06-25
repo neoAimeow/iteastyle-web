@@ -18,7 +18,7 @@
             </div>
             <div class="index-foot-right">
               <span>杭式下午茶，有初恋的温度</span><br>
-              <span style="font-size:12px;">茶为国饮，杭为茶都，一份伴手礼，遥遥西湖情</span><br>
+              <span style="font-size:12px;word-break:keep-all;white-space:nowrap;">茶为国饮，杭为茶都，一份伴手礼，遥遥西湖情</span><br>
               <div class="index-foot-right-font">
                 <div><span style="font-size:30px; border:solid 3px white;border-radius:5px;">&#xe6cf;</span></div>
                 <div style="margin-left:5px;">ONLINE SHOPPING</div>
@@ -122,7 +122,7 @@ span {
 .index-foot-right {
   margin-left: 50px;
   margin-top: 10px;
-  height: 80px;
+  height: 90px;
   color: white;
 }
 .index-foot-right-font{
