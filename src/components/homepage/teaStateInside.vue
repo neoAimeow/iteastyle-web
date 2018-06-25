@@ -11,10 +11,10 @@
                 <span style="font-size:5px;color:#626262;">来源：     发布时间：   </span>
             </div>
             <div class="tsI-main-body">
-                <div class="tsI-main-body-left">
+                <div class="tsI-main-body-img">
                     <progressive-img />
                 </div>
-                <div class="tsI-main-body-right">
+                <div class="tsI-main-body-content">
                     <span>{{content}}</span>
                 </div>
             </div>
@@ -81,33 +81,19 @@ created: function() {
     width: 800px;
     margin: 0 auto;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    //background-color: blue;
-    margin-top: 10px;
-}
-.tsI-main-body-left{
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 400px;
-    //background-color: red;
+    //background-color: blue;
+    margin-top: 10px;
 }
-.tsI-main-body-left-img{
+
+.tsI-main-body-img{
     height: 200px;
     width: 250px;
-    margin-top: 15px;
 }
-.tsI-main-body-right{
-    display: flex;
-    flex-direction: column;
-    width: 100px;
-    margin-top: 30px;
-    margin-left: 20px;
-}
-.tsI-main-body-right span{
-    font-size: 5px;
-    //text-align: center;
+.tsI-main-body-content{
+    width: 250px;
+    font-size: 10px;
 }
 </style>
