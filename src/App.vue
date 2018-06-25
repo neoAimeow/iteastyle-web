@@ -26,7 +26,7 @@
             <p style="font-size:27px;">0571 8373 1743</p>
           </div>
         </div>
-        <hr style="height:0.5px;border:none;border-top:1px solid #e0e0e0;margin-top:40px;" />
+        <hr style="height:0.5px;border:none;border-top:1px solid #c7c7c7;margin-top:40px;" />
         <div class="home-btm-foot">
           <ul class="home-btm-foot-left">
             <li>联系我们</li>
