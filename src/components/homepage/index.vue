@@ -21,7 +21,7 @@
               <span style="letter-spacing:-0.4px;font-size:12px;word-break:keep-all;white-space:nowrap;">茶为国饮，杭为茶都，一份伴手礼，遥遥西湖情</span>
               <div class="index-foot-right-font">
                 <div style="border:solid 2px #eaffbd;border-radius:5px;"><span style="font-size:30px;padding:5px;">&#xe6cf;</span></div>
-                <div style="margin-left:10px;font-weight:bold">ONLINE SHOPPING</div>
+                <div style="margin-left:10px;font-weight:bold;letter-spacing:1.5px;">ONLINE SHOPPING</div>
               </div>
             </div>
         </div>
