@@ -23,7 +23,7 @@
           </div>
           <div class="home-btm-top-right">
             <p >全国订购电话</p>
-            <p style="font-size:27px;">400 688 6888</p>
+            <p style="font-size:27px;">0571 8373 1743</p>
           </div>
         </div>
         <hr style="height:0.5px;background-color:#aeaeae;margin-top:40px;" />
@@ -120,9 +120,11 @@ body,
   font-size: 15px;
 }
 .home-btm-top-right{
-  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   color: #626262;
-  margin-left:240px;
+  margin-left:220px;
 
 }
 .home-btm-foot{
