@@ -7,7 +7,7 @@
         <div class="tsI-main">
             <div class="tsI-main-head">
                 <span>{{title}}</span>
-                <hr style="height:1px;border:none;border-top:1px solid #555555; width: 400px;" />
+                <hr style="height:0.5px;border:none;border-top:1px solid #555555; width: 800px;" />
                 <span style="font-size:5px;color:#626262;">来源：     发布时间：   </span>
             </div>
             <div class="tsI-main-body">
@@ -78,7 +78,7 @@ created: function() {
 }
 .tsI-main-body{
     //height: 600px;
-    width: 600px;
+    width: 800px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -91,7 +91,7 @@ created: function() {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 300px;
+    width: 400px;
     //background-color: red;
 }
 .tsI-main-body-left-img{
@@ -102,7 +102,7 @@ created: function() {
 .tsI-main-body-right{
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 100px;
     margin-top: 30px;
     margin-left: 20px;
 }
