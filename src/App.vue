@@ -86,6 +86,7 @@ body,
 #app{
   margin:0;
   min-width: 1000px;
+  font-family: Microsoft Yahei,Lantinghei SC;
 }
 .home-head{
   display: flex;
