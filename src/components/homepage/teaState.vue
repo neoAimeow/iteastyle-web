@@ -86,6 +86,7 @@ export default {
     //background-color: red;
     display: flex;
     flex-direction: column;
+    margin-bottom: 40px;
 }
 .ts-main-center{
     margin-top: 30px;

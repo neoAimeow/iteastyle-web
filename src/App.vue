@@ -26,7 +26,7 @@
             <p style="font-size:27px;">0571 8373 1743</p>
           </div>
         </div>
-        <hr style="height:0.5px;background-color:#aeaeae;margin-top:40px;" />
+        <hr style="height:0.5px;border:none;border-top:1px solid #e0e0e0;margin-top:40px;" />
         <div class="home-btm-foot">
           <ul class="home-btm-foot-left">
             <li>联系我们</li>
@@ -115,7 +115,7 @@ body,
   
 }
 .home-btm-top-left-list{
-  color: #aeaeae;
+  color: #cfcfcf;
   margin-left: 40px;
   font-size: 15px;
 }
