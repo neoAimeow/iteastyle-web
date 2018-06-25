@@ -86,7 +86,7 @@ body,
 #app{
   margin:0;
   min-width: 1000px;
-  font-family: 14px/1.5 'Microsoft Yahei',Arial,'Hiragino Sans GB';
+  font-family: 14px/1.5 Helvetica, Tahoma, Arial,'Microsoft Yahei','Hiragino Sans GB';
 }
 .home-head{
   display: flex;
