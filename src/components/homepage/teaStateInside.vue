@@ -11,9 +11,6 @@
                 <span style="font-size:5px;color:#626262;">来源：     发布时间：   </span>
             </div>
             <div class="tsI-main-body">
-                <div class="tsI-main-body-img">
-                    <progressive-img />
-                </div>
                 <div class="tsI-main-body-content">
                     <span>{{content}}</span>
                 </div>
@@ -86,11 +83,6 @@ created: function() {
     align-items: center;
     //background-color: blue;
     margin-top: 10px;
-}
-
-.tsI-main-body-img{
-    height: 200px;
-    width: 250px;
 }
 .tsI-main-body-content{
     width: 250px;
