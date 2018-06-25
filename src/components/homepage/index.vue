@@ -15,6 +15,7 @@
         <div class="index-foot">
             <div class="index-foot-left" v-for="(item3,key) in items.showerImages" :key="key">
                 <img class="index-foot-img" :src="item3" />
+                <a href="#"><div class="mask"></div></a>
             </div>
             <div class="index-foot-right">
               <span style="letter-spacing:3px;font-size:18px;">杭式下午茶，有初恋的温度</span>
@@ -115,9 +116,22 @@ span {
   width: 180px;
 }
 .index-foot-left {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+.mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 180px;
+    background: rgba(142, 192, 24, 0.4);
+    opacity: 0;
+}
+.index-foot-left a:hover .mask{
+  opacity: 1;
 }
 .index-foot-right {
   margin-left: 50px;
