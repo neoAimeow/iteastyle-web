@@ -111,6 +111,7 @@ body,
   display: flex;
   flex-direction: row;
   justify-content: center;
+  
 }
 .home-btm-top-left-list{
   color: #aeaeae;
@@ -120,6 +121,7 @@ body,
 .home-btm-top-right{
   margin-left: 100px;
   color: #626262;
+  margin-left:300px;
 
 }
 .home-btm-foot{
@@ -132,12 +134,12 @@ body,
 .home-btm-foot-left{
   display: flex;
   justify-content: center;
-  font-size: 15px;
+  font-size: 10px;
 }
 .home-btm-foot-right{
   display: flex;
   justify-content: center;
-  font-size: 15px;
+  font-size: 10px;
 }
 .home-btm-foot-left li{
   margin-left: 10px;
