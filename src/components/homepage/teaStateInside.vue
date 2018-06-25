@@ -8,7 +8,7 @@
             <div class="tsI-main-head">
                 <span>{{title}}</span>
                 <hr style="height:0.5px;border:none;border-top:1px solid #555555; width: 800px;" />
-                <span style="font-size:5px;color:#626262;">来源：     发布时间：   </span>
+                <span style="font-size:5px;color:#626262;">发布时间：   </span>
             </div>
             <div class="tsI-main-body">
                 <div class="tsI-main-body-content">
