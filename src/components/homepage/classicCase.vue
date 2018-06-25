@@ -100,6 +100,7 @@ a{
     }
     .C-title{
         font-size: 20px;
+        letter-spacing: 12px;
    
     }
     .E-title{

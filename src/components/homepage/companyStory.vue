@@ -85,6 +85,7 @@ export default {
         padding-left:125px;
         padding-right:125px;
         margin-bottom:30px;
+        
     }
     /* .story-ct1{
         padding-bottom: 40px;
