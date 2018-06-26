@@ -18,7 +18,7 @@
                 <a href="#"><div class="mask"></div></a>
             </div>
             <div class="index-foot-right">
-              <span style="letter-spacing:3px;font-size:18px;">杭式下午茶，有初恋的温度</span>
+              <span style="letter-spacing:3px;font-size:18px;word-break:keep-all;white-space:nowrap;">杭式下午茶，有初恋的温度</span>
               <span style="letter-spacing:-0.4px;font-size:12px;word-break:keep-all;white-space:nowrap;">茶为国饮，杭为茶都，一份伴手礼，遥遥西湖情</span>
               <div class="index-foot-right-font">
                 <div style="border:solid 2px #eaffbd;border-radius:5px;"><span style="font-size:30px;padding:5px;">&#xe6cf;</span></div>
