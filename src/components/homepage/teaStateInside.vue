@@ -12,7 +12,7 @@
             </div>
             <div class="tsI-main-body">
                 <div class="tsI-main-body-content">
-                    <span>{{content}}</span>
+                    <span v-html='content'></span>
                 </div>
             </div>
         </div>
