@@ -7,7 +7,7 @@
         <div class="tsI-main">
             <div class="tsI-main-head">
                 <span>{{title}}</span>
-                <hr style="height:0.2px;border:none;border-top:1px solid #626262; width: 800px;" />
+                <hr style="height:0.2px;border:none;border-top:1px solid #a7a7a7; width: 800px;" />
                 <span style="font-size:5px;color:#626262;">发布时间：   </span>
             </div>
             <div class="tsI-main-body">
@@ -89,5 +89,7 @@ created: function() {
 .tsI-main-body-content{
     width: 250px;
     font-size: 10px;
+    letter-spacing:3px;
+    background-color: red;
 }
 </style>
