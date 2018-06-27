@@ -10,7 +10,7 @@
     <span class="story-ct" v-html="info.storyContent"></span>
     </div>
 
-    <video v-if="info.videoUrl != null" :src="info.videoUrl" controls></video>
+    <video v-if="isVideoShown" :src="info.videoUrl" controls></video>
 </div>
 </template>
 
@@ -18,7 +18,8 @@
 export default {
   data() {
     return {
-      info:{}
+      info:{},
+      isVideoShown: false
     }
   },
   created: function() {
@@ -30,6 +31,9 @@ export default {
       console.log(response);
       that.info = response.data.model;
       that.center = [response.data.model.longitude , response.data.model.latitude]
+      if (response.data.model.videoUrl == null || response.data.model.videoUrl == "") {
+          that.isVideoShown = false;
+      }
     })
     .catch(function (response) {
       console.log(response);
@@ -85,7 +89,7 @@ export default {
         margin-top:20px;
         padding-left:125px;
         padding-right:125px;
-        margin-bottom:30px;
+        margin-bottom:70px;
         
         
     }
