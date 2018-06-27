@@ -88,6 +88,11 @@ body,
   min-width: 1000px;
   font-family: 14px/1.5 Helvetica, Tahoma, Arial,'Microsoft Yahei','Hiragino Sans GB';
 }
+
+.ql-align-center {
+  text-align: center;
+}
+
 .home-head{
   display: flex;
   flex-direction: row;

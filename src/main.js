@@ -9,11 +9,14 @@ import axios from 'axios'
 
 import VueProgressiveImage from 'vue-progressive-image'
 import VueAMap from 'vue-amap';
+import VueSilentbox from 'vue-silentbox'
 
 Vue.config.productionTip = false
 Vue.use(ElementUI)
 Vue.use(VueProgressiveImage)
 Vue.use(VueAMap)
+Vue.use(require('vue-moment'));
+Vue.use(VueSilentbox);
 
 let request = axios.create({
   baseURL: 'https://iteastyle-api.aimeow.com/service',

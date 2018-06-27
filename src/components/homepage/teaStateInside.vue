@@ -8,7 +8,7 @@
             <div class="tsI-main-head">
                 <span>{{title}}</span>
                 <hr style="height:0.2px;border:none;border-top:1px solid #a7a7a7; width: 800px;" />
-                <span style="font-size:5px;color:#626262;">发布时间：   </span>
+                <span style="font-size:5px;color:#626262;">发布时间： {{ gmtModified | moment("YYYY-MM-DD HH:mm")  }}  </span>
             </div>
             <div class="tsI-main-body">
                 <div class="tsI-main-body-content">
@@ -24,7 +24,8 @@ export default {
     data() {
         return {
             title:'',
-            content:''
+            content:'',
+            gmtModified:''
         }
     },
 created: function() {
@@ -39,6 +40,7 @@ created: function() {
       console.log(response);
       that.content = response.data.model.content;
       that.title = response.data.model.title;
+      that.gmtModified = response.data.model.gmtModified;
     })
     .catch(function (response) {
       console.log(response);
@@ -87,9 +89,8 @@ created: function() {
     margin-bottom: 40px;
 }
 .tsI-main-body-content{
-    width: 250px;
+    width: 700px;
     font-size: 10px;
     letter-spacing:3px;
-    background-color: red;
 }
 </style>
