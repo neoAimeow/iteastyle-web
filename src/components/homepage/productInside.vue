@@ -19,7 +19,7 @@
     </div>
 
     <div class="pd-introduction">
-        <span>{{content}}</span>
+        <span v-html="content"></span>
     </div>
     
 </div>
