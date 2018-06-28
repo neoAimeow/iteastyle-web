@@ -8,14 +8,15 @@
 
     <div class="pd-picture">
         <div style="display:flex;" v-for="(img,key) in imgs" :key="key" > 
-            <div v-if="key==1" class="pd-name">
+             <img  class="pd-img" :src="img" alt="">  
+            <div v-if="key==0" class="pd-name">
                 <div class="title">
                     <img src="http://pa74otoy6.bkt.clouddn.com/opaque-logo.png" alt="" class="logo">
                     <span>{{typeName}}</span>
                 </div>
                 <span class="name">{{title}}</span>    
             </div>
-            <img  class="pd-img" :src="img" alt="">  
+           
         </div>
     </div>   
        
@@ -26,9 +27,9 @@
 export default {
     data() {
         return {
-            imgs:{
-                    
-            },
+            imgs:[
+                
+            ],
             title: '',
             tyoeName:''
         }
