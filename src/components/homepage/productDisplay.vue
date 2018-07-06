@@ -5,21 +5,90 @@
         <div class="pd-title">
             <hr style="width:33.3%;height:2px;border:none;border-top:2px solid #9dc135;" />
             <div class="pd-title-name">
-                <span>茶饮茶点</span>
+                <span style="letter-spacing:10px;">茶饮茶点</span>
                 <span style="font-size:10px;">TEA DESSERT</span>
             </div>
             <hr style="width:33.3%;height:2px;border:none;border-top:2px solid #9dc135;" />
         </div>
         <div class="pd-content">
-            <div class="pd-content-img">
-                <img src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+            <img class="pd-content-img" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+            <img class="pd-content-img" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+            <img class="pd-content-img" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+        </div>
+        <div class="pd-more">
+            <span>MORE</span>
+        </div>
+    </div>
+    <div class="pd-main">
+        <div class="pd-title">
+            <hr style="width:33.3%;height:2px;border:none;border-top:2px solid #9dc135;" />
+            <div class="pd-title-name">
+                <span style="letter-spacing:10px;">茶文化讲座</span>
+                <span style="font-size:10px;">TEA CULTURE SEMINAR</span>
             </div>
-            <div class="pd-content-img">
-                <img src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+            <hr style="width:33.3%;height:2px;border:none;border-top:2px solid #9dc135;" />
+        </div>
+        <div class="pd-content">
+            <img class="pd-content-img" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+            <img class="pd-content-img" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+            <img class="pd-content-img" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+        </div>
+        <div class="pd-more">
+            <span>MORE</span>
+        </div>
+    </div>
+    <div class="pd-main">
+        <div class="pd-title">
+            <hr style="width:33.3%;height:2px;border:none;border-top:2px solid #9dc135;" />
+            <div class="pd-title-name">
+                <span>DIY 活 动</span>
+                <span style="font-size:10px;">DIY ACTIVITES</span>
             </div>
-            <div class="pd-content-img">
-                <img src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+            <hr style="width:33.3%;height:2px;border:none;border-top:2px solid #9dc135;" />
+        </div>
+        <div class="pd-content">
+            <img class="pd-content-img" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+            <img class="pd-content-img" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+            <img class="pd-content-img" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+        </div>
+        <div class="pd-more">
+            <span>MORE</span>
+        </div>
+    </div>
+    <div class="pd-main">
+        <div class="pd-title">
+            <hr style="width:33.3%;height:2px;border:none;border-top:2px solid #9dc135;" />
+            <div class="pd-title-name">
+                <span style="letter-spacing:10px;">茶歇定制</span>
+                <span style="font-size:10px;">TEA BREAK CUSTOMISATION</span>
             </div>
+            <hr style="width:33.3%;height:2px;border:none;border-top:2px solid #9dc135;" />
+        </div>
+        <div class="pd-content">
+            <img class="pd-content-img" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+            <img class="pd-content-img" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+            <img class="pd-content-img" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+        </div>
+        <div class="pd-more">
+            <span>MORE</span>
+        </div>
+    </div>
+    <div class="pd-main">
+        <div class="pd-title">
+            <hr style="width:33.3%;height:2px;border:none;border-top:2px solid #9dc135;" />
+            <div class="pd-title-name">
+                <span style="letter-spacing:10px;">茶艺表演</span>
+                <span style="font-size:10px;">TEA PERFORMANCE</span>
+            </div>
+            <hr style="width:33.3%;height:2px;border:none;border-top:2px solid #9dc135;" />
+        </div>
+        <div class="pd-content">
+            <img class="pd-content-img" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+            <img class="pd-content-img" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+            <img class="pd-content-img" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+        </div>
+        <div class="pd-more">
+            <span>MORE</span>
         </div>
     </div>
 
@@ -77,14 +146,17 @@ created: function() {
 }
 .pd-main{
     width: 80%;
-    background: red;
+    //background: red;
     margin: 0 auto;
     margin-top: 20px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .pd-title{
-    width: 80%;
-    background: yellow;
-    margin: 0 auto;
+    width: 70%;
+    //background: yellow;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -96,6 +168,24 @@ created: function() {
     align-items: center;
 }
 .pd-content{
-    
+    width: 90%;
+    height: 200px;
+    //background: blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.pd-content-img{
+    width: 30%;
+    height: 200px;
+}
+.pd-more{
+    width: 10%;
+    margin-top: 40px;
+    border: solid 1px #9dc135;
+    border-radius: 15px;
+    text-align: center;
+    color: #9dc135;
 }
 </style>
