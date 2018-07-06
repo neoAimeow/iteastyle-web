@@ -1,13 +1,33 @@
 <template>
-<div class="productDisplay">
+<div class="pd-container">
 
-
+    <div class="pd-main">
+        <div class="pd-title">
+            <hr style="width:33.3%;height:2px;border:none;border-top:2px solid #9dc135;" />
+            <div class="pd-title-name">
+                <span>茶饮茶点</span>
+                <span style="font-size:10px;">TEA DESSERT</span>
+            </div>
+            <hr style="width:33.3%;height:2px;border:none;border-top:2px solid #9dc135;" />
+        </div>
+        <div class="pd-content">
+            <div class="pd-content-img">
+                <img src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+            </div>
+            <div class="pd-content-img">
+                <img src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+            </div>
+            <div class="pd-content-img">
+                <img src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+            </div>
+        </div>
+    </div>
 
 </div>
 </template>
 
-<script>
-export default {
+<!-- <script>
+ export default {
     data() {
         return {
             items:[
@@ -49,4 +69,33 @@ created: function() {
       }
   }
 }
-</script>
+</script> -->
+
+<style lang="scss">
+.pd-container{
+    width: 100%;
+}
+.pd-main{
+    width: 80%;
+    background: red;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.pd-title{
+    width: 80%;
+    background: yellow;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.pd-title-name{
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pd-content{
+    
+}
+</style>
