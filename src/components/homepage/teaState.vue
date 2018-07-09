@@ -136,6 +136,12 @@ export default {
 </script> -->
 
 <style lang="scss">
+a:link{
+    color: #9dc135;
+}
+a:visited{
+    color: #9dc135;
+}
 .ts-container{
     width: 100%;
     display: flex;
