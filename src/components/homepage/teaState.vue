@@ -13,6 +13,67 @@
                 </div>
             </div>
         </div>
+        
+        <div class="ts-main">
+            <img style="width:300px;height:200px;" src="http://pa74otoy6.bkt.clouddn.com/state-portrait.png" alt="">
+            <div class="ts-main-content">
+                <div class="ts-main-content-title">
+                    <span style="color:#9dc135;">这份小确幸，你想要么？</span>
+                    <span style="font-size:10px;">xxxx年xx月xx日</span>
+                </div>
+                <div class="ts-main-content-center">
+                    <span>转眼夏至 这一年已经过去一半 正值夏天 闷热、阵雨、烈日似乎是个不太好的季节。。。</span>
+                </div>
+                <div class="ts-main-content-more">
+                    <span>MORE</span>
+                </div>
+            </div>
+        </div>
+        <div class="ts-main">
+            <img style="width:300px;height:200px;" src="http://pa74otoy6.bkt.clouddn.com/state-portrait.png" alt="">
+            <div class="ts-main-content">
+                <div class="ts-main-content-title">
+                    <span style="color:#9dc135;">这份小确幸，你想要么？</span>
+                    <span style="font-size:10px;">xxxx年xx月xx日</span>
+                </div>
+                <div class="ts-main-content-center">
+                    <span>转眼夏至 这一年已经过去一半 正值夏天 闷热、阵雨、烈日似乎是个不太好的季节。。。</span>
+                </div>
+                <div class="ts-main-content-more">
+                    <span>MORE</span>
+                </div>
+            </div>
+        </div>
+        <div class="ts-main">
+            <img style="width:300px;height:200px;" src="http://pa74otoy6.bkt.clouddn.com/state-portrait.png" alt="">
+            <div class="ts-main-content">
+                <div class="ts-main-content-title">
+                    <span style="color:#9dc135;">这份小确幸，你想要么？</span>
+                    <span style="font-size:10px;">xxxx年xx月xx日</span>
+                </div>
+                <div class="ts-main-content-center">
+                    <span>转眼夏至 这一年已经过去一半 正值夏天 闷热、阵雨、烈日似乎是个不太好的季节。。。</span>
+                </div>
+                <div class="ts-main-content-more">
+                    <span>MORE</span>
+                </div>
+            </div>
+        </div>
+        <div class="ts-main">
+            <img style="width:300px;height:200px;" src="http://pa74otoy6.bkt.clouddn.com/state-portrait.png" alt="">
+            <div class="ts-main-content">
+                <div class="ts-main-content-title">
+                    <span style="color:#9dc135;">这份小确幸，你想要么？</span>
+                    <span style="font-size:10px;">xxxx年xx月xx日</span>
+                </div>
+                <div class="ts-main-content-center">
+                    <span>转眼夏至 这一年已经过去一半 正值夏天 闷热、阵雨、烈日似乎是个不太好的季节。。。</span>
+                </div>
+                <div class="ts-main-content-more">
+                    <span>MORE</span>
+                </div>
+            </div>
+        </div>
         <div class="ts-main">
             <img style="width:300px;height:200px;" src="http://pa74otoy6.bkt.clouddn.com/state-portrait.png" alt="">
             <div class="ts-main-content">
@@ -110,17 +171,19 @@ export default {
     display: flex;
     flex-direction: row;
     align-items: center;
+    min-width: 270px;
 }
 .ts-main{
     margin-top: 40px;
-    width: 60%;
-    background: red;
+    margin-bottom: 40px;
+    min-width: 60%;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 .ts-main-content{
     margin-left: 20px;
+    min-width: 500px;
 }
 .ts-main-content-title{
     display: flex;
