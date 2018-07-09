@@ -136,10 +136,10 @@ export default {
 </script> -->
 
 <style lang="scss">
-a:link{
+.ts-main-content-more a:link{
     color: #9dc135;
 }
-a:visited{
+.ts-main-content-more a:visited{
     color: #9dc135;
 }
 .ts-container{

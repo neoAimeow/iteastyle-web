@@ -52,7 +52,7 @@ created: function() {
 </script>
 
 <style lang="scss" scoped>
-a:hover{
+.tsI-other-article a:hover{
     color: #9dc135;
 }
 .tsI-container{
