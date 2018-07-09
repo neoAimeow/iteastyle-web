@@ -16,6 +16,10 @@
                 </div>
             </div>
         </div>
+        <div class="tsI-other-article">
+            <router-link to="./"><span>上一篇：</span></router-link>
+            <router-link to="./"><span>下一篇：</span></router-link>
+        </div>
     </div>
 </template>
 
@@ -51,6 +55,9 @@ created: function() {
 .tsI-container{
     //height: 900px;
     border-bottom:2px solid #9dc135;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .tsI-head{
     display: flex;
@@ -90,6 +97,11 @@ created: function() {
     width: 250px;
     font-size: 10px;
     letter-spacing:3px;
-    background-color: red;
+}
+.tsI-other-article{
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
 }
 </style>
