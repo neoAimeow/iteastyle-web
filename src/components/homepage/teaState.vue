@@ -1,29 +1,38 @@
 <template>
     <div class="ts-container">
-        <progressive-img class="ts-bgimg" :src="backgroundImageUrl"/>
-        <div class="ts-main">
-            <div class="ts-main-center" v-for="(item,key) in items" :key="key">
-                <router-link :to="{path:'./teaStateInside',query: {id: item.id}}">
-                    <div class="ts-main-center-right">
-                        <div style="color:#9dc135;margin-bottom:20px;margin-left:40px;"><span>{{item.title}}</span></div>
-                        <div style="color:white;font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width:300px;margin-left:40px;"><span>{{item.content}}</span></div>
-                    </div>
-                </router-link>
+        <div class="ts-head">
+            <img style="width:100%;" src="http://pa74otoy6.bkt.clouddn.com/pd-case-DT-Details-background.png" alt="">
+            <div class="ts-title">
+                <div class="ts-title-en">
+                    <span>TEA BREAK</span>
+                    <span>INFORMATION</span>
+                </div>
+                <div class="ts-title-logo">
+                    <img style="width:60px;height:60px;" src="http://pa74otoy6.bkt.clouddn.com/150.png" alt="">
+                    <span style="letter-spacing:10px;margin-left:30px;">茶式动态</span>
+                </div>
             </div>
         </div>
-        <div class="ts-page">
-        <el-pagination
-            background
-            layout="prev, pager, next"
-            :total="totalCount" :page-size="pageSize" :current-page="currentPage" @current-change="currentPageChanged"
-        >
-        </el-pagination>
-   </div>
+        <div class="ts-main">
+            <img style="width:300px;height:200px;" src="http://pa74otoy6.bkt.clouddn.com/state-portrait.png" alt="">
+            <div class="ts-main-content">
+                <div class="ts-main-content-title">
+                    <span style="color:#9dc135;">这份小确幸，你想要么？</span>
+                    <span style="font-size:10px;">xxxx年xx月xx日</span>
+                </div>
+                <div class="ts-main-content-center">
+                    <span>转眼夏至 这一年已经过去一半 正值夏天 闷热、阵雨、烈日似乎是个不太好的季节。。。</span>
+                </div>
+                <div class="ts-main-content-more">
+                    <span>MORE</span>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 
 
-<script>
+<!--<script>
 export default {
   data() {
     return {
@@ -63,41 +72,78 @@ export default {
     }
     }
 }
-</script>
+</script> -->
 
-<style lang="scss" scoped>
+<style lang="scss">
 .ts-container{
-    height: 950px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ts-head{
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-bottom:2px solid #9dc135;
 }
-.ts-bgimg{
-    min-width: 1440px;
-    height: 950px;
-    width: 100%;//progressive-img不设置宽度整个图片就消失了
+.ts-title{
     position: absolute;
-    z-index: -1;
-}
-.ts-main{
-    width: 500px;
-    //height: 1000px;
-    //background-color: red;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 40px;
-}
-.ts-main-center{
-    margin-top: 30px;
-    //background-color: red;
-}
-.ts-main-center-right{
-    height: 100px;
-    background-color: rgba(32, 11, 32, 0.5);
+    z-index: 1;
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+.ts-title-en{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+}
+.ts-title-logo{
+    margin-top: 20px;
+    font-size: 35px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.ts-main{
+    margin-top: 40px;
+    width: 60%;
+    background: red;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.ts-main-content{
+    margin-left: 20px;
+}
+.ts-main-content-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.ts-main-content-center{
+    margin-top: 20px;
+    margin-left: 15px;
+}
+.ts-main-content-more{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px #9dc135;
+    border-radius: 3px;
+    text-align: center;
+    color: #9dc135;
+    width: 15%;
+    height: 25px;
+    font-size: 10px;
 }
 </style>
