@@ -25,7 +25,7 @@
                     <span>转眼夏至 这一年已经过去一半 正值夏天 闷热、阵雨、烈日似乎是个不太好的季节。。。</span>
                 </div>
                 <div class="ts-main-content-more">
-                    <span>MORE</span>
+                    <router-link to="./teaStateInside"><span>MORE</span></router-link>
                 </div>
             </div>
         </div>
@@ -40,7 +40,7 @@
                     <span>转眼夏至 这一年已经过去一半 正值夏天 闷热、阵雨、烈日似乎是个不太好的季节。。。</span>
                 </div>
                 <div class="ts-main-content-more">
-                    <span>MORE</span>
+                    <router-link to="./teaStateInside"><span>MORE</span></router-link>
                 </div>
             </div>
         </div>
@@ -55,7 +55,7 @@
                     <span>转眼夏至 这一年已经过去一半 正值夏天 闷热、阵雨、烈日似乎是个不太好的季节。。。</span>
                 </div>
                 <div class="ts-main-content-more">
-                    <span>MORE</span>
+                    <router-link to="./teaStateInside"><span>MORE</span></router-link>
                 </div>
             </div>
         </div>
@@ -70,7 +70,7 @@
                     <span>转眼夏至 这一年已经过去一半 正值夏天 闷热、阵雨、烈日似乎是个不太好的季节。。。</span>
                 </div>
                 <div class="ts-main-content-more">
-                    <span>MORE</span>
+                    <router-link to="./teaStateInside"><span>MORE</span></router-link>
                 </div>
             </div>
         </div>
@@ -85,7 +85,7 @@
                     <span>转眼夏至 这一年已经过去一半 正值夏天 闷热、阵雨、烈日似乎是个不太好的季节。。。</span>
                 </div>
                 <div class="ts-main-content-more">
-                    <span>MORE</span>
+                    <router-link to="./teaStateInside"><span>MORE</span></router-link>
                 </div>
             </div>
         </div>
