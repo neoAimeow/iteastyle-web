@@ -18,7 +18,7 @@
         </div>
         <div class="tsI-other-article">
             <router-link to="./"><span>上一篇：</span></router-link>
-            <router-link to="./"><span>下一篇：</span></router-link>
+            <router-link style="margin-top:10px;" to="./"><span>下一篇：</span></router-link>
         </div>
     </div>
 </template>
@@ -52,6 +52,9 @@ created: function() {
 </script>
 
 <style lang="scss" scoped>
+a:hover{
+    color: #9dc135;
+}
 .tsI-container{
     //height: 900px;
     border-bottom:2px solid #9dc135;
