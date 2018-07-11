@@ -1,27 +1,30 @@
 <template>
-<div class="productinside">
-    <div class="pdinside-title">
-        <progressive-img class="title-background" src="http://pa74otoy6.bkt.clouddn.com/pd-case-DT-Details-background.png" alt="" />
-        <img src="http://pa74otoy6.bkt.clouddn.com/case-light-logo.png">
+<div class="classinside-one">
+    <div class="case-top">
+        <progressive-img class="top-background" src="http://pa74otoy6.bkt.clouddn.com/pd-case-DT-Details-background.png" alt="" />
+        <img src="http://pa74otoy6.bkt.clouddn.com/case-light-logo.png" >
     </div>
-
-    <div class="pdinside-body">
-        <div style="display:flex;" v-for="(img,key) in imgs" :key="key" >          
-            <div v-if="key==1" class="body-name" >
-                <div class="name-top">
-                    <img class="logo" src="http://pa74otoy6.bkt.clouddn.com/opaque-logo.png" alt="">
-                    <span class="name-bottom">茶饮茶点</span>
-                </div>
-                <span class="pd-name">{{title}}</span>
-            </div>
-            <img  class="body-img" :src="img" alt="">
+    <div class="case-body">
+               
+        <div v-for="(item,key) in items" :key="key">   
+           <router-link  :to="{path:'/homepage/classicCaseInside2',query: {id: item.id}}">
+            <div class="picture"> 
+               <img class="case-picture" :src="item.imageArr[0]" alt="">
+               <div class="case-title">
+                   <span>{{item.title}}</span>
+               </div> 
+            </div>  
+            </router-link>
         </div>
+          
+    </div> 
+    <div class="case-foot">
+        <el-pagination
+            layout="prev, pager, next"
+            :total="totalCount" :page-size="pageSize" :current-page="currentPage" @current-change="currentPageChanged"
+        >
+        </el-pagination>
     </div>
-
-    <div class="pd-introduction">
-        <span>{{content}}</span>
-    </div>
-    
 </div>
 </template>
 
@@ -29,122 +32,108 @@
 export default {
     data() {
         return {
-            imgs:{
-                    
-            },
-            content:'',
-            title: ''
+            items:[
+
+            ],
+            currentPage:1,
+            totalCount:0,
+            pageSize:6
         }
-    },
+ },
 created: function() {
-    console.log(this.$route.query.id);
-    var that = this;
-     this.$ajax.get('/productShowerDetail', {
-        params:{
-            productShowerId:this.$route.query.id
-        }
-    })
-    .then(function (response) {
-      console.log(response);
-      that.content = response.data.model.content;
-      that.imgs = response.data.model.imageArr;
-      that.title = response.data.model.title;
-    })
-    .catch(function (response) {
-      console.log(response);
-    });
+    this.request();
+  },
+  methods: {
+      currentPageChanged(val) {
+          this.currentPage = val;
+              this.request();
+        console.log(`当前页: ${val}`);
+      },
+      request() {
+              var that = this;
+              
+            this.$ajax.get('/cases', {
+                params: {
+                    type:this.$route.query.type,
+                    page:this.currentPage,
+                    pageSize:this.pageSize
+                }
+
+            })
+            .then(function (response) {
+            console.log(response);
+            that.items = response.data.model.cases;
+            that.totalCount = response.data.model.totalCount
+            
+            })
+            .catch(function (response) {
+            console.log(response);
+            });
+      }
   }
 }
 </script>
 
+
 <style scoped>
-    .productinside{
-        margin:0;
-        padding:0;
-        border-bottom:2px solid #9dc135;
-    }
+.classinside-one{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    border-bottom:2px solid #9dc135;
+}
+.case-top{
+    height:200px;  
+    display: flex;
+    align-items:center;
+    justify-content:center;     
+}
 
-    .pdinside-title{
-        height:200px;
-        display: flex;
-        align-items:center;
-        justify-content:center;
-        margin-bottom: 80px;
-    }
-
-    .title-background{
-        min-width: 1300px;
-        height: 200px;
-        width: 100%;
-        position: absolute;
-        z-index: -1;
-    }
-
-    .pdinside-body{
-        width:1020px;       
-        display:flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin:0 auto;  
-    }
-
-    .body-name{
-        width:340px;
-        height:220px;       
-        font-size: 20px;
-        background: #9dc135; 
-        color:white;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+.top-background{
+    min-width: 1300px;
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+.case-body{
+    width:1000px;
+    height:500px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    margin: 0 auto;
+    margin-top:40px; 
     
-    .pd-name{
-        width:200px;
-        text-align: center;
-    }
+}
 
-    .name-top{
-        width:205px;
-        height:50px;
-        border:1px dotted white;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 10px;
-    }
+.picture{
+    width:305px;
+    height: 220px;
+}
 
-    .logo{
-        width:40px;
-        height:auto;
-    }
-
-    .name-bottom{
-        margin-left:5px;
-    }
-
-    .body-img{
-        width:340px;
-        height:220px;
-    }
-
-    .pd-introduction{
-        border:1px dotted #e0e0e0;
-        width:1020px;
-        margin:0 auto;       
-        margin-bottom:40px; 
-        margin-top:40px;       
-    }
-
-    .pd-introduction span{
-       line-height: 2;
-       display:flex;
-       justify-content: center;
-       margin-top:20px;
-       margin-bottom: 20px;
-       text-align: center;
-    }
-    
+.case-picture{
+    width:305px;
+    height: 220px;
+    position:absolute;
+    z-index: -1;
+}
+.case-title{
+    width:305px;   
+    background-color: rgba(174,203,87, 0.83);
+    text-align: center;
+    color: white;
+    line-height: 45px;
+    position: relative;
+    top: 160px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.case-foot{
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
 </style>

@@ -11,8 +11,8 @@ const menus = [{
     path: '/homepage/productDisplay'
 },
 {
-    title: '经典案例',
-    path: '/homepage/classicCase'
+    title: '服务内容',
+    path: '/homepage/serviceContent'
 },
 {
     title: '茶式动态',

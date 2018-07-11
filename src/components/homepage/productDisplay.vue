@@ -16,7 +16,7 @@
             <img class="pd-content-img" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
         </div>
         <div class="pd-more">
-            <span>MORE</span>
+            <router-link to="./productInside"><span>MORE</span></router-link>
         </div>
     </div>
     <div class="pd-main">
@@ -34,7 +34,7 @@
             <img class="pd-content-img" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
         </div>
         <div class="pd-more">
-            <span>MORE</span>
+            <router-link to="./productInside"><span>MORE</span></router-link>
         </div>
     </div>
     <div class="pd-main">
@@ -52,7 +52,7 @@
             <img class="pd-content-img" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
         </div>
         <div class="pd-more">
-            <span>MORE</span>
+            <router-link to="./productInside"><span>MORE</span></router-link>
         </div>
     </div>
     <div class="pd-main">
@@ -70,7 +70,7 @@
             <img class="pd-content-img" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
         </div>
         <div class="pd-more">
-            <span>MORE</span>
+            <router-link to="./productInside"><span>MORE</span></router-link>
         </div>
     </div>
     <div class="pd-main">
@@ -88,7 +88,7 @@
             <img class="pd-content-img" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
         </div>
         <div class="pd-more">
-            <span>MORE</span>
+            <router-link to="./productInside"><span>MORE</span></router-link>
         </div>
     </div>
 
@@ -141,6 +141,12 @@ created: function() {
 </script> -->
 
 <style lang="scss">
+.pd-more a:link{
+    color: #9dc135;
+}
+.pd-more a:visited{
+    color: #9dc135;
+}
 .pd-container{
     width: 100%;
 }
