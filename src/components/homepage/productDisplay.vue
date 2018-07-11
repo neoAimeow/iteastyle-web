@@ -11,9 +11,18 @@
             <hr style="width:33.3%;height:2px;border:none;border-top:2px solid #9dc135;" />
         </div>
         <div class="pd-content">
-            <img class="pd-content-img" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
-            <img class="pd-content-img" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
-            <img class="pd-content-img" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+            <div class="pd-content-img">
+                <img style="width: 100%;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+                <div class="pd-content-img-title"><span>紫色生日会</span></div>
+            </div>
+            <div class="pd-content-img">
+                <img style="width: 100%;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+                <div class="pd-content-img-title"><span>紫色生日会</span></div>
+            </div>
+            <div class="pd-content-img">
+                <img style="width: 100%;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+                <div class="pd-content-img-title"><span>紫色生日会</span></div>
+            </div>
         </div>
         <div class="pd-more">
             <router-link to="./productInside"><span>MORE</span></router-link>
@@ -29,9 +38,18 @@
             <hr style="width:33.3%;height:2px;border:none;border-top:2px solid #9dc135;" />
         </div>
         <div class="pd-content">
-            <img class="pd-content-img" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
-            <img class="pd-content-img" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
-            <img class="pd-content-img" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+            <div class="pd-content-img">
+                <img style="width: 100%;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+                <div class="pd-content-img-title"><span>紫色生日会</span></div>
+            </div>
+            <div class="pd-content-img">
+                <img style="width: 100%;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+                <div class="pd-content-img-title"><span>紫色生日会</span></div>
+            </div>
+            <div class="pd-content-img">
+                <img style="width: 100%;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+                <div class="pd-content-img-title"><span>紫色生日会</span></div>
+            </div>
         </div>
         <div class="pd-more">
             <router-link to="./productInside"><span>MORE</span></router-link>
@@ -47,9 +65,18 @@
             <hr style="width:33.3%;height:2px;border:none;border-top:2px solid #9dc135;" />
         </div>
         <div class="pd-content">
-            <img class="pd-content-img" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
-            <img class="pd-content-img" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
-            <img class="pd-content-img" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+            <div class="pd-content-img">
+                <img style="width: 100%;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+                <div class="pd-content-img-title"><span>紫色生日会</span></div>
+            </div>
+            <div class="pd-content-img">
+                <img style="width: 100%;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+                <div class="pd-content-img-title"><span>紫色生日会</span></div>
+            </div>
+            <div class="pd-content-img">
+                <img style="width: 100%;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+                <div class="pd-content-img-title"><span>紫色生日会</span></div>
+            </div>
         </div>
         <div class="pd-more">
             <router-link to="./productInside"><span>MORE</span></router-link>
@@ -65,9 +92,18 @@
             <hr style="width:33.3%;height:2px;border:none;border-top:2px solid #9dc135;" />
         </div>
         <div class="pd-content">
-            <img class="pd-content-img" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
-            <img class="pd-content-img" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
-            <img class="pd-content-img" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+            <div class="pd-content-img">
+                <img style="width: 100%;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+                <div class="pd-content-img-title"><span>紫色生日会</span></div>
+            </div>
+            <div class="pd-content-img">
+                <img style="width: 100%;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+                <div class="pd-content-img-title"><span>紫色生日会</span></div>
+            </div>
+            <div class="pd-content-img">
+                <img style="width: 100%;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+                <div class="pd-content-img-title"><span>紫色生日会</span></div>
+            </div>
         </div>
         <div class="pd-more">
             <router-link to="./productInside"><span>MORE</span></router-link>
@@ -83,9 +119,18 @@
             <hr style="width:33.3%;height:2px;border:none;border-top:2px solid #9dc135;" />
         </div>
         <div class="pd-content">
-            <img class="pd-content-img" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
-            <img class="pd-content-img" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
-            <img class="pd-content-img" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+            <div class="pd-content-img">
+                <img style="width: 100%;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+                <div class="pd-content-img-title"><span>紫色生日会</span></div>
+            </div>
+            <div class="pd-content-img">
+                <img style="width: 100%;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+                <div class="pd-content-img-title"><span>紫色生日会</span></div>
+            </div>
+            <div class="pd-content-img">
+                <img style="width: 100%;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+                <div class="pd-content-img-title"><span>紫色生日会</span></div>
+            </div>
         </div>
         <div class="pd-more">
             <router-link to="./productInside"><span>MORE</span></router-link>
@@ -185,6 +230,21 @@ created: function() {
 .pd-content-img{
     width: 30%;
     height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.pd-content-img-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    background: rgba(180, 218, 44, 0.5);
+    width: 21.6%;
+    min-width: 216px;
+    color: white;
+    height: 40px;
 }
 .pd-more{
     width: 10%;
