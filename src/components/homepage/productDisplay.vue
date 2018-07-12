@@ -25,7 +25,7 @@
             </div>
         </div>
         <div class="pd-more">
-            <router-link to="./productInside"><span>MORE</span></router-link>
+            <router-link to="../display/teaDessert"><span>MORE</span></router-link>
         </div>
     </div>
     <div class="pd-main">

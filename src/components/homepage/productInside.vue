@@ -1,6 +1,8 @@
 <template>
-<div class="classinside-one">
-    <div class="case-top">
+<div class="pdi-container">
+    
+</div>
+<!--<div class="case-top">
         <progressive-img class="top-background" src="http://pa74otoy6.bkt.clouddn.com/pd-case-DT-Details-background.png" alt="" />
         <img src="http://pa74otoy6.bkt.clouddn.com/case-light-logo.png" >
     </div>
@@ -24,8 +26,7 @@
             :total="totalCount" :page-size="pageSize" :current-page="currentPage" @current-change="currentPageChanged"
         >
         </el-pagination>
-    </div>
-</div>
+    </div>-->
 </template>
 
 <!-- <script>
