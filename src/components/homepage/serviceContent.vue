@@ -18,9 +18,7 @@
       
       <el-tabs v-model="activeName2" type="card" @tab-click="handleClick">
         <el-tab-pane label="茶歇服务" name="first">
-          <tea-break-service>
-
-          </tea-break-service>
+          <TeaBreakService></TeaBreakService>
         </el-tab-pane>
         <el-tab-pane label="茶艺表演" name="second">茶艺表演</el-tab-pane>
         <el-tab-pane label="DIY活动" name="third">DIY活动</el-tab-pane>
@@ -46,7 +44,7 @@
       }
     },
     components: {
-      TeaBreakService
+      TeaBreakService,
     }
   };
 </script>
