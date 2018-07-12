@@ -66,7 +66,7 @@
     justify-content: center;
     align-items: flex-end;
 }
-.da-main-title{
+.d-main-title{
     position: absolute;
     z-index: 1;
     color: white;
