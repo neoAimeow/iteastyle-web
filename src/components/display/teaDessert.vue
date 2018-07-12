@@ -10,6 +10,27 @@
         <div class="td-main">
             <div class="ts-main-img">
                 <img style="width: 270px;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+                <div class="ts-main-title"><span>紫色生日会</span></div>
+            </div>
+            <div class="ts-main-img">
+                <img style="width: 270px;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+                <div class="ts-main-title"><span>紫色生日会</span></div>
+            </div>
+            <div class="ts-main-img">
+                <img style="width: 270px;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+                <div class="ts-main-title"><span>紫色生日会</span></div>
+            </div>
+            <div class="ts-main-img">
+                <img style="width: 270px;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+                <div class="ts-main-title"><span>紫色生日会</span></div>
+            </div>
+            <div class="ts-main-img">
+                <img style="width: 270px;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+                <div class="ts-main-title"><span>紫色生日会</span></div>
+            </div>
+            <div class="ts-main-img">
+                <img style="width: 270px;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+                <div class="ts-main-title"><span>紫色生日会</span></div>
             </div>
         </div>
     </div>
@@ -19,7 +40,7 @@
 .td-container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
 .td-head{
     width: 100%;
@@ -32,7 +53,28 @@
     z-index: 1;
 }
 .td-main{
-    margin-top: 40px;
     margin-bottom: 40px;
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.ts-main-img{
+    margin-top: 40px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.ts-main-title{
+    position: absolute;
+    z-index: 1;
+    color: white;
+    background-color: rgba(180, 218, 44, 0.5);
+    width: 270px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 </style>
