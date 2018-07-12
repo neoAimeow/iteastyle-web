@@ -2,12 +2,11 @@
     <div class="sc-container">
       <div class="sc-head">
         <div class="head-name-top">
-          <span>TEA BREAK</span>
-          <span>WITH IMAGINATIVE AND HEALTHY</span>
+          <span>TEA BREAK WITH<br>IMAGINATIVE AND HEALTHY</span>
           <div class="head-name-bottom">
             <span class="C-name">创意茶歇</span>
             <img class="title-logo" src="http://pa74otoy6.bkt.clouddn.com/opaque-logo.png" alt="logo">
-            <span class="C-name">健康时尚</span>
+            <span class="C-name" style="margin-left:10px;">健康时尚</span>
           </div>
         </div>
 
@@ -72,6 +71,10 @@
 
 
 <style scoped>
+.sc-container{
+  margin:0;
+  padding: 0;
+}
 .sc-head{
   display: flex;
   justify-content: center;
@@ -94,6 +97,7 @@
   justify-content: center;
   align-items: center;
   margin-top:20px;
+  min-width:500px;
 }
 
 .title-logo{
