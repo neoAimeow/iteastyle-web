@@ -28,7 +28,7 @@
 </div>
 </template>
 
-<script>
+<!-- <script>
 export default {
     data() {
         return {
@@ -72,7 +72,7 @@ created: function() {
       }
   }
 }
-</script>
+</script> -->
 
 
 <style scoped>

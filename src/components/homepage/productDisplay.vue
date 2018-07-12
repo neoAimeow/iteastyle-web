@@ -3,24 +3,24 @@
 
     <div class="pd-main">
         <div class="pd-title">
-            <hr style="width:33.3%;height:2px;border:none;border-top:2px solid #9dc135;" />
+            <hr style="width:260px;height:2px;border:none;border-top:2px solid #9dc135;" />
             <div class="pd-title-name">
                 <span style="letter-spacing:10px;">茶饮茶点</span>
                 <span style="font-size:10px;">TEA DESSERT</span>
             </div>
-            <hr style="width:33.3%;height:2px;border:none;border-top:2px solid #9dc135;" />
+            <hr style="width:260px;height:2px;border:none;border-top:2px solid #9dc135;" />
         </div>
         <div class="pd-content">
             <div class="pd-content-img">
-                <img style="width: 100%;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+                <img style="width: 270px;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
                 <div class="pd-content-img-title"><span>紫色生日会</span></div>
             </div>
             <div class="pd-content-img">
-                <img style="width: 100%;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+                <img style="width: 270px;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
                 <div class="pd-content-img-title"><span>紫色生日会</span></div>
             </div>
             <div class="pd-content-img">
-                <img style="width: 100%;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+                <img style="width: 270px;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
                 <div class="pd-content-img-title"><span>紫色生日会</span></div>
             </div>
         </div>
@@ -30,24 +30,24 @@
     </div>
     <div class="pd-main">
         <div class="pd-title">
-            <hr style="width:33.3%;height:2px;border:none;border-top:2px solid #9dc135;" />
+            <hr style="width:260px;height:2px;border:none;border-top:2px solid #9dc135;" />
             <div class="pd-title-name">
                 <span style="letter-spacing:10px;">茶文化讲座</span>
                 <span style="font-size:10px;">TEA CULTURE SEMINAR</span>
             </div>
-            <hr style="width:33.3%;height:2px;border:none;border-top:2px solid #9dc135;" />
+            <hr style="width:260px;height:2px;border:none;border-top:2px solid #9dc135;" />
         </div>
         <div class="pd-content">
             <div class="pd-content-img">
-                <img style="width: 100%;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+                <img style="width: 270px;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
                 <div class="pd-content-img-title"><span>紫色生日会</span></div>
             </div>
             <div class="pd-content-img">
-                <img style="width: 100%;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+                <img style="width: 270px;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
                 <div class="pd-content-img-title"><span>紫色生日会</span></div>
             </div>
             <div class="pd-content-img">
-                <img style="width: 100%;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+                <img style="width: 270px;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
                 <div class="pd-content-img-title"><span>紫色生日会</span></div>
             </div>
         </div>
@@ -57,24 +57,24 @@
     </div>
     <div class="pd-main">
         <div class="pd-title">
-            <hr style="width:33.3%;height:2px;border:none;border-top:2px solid #9dc135;" />
+            <hr style="width:260px;height:2px;border:none;border-top:2px solid #9dc135;" />
             <div class="pd-title-name">
                 <span>DIY 活 动</span>
                 <span style="font-size:10px;">DIY ACTIVITES</span>
             </div>
-            <hr style="width:33.3%;height:2px;border:none;border-top:2px solid #9dc135;" />
+            <hr style="width:260px;height:2px;border:none;border-top:2px solid #9dc135;" />
         </div>
         <div class="pd-content">
             <div class="pd-content-img">
-                <img style="width: 100%;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+                <img style="width: 270px;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
                 <div class="pd-content-img-title"><span>紫色生日会</span></div>
             </div>
             <div class="pd-content-img">
-                <img style="width: 100%;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+                <img style="width: 270px;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
                 <div class="pd-content-img-title"><span>紫色生日会</span></div>
             </div>
             <div class="pd-content-img">
-                <img style="width: 100%;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+                <img style="width: 270px;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
                 <div class="pd-content-img-title"><span>紫色生日会</span></div>
             </div>
         </div>
@@ -84,24 +84,24 @@
     </div>
     <div class="pd-main">
         <div class="pd-title">
-            <hr style="width:33.3%;height:2px;border:none;border-top:2px solid #9dc135;" />
+            <hr style="width:260px;height:2px;border:none;border-top:2px solid #9dc135;" />
             <div class="pd-title-name">
                 <span style="letter-spacing:10px;">茶歇定制</span>
                 <span style="font-size:10px;">TEA BREAK CUSTOMISATION</span>
             </div>
-            <hr style="width:33.3%;height:2px;border:none;border-top:2px solid #9dc135;" />
+            <hr style="width:260px;height:2px;border:none;border-top:2px solid #9dc135;" />
         </div>
         <div class="pd-content">
             <div class="pd-content-img">
-                <img style="width: 100%;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+                <img style="width: 270px;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
                 <div class="pd-content-img-title"><span>紫色生日会</span></div>
             </div>
             <div class="pd-content-img">
-                <img style="width: 100%;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+                <img style="width: 270px;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
                 <div class="pd-content-img-title"><span>紫色生日会</span></div>
             </div>
             <div class="pd-content-img">
-                <img style="width: 100%;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+                <img style="width: 270px;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
                 <div class="pd-content-img-title"><span>紫色生日会</span></div>
             </div>
         </div>
@@ -111,24 +111,24 @@
     </div>
     <div class="pd-main">
         <div class="pd-title">
-            <hr style="width:33.3%;height:2px;border:none;border-top:2px solid #9dc135;" />
+            <hr style="width:260px;height:2px;border:none;border-top:2px solid #9dc135;" />
             <div class="pd-title-name">
                 <span style="letter-spacing:10px;">茶艺表演</span>
                 <span style="font-size:10px;">TEA PERFORMANCE</span>
             </div>
-            <hr style="width:33.3%;height:2px;border:none;border-top:2px solid #9dc135;" />
+            <hr style="width:260px;height:2px;border:none;border-top:2px solid #9dc135;" />
         </div>
         <div class="pd-content">
             <div class="pd-content-img">
-                <img style="width: 100%;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+                <img style="width: 270px;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
                 <div class="pd-content-img-title"><span>紫色生日会</span></div>
             </div>
             <div class="pd-content-img">
-                <img style="width: 100%;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+                <img style="width: 270px;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
                 <div class="pd-content-img-title"><span>紫色生日会</span></div>
             </div>
             <div class="pd-content-img">
-                <img style="width: 100%;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+                <img style="width: 270px;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
                 <div class="pd-content-img-title"><span>紫色生日会</span></div>
             </div>
         </div>
@@ -206,20 +206,20 @@ created: function() {
     align-items: center;
 }
 .pd-title{
-    width: 70%;
+    width: 720px;
     //background: yellow;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 .pd-title-name{
-    width: 33.3%;
+    width: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .pd-content{
-    width: 90%;
+    width: 900px;
     height: 200px;
     //background: blue;
     display: flex;
@@ -228,7 +228,7 @@ created: function() {
     margin-top: 40px;
 }
 .pd-content-img{
-    width: 30%;
+    width: 270px;
     height: 200px;
     display: flex;
     flex-direction: column;
@@ -241,8 +241,7 @@ created: function() {
     position: absolute;
     z-index: 1;
     background: rgba(180, 218, 44, 0.5);
-    width: 21.6%;
-    min-width: 216px;
+    width: 270px;
     color: white;
     height: 40px;
 }
