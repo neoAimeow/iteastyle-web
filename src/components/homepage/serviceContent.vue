@@ -1,8 +1,10 @@
 <template>
     <div class="sc-container">
       <div class="sc-head">
-        <img style="width:100%;position: absolute;z-index: -1;"  src="http://pa74otoy6.bkt.clouddn.com/service-title-bkground.png" alt="background">
-        <div class="head-name-top">
+        <!-- <img style="width:100%;position: absolute;z-index: -1;"  src="http://pa74otoy6.bkt.clouddn.com/service-title-bkground.png" alt="background"> -->
+        
+        <img style="width:100%;"  src="http://pa74otoy6.bkt.clouddn.com/service-title-bkground.png" alt="background">
+        <!-- <div class="head-name-top">
           <span class="E-name">TEA BREAK</span>
           <span class="E-name">WITH IMAGINATIVE AND HEALTHY</span>
           <div class="head-name-bottom">
@@ -10,22 +12,28 @@
             <img src="" alt="logo">
             <span class="C-name">健康时尚</span>
           </div>
-        </div>
+        </div> -->
       </div>
 
       
-      <!-- <el-tabs v-model="activeName2" type="card" @tab-click="handleClick">
-        <el-tab-pane label="茶歇服务" name="first">茶歇服务</el-tab-pane>
+      <el-tabs v-model="activeName2" type="card" @tab-click="handleClick">
+        <el-tab-pane label="茶歇服务" name="first">
+          <tea-break-service>
+
+          </tea-break-service>
+        </el-tab-pane>
         <el-tab-pane label="茶艺表演" name="second">茶艺表演</el-tab-pane>
         <el-tab-pane label="DIY活动" name="third">DIY活动</el-tab-pane>
         <el-tab-pane label="茶文化讲座" name="fourth">茶文化讲座</el-tab-pane>
         <el-tab-pane label="杭州伴手礼" name="fifth">杭州伴手礼</el-tab-pane>
-      </el-tabs>  -->
+      </el-tabs> 
        
     </div>
 </template>
 
 <script>
+ import TeaBreakService from '../service/teaBreakService.vue';
+
   export default {
     data() {
       return {
@@ -36,6 +44,9 @@
       handleClick(tab, event) {
         console.log(tab, event);
       }
+    },
+    components: {
+      TeaBreakService
     }
   };
 </script>
