@@ -52,7 +52,7 @@
             </div>
         </div>
         <div class="pd-more">
-            <router-link to="./productInside"><span>MORE</span></router-link>
+            <router-link to="../display/teaCultureSeminar"><span>MORE</span></router-link>
         </div>
     </div>
     <div class="pd-main">
@@ -79,7 +79,7 @@
             </div>
         </div>
         <div class="pd-more">
-            <router-link to="./productInside"><span>MORE</span></router-link>
+            <router-link to="../display/diyActivites"><span>MORE</span></router-link>
         </div>
     </div>
     <div class="pd-main">
@@ -106,7 +106,7 @@
             </div>
         </div>
         <div class="pd-more">
-            <router-link to="./productInside"><span>MORE</span></router-link>
+            <router-link to="../display/teaBreakCustomisation"><span>MORE</span></router-link>
         </div>
     </div>
     <div class="pd-main">
@@ -133,7 +133,7 @@
             </div>
         </div>
         <div class="pd-more">
-            <router-link to="./productInside"><span>MORE</span></router-link>
+            <router-link to="../display/teaPerformance"><span>MORE</span></router-link>
         </div>
     </div>
 

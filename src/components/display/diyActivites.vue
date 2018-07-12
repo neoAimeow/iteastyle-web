@@ -1,5 +1,6 @@
 <template>
     <div class="da-container">
+        <h1>diy活动</h1>
         <div class="da-head">
             <img style="width:100%;" src="http://pa74otoy6.bkt.clouddn.com/pd-case-DT-Details-background.png" alt="">
             <div class="da-head-logo">
@@ -66,7 +67,7 @@
     justify-content: center;
     align-items: flex-end;
 }
-.d-main-title{
+.da-main-title{
     position: absolute;
     z-index: 1;
     color: white;

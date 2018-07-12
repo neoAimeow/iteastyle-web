@@ -1,5 +1,6 @@
 <template>
     <div class="tbc-container">
+        <h1>茶歇定制</h1>
         <div class="tbc-head">
             <img style="width:100%;" src="http://pa74otoy6.bkt.clouddn.com/pd-case-DT-Details-background.png" alt="">
             <div class="tbc-head-logo">

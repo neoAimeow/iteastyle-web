@@ -1,5 +1,6 @@
 <template>
     <div class="tp-container">
+        <h1>茶艺表演</h1>
         <div class="tp-head">
             <img style="width:100%;" src="http://pa74otoy6.bkt.clouddn.com/pd-case-DT-Details-background.png" alt="">
             <div class="tp-head-logo">
