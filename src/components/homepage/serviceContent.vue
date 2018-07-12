@@ -1,18 +1,17 @@
 <template>
     <div class="sc-container">
       <div class="sc-head">
-        <!-- <img style="width:100%;position: absolute;z-index: -1;"  src="http://pa74otoy6.bkt.clouddn.com/service-title-bkground.png" alt="background"> -->
-        
-        <img style="width:100%;"  src="http://pa74otoy6.bkt.clouddn.com/service-title-bkground.png" alt="background">
-        <!-- <div class="head-name-top">
-          <span class="E-name">TEA BREAK</span>
-          <span class="E-name">WITH IMAGINATIVE AND HEALTHY</span>
+        <div class="head-name-top">
+          <span>TEA BREAK</span>
+          <span>WITH IMAGINATIVE AND HEALTHY</span>
           <div class="head-name-bottom">
             <span class="C-name">创意茶歇</span>
-            <img src="" alt="logo">
+            <img class="title-logo" src="http://pa74otoy6.bkt.clouddn.com/opaque-logo.png" alt="logo">
             <span class="C-name">健康时尚</span>
           </div>
-        </div> -->
+        </div>
+
+        <img style="width:100%;"  src="http://pa74otoy6.bkt.clouddn.com/service-title-bkground.png" alt="background">
       </div>
 
       
@@ -71,43 +70,39 @@
   };
 </script>
 
-<!--<script>
-export default {
-  data() {
-    return {
-      items:{}
-    }
-  },
-  created: function() {
-    var that = this;
-     this.$ajax.get('/getCaseTypes', {
 
-    })
-    .then(function (response) {
-      console.log(response);
-      that.items = response.data.model;
-    })
-    .catch(function (response) {
-      console.log(response);
-    });
-  }
-}
-</script> -->
 <style scoped>
+.sc-head{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom:20px;
+}
 .head-name-top{ 
+  position: absolute;
+  z-index: 1;
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  text-align: center; 
+  font-size: 35px;
 }
 
-.head-name-bottom{
-  color: white;
+.head-name-bottom{ 
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-top:20px;
 }
 
+.title-logo{
+  width:60px;
+  height:auto;
+  margin:0 20px;
+}
+
+.C-name{
+  letter-spacing:10px;
+}
 </style>
