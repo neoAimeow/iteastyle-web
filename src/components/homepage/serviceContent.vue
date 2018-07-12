@@ -17,13 +17,27 @@
 
       
       <el-tabs v-model="activeName2" type="card" @tab-click="handleClick">
+
         <el-tab-pane label="茶歇服务" name="first">
           <TeaBreakService></TeaBreakService>
         </el-tab-pane>
-        <el-tab-pane label="茶艺表演" name="second">茶艺表演</el-tab-pane>
-        <el-tab-pane label="DIY活动" name="third">DIY活动</el-tab-pane>
-        <el-tab-pane label="茶文化讲座" name="fourth">茶文化讲座</el-tab-pane>
-        <el-tab-pane label="杭州伴手礼" name="fifth">杭州伴手礼</el-tab-pane>
+
+        <el-tab-pane label="茶艺表演" name="second">
+          <Performance></Performance>
+        </el-tab-pane>
+
+        <el-tab-pane label="DIY活动" name="third">
+          <DIYActivites></DIYActivites>
+        </el-tab-pane>
+        
+        <el-tab-pane label="茶文化讲座" name="fourth">
+          <Seminar></Seminar>
+        </el-tab-pane>
+
+        <el-tab-pane label="杭州伴手礼" name="fifth">
+          <Souvenir></Souvenir>
+        </el-tab-pane>
+
       </el-tabs> 
        
     </div>
@@ -31,6 +45,10 @@
 
 <script>
  import TeaBreakService from '../service/teaBreakService.vue';
+ import Performance from '../service/performance.vue';
+ import DIYActivites from '../service/diyActivites.vue';
+ import Seminar from '../service/seminar.vue';
+ import Souvenir from '../service/souvenir.vue';
 
   export default {
     data() {
@@ -45,6 +63,10 @@
     },
     components: {
       TeaBreakService,
+      Performance,
+      DIYActivites,
+      Seminar,
+      Souvenir
     }
   };
 </script>
