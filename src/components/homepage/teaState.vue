@@ -1,7 +1,7 @@
 <template>
     <div class="ts-container">
         <div class="ts-head">
-            <img style="width:100%;" src="http://pa74otoy6.bkt.clouddn.com/pd-case-DT-Details-background.png" alt="">
+            <img style="width:100%;" src="http://pa74otoy6.bkt.clouddn.com/teaState-title-bkground.png" alt="">
             <div class="ts-title">
                 <div class="ts-title-en">
                     <span>TEA BREAK</span>
