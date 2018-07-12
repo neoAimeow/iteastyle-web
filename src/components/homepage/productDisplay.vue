@@ -196,7 +196,7 @@ created: function() {
     width: 100%;
 }
 .pd-main{
-    width: 80%;
+    width: 900px;
     //background: red;
     margin: 0 auto;
     margin-top: 20px;
