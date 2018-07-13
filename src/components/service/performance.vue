@@ -1,31 +1,31 @@
 <template>
     <div class="ps-container">
         <div class="ps-main">
-            <div class="ps-perform">
-                <img src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="" class="ps-perform-img">
-                <div class="ps-perform-title">
-                    <img src="http://pa74otoy6.bkt.clouddn.com/120.png" alt="" class="ps-perform-logo">
-                    <div class="ps-perform-name">
+            <div class="ps-content">
+                <img src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="" class="ps-content-img">
+                <div class="ps-content-title">
+                    <img src="http://pa74otoy6.bkt.clouddn.com/120.png" alt="" class="ps-content-logo">
+                    <div class="ps-content-name">
                         <span style="color:#9dc135;">IBM茶艺表演</span>
                         <span style=" color: rgb(228, 227, 227);">TEA PERFORMANCE</span>
                     </div>
                 </div>
             </div>
-            <div class="ps-perform">
-                <img src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="" class="ps-perform-img">
-                <div class="ps-perform-title">
-                    <img src="http://pa74otoy6.bkt.clouddn.com/120.png" alt="" class="ps-perform-logo">
-                    <div class="ps-perform-name">
+            <div class="ps-content">
+                <img src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="" class="ps-content-img">
+                <div class="ps-content-title">
+                    <img src="http://pa74otoy6.bkt.clouddn.com/120.png" alt="" class="ps-content-logo">
+                    <div class="ps-content-name">
                         <span style="color:#9dc135;">IBM茶艺表演</span>
                         <span style=" color: rgb(228, 227, 227);">TEA PERFORMANCE</span>
                     </div>
                 </div>
             </div>
-            <div class="ps-perform">
-                <img src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="" class="ps-perform-img">
-                <div class="ps-perform-title">
-                    <img src="http://pa74otoy6.bkt.clouddn.com/120.png" alt="" class="ps-perform-logo">
-                    <div class="ps-perform-name">
+            <div class="ps-content">
+                <img src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="" class="ps-content-img">
+                <div class="ps-content-title">
+                    <img src="http://pa74otoy6.bkt.clouddn.com/120.png" alt="" class="ps-content-logo">
+                    <div class="ps-content-name">
                         <span style="color:#9dc135;">IBM茶艺表演</span>
                         <span style=" color: rgb(228, 227, 227);">TEA PERFORMANCE</span>
                     </div>
@@ -43,7 +43,6 @@ export default {
 
 <style lang="scss">
 .ps-container{
-    margin-top: 40px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -57,17 +56,18 @@ export default {
     margin-bottom: 200px;
     flex-wrap: wrap;
 }
-.ps-perform{
+.ps-content{
     width: 300px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.ps-perform-img{
+.ps-content-img{
     width: 270px;
     height: 200px;
 }
-.ps-perform-title{
+.ps-content-title{
     margin-top: 20px;
     display: flex;
     flex-direction: row;
@@ -75,11 +75,11 @@ export default {
     align-items: center;
     width: 270px;
 }
-.ps-perform-logo{
+.ps-content-logo{
     width: 50px;
     height: 50px;
 }
-.ps-perform-name{
+.ps-content-name{
     color: white;
     font-size: 15px;
     display: flex;
