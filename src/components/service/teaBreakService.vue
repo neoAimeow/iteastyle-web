@@ -47,7 +47,7 @@
                 <span>茶歇菜单</span>
             </div>
 
-            <div class="border">
+            <div class="menu-border">
                 <span>&#xe9ea;</span>
                 <span>点心</span>
 
