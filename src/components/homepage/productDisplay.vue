@@ -12,7 +12,7 @@
         </div>
         <div class="pd-content">
             <div class="pd-content-img">
-                <img style="width: 270px;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
+                <silentbox-single src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" autoplay="true" description=""><img style="width: 270px;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt=""></silentbox-single>
                 <div class="pd-content-img-title"><span>紫色生日会</span></div>
             </div>
             <div class="pd-content-img">
@@ -140,42 +140,32 @@
 </div>
 </template>
 
-<!-- <script>
+<script>
  export default {
     data() {
         return {
             items:[
 
             ],
-            headerImageUrl:'',
-            currentPage:1,
-            totalCount:0,
-            pageSize:6
+
         }
  },
 created: function() {
     this.request();
   },
   methods: {
-      currentPageChanged(val) {
-          this.currentPage = val;
-              this.request();
-        console.log(`当前页: ${val}`);
-      },
+
       request() {
               var that = this;
-            this.$ajax.get('/productShower', {
+            this.$ajax.get('/getCasesHomeData', {
                 params: {
-                    page:this.currentPage,
-                    pageSize:this.pageSize
+                    type:this.$route.query.type
                 }
 
             })
             .then(function (response) {
             console.log(response);
-            that.items = response.data.model.products;
-            that.totalCount = response.data.model.totalCount
-            that.headerImageUrl = response.data.model.headerImageUrl
+            that.items = response.data.model.caseType;
             })
             .catch(function (response) {
             console.log(response);
@@ -183,7 +173,7 @@ created: function() {
       }
   }
 }
-</script> -->
+</script>
 
 <style lang="scss">
 .pd-more a:link{
@@ -235,15 +225,13 @@ created: function() {
     justify-content: flex-end;
 }
 .pd-content-img-title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    z-index: 1;
-    background: rgba(180, 218, 44, 0.5);
+    position: relative;
+    background-color: rgba(180, 218, 44, 0.5);
     width: 270px;
     color: white;
-    height: 40px;
+    line-height: 35px;
+    bottom: 50px;
+    text-align: center;
 }
 .pd-more{
     width: 10%;

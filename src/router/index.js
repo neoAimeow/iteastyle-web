@@ -12,7 +12,7 @@ import ProductInside from '@/components/homepage/productInside.vue'
 import TeaStateInside from '@/components/homepage/teaStateInside.vue'
 import TeaDessert from '@/components/display/teaDessert.vue'
 import TeaCultureSeminar from '@/components/display/teaCultureSeminar.vue'
-import DiyActivites from '@/components/display/diyActivites.vue'
+import DiyActivitesDisplay from '@/components/display/diyActivitesDisplay.vue'
 import TeaBreakCustomisation from '@/components/display/teaBreakCustomisation.vue'
 import TeaPerformance from '@/components/display/teaPerformance.vue'
 
@@ -71,9 +71,9 @@ export default new Router({
       component: TeaCultureSeminar
     },
     {
-      path: '/display/diyActivites',
-      name: 'diyActivites',
-      component: DiyActivites
+      path: '/display/diyActivitesDisplay',
+      name: 'diyActivitesDisplay',
+      component: DiyActivitesDisplay
     },
     {
       path: '/display/teaBreakCustomisation',
