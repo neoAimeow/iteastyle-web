@@ -55,13 +55,16 @@ export default {
     flex-direction: row;
     margin-bottom: 200px;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 }
 .ps-content{
-    width: 300px;
+    width: 270px;
     margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow:0px 0px  5px 2px #aaa;
 }
 .ps-content-img{
     width: 270px;
@@ -74,6 +77,7 @@ export default {
     justify-content: space-around;
     align-items: center;
     width: 270px;
+    margin-bottom: 10px;
 }
 .ps-content-logo{
     width: 50px;
