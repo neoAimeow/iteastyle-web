@@ -10,7 +10,6 @@
                         <span class="e-title">RESERVATION</span>
                     </div>               
                 </div>
-                <!-- <div class="hr"></div> -->
             </div>
 
             <div class="way">
@@ -18,9 +17,45 @@
                 <span>预定方式</span>
             </div>
 
+            <div class="way-ct">
+                <div class="ct1">
+                    <div class="ct-title">
+                    <img style="width:30px;height:atuo;" src="http://pa74otoy6.bkt.clouddn.com/opaque-logo.png" alt="">
+                    <span class="ct-title-name">高端个性化定制</span>
+                    </div>
+                    <span >按照您的个性化需求，茶歇师会为您制定独一无二的产品，预算金额将根据工作量进行相应预算。</span>
+                </div>
+                <div class="ct2">
+                    <div class="ct-title">
+                    <img style="width:30px;height:atuo;" src="http://pa74otoy6.bkt.clouddn.com/opaque-logo.png" alt="">
+                    <span class="ct-title-name">高端个性化定制</span>
+                    </div>
+                    <span >按照您的个性化需求，茶歇师会为您制定独一无二的产品，预算金额将根据工作量进行相应预算。</span>
+                </div>
+                <div class="ct3">
+                    <div class="ct-title">
+                    <img style="width:30px;height:atuo;" src="http://pa74otoy6.bkt.clouddn.com/opaque-logo.png" alt="">
+                    <span class="ct-title-name">高端个性化定制</span>
+                    </div>
+                    <span >按照您的个性化需求，茶歇师会为您制定独一无二的产品，预算金额将根据工作量进行相应预算。</span>
+                </div>
+
+            </div>
+
             <div class="menu">
-            <span class="res-logo">&#xe9e7;</span>
-            <span>茶歇菜单</span>
+                <span class="res-logo">&#xe9e7;</span>
+                <span>茶歇菜单</span>
+            </div>
+
+            <div class="border">
+                <span>&#xe9ea;</span>
+                <span>点心</span>
+
+                <span>&#xe9ec;</span>
+                <span>水果拼盘</span>
+
+                <span>&#xe9eb;</span>
+                <span>饮料</span>
             </div>
             
         </div>
@@ -73,7 +108,7 @@ export default {
 }
 
 .e-title{
-    font-size: 14px;
+    font-size: 10px;
 }
 
 .border{   
@@ -93,9 +128,6 @@ export default {
     align-items: center;
 }
 
-.way{
-    margin-top:20px;
-}
 
 .hr{
     border:0.5px dashed #9dc135;
@@ -110,7 +142,49 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top:30px;
     
 }
 
+.reservation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.way,.menu{
+    margin-top:30px;
+    color:#9dc135;
+    font-size: 20px;
+}
+
+.ct1,.ct2,.ct3{
+    
+    width:200px;
+
+}
+
+.way-ct{
+    display: flex;
+    flex-direction: row;
+    margin-top:30px;
+}
+
+.ct2{
+    margin:0 50px;
+}
+
+.ct-title-name{
+    font-size: 18px;
+    margin-left:10px;
+    font-weight:bold;
+    
+}
+
+.ct-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom:10px;
+}
 </style>
