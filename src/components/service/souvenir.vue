@@ -2,8 +2,9 @@
     <div class="souvenir-container">
         <div class="souvenir-main">
             <div class="souvenir-main-title">
-                <span>杭州伴手礼</span>
-                <span>TEA SOUVENIR</span>
+                <span style="background:green;">杭州伴手礼</span>
+                <hr style="width:600px;height:1px;border:none;border-top:2px solid #9dc135;" />
+                <span style="background:yellow;">TEA SOUVENIR</span>
             </div>
             <div class="souvenir-main-content">
                 <div class="souvenir-main-content-introduce">
