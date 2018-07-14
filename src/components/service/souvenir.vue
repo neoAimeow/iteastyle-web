@@ -73,6 +73,43 @@
                 <img class="souvenir-main-drink-img" src="http://pa74otoy6.bkt.clouddn.com/case-inside2-picture2.png" alt="">
             </div>
         </div>
+        <div class="souvenir-main">
+            <div class="souvenir-main-title">
+                <span style="position: relative;top:40px;left:50px;letter-spacing:5px;">伴手心意</span>
+                <div class="souvenir-main-title-cn"></div>
+                <div class="souvenir-main-title-hr"></div>
+                <span style="position: relative;left:40px;">TEA SOUVENIR</span>
+                <div class="souvenir-main-title-en"></div>
+            </div>
+            <div class="souvenir-main-gift">
+                <div class="souvenir-main-gitf-category">
+                    <div class="souvenir-main-gitf-list">
+                        <table>
+                            <tr>
+                                <th>编号</th>
+                                <th>品名</th>
+                                <th>包装</th>
+                                <th>规格</th>
+                                <th>价格（RMB）</th>
+                            </tr>
+                            <tr>
+                                <td>HZ001</td>
+                                <td>龙井茶特级A</td>
+                                <td>单罐礼盒</td>
+                                <td>50G*1罐</td>
+                                <td>82.00</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="souvenir-main-gitf-introduce">
+
+                    </div>
+                </div>
+                <div class="souvenir-main-gitf-img">
+
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -83,6 +120,12 @@ export default {
 </script>
 
 <style lang="scss">
+th, td{
+    padding: 0 30px 0 30px;
+}
+td{
+    border-bottom:1px dashed #9dc135;
+}
 .souvenir-container{
     width: 100%;
     display: flex;
