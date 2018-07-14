@@ -23,21 +23,21 @@
                     <img style="width:30px;height:atuo;" src="http://pa74otoy6.bkt.clouddn.com/opaque-logo.png" alt="">
                     <span class="ct-title-name">高端个性化定制</span>
                     </div>
-                    <span >按照您的个性化需求，茶歇师会为您制定独一无二的产品，预算金额将根据工作量进行相应预算。</span>
+                    <span>按照您的个性化需求，茶歇师会为您制定独一无二的产品，预算金额将根据工作量进行相应预算。</span>
                 </div>
                 <div class="ct2">
                     <div class="ct-title">
                     <img style="width:30px;height:atuo;" src="http://pa74otoy6.bkt.clouddn.com/opaque-logo.png" alt="">
-                    <span class="ct-title-name">高端个性化定制</span>
+                    <span class="ct-title-name">人数标准化菜单</span>
                     </div>
-                    <span >按照您的个性化需求，茶歇师会为您制定独一无二的产品，预算金额将根据工作量进行相应预算。</span>
+                    <span>按照您提供的人数，选择菜单，立刻生成预算。</span>
                 </div>
                 <div class="ct3">
                     <div class="ct-title">
                     <img style="width:30px;height:atuo;" src="http://pa74otoy6.bkt.clouddn.com/opaque-logo.png" alt="">
-                    <span class="ct-title-name">高端个性化定制</span>
+                    <span class="ct-title-name">一人一份</span>
                     </div>
-                    <span >按照您的个性化需求，茶歇师会为您制定独一无二的产品，预算金额将根据工作量进行相应预算。</span>
+                    <span>每人平均分配，人手一份，同样根据人数快速生成预算。</span>
                 </div>
 
             </div>
@@ -344,13 +344,10 @@ export default {};
 
 .way-ct {
   display: flex;
-  flex-direction: row;
   margin-top: 30px;
   margin-bottom: 20px;
-}
-
-.ct2 {
-  margin: 0 50px;
+  width:900px;
+  justify-content:space-between;
 }
 
 .ct-title-name {
