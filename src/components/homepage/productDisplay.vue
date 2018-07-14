@@ -1,6 +1,9 @@
 <template>
 <div class="pd-container">
-
+    <div class="pd-head">
+        <img src="http://pa74otoy6.bkt.clouddn.com/pd-title-background.png" alt="" class="pd-head-bg">
+        <img src="http://pa74otoy6.bkt.clouddn.com/opaque-logo.png" alt="" class="pd-head-logo">
+    </div>
     <div class="pd-main">
         <div class="pd-title">
             <hr style="width:260px;height:2px;border:none;border-top:2px solid #9dc135;" />
@@ -184,6 +187,23 @@ created: function() {
 }
 .pd-container{
     width: 100%;
+}
+.pd-head{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pd-head-bg{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    min-width: 1000px;
+}
+.pd-head-logo{
+    width: 80px;
+    height: 80px;
+    margin-top: 30px;
 }
 .pd-main{
     width: 900px;
