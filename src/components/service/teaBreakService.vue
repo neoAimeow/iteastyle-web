@@ -467,6 +467,57 @@
                 </div>
             </div>
 
+            <div class="in-ct">
+                <div class="in-ct1">
+                    <div class="in-no">
+                        <span class="in-no1">1</span>
+                    </div>
+                    <span>杭式下午茶目前支持杭州地区订购，全国其他地区暂未开通；</span>
+                </div>
+
+                <div class="in-ct1">
+                    <div class="in-no">
+                        <span class="in-no1">2</span>
+                    </div>
+                    <span>订单金额1500元起订，所有订单请提前48小时预约并支付预定金；</span>
+                </div>
+
+                <div class="in-ct1">
+                    <div class="in-no">
+                        <span class="in-no1">3</span>
+                    </div>
+                    <span>高端个性化定制请提前7天预约；</span>
+                </div>
+
+                <div class="in-ct1">
+                    <div class="in-no">
+                        <span class="in-no1">4</span>
+                    </div>
+                    <span>杭州市区内免费送货，其他地区（余杭、萧山等）交通费另计；</span>
+                </div>
+
+                <div class="in-ct1">
+                    <div class="in-no">
+                        <span class="in-no1">5</span>
+                    </div>
+                    <span>杭式下午茶提供茶歇现场服务人员，并提供现场摆盘服务、装饰布置等服务；</span>
+                </div>
+
+                <div class="in-ct1">
+                    <div class="in-no">
+                        <span class="in-no1">6</span>
+                    </div>
+                    <span>活动结束后，现场器具如有丢失损坏，100元金额以内属正常损耗，无须赔偿，100元金额以上需按器具价格进行赔偿；</span>
+                </div>
+
+                <div class="in-ct1">
+                    <div class="in-no">
+                        <span class="in-no1">7</span>
+                    </div>
+                    <span>如在订购后解除订购，我们将按照实际制作量按比例扣除预定订金。</span>
+                </div>
+
+            </div>
         </div>
     
         <div class="order-ways">
@@ -480,6 +531,10 @@
                     </div>               
                 </div>
             </div>
+
+
+
+
 
         </div>
     
@@ -778,4 +833,38 @@ export default {};
     margin-top:30px;
 }
 
+.in-no{
+    width:25px; 
+    height:25px; 
+    background-color: #9dc135; 
+    border-radius:12.5px;
+    margin-right:10px;
+}
+
+.in-no1{
+    height:25px;
+    line-height:25px;
+    display:block;
+    color:#FFF;
+    text-align:center
+}
+
+.in-ct1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom:20px;
+}
+
+.in-ct{    
+    margin-top:40px;
+    width: 900px;
+    /* background-color: aqua; */
+}
+
+.order-information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 </style>
