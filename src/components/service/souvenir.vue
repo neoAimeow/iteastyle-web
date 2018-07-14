@@ -99,16 +99,15 @@
                     </div>
                     <div class="souvenir-main-gitf-introduce">
                         <div class="gitf-introduce-title">
-                            <span>- 西湖龙井介绍 --</span>
+                            <span style="color:#9dc135">- 西湖龙井介绍 --</span>
                         </div>
                         <div class="gitf-introduce-content">
-                            <span></span>
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;西湖龙井位列我国十大名茶之一，具有1200多年历史，明代列为上品，清顺治列为贡品。清乾隆游览杭州西湖时，盛赞龙井茶，并把狮峰山下胡公庙前的十八棵茶树封为“御茶”。</span><br>
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;龙井茶素有“色绿、香郁、味醇、形美”四绝著称于世，其外形挺直削尖、扁平俊秀、光滑匀齐、色泽绿中显黄。龙井冲泡后，香气清高持久，香郁若兰；汤色杏绿，清澈明亮，叶底嫩绿，匀齐成朵，芽芽直立，栩栩如生。品饮茶汤，沁人心脾，齿间留芳，回味无穷。</span>
                         </div>
                     </div>
                 </div>
-                <div class="souvenir-main-gitf-img">
-                    <img src="http://pa74otoy6.bkt.clouddn.com/case-inside2-picture2.png" alt="">
-                </div>
+                <img src="http://pa74otoy6.bkt.clouddn.com/case-inside2-picture2.png" alt="" class="souvenir-main-gitf-img">
             </div>
         </div>
     </div>
@@ -231,5 +230,25 @@
 .souvenir-main-drink-introduce{
     margin-left: 40px;
     background: red;
+}
+.souvenir-main-gift{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom:2px solid #9dc135;
+}
+.souvenir-main-gitf-img{
+    width: 300px;
+    height: 300px;
+}
+.souvenir-main-gitf-category{
+
+}
+.souvenir-main-gitf-introduce{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.gitf-introduce-content{
+    margin-top: 20px;
 }
 </style>
