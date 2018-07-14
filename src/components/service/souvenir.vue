@@ -2,9 +2,11 @@
     <div class="souvenir-container">
         <div class="souvenir-main">
             <div class="souvenir-main-title">
-                <span style="background:green;">杭州伴手礼</span>
-                <hr style="width:600px;height:1px;border:none;border-top:2px solid #9dc135;" />
-                <span style="background:yellow;">TEA SOUVENIR</span>
+                <span style="position: relative;top:40px;left:50px;letter-spacing:5px;">杭州伴手礼</span>
+                <div class="souvenir-main-title-cn"></div>
+                <div class="souvenir-main-title-hr"></div>
+                <span style="position: relative;left:40px;">TEA SOUVENIR</span>
+                <div class="souvenir-main-title-en"></div>
             </div>
             <div class="souvenir-main-content">
                 <div class="souvenir-main-content-introduce">
@@ -36,7 +38,27 @@ export default {
     display: flex;
     flex-direction: column;
     width: 600px;
-    background: blue;
+    color: white;
+}
+.souvenir-main-title-hr{
+    width:600px;
+    height:1px;
+    border:none;
+    border-top:2px solid #9dc135;
+}
+.souvenir-main-title-cn{
+    width: 140px;
+    margin-left: 30px;
+    border-top: 50px solid #9dc135;
+    border-top-left-radius: 10px;
+    border-top-right-radius:10px;
+}
+.souvenir-main-title-en{
+    width: 140px;
+    border-top: 30px solid #9dc135;
+    border-right: 30px solid transparent;
+    border-left: 30px solid transparent;
+    margin-top: -23px;
 }
 .souvenir-main-content{
     display: flex;
