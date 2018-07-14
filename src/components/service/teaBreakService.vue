@@ -51,62 +51,196 @@
 
             <div class="menu-border-out">
                 
-            <div class="menu-border-inside">
-                <div class="menu-head">
-                    <div class="menu-head-name">
-                        <span>A款茶歇/48元人均</span>
-                    </div>
-                    <div class="menu-head-triangle"></div>
-                </div>
-
-                <div class="menu-ct">
-                    <div class="menu-left">
-                        <div class="menu-top top1" >
-                            <span>&#xe9ea;</span>
-                            <span>点心</span>
+                <div class="menu-border-inside">
+                    <div class="menu-head">
+                        <div class="menu-head-name">
+                            <span>A款茶歇/48元人均</span>
                         </div>
-                        <ul class="menu-bottom">
-                            <li>特色茶曲奇</li>
-                            <li>抹茶慕斯</li>
-                            <li>水果布丁</li>
-                            <li>抹茶泡芙</li>
-                            <li>双色巧克力蛋糕</li>
-                        </ul>
+                        <div class="menu-head-triangle"></div>
                     </div>
 
-                    <div class="menu-mid">
-                        <div class="menu-top">
-                            <span>&#xe9ec;</span>
-                            <span class="top2">水果拼盘</span>
+                    <div class="menu-ct">
+                        <div class="menu-left">
+                            <div class="menu-top top1" >
+                                <span>&#xe9ea;</span>
+                                <span>点心</span>
+                            </div>
+                            <ul class="menu-bottom">
+                                <li>特色茶曲奇</li>
+                                <li>抹茶慕斯</li>
+                                <li>水果布丁</li>
+                                <li>抹茶泡芙</li>
+                                <li>双色巧克力蛋糕</li>
+                            </ul>
                         </div>
-                        <ul class="menu-bottom">
-                            <li>西瓜</li>
-                            <li>橙子</li>
-                            <li>圣女果</li>
-                        </ul>
-                    </div>
-                
-                    <div class="menu-right">
-                        <div class="menu-top top3">
-                            <span>&#xe9eb;</span>
-                            <span>饮料</span>
+
+                        <div class="menu-mid">
+                            <div class="menu-top">
+                                <span>&#xe9ec;</span>
+                                <span class="top2">水果拼盘</span>
+                            </div>
+                            <ul class="menu-bottom">
+                                <li>西瓜</li>
+                                <li>橙子</li>
+                                <li>圣女果</li>
+                            </ul>
                         </div>
-                        <ul class="menu-bottom">
-                            <li>抹茶拿铁</li>
-                            <li>桂花龙井茶</li>
-                        </ul>
-                    </div>
                 
-                </div>
+                        <div class="menu-right">
+                            <div class="menu-top top3">
+                                <span>&#xe9eb;</span>
+                                <span>饮料</span>
+                            </div>
+                            <ul class="menu-bottom">
+                                <li>抹茶拿铁</li>
+                                <li>桂花龙井茶</li>
+                            </ul>
+                        </div>
+                
+                    </div>
                     
-                <img class="menu-foot" src="http://pa74otoy6.bkt.clouddn.com/menu-foot.png" alt="">
+                </div>
 
             </div>
 
+
+            <div class="menu-border-out">
+                
+                <div class="menu-border-inside">
+                    <div class="menu-head">
+                        <div class="menu-head-name">
+                            <span>B款茶歇/68元人均&#xe7a8;</span>                           
+                        </div>
+                        <div class="menu-head-triangle"></div>
+                    </div>
+
+                    <div class="menu-ct">
+                        <div class="menu-left">
+                            <div class="menu-top top1" >
+                                <span>&#xe9ea;</span>
+                                <span>点心</span>
+                            </div>
+                            <ul class="menu-bottom">
+                                <li>抹茶慕斯</li>
+                                <li>水果布丁</li>
+                                <li>抹茶泡芙</li>
+                                <li>纸杯蛋糕</li>
+                                <li>特色茶曲奇</li>
+                                <li>抹茶瑞士卷</li>
+                                <li>双色巧克力蛋糕</li>
+                            </ul>
+                        </div>
+
+                        <div class="menu-mid">
+                            <div class="menu-top">
+                                <span>&#xe9ec;</span>
+                                <span class="top2">水果拼盘</span>
+                            </div>
+                            <ul class="menu-bottom">
+                                <li>西瓜</li>
+                                <li>橙子</li>
+                                <li>哈密瓜</li>
+                                <li>火龙果</li>
+                            </ul>
+                        </div>
+                
+                        <div class="menu-right">
+                            <div class="menu-top top3">
+                                <span>&#xe9eb;</span>
+                                <span>饮料</span>
+                            </div>
+                            <ul class="menu-bottom">
+                                <li>抹茶拿铁</li>
+                                <li>洛神花茶</li>
+                                <li>水果茶</li>
+                            </ul>
+                        </div>
+                
+                    </div>
+                    
+                </div>
+
             </div>
-            
+
+
+                        <div class="menu-border-out">
+                
+                <div class="menu-border-inside">
+                    <div class="menu-head">
+                        <div class="menu-head-name">
+                            <span>C款茶歇/88元人均</span>
+                        </div>
+                        <div class="menu-head-triangle"></div>
+                    </div>
+
+                    <div class="menu-ct">
+                        <div class="menu-left">
+                            <div class="menu-top top1" >
+                                <span>&#xe9ea;</span>
+                                <span>点心</span>
+                            </div>
+                            <ul class="menu-bottom">
+                                <li>蓝莓挞</li>
+                                <li>栗子蛋糕</li>
+                                <li>抹茶慕斯</li>
+                                <li>水果布丁</li>
+                                <li>抹茶泡芙</li>
+                                <li>盆栽蛋糕</li>
+                                <li>抹茶瑞士卷</li>
+                                <li>特色茶曲奇</li>
+                                <li>双色巧克力蛋糕</li>
+                                <li>芒果抹茶慕斯球</li>
+                            </ul>
+                        </div>
+
+                        <div class="menu-mid">
+                            <div class="menu-top">
+                                <span>&#xe9ec;</span>
+                                <span class="top2">水果拼盘</span>
+                            </div>
+                            <ul class="menu-bottom">
+                                <li>西瓜</li>
+                                <li>橙子</li>
+                                <li>圣女果</li>
+                                <li>哈密瓜</li>
+                                <li>火龙果</li>
+                                <li>时令果串</li>
+                            </ul>
+                        </div>
+                
+                        <div class="menu-right">
+                            <div class="menu-top top3">
+                                <span>&#xe9eb;</span>
+                                <span>饮料</span>
+                            </div>
+                            <ul class="menu-bottom">
+                                <li>抹茶拿铁</li>
+                                <li>玫瑰红茶拿铁</li>
+                                <li>洛神花茶</li>
+                                <li>水果茶</li>
+                            </ul>
+                        </div>
+                
+                    </div>
+                    
+                </div>
+
+            </div>
+
         </div>
-       
+        
+
+        <div class="r-title">
+            <div class="hr"></div>
+            <div class="mid-name">
+                <div class="border"></div>
+                <div class="name">
+                    <span class="c-title">服务范围</span>
+                    <span class="e-title">SERVICE SCOPE</span>
+                </div>               
+            </div>
+        </div>
+        
     
     
     
@@ -258,7 +392,7 @@ export default {};
 }
 
 .menu-border-out {
-  width: 700px;
+  width: 900px;
   border: 2px solid #9dc135;
   margin-top: 50px;
 }
@@ -272,7 +406,7 @@ export default {};
   height: 40px;
 }
 
-.menu-head-name > span {
+.menu-head-name>span{
   margin: 20px;
   font-size: 18px;
   line-height: 40px;
@@ -294,12 +428,5 @@ export default {};
   left: 50px;
 }
 
-.menu-foot {
-  /* position: relative; */
-  float: right;
-  /* right: 0; */
-  /* bottom:50px; */
-  /* left:563px; */
-  background-color: aquamarine;
-}
+
 </style>
