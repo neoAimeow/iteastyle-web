@@ -17,10 +17,10 @@
         </div>
         <div class="souvenir-main">
             <div class="souvenir-main-title">
-                <span style="position: relative;top:40px;left:50px;letter-spacing:5px;">冲饮方式</span>
+                <span style="position: relative;top:40px;left:60px;letter-spacing:5px;">冲饮方式</span>
                 <div class="souvenir-main-title-cn"></div>
                 <div class="souvenir-main-title-hr"></div>
-                <span style="position: relative;left:40px;">DRINKING WAY</span>
+                <span style="position: relative;left:45px;">DRINKING WAY</span>
                 <div class="souvenir-main-title-en"></div>
             </div>
             <div class="souvenir-main-drink">
@@ -75,10 +75,10 @@
         </div>
         <div class="souvenir-main">
             <div class="souvenir-main-title">
-                <span style="position: relative;top:40px;left:50px;letter-spacing:5px;">伴手心意</span>
+                <span style="position: relative;top:40px;left:60px;letter-spacing:5px;">伴手心意</span>
                 <div class="souvenir-main-title-cn"></div>
                 <div class="souvenir-main-title-hr"></div>
-                <span style="position: relative;left:40px;">TEA SOUVENIR</span>
+                <span style="position: relative;left:45px;">TEA SOUVENIR</span>
                 <div class="souvenir-main-title-en"></div>
             </div>
             <div class="souvenir-main-gift">
@@ -128,7 +128,7 @@
                     <div class="souvenir-main-gitf-introduce2">
                         <div class="gitf-introduce2">
                             <div class="gitf-introduce-title">
-                                <span style="color:#9dc135">- 西湖龙井介绍 --</span>
+                                <span style="color:#9dc135">- 九曲红梅介绍 --</span>
                             </div>
                             <div class="gitf-introduce-content">
                                 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;西湖龙井位列我国十大名茶之一，具有1200多年历史，明代列为上品，清顺治列为贡品。清乾隆游览杭州西湖时，盛赞龙井茶，并把狮峰山下胡公庙前的十八棵茶树封为“御茶”。</span><br>
@@ -158,7 +158,7 @@
                     <div class="souvenir-main-gitf-introduce2">
                         <div class="gitf-introduce2">
                             <div class="gitf-introduce-title">
-                                <span style="color:#9dc135">- 西湖龙井介绍 --</span>
+                                <span style="color:#9dc135">- 桂花龙井介绍 --</span>
                             </div>
                             <div class="gitf-introduce-content">
                                 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;西湖龙井位列我国十大名茶之一，具有1200多年历史，明代列为上品，清顺治列为贡品。清乾隆游览杭州西湖时，盛赞龙井茶，并把狮峰山下胡公庙前的十八棵茶树封为“御茶”。</span><br>
