@@ -318,4 +318,7 @@
     width: 300px;
     height: 200px;
 }
+.souvenir-main-gift2{
+    margin-bottom: 150px;
+}
 </style>
