@@ -366,8 +366,122 @@
                 </div>               
             </div>
         </div>
+
+        <div class="order">
+            <div class="order-ct">
+                <div>
+                    <div class="order-top">
+                        <span>1、售前咨询</span>
+                    </div>
+                    <div class="order-bottom"><span>茶歇服务完成后，请于当日内支付尾款</span></div>                
+                </div>
+                <span class="order-arrow">&#xe631;</span>
+            </div>
+
+            <div class="order-ct">
+                <div>
+                    <div class="order-top">
+                        <span>2、确认订单</span>
+                    </div>
+                    <div class="order-bottom"><span>确认选择的产品和服务清单</span></div>                
+                </div>
+                <span class="order-arrow">&#xe631;</span>
+            </div>
+
+            <div class="order-ct">
+                <div>
+                    <div class="order-top">
+                        <span>3、线上预定</span>
+                    </div>
+                    <div class="order-bottom"><span>线上预定</span></div>                
+                </div>
+                <span class="order-arrow">&#xe631;</span>
+            </div>
+
+            <div class="order-ct">
+                <div>
+                    <div class="order-top">
+                        <span>4、接单合作</span>
+                    </div>
+                    <div class="order-bottom"><span>根据合同的产品清单制作新鲜的茶歇产品</span></div>                
+                </div>
+                <span class="order-arrow">&#xe631;</span>
+            </div>
+
+            <div class="order-ct">
+                <div>
+                    <div class="order-top">
+                        <span>5、订单配送</span>
+                    </div>
+                    <div class="order-bottom"><span>按合同上约定的送达时间准时送达产品</span></div>                
+                </div>
+                <span class="order-arrow">&#xe631;</span>
+            </div>
+
+            <div class="order-ct">
+                <div>
+                    <div class="order-top">
+                        <span>6、摆台服务</span>
+                    </div>
+                    <div class="order-bottom"><span>现场服务人员布置茶歇摆台与装饰</span></div>                
+                </div>
+                <span class="order-arrow">&#xe631;</span>
+            </div>
+
+            <div class="order-ct">
+                <div>
+                    <div class="order-top">
+                        <span>7、售后服务</span>
+                    </div>
+                    <div class="order-bottom"><span>对产品及服务有不满意的地方请及时联系客服小tea</span></div>                
+                </div>
+                <span class="order-arrow">&#xe631;</span>
+            </div>
+
+            <div class="order-ct">
+                <div>
+                    <div class="order-top">
+                        <span>8、支付尾款</span>
+                    </div>
+                    <div class="order-bottom"><span>电话或微信联系杭式下午茶小tea，了解产品及服务</span></div>                
+                </div>
+                <span class="order-arrow">&#xe631;</span>
+            </div>
+
+
+            
+
+
+        </div>
     
+        
+        <div class="order-information">
+            <div class="r-title">
+                <div class="hr"></div>
+                <div class="mid-name">
+                    <div class="border"></div>
+                    <div class="name">
+                        <span class="c-title">订购须知</span>
+                        <span class="e-title">ORDERING INFROMATION</span>
+                    </div>               
+                </div>
+            </div>
+
+        </div>
     
+        <div class="order-ways">
+            <div class="r-title">
+                <div class="hr"></div>
+                <div class="mid-name">
+                    <div class="border"></div>
+                    <div class="name">
+                        <span class="c-title">订购方式</span>
+                        <span class="e-title">ORDERING WAYS</span>
+                    </div>               
+                </div>
+            </div>
+
+        </div>
     
     
     </div>
@@ -380,11 +494,11 @@ export default {};
 <style scoped>
 @font-face {
   font-family: 'iconfont';  /* project id 721549 */
-  src: url('//at.alicdn.com/t/font_721549_baehcuch5p.eot');
-  src: url('//at.alicdn.com/t/font_721549_baehcuch5p.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_721549_baehcuch5p.woff') format('woff'),
-  url('//at.alicdn.com/t/font_721549_baehcuch5p.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_721549_baehcuch5p.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_721549_1xq8miie5xl.eot');
+  src: url('//at.alicdn.com/t/font_721549_1xq8miie5xl.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_721549_1xq8miie5xl.woff') format('woff'),
+  url('//at.alicdn.com/t/font_721549_1xq8miie5xl.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_721549_1xq8miie5xl.svg#iconfont') format('svg');
 }
 
 .service {
@@ -398,17 +512,23 @@ export default {};
 
 .name {
   text-align: center;
-  background-color: #fff;
-  width: 110px;
+  /* background-color: blue; */
+  width: 160px;
   color: #9dc135;
   position: absolute;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .c-title {
   display: block;
   font-size: 20px;
   line-height: 20px;
+  width:120px;
+  background-color:#fff;
 }
 
 .e-title {
@@ -417,14 +537,14 @@ export default {};
 
 .border {
   border: 2px solid #9dc135;
-  width: 160px;
+  width: 180px;
   height: 30px;
   background-color: #fff;
   margin-top: 20px;
 }
 
 .mid-name {
-  width: 150px;
+  width: 180px;
   display: block;
   margin: 0 auto;
   display: flex;
@@ -611,4 +731,51 @@ export default {};
     margin:0 auto;
     margin-top:30px;
 }
+
+.order-ct{
+    width:200px;
+    font-size:20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.order-top{
+    width:152px;
+    height:40px;
+    text-align: center;
+    background:#9dc135;
+    line-height: 40px; 
+    border-radius: 5px 5px 0 0;  
+    position: relative;
+    color:#fff;
+
+}
+
+.order-bottom{
+    border-left:2px dotted #9dc135;
+    border-right:2px dotted #9dc135;
+    border-bottom:2px dotted #9dc135;
+    width:128px;
+    height:115px;
+    padding:10px;   
+}
+
+.order-arrow{
+    color:#9dc135;
+    margin-left:25px;
+    font-size:30px;
+}
+
+.order{
+    width:900px;
+    height:400px;
+    margin:0 auto;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    margin-top:30px;
+}
+
 </style>
