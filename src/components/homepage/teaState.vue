@@ -1,7 +1,7 @@
 <template>
     <div class="ts-container">
         <div class="ts-head">
-            <img style="width:100%;" src="http://pa74otoy6.bkt.clouddn.com/teaState-title-bkground.png" alt="">
+            <img class="ts-head-bg" src="http://pa74otoy6.bkt.clouddn.com/teaState-title-bkground.png" alt="">
             <div class="ts-title">
                 <div class="ts-title-en">
                     <span>TEA BREAK</span>
@@ -155,6 +155,11 @@ export default {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.ts-head-bg{
+    width:100%;
+    height: 500px;
+    min-width: 1300px;
 }
 .ts-title{
     position: absolute;
