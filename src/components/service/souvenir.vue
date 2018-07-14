@@ -84,29 +84,30 @@
             <div class="souvenir-main-gift">
                 <div class="souvenir-main-gitf-category">
                     <div class="souvenir-main-gitf-list">
-                        <table>
-                            <tr>
-                                <th>编号</th>
-                                <th>品名</th>
-                                <th>包装</th>
-                                <th>规格</th>
-                                <th>价格（RMB）</th>
-                            </tr>
-                            <tr>
-                                <td>HZ001</td>
-                                <td>龙井茶特级A</td>
-                                <td>单罐礼盒</td>
-                                <td>50G*1罐</td>
-                                <td>82.00</td>
-                            </tr>
-                        </table>
+                        <el-table :data="tableData" stripe style="width: 100%">
+                            <el-table-column prop="number" label="编号" width="180">
+                            </el-table-column>
+                            <el-table-column prop="name" label="品名" width="180">
+                            </el-table-column>
+                            <el-table-column prop="pack" label="包装" width="180">
+                            </el-table-column>
+                            <el-table-column prop="specification" label="规格" width="180">
+                            </el-table-column>
+                            <el-table-column prop="price" label="价格（RMB）">
+                            </el-table-column>
+                        </el-table>
                     </div>
                     <div class="souvenir-main-gitf-introduce">
-
+                        <div class="gitf-introduce-title">
+                            <span>- 西湖龙井介绍 --</span>
+                        </div>
+                        <div class="gitf-introduce-content">
+                            <span></span>
+                        </div>
                     </div>
                 </div>
                 <div class="souvenir-main-gitf-img">
-
+                    <img src="http://pa74otoy6.bkt.clouddn.com/case-inside2-picture2.png" alt="">
                 </div>
             </div>
         </div>
@@ -114,18 +115,40 @@
 </template>
 
 <script>
-export default {
-    
-}
+  export default {
+    data() {
+      return {
+        tableData: [{
+          number: 'HZ001',
+          name: '龙井茶特级A',
+          pack: '单罐礼盒',
+          specification: '50G*1罐',
+          price: '82.00'
+        }, {
+          number: 'HZ002',
+          name: '西湖龙井特级A',
+          pack: '单罐礼盒',
+          specification: '65G*1罐',
+          price: '188.00'
+        }, {
+          number: 'HZ003',
+          name: '桂花龙井A',
+          pack: '单罐礼盒',
+          specification: '65G*1罐',
+          price: '132.00'
+        }, {
+          number: 'HZ004',
+          name: '九曲红梅特级A',
+          pack: '单罐礼盒',
+          specification: '65G*1罐',
+          price: '105.00'
+        }]
+      }
+    }
+  }
 </script>
 
 <style lang="scss">
-th, td{
-    padding: 0 30px 0 30px;
-}
-td{
-    border-bottom:1px dashed #9dc135;
-}
 .souvenir-container{
     width: 100%;
     display: flex;
