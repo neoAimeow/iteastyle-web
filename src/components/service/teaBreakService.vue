@@ -241,6 +241,32 @@
             </div>
         </div>
         
+        <div class="service-ct">
+            <div class="service-border">
+                <div class="service-ct-top">
+                    
+                    <div class="service-ct-top-left">
+                        
+                            
+                        <img style="width:30px;height:30px;margin-left:5px;" src="http://pa74otoy6.bkt.clouddn.com/opaque-logo.png" alt="logo">
+                            
+                       
+                        <div class="service-e-name">
+                           coampany afternon tea
+                        </div>
+                    </div>
+                    <div class="service-c-name">
+                        <span>公司</span>
+                        <span class="s-c-name-bottom">下午茶</span>
+                    </div>
+                </div>
+                <img style="width:180px;height:120px;" src="http://pa74otoy6.bkt.clouddn.com/case-inside2-picture1.png" alt="service picture">
+            </div>
+
+
+
+
+        </div>
     
     
     
@@ -254,13 +280,12 @@ export default {};
 
 <style scoped>
 @font-face {
-  font-family: "iconfont"; /* project id 721549 */
-  src: url("//at.alicdn.com/t/font_721549_1uk9sekj7xb.eot");
-  src: url("//at.alicdn.com/t/font_721549_1uk9sekj7xb.eot?#iefix")
-      format("embedded-opentype"),
-    url("//at.alicdn.com/t/font_721549_1uk9sekj7xb.woff") format("woff"),
-    url("//at.alicdn.com/t/font_721549_1uk9sekj7xb.ttf") format("truetype"),
-    url("//at.alicdn.com/t/font_721549_1uk9sekj7xb.svg#iconfont") format("svg");
+  font-family: 'iconfont';  /* project id 721549 */
+  src: url('//at.alicdn.com/t/font_721549_baehcuch5p.eot');
+  src: url('//at.alicdn.com/t/font_721549_baehcuch5p.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_721549_baehcuch5p.woff') format('woff'),
+  url('//at.alicdn.com/t/font_721549_baehcuch5p.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_721549_baehcuch5p.svg#iconfont') format('svg');
 }
 
 .service {
@@ -425,5 +450,53 @@ export default {};
   left: 50px;
 }
 
+.service-ct-top{
+    display: flex;
+    flex-direction:row;
+    
+    /* background-color: yellow; */
+    margin-bottom: 5px;
+}
+
+.service-c-name{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-size:20px;
+    /* background-color: blue; */
+    margin-left:5px;
+    
+}
+
+.service-e-name{
+    font-size:10px;
+    /* background-color: red; */
+    font-style: italic;
+    width:130px;
+    white-space:nowrap;
+    overflow:hidden;
+    
+    
+}
+
+.service-border{
+    width:200px;
+    height:200px;
+    border:1px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.s-c-name-bottom{
+    font-size: 14px;
+}
+
+.service-ct-top-left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
 
 </style>
