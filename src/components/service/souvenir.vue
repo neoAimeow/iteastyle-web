@@ -8,11 +8,32 @@
                 <span style="position: relative;left:40px;">TEA SOUVENIR</span>
                 <div class="souvenir-main-title-en"></div>
             </div>
-            <div class="souvenir-main-content">
-                <div class="souvenir-main-content-introduce">
+            <div class="souvenir-main-souvenir">
+                <div class="souvenir-main-souvenir-introduce">
                     <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;西湖龙井、九曲红梅、桂花龙井。都是最具杭城特色的茶品。是赠送外地友人的不二选择，也是外来游客的必选物品。</span>
                 </div>
-                <img class="souvenir-main-content-img" src="http://pa74otoy6.bkt.clouddn.com/case-inside2-picture2.png" alt="">
+                <img class="souvenir-main-souvenir-img" src="http://pa74otoy6.bkt.clouddn.com/case-inside2-picture2.png" alt="">
+            </div>
+            <div class="souvenir-main-title">
+                <span style="position: relative;top:40px;left:50px;letter-spacing:5px;">冲饮方式</span>
+                <div class="souvenir-main-title-cn"></div>
+                <div class="souvenir-main-title-hr"></div>
+                <span style="position: relative;left:40px;">DRINKING WAY</span>
+                <div class="souvenir-main-title-en"></div>
+            </div>
+            <div class="souvenir-main-drink">
+                <div class="souvenir-main-drink-introduce">
+                    <div class="souvenir-main-drink-subtitle">
+                        <div class="souvenir-main-drink-subtitle1">
+                            <span style="height:25px; line-height:25px; display:block; color:#FFF; text-align:center">1</span>
+                        </div>
+                        <div class="souvenir-main-drink-subtitle2"><span>投茶</span></div>
+                    </div>
+                    <div class="souvenir-main-drink-introduce">
+                        <span>投入3G茶叶于玻璃杯中</span>
+                    </div>
+                </div>
+                <img class="souvenir-main-drink-img" src="http://pa74otoy6.bkt.clouddn.com/case-inside2-picture2.png" alt="">
             </div>
         </div>
     </div>
@@ -32,7 +53,6 @@ export default {
 }
 .souvenir-main{
     width: 900px;
-    background: red;
 }
 .souvenir-main-title{
     display: flex;
@@ -60,17 +80,51 @@ export default {
     border-left: 30px solid transparent;
     margin-top: -23px;
 }
-.souvenir-main-content{
+.souvenir-main-souvenir{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    background: red;
 }
-.souvenir-main-content-introduce{
+.souvenir-main-souvenir-introduce{
+    margin-top: 40px;
     width: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
-.souvenir-main-content-img{
+.souvenir-main-souvenir-img{
     width: 300px;
     height: 300px;
+}
+.souvenir-main-drink{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.souvenir-main-drink-img{
+    width: 300px;
+    height: 300px;
+}
+.souvenir-main-drink-subtitle{
+    display: flex;
+    margin-top: 40px;
+}
+.souvenir-main-drink-subtitle1{
+    width:25px; 
+    height:25px; 
+    background-color: #9dc135; 
+    border-radius:12.5px;
+}
+.souvenir-main-drink-subtitle2{
+    margin-left: 20px;
+    color: #9dc135;
+}
+.souvenir-main-drink-introduce{
+    margin-left: 45px;
+    width: 500px;
+    background: red;
 }
 </style>
