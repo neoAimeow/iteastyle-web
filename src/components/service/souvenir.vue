@@ -109,7 +109,37 @@
                 </div>
                 <img src="http://pa74otoy6.bkt.clouddn.com/case-inside2-picture2.png" alt="" class="souvenir-main-gitf-img1">
             </div>
-                        <div class="souvenir-main-gift">
+            <div class="souvenir-main-gift">
+                <div class="souvenir-main-gitf-category">
+                    <div class="souvenir-main-gitf-list">
+                        <el-table :data="tableData" stripe style="width: 800px;">
+                            <el-table-column prop="number" label="编号" width="160">
+                            </el-table-column>
+                            <el-table-column prop="name" label="品名" width="160">
+                            </el-table-column>
+                            <el-table-column prop="pack" label="包装" width="160">
+                            </el-table-column>
+                            <el-table-column prop="specification" label="规格" width="160">
+                            </el-table-column>
+                            <el-table-column prop="price" label="价格（RMB）">
+                            </el-table-column>
+                        </el-table>
+                    </div>
+                    <div class="souvenir-main-gitf-introduce2">
+                        <div class="gitf-introduce2">
+                            <div class="gitf-introduce-title">
+                                <span style="color:#9dc135">- 西湖龙井介绍 --</span>
+                            </div>
+                            <div class="gitf-introduce-content">
+                                <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;西湖龙井位列我国十大名茶之一，具有1200多年历史，明代列为上品，清顺治列为贡品。清乾隆游览杭州西湖时，盛赞龙井茶，并把狮峰山下胡公庙前的十八棵茶树封为“御茶”。</span><br>
+                                <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;龙井茶素有“色绿、香郁、味醇、形美”四绝著称于世，其外形挺直削尖、扁平俊秀、光滑匀齐、色泽绿中显黄。龙井冲泡后，香气清高持久，香郁若兰；汤色杏绿，清澈明亮，叶底嫩绿，匀齐成朵，芽芽直立，栩栩如生。品饮茶汤，沁人心脾，齿间留芳，回味无穷。</span>
+                            </div>
+                        </div>
+                        <img src="http://pa74otoy6.bkt.clouddn.com/case-inside2-picture2.png" alt="" class="souvenir-main-gitf-img2">
+                    </div>
+                </div>
+            </div>
+            <div class="souvenir-main-gift2">
                 <div class="souvenir-main-gitf-category">
                     <div class="souvenir-main-gitf-list">
                         <el-table :data="tableData" stripe style="width: 800px;">
@@ -184,6 +214,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-bottom:2px solid #9dc135;
 }
 .souvenir-main{
     width: 900px;
@@ -219,7 +250,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background: red;
+    //background: red;
 }
 .souvenir-main-souvenir-introduce{
     width: 500px;
@@ -259,7 +290,7 @@
 }
 .souvenir-main-drink-introduce{
     margin-left: 40px;
-    background: red;
+    //background: red;
 }
 .souvenir-main-gift{
     display: flex;
@@ -270,9 +301,6 @@
 .souvenir-main-gitf-img1{
     width: 300px;
     height: 300px;
-}
-.souvenir-main-gitf-category{
-
 }
 .souvenir-main-gitf-introduce1{
     margin-top: 20px;
