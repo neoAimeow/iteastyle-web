@@ -14,6 +14,8 @@
                 </div>
                 <img class="souvenir-main-souvenir-img" src="http://pa74otoy6.bkt.clouddn.com/case-inside2-picture2.png" alt="">
             </div>
+        </div>
+        <div class="souvenir-main">
             <div class="souvenir-main-title">
                 <span style="position: relative;top:40px;left:50px;letter-spacing:5px;">冲饮方式</span>
                 <div class="souvenir-main-title-cn"></div>
@@ -27,10 +29,45 @@
                         <div class="souvenir-main-drink-subtitle1">
                             <span style="height:25px; line-height:25px; display:block; color:#FFF; text-align:center">1</span>
                         </div>
-                        <div class="souvenir-main-drink-subtitle2"><span>投茶</span></div>
+                        <div class="souvenir-main-drink-subtitle2">
+                            <span>投茶</span>
+                        </div>
                     </div>
                     <div class="souvenir-main-drink-introduce">
                         <span>投入3G茶叶于玻璃杯中</span>
+                    </div>
+                    <div class="souvenir-main-drink-subtitle">
+                        <div class="souvenir-main-drink-subtitle1">
+                            <span style="height:25px; line-height:25px; display:block; color:#FFF; text-align:center">2</span>
+                        </div>
+                        <div class="souvenir-main-drink-subtitle2">
+                            <span>洗茶</span>
+                        </div>
+                    </div>
+                    <div class="souvenir-main-drink-introduce">
+                        <span>往杯中注入开水（西湖龙井、桂花龙井水温均为85度，九曲红梅水温约95度），茶水比例约1/3，摇动后，快速洗去第一泡茶汤。</span>
+                    </div>
+                    <div class="souvenir-main-drink-subtitle">
+                        <div class="souvenir-main-drink-subtitle1">
+                            <span style="height:25px; line-height:25px; display:block; color:#FFF; text-align:center">3</span>
+                        </div>
+                        <div class="souvenir-main-drink-subtitle2">
+                            <span>注水冲泡</span>
+                        </div>
+                    </div>
+                    <div class="souvenir-main-drink-introduce">
+                        <span>再往杯中注入开水（西湖龙井、桂花龙井水温均为85度，九曲红梅水温约95度），约7分满，待茶叶吸水舒张。</span>
+                    </div>
+                    <div class="souvenir-main-drink-subtitle">
+                        <div class="souvenir-main-drink-subtitle1">
+                            <span style="height:25px; line-height:25px; display:block; color:#FFF; text-align:center">4</span>
+                        </div>
+                        <div class="souvenir-main-drink-subtitle2">
+                            <span>品饮</span>
+                        </div>
+                    </div>
+                    <div class="souvenir-main-drink-introduce">
+                        <span>浸泡3-5分钟，即可饮茶香茶韵，可冲泡4次以上。</span>
                     </div>
                 </div>
                 <img class="souvenir-main-drink-img" src="http://pa74otoy6.bkt.clouddn.com/case-inside2-picture2.png" alt="">
@@ -49,7 +86,9 @@ export default {
 .souvenir-container{
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 .souvenir-main{
     width: 900px;
@@ -84,11 +123,10 @@ export default {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     background: red;
 }
 .souvenir-main-souvenir-introduce{
-    margin-top: 40px;
     width: 500px;
     display: flex;
     flex-direction: row;
@@ -110,7 +148,9 @@ export default {
 }
 .souvenir-main-drink-subtitle{
     display: flex;
-    margin-top: 40px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
 .souvenir-main-drink-subtitle1{
     width:25px; 
@@ -123,8 +163,7 @@ export default {
     color: #9dc135;
 }
 .souvenir-main-drink-introduce{
-    margin-left: 45px;
-    width: 500px;
+    margin-left: 40px;
     background: red;
 }
 </style>
