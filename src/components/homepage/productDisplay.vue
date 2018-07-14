@@ -193,23 +193,24 @@ created: function() {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 .pd-head-bg{
     width: 100%;
-    position: absolute;
-    z-index: -1;
-    min-width: 1000px;
+    height: 160px;
+    min-width: 1300px;
 }
 .pd-head-logo{
     width: 80px;
     height: 80px;
-    margin-top: 30px;
+    position: absolute;
+    z-index: 1;
 }
 .pd-main{
     width: 900px;
     //background: red;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-bottom: 80px;
     display: flex;
     flex-direction: column;
@@ -224,6 +225,7 @@ created: function() {
 }
 .pd-title-name{
     width: 200px;
+    color: #9dc135;
     display: flex;
     flex-direction: column;
     align-items: center;
