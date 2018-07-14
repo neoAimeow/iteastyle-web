@@ -462,7 +462,7 @@
                     <div class="border"></div>
                     <div class="name">
                         <span class="c-title">订购须知</span>
-                        <span class="e-title">ORDERING INFROMATION</span>
+                        <span class="e-title">ORDERING INSTRUCTIONS</span>
                     </div>               
                 </div>
             </div>
@@ -532,10 +532,22 @@
                 </div>
             </div>
 
-
-
-
-
+            <div class="ways-ct">
+                <div class="ways-top">
+                    <div class="ways-ver"></div>
+                    <span>公众号预定</span>
+                    <div class="ways-ver"></div>
+                </div>
+                <div class="ways-bottom">
+                    <img class="ways-bottom-left" src="http://pa74otoy6.bkt.clouddn.com/opaque-logo.png" alt="QR Code">
+                    <div class="ways-bottom-mid"></div>
+                    <div class="ways-bottom-right">
+                        <span>长按二维码关注</span>
+                        <span class="fingerprint">&#xe61b;</span>
+                    </div>                    
+                </div>
+                
+            </div>
         </div>
     
     
@@ -549,11 +561,11 @@ export default {};
 <style scoped>
 @font-face {
   font-family: 'iconfont';  /* project id 721549 */
-  src: url('//at.alicdn.com/t/font_721549_1xq8miie5xl.eot');
-  src: url('//at.alicdn.com/t/font_721549_1xq8miie5xl.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_721549_1xq8miie5xl.woff') format('woff'),
-  url('//at.alicdn.com/t/font_721549_1xq8miie5xl.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_721549_1xq8miie5xl.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_721549_0qxys3z794x.eot');
+  src: url('//at.alicdn.com/t/font_721549_0qxys3z794x.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_721549_0qxys3z794x.woff') format('woff'),
+  url('//at.alicdn.com/t/font_721549_0qxys3z794x.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_721549_0qxys3z794x.svg#iconfont') format('svg');
 }
 
 .service {
@@ -789,7 +801,7 @@ export default {};
 
 .order-ct{
     width:200px;
-    font-size:20px;
+    font-size:16px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -813,7 +825,7 @@ export default {};
     border-right:2px dotted #9dc135;
     border-bottom:2px dotted #9dc135;
     width:128px;
-    height:115px;
+    height:70px;
     padding:10px;   
 }
 
@@ -866,5 +878,67 @@ export default {};
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.ways-ver{
+    width:8px;
+    height:23px;
+    background-color: #9dc135;
+}
+
+.ways-top{
+    display: flex;
+    flex-direction: row;
+}
+
+.ways-top>span{
+    margin:0 10px;
+    font-size: 18px;
+}
+
+.ways-bottom{
+    border:2px solid #9dc135;
+    width: 500px;
+    height:200px;
+    display: flex;
+    flex-direction: row;   
+    align-items: center;
+    justify-content:center;
+    margin-top:20px;
+
+}
+
+.ways-bottom-left{
+    width:120px;
+    height: 120px;
+}
+
+.ways-bottom-mid{
+    border:1px solid #9dc135;
+    height:100px;
+    margin:0 60px;
+}
+
+.ways-bottom-right{
+    color:#9dc135;
+    display: flex;
+    flex-direction: column;
+    font-size:18px;
+    text-align: center;
+}
+
+.fingerprint{
+    font-size:120px;
+}
+
+.order-ways{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ways-ct{
+    margin-top:40px;
+    margin-bottom:100px;
 }
 </style>
