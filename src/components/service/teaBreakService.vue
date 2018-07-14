@@ -243,17 +243,10 @@
         
         <div class="service-ct">
             <div class="service-border">
-                <div class="service-ct-top">
-                    
-                    <div class="service-ct-top-left">
-                        
-                            
+                <div class="service-ct-top">                    
+                    <div class="service-ct-top-left">    
                         <img style="width:30px;height:30px;margin-left:5px;" src="http://pa74otoy6.bkt.clouddn.com/opaque-logo.png" alt="logo">
-                            
-                       
-                        <div class="service-e-name">
-                           coampany afternon tea
-                        </div>
+                        <div class="service-e-name">Company Afternon Tea</div>
                     </div>
                     <div class="service-c-name">
                         <span>公司</span>
@@ -263,9 +256,115 @@
                 <img style="width:180px;height:120px;" src="http://pa74otoy6.bkt.clouddn.com/case-inside2-picture1.png" alt="service picture">
             </div>
 
+            <div class="service-border">
+                <div class="service-ct-top">                    
+                    <div class="service-ct-top-left">    
+                        <img style="width:30px;height:30px;margin-left:5px;" src="http://pa74otoy6.bkt.clouddn.com/opaque-logo.png" alt="logo">
+                        <div class="service-e-name">Staff Birthday Party</div>
+                    </div>
+                    <div class="service-c-name">
+                        <span>员工</span>
+                        <span class="s-c-name-bottom">生日会</span>
+                    </div>
+                </div>
+                <img style="width:180px;height:120px;" src="http://pa74otoy6.bkt.clouddn.com/case-inside2-picture1.png" alt="service picture">
+            </div>
 
+            <div class="service-border">
+                <div class="service-ct-top">                    
+                    <div class="service-ct-top-left">    
+                        <img style="width:30px;height:30px;margin-left:5px;" src="http://pa74otoy6.bkt.clouddn.com/opaque-logo.png" alt="logo">
+                        <div class="service-e-name">Annual Meeting</div>
+                    </div>
+                    <div class="service-c-name">
+                        <span>公司</span>
+                        <span class="s-c-name-bottom">年会</span>
+                    </div>
+                </div>
+                <img style="width:180px;height:120px;" src="http://pa74otoy6.bkt.clouddn.com/case-inside2-picture1.png" alt="service picture">
+            </div>
 
+            <div class="service-border">
+                <div class="service-ct-top">                    
+                    <div class="service-ct-top-left">    
+                        <img style="width:30px;height:30px;margin-left:5px;" src="http://pa74otoy6.bkt.clouddn.com/opaque-logo.png" alt="logo">
+                        <div class="service-e-name">Festival Celebration</div>
+                    </div>
+                    <div class="service-c-name">
+                        <span>节日</span>
+                        <span class="s-c-name-bottom">庆典</span>
+                    </div>
+                </div>
+                <img style="width:180px;height:120px;" src="http://pa74otoy6.bkt.clouddn.com/case-inside2-picture1.png" alt="service picture">
+            </div>
 
+            <div class="service-border">
+                <div class="service-ct-top">                    
+                    <div class="service-ct-top-left">    
+                        <img style="width:30px;height:30px;margin-left:5px;" src="http://pa74otoy6.bkt.clouddn.com/opaque-logo.png" alt="logo">
+                        <div class="service-e-name">High-end Reception</div>
+                    </div>
+                    <div class="service-c-name">
+                        <span>高端</span>
+                        <span class="s-c-name-bottom">酒会</span>
+                    </div>
+                </div>
+                <img style="width:180px;height:120px;" src="http://pa74otoy6.bkt.clouddn.com/case-inside2-picture1.png" alt="service picture">
+            </div>
+
+            <div class="service-border">
+                <div class="service-ct-top">                    
+                    <div class="service-ct-top-left">    
+                        <img style="width:30px;height:30px;margin-left:5px;" src="http://pa74otoy6.bkt.clouddn.com/opaque-logo.png" alt="logo">
+                        <div class="service-e-name">Business Reception</div>
+                    </div>
+                    <div class="service-c-name">
+                        <span>商务</span>
+                        <span class="s-c-name-bottom">接待会</span>
+                    </div>
+                </div>
+                <img style="width:180px;height:120px;" src="http://pa74otoy6.bkt.clouddn.com/case-inside2-picture1.png" alt="service picture">
+            </div>
+
+            <div class="service-border">
+                <div class="service-ct-top">                    
+                    <div class="service-ct-top-left">    
+                        <img style="width:30px;height:30px;margin-left:5px;" src="http://pa74otoy6.bkt.clouddn.com/opaque-logo.png" alt="logo">
+                        <div class="service-e-name">Product Launch</div>
+                    </div>
+                    <div class="service-c-name">
+                        <span>产品</span>
+                        <span class="s-c-name-bottom">发布会</span>
+                    </div>
+                </div>
+                <img style="width:180px;height:120px;" src="http://pa74otoy6.bkt.clouddn.com/case-inside2-picture1.png" alt="service picture">
+            </div>
+
+            <div class="service-border">
+                <div class="service-ct-top">                    
+                    <div class="service-ct-top-left">    
+                        <img style="width:30px;height:30px;margin-left:5px;" src="http://pa74otoy6.bkt.clouddn.com/opaque-logo.png" alt="logo">
+                        <div class="service-e-name">Opening Ceremony</div>
+                    </div>
+                    <div class="service-c-name">
+                        <span>开业</span>
+                        <span class="s-c-name-bottom">庆典</span>
+                    </div>
+                </div>
+                <img style="width:180px;height:120px;" src="http://pa74otoy6.bkt.clouddn.com/case-inside2-picture1.png" alt="service picture">
+            </div>
+
+        </div>
+
+        <div class="r-title">
+            <div class="hr"></div>
+            <div class="mid-name">
+                <div class="border"></div>
+                <div class="name">
+                    <span class="c-title">订购流程</span>
+                    <span class="e-title">ORDER PROCESS</span>
+                </div>               
+            </div>
         </div>
     
     
@@ -458,9 +557,10 @@ export default {};
     margin-bottom: 5px;
 }
 
-.service-c-name{
+.service-c-name{   
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
     font-weight: bold;
     font-size:20px;
     /* background-color: blue; */
@@ -471,22 +571,24 @@ export default {};
 .service-e-name{
     font-size:10px;
     /* background-color: red; */
-    font-style: italic;
+    /* font-style: italic; */
     width:130px;
     white-space:nowrap;
     overflow:hidden;
-    
-    
+    text-overflow:ellipsis;
+    text-align: right;
+
 }
 
 .service-border{
     width:200px;
     height:200px;
-    border:1px solid gray;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: 0px 0px 10px 0px #e0e0e0;
+
 }
 
 .s-c-name-bottom{
@@ -499,4 +601,14 @@ export default {};
     align-items: flex-end;
 }
 
+.service-ct{
+    width:900px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    
+    height:450px;
+    margin:0 auto;
+    margin-top:30px;
+}
 </style>
