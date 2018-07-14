@@ -84,14 +84,14 @@
             <div class="souvenir-main-gift">
                 <div class="souvenir-main-gitf-category">
                     <div class="souvenir-main-gitf-list">
-                        <el-table :data="tableData" stripe style="width: 100%">
-                            <el-table-column prop="number" label="编号" width="180">
+                        <el-table :data="tableData" stripe style="width: 600px;">
+                            <el-table-column prop="number" label="编号" width="120">
                             </el-table-column>
-                            <el-table-column prop="name" label="品名" width="180">
+                            <el-table-column prop="name" label="品名" width="120">
                             </el-table-column>
-                            <el-table-column prop="pack" label="包装" width="180">
+                            <el-table-column prop="pack" label="包装" width="120">
                             </el-table-column>
-                            <el-table-column prop="specification" label="规格" width="180">
+                            <el-table-column prop="specification" label="规格" width="120">
                             </el-table-column>
                             <el-table-column prop="price" label="价格（RMB）">
                             </el-table-column>
