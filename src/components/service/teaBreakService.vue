@@ -13,12 +13,12 @@
                 </div>
             </div>
             
-            <span class="re-title2" v-html="responseDatas.order.orderWay.title"></span>           
+            <span class="re-title2" v-html="responseDatas.order.orderWay.title"></span>
 
             <div class="way-ct">
                 <div class="ct1" v-for="(value,key) in responseDatas.order.orderWay.items" :key="key">
                     <div class="ct-title">
-                        <img style="width:30px;height:atuo;" :src=value.imageUrl alt="">
+                        <img style="width:30px;height:auto;" :src=value.imageUrl alt="">
                         <span class="ct-title-name">{{value.title}}</span>
                     </div>
                     <span class="ct-bottom">{{value.content}}</span>
@@ -43,8 +43,8 @@
                             <span class="menu-top top-icon" v-html="food.icon"></span>
                             <span class="menu-top">{{food.title}}</span>
                                                           
-                            <ul class="menu-bottom" v-for="(cake,dessert) in food.desserts" :key="dessert">
-                                <li>{{cake,desserts}}</li>
+                            <ul class="menu-bottom">
+                                <li v-for="(cake,dessert) in food.desserts" :key="dessert">{{cake}}</li>
                             </ul>
                         </div>
 
@@ -184,13 +184,6 @@ export default {
             console.log(response);
         });
     }
-
-
-
-
-
-
-
 
 };
 
