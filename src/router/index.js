@@ -8,13 +8,8 @@ import ServiceContent from '@/components/homepage/serviceContent.vue'
 import TeaState from '@/components/homepage/teaState.vue'
 import ContactUs from '@/components/homepage/contactUs.vue'
 
-import ProductInside from '@/components/homepage/productInside.vue'
 import TeaStateInside from '@/components/homepage/teaStateInside.vue'
 import TeaDessert from '@/components/display/teaDessert.vue'
-import TeaCultureSeminar from '@/components/display/teaCultureSeminar.vue'
-import DiyActivitesDisplay from '@/components/display/diyActivitesDisplay.vue'
-import TeaBreakCustomisation from '@/components/display/teaBreakCustomisation.vue'
-import TeaPerformance from '@/components/display/teaPerformance.vue'
 
 Vue.use(Router)
 
@@ -51,11 +46,6 @@ export default new Router({
       component: ContactUs
     },
     {
-      path: '/homepage/productInside',
-      name: 'productInside',
-      component: ProductInside
-    },
-    {
       path: '/homepage/teaStateInside',
       name: 'teaStateInside',
       component: TeaStateInside
@@ -64,26 +54,6 @@ export default new Router({
       path: '/display/teaDessert',
       name: 'teaDessert',
       component: TeaDessert
-    },
-    {
-      path: '/display/teaCultureSeminar',
-      name: 'teaCultureSeminar',
-      component: TeaCultureSeminar
-    },
-    {
-      path: '/display/diyActivitesDisplay',
-      name: 'diyActivitesDisplay',
-      component: DiyActivitesDisplay
-    },
-    {
-      path: '/display/teaBreakCustomisation',
-      name: 'teaBreakCustomisation',
-      component: TeaBreakCustomisation
-    },
-    {
-      path: '/display/teaPerformance',
-      name: 'teaPerformance',
-      component: TeaPerformance
     }
   ]
 })
