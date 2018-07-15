@@ -13,8 +13,8 @@
                 </div>
             </div>
         </div>
-        
-        <div class="ts-main" v-for="(item , key) in items.items" :key="key">
+        <div v-for="(item , key) in items.items" :key="key">
+        <div class="ts-main" >
             <img style="width:300px;height:200px;margin:10px;" :src="item.imageUrl" alt="">
             <div class="ts-main-content">
                 <div class="ts-main-content-title">
@@ -24,6 +24,8 @@
                 <div class="ts-main-content-center">{{item.summary}}</div>
                 <router-link to="./teaStateInside"><div class="ts-main-content-more">MORE</div></router-link>
             </div>
+        </div>
+        <div class="hr" style="width:940px;border:0.5px solid #f0f0f0;margin-top:20px;"></div>
         </div>
 
         <div class="case-foot">
@@ -124,6 +126,15 @@ export default {
     min-width: 270px;
 }
 .ts-main{
+    margin-top: 40px;
+    min-width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.ts-main:hover{
     margin-top: 40px;
     min-width: 60%;
     display: flex;
