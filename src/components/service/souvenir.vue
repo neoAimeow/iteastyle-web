@@ -158,13 +158,15 @@
 }
 .souvenir-main-souvenir-introduce{
     width: 500px;
+    height:250px;
+    background-color: aqua;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 .souvenir-main-souvenir-img{
     width: 300px;
-    height: 300px;
+    height: auto;
 }
 .souvenir-main-drink{
     display: flex;
@@ -174,7 +176,7 @@
 }
 .souvenir-main-drink-img{
     width: 300px;
-    height: 300px;
+    height: auto;
 }
 .souvenir-main-drink-subtitle{
     display: flex;
