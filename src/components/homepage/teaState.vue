@@ -19,7 +19,7 @@
             <div class="ts-main-content">
                 <div class="ts-main-content-title">
                     <span style="color:#9dc135;">{{item.title}}</span>
-                    <span style="font-size:10px;">xxxx年xx月xx日</span>
+                    <span style="font-size:10px;">{{ item.gmtModified | moment("YYYY-MM-DD")}}</span>
                 </div>
                 <div class="ts-main-content-center">
                     aaaaaaaaaaaaaaa
