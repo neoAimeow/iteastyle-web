@@ -8,18 +8,18 @@
             <div class="tsI-main-head">
                 <span>{{title}}</span>
                 <hr style="height:0.2px;border:none;border-top:1px solid #a7a7a7; width: 800px;" />
-                <span style="font-size:5px;color:#626262;">发布时间：   </span>
+                <span style="font-size:5px;color:#626262;">发布时间：{{ gmtModified | moment("YYYY-MM-DD") }}</span>
             </div>
             <div class="tsI-main-body">
                 <div class="tsI-main-body-content">
-                    <span>{{content}}</span>
+                    <span v-html="content"></span>
                 </div>
             </div>
         </div>
-        <div class="tsI-other-article">
-            <router-link to="./"><span>上一篇：</span></router-link>
-            <router-link style="margin-top:10px;" to="./"><span>下一篇：</span></router-link>
-        </div>
+        <!--<div class="tsI-other-article">-->
+            <!--<router-link to="./"><span>上一篇：</span></router-link>-->
+            <!--<router-link style="margin-top:10px;" to="./"><span>下一篇：</span></router-link>-->
+        <!--</div>-->
     </div>
 </template>
 
@@ -28,7 +28,8 @@ export default {
     data() {
         return {
             title:'',
-            content:''
+            content:'',
+            gmtModified: ''
         }
     },
 created: function() {
@@ -43,6 +44,7 @@ created: function() {
       console.log(response);
       that.content = response.data.model.content;
       that.title = response.data.model.title;
+      that.gmtModified = response.data.model.gmtModified
     })
     .catch(function (response) {
       console.log(response);
