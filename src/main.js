@@ -16,6 +16,7 @@ Vue.use(ElementUI)
 Vue.use(VueProgressiveImage)
 Vue.use(VueAMap)
 Vue.use(VueSilentbox)
+Vue.use(require('vue-moment'))
 
 let request = axios.create({
   baseURL: 'https://iteastyle-api-test.aimeow.com/service/',
