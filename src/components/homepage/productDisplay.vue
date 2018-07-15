@@ -25,7 +25,7 @@
             </div>
         </div>
         <div class="pd-more">
-            <router-link to="../display/teaDessert"><span>MORE</span></router-link>
+            <router-link :to="{path:'../display/teaDessert',query:{type:item.type}}"><span>MORE</span></router-link>
         </div>
     </div>
 
@@ -37,16 +37,14 @@
     data() {
         return {
             items:[],
-            moreItems:{}
         }
  },
 created: function() {
-    this.productDisplayRequest();
-    this.productDisplaymoreRequest();
+    this.request();
   },
   methods: {
 
-      productDisplayRequest: function() {
+        request: function() {
           var that = this;
             this.$ajax.get('/getCasesHomeData', {
             })
@@ -57,22 +55,6 @@ created: function() {
             .catch(function (response) {
             console.log(response);
             });
-      },
-      productDisplaymoreRequest: function(){
-          var that = this;
-          this.$ajax.get('/getCaseByType', {
-              params:{
-            productDisplayType:this.$route.query.type
-        }
-          })
-          .then(function(response){
-            console.log(this.$route.query.type);
-            that.moreItems = response.data.model;
-            that.imgs = response.data.model.imageArr;
-          })
-          .catch(function (response){
-              console.log(response);
-          });
       }
   }
 }
