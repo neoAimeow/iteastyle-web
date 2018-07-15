@@ -18,7 +18,7 @@
         </div>
         <el-pagination
             layout="prev, pager, next"
-            :total="totalCount" :page-size="pageSize" :current-page="currentPage" @current-change="currentPageChanged"
+            :total="totalCount" :page-size="pageSize" :current-page="currentPage" @current-change="currentPageChanged" style="margin-bottom:40px;"
         >
         </el-pagination>
     </div>
@@ -78,7 +78,7 @@ created: function() {
     width: 900px;
     display: flex;
     flex-direction: row;
-    margin-bottom: 200px;
+    margin-bottom: 40px;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
