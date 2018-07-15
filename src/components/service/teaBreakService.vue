@@ -560,13 +560,12 @@ export default {};
 
 <style scoped>
 @font-face {
-  font-family: "iconfont"; /* project id 721549 */
-  src: url("//at.alicdn.com/t/font_721549_0qxys3z794x.eot");
-  src: url("//at.alicdn.com/t/font_721549_0qxys3z794x.eot?#iefix")
-      format("embedded-opentype"),
-    url("//at.alicdn.com/t/font_721549_0qxys3z794x.woff") format("woff"),
-    url("//at.alicdn.com/t/font_721549_0qxys3z794x.ttf") format("truetype"),
-    url("//at.alicdn.com/t/font_721549_0qxys3z794x.svg#iconfont") format("svg");
+  font-family: 'iconfont';  /* project id 721549 */
+  src: url('//at.alicdn.com/t/font_721549_gv2tbnt6yt8.eot');
+  src: url('//at.alicdn.com/t/font_721549_gv2tbnt6yt8.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_721549_gv2tbnt6yt8.woff') format('woff'),
+  url('//at.alicdn.com/t/font_721549_gv2tbnt6yt8.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_721549_gv2tbnt6yt8.svg#iconfont') format('svg');
 }
 
 .service {
@@ -852,6 +851,7 @@ export default {};
 }
 
 .in-no1 {
+  width:25px;
   height: 25px;
   line-height: 25px;
   display: block;
@@ -863,6 +863,7 @@ export default {};
   display: flex;
   flex-direction: row;
   align-items: center;
+  align-items: flex-start;
   margin-bottom: 20px;
 }
 
