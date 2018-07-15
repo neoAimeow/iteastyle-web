@@ -15,24 +15,16 @@
         </div>
         
         <div class="ts-main" v-for="(item , key) in items.items" :key="key">
-            <img style="width:300px;height:200px;" :src="item.imageUrl" alt="">
+            <img style="width:300px;height:200px;margin:10px;" :src="item.imageUrl" alt="">
             <div class="ts-main-content">
                 <div class="ts-main-content-title">
                     <span style="color:#9dc135;">{{item.title}}</span>
-                    <span style="font-size:10px;">{{ item.gmtModified | moment("YYYY-MM-DD")}}</span>
+                    <span style="font-size:10px;color:#909090">{{ item.gmtModified | moment("YYYY-MM-DD")}}</span>
                 </div>
-                <div class="ts-main-content-center">
-                    aaaaaaaaaaaaaaa
-                </div>
-                <div class="ts-main-content-more">
-                    <router-link to="./teaStateInside"><span>MORE</span></router-link>
-                </div>
+                <div class="ts-main-content-center">{{item.summary}}</div>
+                <router-link to="./teaStateInside"><div class="ts-main-content-more">MORE</div></router-link>
             </div>
         </div>
-
-        
-
-
 
         <div class="case-foot">
         <el-pagination
@@ -87,12 +79,7 @@ export default {
 </script>
 
 <style lang="scss">
-.ts-main-content-more a:link{
-    color: #9dc135;
-}
-.ts-main-content-more a:visited{
-    color: #9dc135;
-}
+
 .ts-container{
     width: 100%;
     display: flex;
@@ -138,11 +125,11 @@ export default {
 }
 .ts-main{
     margin-top: 40px;
-    margin-bottom: 40px;
     min-width: 60%;
     display: flex;
     flex-direction: row;
     align-items: center;
+    box-shadow: 0px 0px 10px 0px #e0e0e0;
 }
 .ts-main-content{
     margin-left: 20px;
@@ -157,15 +144,17 @@ export default {
     align-items: center;
     justify-content: space-between;
     margin-top:30px;
+    width:550px;
 }
 .ts-main-content-center{
-    margin-top: 30px;
+    margin-top: 25px;
     margin-left: 30px;  
     height:20px;
     width:400px;
     overflow: hidden;
     text-overflow:ellipsis;
     white-space:nowrap;
+    color:#909090;
     // background-color: orange;
 }
 
@@ -178,14 +167,31 @@ export default {
     border: solid 1px #9dc135;
     border-radius: 3px;
     text-align: center;
-    color: #9dc135;
+    width: 15%;
+    height: 25px;
+    color:#9dc135;
+    font-size: 10px;
+}
+
+.ts-main-content-more:hover{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    text-align: center;
     width: 15%;
     height: 25px;
     font-size: 10px;
+    background-color: #9dc135;
+    color:#fff;
+
 }
 
 .case-foot{
     margin: 0 auto;
     margin-bottom: 40px;
+    margin-top:40px;
 }
 </style>
