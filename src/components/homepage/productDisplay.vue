@@ -96,7 +96,7 @@ created: function() {
     width: 900px;
     // background: red;
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 80px;
     margin-bottom: 80px;
     display: flex;
     flex-direction: column;
