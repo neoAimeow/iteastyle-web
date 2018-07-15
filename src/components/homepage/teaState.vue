@@ -21,14 +21,25 @@
                     <span style="color:#9dc135;">{{item.title}}</span>
                     <span style="font-size:10px;">xxxx年xx月xx日</span>
                 </div>
-                <!-- <div class="ts-main-content-center" v-html="item.content" > -->
                 <div class="ts-main-content-center">
-                    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                    aaaaaaaaaaaaaaa
                 </div>
                 <div class="ts-main-content-more">
                     <router-link to="./teaStateInside"><span>MORE</span></router-link>
                 </div>
             </div>
+        </div>
+
+        
+
+
+
+        <div class="case-foot">
+        <el-pagination
+            layout="prev, pager, next"
+            :total="totalCount" :page-size="pageSize" :current-page="currentPage" @current-change="currentPageChanged"
+        >
+        </el-pagination>
         </div>
 
     </div>
@@ -39,11 +50,11 @@
 export default {
   data() {
     return {
-        items: {},
-        currentPage:1,
-        totalCount:0,
-        pageSize:4
-    };
+        items: [],
+            currentPage:1,
+            totalCount:0,
+            pageSize:5
+    }
   },
   created: function() {
     this.request();
@@ -64,8 +75,8 @@ export default {
             })
         .then(function (response) {
         console.log(response.data);
-        that.items = response.data.model;
-        that.totalCount = response.data.model.totalCount
+            that.items = response.data.model;
+            that.totalCount = response.data.model.totalCount
         })
         .catch(function (response) {
         console.log(response);
@@ -98,7 +109,7 @@ export default {
 }
 .ts-head-bg{
     width:100%;
-    height: 500px;
+    
     min-width: 1300px;
 }
 .ts-title{
@@ -136,7 +147,7 @@ export default {
 .ts-main-content{
     margin-left: 20px;
     min-width: 500px;
-    background-color: red;
+    // background-color: red;
     width:600px;
     height:200px;
 }
@@ -149,21 +160,15 @@ export default {
 }
 .ts-main-content-center{
     margin-top: 30px;
-    margin-left: 30px;
-    position:relative;
-    line-height:20px;;
+    margin-left: 30px;  
     height:20px;
-    overflow:hidden;
-    background-color: orange;
+    width:400px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    // background-color: orange;
 }
 
-.ts-main-content-center::after{
-    content:"...";
-    position:absolute;
-    bottom:0;
-    right:0;
-    padding-left:20px;
-}
 .ts-main-content-more{
     margin-top: 30px;
     display: flex;
@@ -177,5 +182,10 @@ export default {
     width: 15%;
     height: 25px;
     font-size: 10px;
+}
+
+.case-foot{
+    margin: 0 auto;
+    margin-bottom: 40px;
 }
 </style>
