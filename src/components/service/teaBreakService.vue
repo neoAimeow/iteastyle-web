@@ -202,6 +202,7 @@ export default {
 .service {
   margin: 0;
   padding: 0;
+  border-bottom:2px solid #9dc135;
 }
 
 .name {
