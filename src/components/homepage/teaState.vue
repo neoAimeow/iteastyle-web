@@ -14,91 +14,31 @@
             </div>
         </div>
         
-        <div class="ts-main">
-            <img style="width:300px;height:200px;" src="http://pa74otoy6.bkt.clouddn.com/state-portrait.png" alt="">
+        <div class="ts-main" v-for="(item , key) in items.items" :key="key">
+            <img style="width:300px;height:200px;" :src="item.imageUrl" alt="">
             <div class="ts-main-content">
                 <div class="ts-main-content-title">
-                    <span style="color:#9dc135;">这份小确幸，你想要么？</span>
+                    <span style="color:#9dc135;">{{item.title}}</span>
                     <span style="font-size:10px;">xxxx年xx月xx日</span>
                 </div>
                 <div class="ts-main-content-center">
-                    <span>转眼夏至 这一年已经过去一半 正值夏天 闷热、阵雨、烈日似乎是个不太好的季节。。。</span>
+                    <span v-html="item.content" style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;"></span>
                 </div>
                 <div class="ts-main-content-more">
                     <router-link to="./teaStateInside"><span>MORE</span></router-link>
                 </div>
             </div>
         </div>
-        <div class="ts-main">
-            <img style="width:300px;height:200px;" src="http://pa74otoy6.bkt.clouddn.com/state-portrait.png" alt="">
-            <div class="ts-main-content">
-                <div class="ts-main-content-title">
-                    <span style="color:#9dc135;">这份小确幸，你想要么？</span>
-                    <span style="font-size:10px;">xxxx年xx月xx日</span>
-                </div>
-                <div class="ts-main-content-center">
-                    <span>转眼夏至 这一年已经过去一半 正值夏天 闷热、阵雨、烈日似乎是个不太好的季节。。。</span>
-                </div>
-                <div class="ts-main-content-more">
-                    <router-link to="./teaStateInside"><span>MORE</span></router-link>
-                </div>
-            </div>
-        </div>
-        <div class="ts-main">
-            <img style="width:300px;height:200px;" src="http://pa74otoy6.bkt.clouddn.com/state-portrait.png" alt="">
-            <div class="ts-main-content">
-                <div class="ts-main-content-title">
-                    <span style="color:#9dc135;">这份小确幸，你想要么？</span>
-                    <span style="font-size:10px;">xxxx年xx月xx日</span>
-                </div>
-                <div class="ts-main-content-center">
-                    <span>转眼夏至 这一年已经过去一半 正值夏天 闷热、阵雨、烈日似乎是个不太好的季节。。。</span>
-                </div>
-                <div class="ts-main-content-more">
-                    <router-link to="./teaStateInside"><span>MORE</span></router-link>
-                </div>
-            </div>
-        </div>
-        <div class="ts-main">
-            <img style="width:300px;height:200px;" src="http://pa74otoy6.bkt.clouddn.com/state-portrait.png" alt="">
-            <div class="ts-main-content">
-                <div class="ts-main-content-title">
-                    <span style="color:#9dc135;">这份小确幸，你想要么？</span>
-                    <span style="font-size:10px;">xxxx年xx月xx日</span>
-                </div>
-                <div class="ts-main-content-center">
-                    <span>转眼夏至 这一年已经过去一半 正值夏天 闷热、阵雨、烈日似乎是个不太好的季节。。。</span>
-                </div>
-                <div class="ts-main-content-more">
-                    <router-link to="./teaStateInside"><span>MORE</span></router-link>
-                </div>
-            </div>
-        </div>
-        <div class="ts-main">
-            <img style="width:300px;height:200px;" src="http://pa74otoy6.bkt.clouddn.com/state-portrait.png" alt="">
-            <div class="ts-main-content">
-                <div class="ts-main-content-title">
-                    <span style="color:#9dc135;">这份小确幸，你想要么？</span>
-                    <span style="font-size:10px;">xxxx年xx月xx日</span>
-                </div>
-                <div class="ts-main-content-center">
-                    <span>转眼夏至 这一年已经过去一半 正值夏天 闷热、阵雨、烈日似乎是个不太好的季节。。。</span>
-                </div>
-                <div class="ts-main-content-more">
-                    <router-link to="./teaStateInside"><span>MORE</span></router-link>
-                </div>
-            </div>
-        </div>
+
     </div>
 </template>
 
 
-<!--<script>
+<script>
 export default {
   data() {
     return {
-        items: [],
-        backgroundImageUrl:'',
+        items: {},
         currentPage:1,
         totalCount:0,
         pageSize:4
@@ -123,8 +63,7 @@ export default {
             })
         .then(function (response) {
         console.log(response.data);
-        that.items = response.data.model.posts;
-        that.backgroundImageUrl = response.data.model.postBackgroundImage;
+        that.items = response.data.model;
         that.totalCount = response.data.model.totalCount
         })
         .catch(function (response) {
@@ -133,7 +72,7 @@ export default {
     }
     }
 }
-</script> -->
+</script>
 
 <style lang="scss">
 .ts-main-content-more a:link{
