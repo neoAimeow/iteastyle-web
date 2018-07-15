@@ -25,7 +25,7 @@
             </div>
         </div>
         <div class="pd-more">
-            <router-link :to="{path:'../display/teaDessert',query:{type:item.type}}"><span>MORE</span></router-link>
+            <router-link :to="{path:'../display/teaDessert',query:{type:item.caseType.type}}"><span>MORE</span></router-link>
         </div>
     </div>
 
