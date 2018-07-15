@@ -15,10 +15,10 @@
             <hr style="width:260px;height:2px;border:none;border-top:2px solid #9dc135;" />
         </div>
         <div class="pd-content">
-            <div class="pd-content-img" v-for="(cell , inKey) in item.cases" :key="inKey">
+            <div v-if="inKey<3" class="pd-content-img" v-for="(cell , inKey) in item.cases" :key="inKey">
                     <silentbox-group>
                         <silentbox-item v-for="(image,imageKey) in cell.imageArr" :key="imageKey" :src="image">
-                            <img v-if="imageKey==0" style="width: 270px;height: 200px;" :src="cell.imageArr[0]" alt="">
+                            <img v-if="imageKey===0" style="width: 270px;height: 200px;" :src="cell.imageArr[0]" alt="">
                         </silentbox-item>
                     </silentbox-group>
                 <div class="pd-content-img-title"><span>{{cell.title}}</span></div>
@@ -36,16 +36,18 @@
  export default {
     data() {
         return {
-            items:[]
+            items:[],
+            moreItems:{}
         }
  },
 created: function() {
-    this.request();
+    this.productDisplayRequest();
+    this.productDisplaymoreRequest();
   },
   methods: {
 
-      request() {
-              var that = this;
+      productDisplayRequest: function() {
+          var that = this;
             this.$ajax.get('/getCasesHomeData', {
             })
             .then(function (response) {
@@ -55,6 +57,22 @@ created: function() {
             .catch(function (response) {
             console.log(response);
             });
+      },
+      productDisplaymoreRequest: function(){
+          var that = this;
+          this.$ajax.get('/getCaseByType', {
+              params:{
+            productDisplayType:this.$route.query.type
+        }
+          })
+          .then(function(response){
+            console.log(this.$route.query.type);
+            that.moreItems = response.data.model;
+            that.imgs = response.data.model.imageArr;
+          })
+          .catch(function (response){
+              console.log(response);
+          });
       }
   }
 }
@@ -80,7 +98,7 @@ created: function() {
 .pd-head-bg{
     width: 100%;
     height: 160px;
-    min-width: 1300px;
+    min-width: 1000px;
 }
 .pd-head-logo{
     width: 80px;
@@ -141,7 +159,7 @@ created: function() {
 .pd-more{
     width: 10%;
     margin-top: 40px;
-    border: solid 1px #9dc135;
+    border: dashed 1px #9dc135;
     border-radius: 15px;
     text-align: center;
     color: #9dc135;
