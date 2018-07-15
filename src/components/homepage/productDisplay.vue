@@ -18,15 +18,18 @@
             <div v-if="inKey<3" class="pd-content-img" v-for="(cell , inKey) in item.cases" :key="inKey">
                     <silentbox-group>
                         <silentbox-item v-for="(image,imageKey) in cell.imageArr" :key="imageKey" :src="image">
-                            <img v-if="imageKey===0" style="width: 270px;height: 200px;" :src="cell.imageArr[0]" alt="">
+                            <img v-if="imageKey===0" class="content-picture" :src="cell.imageArr[0]" alt="">
                         </silentbox-item>
                     </silentbox-group>
                 <div class="pd-content-img-title"><span>{{cell.title}}</span></div>
             </div>
         </div>
+
+        <router-link :to="{path:'../display/teaDessert',query:{type:item.caseType.type}}">
         <div class="pd-more">
-            <router-link :to="{path:'../display/teaDessert',query:{type:item.caseType.type}}"><span>MORE</span></router-link>
+            <span>MORE</span>
         </div>
+        </router-link>
     </div>
 
 </div>
@@ -61,12 +64,12 @@ created: function() {
 </script>
 
 <style lang="scss">
-.pd-more a:link{
-    color: #9dc135;
-}
-.pd-more a:visited{
-    color: #9dc135;
-}
+// .pd-more a:link{
+//     color: #9dc135;
+// }
+// .pd-more a:visited{
+//     color: #9dc135;
+// }
 .pd-container{
     width: 100%;
 }
@@ -90,7 +93,7 @@ created: function() {
 }
 .pd-main{
     width: 900px;
-    background: red;
+    // background: red;
     margin: 0 auto;
     margin-top: 40px;
     margin-bottom: 80px;
@@ -121,6 +124,7 @@ created: function() {
     flex-flow: wrap;
     margin-top: 40px;
 }
+
 .pd-content-img{
     margin-top: 40px;
     width: 270px;
@@ -129,6 +133,16 @@ created: function() {
     flex-direction: column;
     justify-content: flex-end;
 }
+
+.content-picture{
+    width: 270px;
+    height: 200px;
+} 
+
+.content-picture:hover{
+    box-shadow: 0px 0px 10px 0px black;
+}
+
 .pd-content-img-title{
     position: relative;
     background-color: rgba(180, 218, 44, 0.5);
@@ -139,11 +153,18 @@ created: function() {
     text-align: center;
 }
 .pd-more{
-    width: 10%;
+    width: 100px;
+    height:30px;
     margin-top: 40px;
     border: dashed 1px #9dc135;
     border-radius: 15px;
     text-align: center;
+    line-height:30px;
     color: #9dc135;
+}
+
+.pd-more:hover{
+    color:#fff;
+    background-color: #9dc135;
 }
 </style>
