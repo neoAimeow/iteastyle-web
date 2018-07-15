@@ -1,33 +1,17 @@
 <template>
     <div class="ps-container">
         <div class="ps-main">
-            <div class="ps-content">
-                <img src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="" class="ps-content-img">
+            <div class="ps-content" v-for="(info1 , key1) in info.items" :key="key1">
+                <silentbox-group>
+                    <silentbox-item v-for="(image,imageKey) in info1.imageUrls" :key="imageKey" :src="image">
+                        <img v-if="imageKey===0" :src="image" alt="" class="ps-content-img">
+                    </silentbox-item>
+                </silentbox-group>
                 <div class="ps-content-title">
-                    <img src="http://pa74otoy6.bkt.clouddn.com/120.png" alt="" class="ps-content-logo">
+                    <img :src="info1.iconImageUrl" alt="" class="ps-content-logo">
                     <div class="ps-content-name">
-                        <span style="color:#9dc135;">IBM茶艺表演</span>
-                        <span style=" color: rgb(228, 227, 227);">TEA PERFORMANCE</span>
-                    </div>
-                </div>
-            </div>
-            <div class="ps-content">
-                <img src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="" class="ps-content-img">
-                <div class="ps-content-title">
-                    <img src="http://pa74otoy6.bkt.clouddn.com/120.png" alt="" class="ps-content-logo">
-                    <div class="ps-content-name">
-                        <span style="color:#9dc135;">IBM茶艺表演</span>
-                        <span style=" color: rgb(228, 227, 227);">TEA PERFORMANCE</span>
-                    </div>
-                </div>
-            </div>
-            <div class="ps-content">
-                <img src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="" class="ps-content-img">
-                <div class="ps-content-title">
-                    <img src="http://pa74otoy6.bkt.clouddn.com/120.png" alt="" class="ps-content-logo">
-                    <div class="ps-content-name">
-                        <span style="color:#9dc135;">IBM茶艺表演</span>
-                        <span style=" color: rgb(228, 227, 227);">TEA PERFORMANCE</span>
+                        <span style="color:#9dc135;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width:110px;">{{info1.title}}</span>
+                        <span style=" color: rgb(228, 227, 227);">{{info1.title_en}}</span>
                     </div>
                 </div>
             </div>
@@ -36,8 +20,30 @@
 </template>
 
 <script>
-export default {
-    
+ export default {
+    data() {
+        return {
+            info:{},
+        }
+    },
+created: function() {
+    console.log(this.$route.query.id);
+    var that = this;
+     this.$ajax.get('/getTeaPerformService', {
+        params:{
+            id:this.$route.query.id,
+            page:0,
+            pageSize:10
+        }
+    })
+    .then(function (response) {
+      console.log(response);
+      that.info = response.data.model;
+    })
+    .catch(function (response) {
+      console.log(response);
+    });
+  }
 }
 </script>
 

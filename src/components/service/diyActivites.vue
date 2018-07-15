@@ -1,69 +1,17 @@
 <template>
     <div class="das-container">
         <div class="das-main">
-            <div class="das-content">
-                <img src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="" class="das-content-img">
+            <div class="das-content"  v-for="(info1 , key1) in info.items" :key="key1">
+                <silentbox-group>
+                    <silentbox-item v-for="(image,imageKey) in info1.imageUrls" :key="imageKey" :src="image">
+                        <img v-if="imageKey===0" :src="image" alt="" class="das-content-img">
+                    </silentbox-item>
+                </silentbox-group>
                 <div class="das-content-title">
-                    <img src="http://pa74otoy6.bkt.clouddn.com/120.png" alt="" class="das-content-logo">
+                    <img :src="info1.iconImageUrl" alt="" class="das-content-logo">
                     <div class="das-content-name">
-                        <span style="color:#9dc135;">彩绘类DIY</span>
-                        <span style=" color: rgb(228, 227, 227);">PATTING</span>
-                        <span style=" color: rgb(228, 227, 227);">DO IT YOURSELF</span>
-                    </div>
-                </div>
-            </div>
-            <div class="das-content">
-                <img src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="" class="das-content-img">
-                <div class="das-content-title">
-                    <img src="http://pa74otoy6.bkt.clouddn.com/120.png" alt="" class="das-content-logo">
-                    <div class="das-content-name">
-                        <span style="color:#9dc135;">护理类DIY</span>
-                        <span style=" color: rgb(228, 227, 227);">NURSING</span>
-                        <span style=" color: rgb(228, 227, 227);">DO IT YOURSELF</span>
-                    </div>
-                </div>
-            </div>
-            <div class="das-content">
-                <img src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="" class="das-content-img">
-                <div class="das-content-title">
-                    <img src="http://pa74otoy6.bkt.clouddn.com/120.png" alt="" class="das-content-logo">
-                    <div class="das-content-name">
-                        <span style="color:#9dc135;">香薰类DIY</span>
-                        <span style=" color: rgb(228, 227, 227);">ARAMIS</span>
-                        <span style=" color: rgb(228, 227, 227);">DO IT YOURSELF</span>
-                    </div>
-                </div>
-            </div>
-            <div class="das-content">
-                <img src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="" class="das-content-img">
-                <div class="das-content-title">
-                    <img src="http://pa74otoy6.bkt.clouddn.com/120.png" alt="" class="das-content-logo">
-                    <div class="das-content-name">
-                        <span style="color:#9dc135;">食品类DIY</span>
-                        <span style=" color: rgb(228, 227, 227);">FOOD</span>
-                        <span style=" color: rgb(228, 227, 227);">DO IT YOURSELF</span>
-                    </div>
-                </div>
-            </div>
-            <div class="das-content">
-                <img src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="" class="das-content-img">
-                <div class="das-content-title">
-                    <img src="http://pa74otoy6.bkt.clouddn.com/120.png" alt="" class="das-content-logo">
-                    <div class="das-content-name">
-                        <span style="color:#9dc135;">永生花类DIY</span>
-                        <span style=" color: rgb(228, 227, 227);">FLOWER PRESERVATION</span>
-                        <span style=" color: rgb(228, 227, 227);">DO IT YOURSELF</span>
-                    </div>
-                </div>
-            </div>
-            <div class="das-content">
-                <img src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="" class="das-content-img">
-                <div class="das-content-title">
-                    <img src="http://pa74otoy6.bkt.clouddn.com/120.png" alt="" class="das-content-logo">
-                    <div class="das-content-name">
-                        <span style="color:#9dc135;">鲜花绿植类DIY</span>
-                        <span style=" color: rgb(228, 227, 227);">GREEN FLOWERS</span>
-                        <span style=" color: rgb(228, 227, 227);">DO IT YOURSELF</span>
+                        <span style="color:#9dc135;">{{info1.title}}</span>
+                        <span style=" color: rgb(228, 227, 227);">{{info1.title_en}}</span>
                     </div>
                 </div>
             </div>
@@ -73,7 +21,29 @@
 
 <script>
 export default {
-    
+    data() {
+        return {
+            info:{},
+        }
+    },
+created: function() {
+    console.log(this.$route.query.id);
+    var that = this;
+     this.$ajax.get('/getTeaDIYService', {
+        params:{
+            id:this.$route.query.id,
+            page:0,
+            pageSize:10
+        }
+    })
+    .then(function (response) {
+      console.log(response);
+      that.info = response.data.model;
+    })
+    .catch(function (response) {
+      console.log(response);
+    });
+  }
 }
 </script>
 
