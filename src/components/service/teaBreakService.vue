@@ -1,53 +1,31 @@
 <template>
-    <div class="service">
+    <div class="service">      
         <div class="reservation">
+
             <div class="r-title">
                 <div class="hr"></div>
                 <div class="mid-name">
                     <div class="border"></div>
                     <div class="name">
-                        <span class="c-title">茶歇预定</span>
-                        <span class="e-title">RESERVATION</span>
+                        <span class="c-title">{{responseDatas.order.title}}</span>
+                        <span class="e-title">{{responseDatas.order.title_en}}</span>
                     </div>               
                 </div>
             </div>
-
-            <div class="way">
-                <span class="res-logo">&#xe9e7;</span>
-                <span>预定方式</span>
-            </div>
+            
+            <span class="re-title2" v-html="responseDatas.order.orderWay.title"></span>           
 
             <div class="way-ct">
-                <div class="ct1">
+                <div class="ct1" v-for="(value,key) in responseDatas.order.orderWay.items" :key="key">
                     <div class="ct-title">
-                    <img style="width:30px;height:atuo;" src="http://pa74otoy6.bkt.clouddn.com/opaque-logo.png" alt="">
-                    <span class="ct-title-name">高端个性化定制</span>
+                        <img style="width:30px;height:atuo;" :src=value.imageUrl alt="">
+                        <span class="ct-title-name">{{value.title}}</span>
                     </div>
-                    <span>按照您的个性化需求，茶歇师会为您制定独一无二的产品，预算金额将根据工作量进行相应预算。</span>
+                    <span class="ct-bottom">{{value.content}}</span>
                 </div>
-                <div class="ct2">
-                    <div class="ct-title">
-                    <img style="width:30px;height:atuo;" src="http://pa74otoy6.bkt.clouddn.com/opaque-logo.png" alt="">
-                    <span class="ct-title-name">人数标准化菜单</span>
-                    </div>
-                    <span>按照您提供的人数，选择菜单，立刻生成预算。</span>
-                </div>
-                <div class="ct3">
-                    <div class="ct-title">
-                    <img style="width:30px;height:atuo;" src="http://pa74otoy6.bkt.clouddn.com/opaque-logo.png" alt="">
-                    <span class="ct-title-name">一人一份</span>
-                    </div>
-                    <span>每人平均分配，人手一份，同样根据人数快速生成预算。</span>
-                </div>
-
             </div>
 
-            <div class="menu">
-                <span class="res-logo">&#xe9e7;</span>
-                <span>茶歇菜单</span>
-            </div>
-
-           
+            <span class="re-title2" v-html="responseDatas.order.menu.title"></span>          
 
             <div class="menu-border-out">
                 
@@ -163,7 +141,7 @@
             </div>
 
 
-                        <div class="menu-border-out">
+            <div class="menu-border-out">
                 
                 <div class="menu-border-inside">
                     <div class="menu-head">
@@ -555,7 +533,35 @@
 </template>
 
 <script>
-export default {};
+export default {
+    data() {
+        return {
+            responseDatas: {}
+        }
+    },
+    created() {
+        var that = this;
+        this.$ajax.get('/getTeaBreakService', {
+
+        }).then(function (response) {
+            // console.log(response)
+            that.responseDatas = response.data.model;
+            console.log(that.responseDatas);
+        })
+        .catch(function (response) {
+            console.log(response);
+        });
+    }
+
+
+
+
+
+
+
+
+};
+
 </script>
 
 <style scoped>
@@ -573,9 +579,9 @@ export default {};
   padding: 0;
 }
 
-.res-logo {
+/* .res-logo {
   font-family: iconfont;
-}
+} */
 
 .name {
   text-align: center;
@@ -641,17 +647,15 @@ export default {};
   align-items: center;
 }
 
-.way,
-.menu {
+.re-title2{
   margin-top: 30px;
   color: #9dc135;
   font-size: 20px;
   margin-bottom: 20px;
+  font-family: iconfont;
 }
 
-.ct1,
-.ct2,
-.ct3 {
+.ct1,.ct-bottom{
   width: 200px;
 }
 
