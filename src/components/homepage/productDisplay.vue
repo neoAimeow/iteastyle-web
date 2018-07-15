@@ -4,139 +4,28 @@
         <img src="http://pa74otoy6.bkt.clouddn.com/pd-title-background.png" alt="" class="pd-head-bg">
         <img src="http://pa74otoy6.bkt.clouddn.com/opaque-logo.png" alt="" class="pd-head-logo">
     </div>
-    <div class="pd-main">
+    <div style="background-color:red;" class="pd-main" v-for="(item , key) in items" :key="key">
+
         <div class="pd-title">
             <hr style="width:260px;height:2px;border:none;border-top:2px solid #9dc135;" />
             <div class="pd-title-name">
-                <span style="letter-spacing:10px;">茶饮茶点</span>
-                <span style="font-size:10px;">TEA DESSERT</span>
+                <span style="letter-spacing:10px;">{{item.caseType.typeName}}</span>
+                <span style="font-size:10px;">{{item.caseType.typeNameEn}}</span>
             </div>
             <hr style="width:260px;height:2px;border:none;border-top:2px solid #9dc135;" />
         </div>
         <div class="pd-content">
-            <div class="pd-content-img">
-                <silentbox-single src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" autoplay="true" description=""><img style="width: 270px;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt=""></silentbox-single>
-                <div class="pd-content-img-title"><span>紫色生日会</span></div>
-            </div>
-            <div class="pd-content-img">
-                <img style="width: 270px;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
-                <div class="pd-content-img-title"><span>紫色生日会</span></div>
-            </div>
-            <div class="pd-content-img">
-                <img style="width: 270px;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
-                <div class="pd-content-img-title"><span>紫色生日会</span></div>
+            <div class="pd-content-img" v-for="(cell , inKey) in item.cases" :key="inKey">
+                    <silentbox-group>
+                        <silentbox-item v-for="(image,imageKey) in cell.imageArr" :key="imageKey" :src="image">
+                            <img v-if="imageKey==0" style="width: 270px;height: 200px;" :src="cell.imageArr[0]" alt="">
+                        </silentbox-item>
+                    </silentbox-group>
+                <div class="pd-content-img-title"><span>{{cell.title}}</span></div>
             </div>
         </div>
         <div class="pd-more">
             <router-link to="../display/teaDessert"><span>MORE</span></router-link>
-        </div>
-    </div>
-    <div class="pd-main">
-        <div class="pd-title">
-            <hr style="width:260px;height:2px;border:none;border-top:2px solid #9dc135;" />
-            <div class="pd-title-name">
-                <span style="letter-spacing:10px;">茶文化讲座</span>
-                <span style="font-size:10px;">TEA CULTURE SEMINAR</span>
-            </div>
-            <hr style="width:260px;height:2px;border:none;border-top:2px solid #9dc135;" />
-        </div>
-        <div class="pd-content">
-            <div class="pd-content-img">
-                <img style="width: 270px;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
-                <div class="pd-content-img-title"><span>紫色生日会</span></div>
-            </div>
-            <div class="pd-content-img">
-                <img style="width: 270px;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
-                <div class="pd-content-img-title"><span>紫色生日会</span></div>
-            </div>
-            <div class="pd-content-img">
-                <img style="width: 270px;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
-                <div class="pd-content-img-title"><span>紫色生日会</span></div>
-            </div>
-        </div>
-        <div class="pd-more">
-            <router-link to="../display/teaCultureSeminar"><span>MORE</span></router-link>
-        </div>
-    </div>
-    <div class="pd-main">
-        <div class="pd-title">
-            <hr style="width:260px;height:2px;border:none;border-top:2px solid #9dc135;" />
-            <div class="pd-title-name">
-                <span>DIY 活 动</span>
-                <span style="font-size:10px;">DIY ACTIVITES</span>
-            </div>
-            <hr style="width:260px;height:2px;border:none;border-top:2px solid #9dc135;" />
-        </div>
-        <div class="pd-content">
-            <div class="pd-content-img">
-                <img style="width: 270px;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
-                <div class="pd-content-img-title"><span>紫色生日会</span></div>
-            </div>
-            <div class="pd-content-img">
-                <img style="width: 270px;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
-                <div class="pd-content-img-title"><span>紫色生日会</span></div>
-            </div>
-            <div class="pd-content-img">
-                <img style="width: 270px;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
-                <div class="pd-content-img-title"><span>紫色生日会</span></div>
-            </div>
-        </div>
-        <div class="pd-more">
-            <router-link to="../display/diyActivites"><span>MORE</span></router-link>
-        </div>
-    </div>
-    <div class="pd-main">
-        <div class="pd-title">
-            <hr style="width:260px;height:2px;border:none;border-top:2px solid #9dc135;" />
-            <div class="pd-title-name">
-                <span style="letter-spacing:10px;">茶歇定制</span>
-                <span style="font-size:10px;">TEA BREAK CUSTOMISATION</span>
-            </div>
-            <hr style="width:260px;height:2px;border:none;border-top:2px solid #9dc135;" />
-        </div>
-        <div class="pd-content">
-            <div class="pd-content-img">
-                <img style="width: 270px;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
-                <div class="pd-content-img-title"><span>紫色生日会</span></div>
-            </div>
-            <div class="pd-content-img">
-                <img style="width: 270px;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
-                <div class="pd-content-img-title"><span>紫色生日会</span></div>
-            </div>
-            <div class="pd-content-img">
-                <img style="width: 270px;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
-                <div class="pd-content-img-title"><span>紫色生日会</span></div>
-            </div>
-        </div>
-        <div class="pd-more">
-            <router-link to="../display/teaBreakCustomisation"><span>MORE</span></router-link>
-        </div>
-    </div>
-    <div class="pd-main">
-        <div class="pd-title">
-            <hr style="width:260px;height:2px;border:none;border-top:2px solid #9dc135;" />
-            <div class="pd-title-name">
-                <span style="letter-spacing:10px;">茶艺表演</span>
-                <span style="font-size:10px;">TEA PERFORMANCE</span>
-            </div>
-            <hr style="width:260px;height:2px;border:none;border-top:2px solid #9dc135;" />
-        </div>
-        <div class="pd-content">
-            <div class="pd-content-img">
-                <img style="width: 270px;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
-                <div class="pd-content-img-title"><span>紫色生日会</span></div>
-            </div>
-            <div class="pd-content-img">
-                <img style="width: 270px;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
-                <div class="pd-content-img-title"><span>紫色生日会</span></div>
-            </div>
-            <div class="pd-content-img">
-                <img style="width: 270px;height: 200px;" src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="">
-                <div class="pd-content-img-title"><span>紫色生日会</span></div>
-            </div>
-        </div>
-        <div class="pd-more">
-            <router-link to="../display/teaPerformance"><span>MORE</span></router-link>
         </div>
     </div>
 
@@ -147,10 +36,7 @@
  export default {
     data() {
         return {
-            items:[
-
-            ],
-
+            items:[]
         }
  },
 created: function() {
@@ -161,14 +47,10 @@ created: function() {
       request() {
               var that = this;
             this.$ajax.get('/getCasesHomeData', {
-                params: {
-                    type:this.$route.query.type
-                }
-
             })
             .then(function (response) {
-            console.log(response);
-            that.items = response.data.model.caseType;
+                console.log(response);
+                that.items = response.data.model;
             })
             .catch(function (response) {
             console.log(response);
@@ -232,14 +114,15 @@ created: function() {
 }
 .pd-content{
     width: 900px;
-    height: 200px;
     //background: blue;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-flow: wrap;
     margin-top: 40px;
 }
 .pd-content-img{
+    margin-top: 40px;
     width: 270px;
     height: 200px;
     display: flex;
