@@ -156,7 +156,7 @@ created: function() {
 .pd-more{
     width: 100px;
     height:30px;
-    margin-top: 40px;
+    margin-top: 10px;
     border: dashed 1px #9dc135;
     border-radius: 15px;
     text-align: center;

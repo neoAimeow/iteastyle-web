@@ -18,7 +18,7 @@
         </div>
         <el-pagination
             layout="prev, pager, next"
-            :total="totalCount" :page-size="pageSize" :current-page="currentPage" @current-change="currentPageChanged"
+            :total="totalCount" :page-size="pageSize" :current-page="currentPage" @current-change="currentPageChanged" style="margin-bottom:40px;"
         >
         </el-pagination>
     </div>
@@ -71,6 +71,7 @@ created: function() {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-bottom:2px solid #9dc135;
 }
 .td-head{
     width: 100%;
@@ -83,7 +84,6 @@ created: function() {
     z-index: 1;
 }
 .td-main{
-    margin-bottom: 40px;
     margin-top: 80px;
     width: 900px;
     display: flex;
