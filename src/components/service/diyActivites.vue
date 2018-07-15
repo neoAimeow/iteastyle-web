@@ -5,16 +5,15 @@
                 <silentbox-group>
                     <silentbox-item v-for="(image,imageKey) in info1.imageUrls" :key="imageKey" :src="image">
                         <img v-if="imageKey===0" :src="image" alt="" class="das-content-img">
-                        <div class="das-content-title" v-if="imageKey===0">
-                            <img :src="info1.iconImageUrl" alt="" class="das-content-logo">
-                            <div class="das-content-name">
-                                <span style="color:#9dc135;text-decoration:none;">{{info1.title}}</span>
-                                <span style=" color: rgb(228, 227, 227);">{{info1.title_en}}</span>
-                            </div>
-                        </div>
                     </silentbox-item>
                 </silentbox-group>
-                
+                <div class="das-content-title">
+                    <img :src="info1.iconImageUrl" alt="" class="das-content-logo">
+                    <div class="das-content-name">
+                        <span style="color:#9dc135;">{{info1.title}}</span>
+                        <span style=" color: rgb(228, 227, 227);">{{info1.title_en}}</span>
+                    </div>
+                </div>
             </div>
         </div>
         <el-pagination
