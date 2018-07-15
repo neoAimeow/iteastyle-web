@@ -16,6 +16,11 @@
                 </silentbox-group>
             </div>
         </div>
+        <el-pagination
+            layout="prev, pager, next"
+            :total="totalCount" :page-size="pageSize" :current-page="currentPage" @current-change="currentPageChanged"
+        >
+        </el-pagination>
     </div>
 </template>
 <script>
@@ -23,25 +28,39 @@ export default {
     data() {
         return {
             info:{},
+            currentPage:1,
+            pageSize:6,
+            totalCount: 0
         }
     },
 created: function() {
     console.log(this.$route.query.type);
-    var that = this;
-     this.$ajax.get('/getCaseByType', {
-        params:{
-            type:this.$route.query.type,
-            page:0,
-            pageSize:10
-        }
-    })
-    .then(function (response) {
-      console.log(response);
-      that.info = response.data.model.items;
-    })
-    .catch(function (response) {
-      console.log(response);
-    });
+    this.request();
+  },
+  methods : {
+      request() {
+        var that = this;
+        this.$ajax.get('/getCaseByType', {
+            params:{
+                type:this.$route.query.type,
+                page:this.currentPage,
+                pageSize:this.pageSize
+            }
+        })
+        .then(function (response) {
+        console.log(response);
+        that.info = response.data.model.items;
+        that.totalCount = response.data.model.totalCount;
+        })
+        .catch(function (response) {
+        console.log(response);
+        });
+      },
+      currentPageChanged(val) {
+        this.currentPage = val;
+        this.request();
+
+      }
   }
 }
 </script>

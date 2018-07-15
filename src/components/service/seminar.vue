@@ -1,43 +1,68 @@
 <template>
     <div class="ss-container">
         <div class="ss-main">
-            <div class="ss-content">
-                <img src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="" class="ss-content-img">
+            <div class="ss-content" v-for="(info1 , key1) in info.items" :key="key1">
+                <silentbox-group>
+                    <silentbox-item v-for="(image,imageKey) in info1.imageUrls" :key="imageKey" :src="image">
+                        <img v-if="imageKey===0" :src="image" alt="" class="ss-content-img">
+                    </silentbox-item>
+                </silentbox-group>
                 <div class="ss-content-title">
-                    <img src="http://pa74otoy6.bkt.clouddn.com/120.png" alt="" class="ss-content-logo">
+                    <img :src="info1.iconImageUrl" alt="" class="ss-content-logo">
                     <div class="ss-content-name">
-                        <span style="color:#9dc135;">商贸界别组活动</span>
-                        <span style=" color: rgb(228, 227, 227);">TEA CULTURE SEMINAR</span>
-                    </div>
-                </div>
-            </div>
-            <div class="ss-content">
-                <img src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="" class="ss-content-img">
-                <div class="ss-content-title">
-                    <img src="http://pa74otoy6.bkt.clouddn.com/120.png" alt="" class="ss-content-logo">
-                    <div class="ss-content-name">
-                        <span style="color:#9dc135;">品茗西湖</span>
-                        <span style=" color: rgb(228, 227, 227);">TEA CULTURE SEMINAR</span>
-                    </div>
-                </div>
-            </div>
-            <div class="ss-content">
-                <img src="http://pa74otoy6.bkt.clouddn.com/Caseimg1.png" alt="" class="ss-content-img">
-                <div class="ss-content-title">
-                    <img src="http://pa74otoy6.bkt.clouddn.com/120.png" alt="" class="ss-content-logo">
-                    <div class="ss-content-name">
-                        <span style="color:#9dc135;">辉瑞制药</span>
-                        <span style=" color: rgb(228, 227, 227);">TEA CULTURE SEMINAR</span>
+                        <span style="color:#9dc135;">{{info1.title}}</span>
+                        <span style=" color: rgb(228, 227, 227);">{{info1.title_en}}</span>
                     </div>
                 </div>
             </div>
         </div>
+        <el-pagination
+            layout="prev, pager, next"
+            :total="totalCount" :page-size="pageSize" :current-page="currentPage" @current-change="currentPageChanged"
+        >
+        </el-pagination>
     </div>
 </template>
 
 <script>
 export default {
-    
+    data() {
+        return {
+            info:{},
+            currentPage:1,
+            pageSize:6,
+            totalCount: 0
+        }
+    },
+created: function() {
+    console.log(this.$route.query.id);
+    this.request();
+  },
+  methods : {
+      request() {
+        var that = this;
+        this.$ajax.get('/getTeaLectureService', {
+            params:{
+                id:this.$route.query.id,
+                page:this.currentPage,
+                pageSize:this.pageSize
+            }
+        })
+        .then(function (response) {
+        console.log(response);
+        that.info = response.data.model;
+        that.totalCount = response.data.model.totalCount;
+        })
+        .catch(function (response) {
+        console.log(response);
+        });
+      },
+      currentPageChanged(val) {
+        this.currentPage = val;
+        this.request();
+
+      }
+  }
 }
 </script>
 

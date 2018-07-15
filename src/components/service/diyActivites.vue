@@ -5,17 +5,23 @@
                 <silentbox-group>
                     <silentbox-item v-for="(image,imageKey) in info1.imageUrls" :key="imageKey" :src="image">
                         <img v-if="imageKey===0" :src="image" alt="" class="das-content-img">
+                        <div class="das-content-title" v-if="imageKey===0">
+                            <img :src="info1.iconImageUrl" alt="" class="das-content-logo">
+                            <div class="das-content-name">
+                                <span style="color:#9dc135;text-decoration:none;">{{info1.title}}</span>
+                                <span style=" color: rgb(228, 227, 227);">{{info1.title_en}}</span>
+                            </div>
+                        </div>
                     </silentbox-item>
                 </silentbox-group>
-                <div class="das-content-title">
-                    <img :src="info1.iconImageUrl" alt="" class="das-content-logo">
-                    <div class="das-content-name">
-                        <span style="color:#9dc135;">{{info1.title}}</span>
-                        <span style=" color: rgb(228, 227, 227);">{{info1.title_en}}</span>
-                    </div>
-                </div>
+                
             </div>
         </div>
+        <el-pagination
+            layout="prev, pager, next"
+            :total="totalCount" :page-size="pageSize" :current-page="currentPage" @current-change="currentPageChanged"
+        >
+        </el-pagination>
     </div>
 </template>
 
@@ -24,25 +30,39 @@ export default {
     data() {
         return {
             info:{},
+            currentPage:1,
+            pageSize:6,
+            totalCount: 0
         }
     },
 created: function() {
     console.log(this.$route.query.id);
-    var that = this;
-     this.$ajax.get('/getTeaDIYService', {
-        params:{
-            id:this.$route.query.id,
-            page:0,
-            pageSize:10
-        }
-    })
-    .then(function (response) {
-      console.log(response);
-      that.info = response.data.model;
-    })
-    .catch(function (response) {
-      console.log(response);
-    });
+    this.request();
+  },
+  methods : {
+      request() {
+        var that = this;
+        this.$ajax.get('/getTeaDIYService', {
+            params:{
+                id:this.$route.query.id,
+                page:this.currentPage,
+                pageSize:this.pageSize
+            }
+        })
+        .then(function (response) {
+        console.log(response);
+        that.info = response.data.model;
+        that.totalCount = response.data.model.totalCount;
+        })
+        .catch(function (response) {
+        console.log(response);
+        });
+      },
+      currentPageChanged(val) {
+        this.currentPage = val;
+        this.request();
+
+      }
   }
 }
 </script>
