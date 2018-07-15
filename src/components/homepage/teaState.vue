@@ -21,7 +21,7 @@
                     <span style="color:#9dc135;">{{item.title}}</span>
                     <span style="font-size:10px;color:#909090">{{ item.gmtModified | moment("YYYY-MM-DD")}}</span>
                 </div>
-                <div class="ts-main-content-center">{{item.summary}}</div>
+                <router-link to="./teaStateInside"><div class="ts-main-content-center">{{item.summary}}</div></router-link>
                 <router-link to="./teaStateInside"><div class="ts-main-content-more">MORE</div></router-link>
             </div>
         </div>
