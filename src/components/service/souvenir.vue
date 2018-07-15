@@ -51,16 +51,16 @@
                 <div class="souvenir-main-title-en"></div>
             </div>
             <div class="souvenir-main-gift">
-                <div class="souvenir-main-gitf-category">
+                <div class="souvenir-main-gitf-category" v-for="(info2 , key2) in items.mind.minds" :key="key2">
                     <div class="souvenir-main-gitf-list">
-                        <el-table :data="tableData" stripe style="width: 800px;">
+                        <el-table :data="info2.elements" stripe style="width: 800px;">
                             <el-table-column prop="number" label="编号" width="160">
                             </el-table-column>
-                            <el-table-column prop="name" label="品名" width="160">
+                            <el-table-column prop="elementName" label="品名" width="160">
                             </el-table-column>
-                            <el-table-column prop="pack" label="包装" width="160">
+                            <el-table-column prop="wrap" label="包装" width="160">
                             </el-table-column>
-                            <el-table-column prop="specification" label="规格" width="160">
+                            <el-table-column prop="size" label="规格" width="160">
                             </el-table-column>
                             <el-table-column prop="price" label="价格（RMB）">
                             </el-table-column>
@@ -69,14 +69,13 @@
                     <div class="souvenir-main-gitf-introduce">
                         <div class="gitf-introduce">
                             <div class="gitf-introduce-title">
-                                <span style="color:#9dc135">- 九曲红梅介绍 --</span>
+                                <span style="color:#9dc135">{{info2.itemTitle}}</span>
                             </div>
                             <div class="gitf-introduce-content">
-                                <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;西湖龙井位列我国十大名茶之一，具有1200多年历史，明代列为上品，清顺治列为贡品。清乾隆游览杭州西湖时，盛赞龙井茶，并把狮峰山下胡公庙前的十八棵茶树封为“御茶”。</span><br>
-                                <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;龙井茶素有“色绿、香郁、味醇、形美”四绝著称于世，其外形挺直削尖、扁平俊秀、光滑匀齐、色泽绿中显黄。龙井冲泡后，香气清高持久，香郁若兰；汤色杏绿，清澈明亮，叶底嫩绿，匀齐成朵，芽芽直立，栩栩如生。品饮茶汤，沁人心脾，齿间留芳，回味无穷。</span>
+                                <span v-html="info2.itemContent"></span>
                             </div>
                         </div>
-                        <img src="http://pa74otoy6.bkt.clouddn.com/case-inside2-picture2.png" alt="" class="souvenir-main-gitf-img">
+                        <img :src="info2.itemImageUrl" alt="" />
                     </div>
                 </div>
             </div>
