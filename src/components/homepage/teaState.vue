@@ -21,8 +21,9 @@
                     <span style="color:#9dc135;">{{item.title}}</span>
                     <span style="font-size:10px;">xxxx年xx月xx日</span>
                 </div>
+                <!-- <div class="ts-main-content-center" v-html="item.content" > -->
                 <div class="ts-main-content-center">
-                    <span v-html="item.content" style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;"></span>
+                    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
                 </div>
                 <div class="ts-main-content-more">
                     <router-link to="./teaStateInside"><span>MORE</span></router-link>
@@ -135,19 +136,36 @@ export default {
 .ts-main-content{
     margin-left: 20px;
     min-width: 500px;
+    background-color: red;
+    width:600px;
+    height:200px;
 }
 .ts-main-content-title{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    margin-top:30px;
 }
 .ts-main-content-center{
-    margin-top: 20px;
-    margin-left: 15px;
+    margin-top: 30px;
+    margin-left: 30px;
+    position:relative;
+    line-height:20px;;
+    height:20px;
+    overflow:hidden;
+    background-color: orange;
+}
+
+.ts-main-content-center::after{
+    content:"...";
+    position:absolute;
+    bottom:0;
+    right:0;
+    padding-left:20px;
 }
 .ts-main-content-more{
-    margin-top: 20px;
+    margin-top: 30px;
     display: flex;
     flex-direction: row;
     align-items: center;

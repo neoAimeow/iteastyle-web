@@ -69,8 +69,8 @@
   };
 </script>
 
+<style lang="scss" scoped>
 
-<style scoped>
 .sc-container{
   margin:0;
   padding: 0;

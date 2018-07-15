@@ -4,15 +4,15 @@
         <img src="http://pa74otoy6.bkt.clouddn.com/pd-title-background.png" alt="" class="pd-head-bg">
         <img src="http://pa74otoy6.bkt.clouddn.com/opaque-logo.png" alt="" class="pd-head-logo">
     </div>
-    <div style="background-color:red;" class="pd-main" v-for="(item , key) in items" :key="key">
+    <div class="pd-main" v-for="(item , key) in items" :key="key">
 
         <div class="pd-title">
-            <hr style="width:260px;height:2px;border:none;border-top:2px solid #9dc135;" />
+            <hr style="width:260px;border:0.5px solid #9dc135;" />
             <div class="pd-title-name">
                 <span style="letter-spacing:10px;">{{item.caseType.typeName}}</span>
                 <span style="font-size:10px;">{{item.caseType.typeNameEn}}</span>
             </div>
-            <hr style="width:260px;height:2px;border:none;border-top:2px solid #9dc135;" />
+            <hr style="width:260px;border:0.5px solid #9dc135;" />
         </div>
         <div class="pd-content">
             <div v-if="inKey<3" class="pd-content-img" v-for="(cell , inKey) in item.cases" :key="inKey">
@@ -90,7 +90,7 @@ created: function() {
 }
 .pd-main{
     width: 900px;
-    //background: red;
+    background: red;
     margin: 0 auto;
     margin-top: 40px;
     margin-bottom: 80px;
