@@ -44,7 +44,7 @@ export default {
         margin:0;
         padding:0;
         color:white;
-        height:1000px;
+        height:900px;
         display: flex;
         flex-direction: column;
         justify-content:center;
@@ -52,7 +52,7 @@ export default {
         border-bottom:2px solid #9dc135;
     }
     .companystory-background{
-        height:1000px;
+        height:900px;
         position:absolute;
         z-index: -1;
         margin-left:0px;
