@@ -1,10 +1,12 @@
 <template>
     <div class="tsI-container">
-        <div class="tsI-head">
-            <img class="tsI-head-bgimg" src="http://pa74otoy6.bkt.clouddn.com/pd-case-DT-Details-background.png" alt="" />
-            <img class="tsI-head-logo" src="http://pa74otoy6.bkt.clouddn.com/case-light-logo.png" alt="" />
+        <div class="td-head">
+            <img style="width:100%;" src="http://pa74otoy6.bkt.clouddn.com/pd-case-DT-Details-background.png" alt="">
+            <div class="td-head-logo">
+                <img style="width:100px;height:100px;" src="http://pa74otoy6.bkt.clouddn.com/title-logo.png" alt="">
+            </div>
         </div>
-        <div class="tsI-main">
+        <div>
             <div class="tsI-main-head">
                 <span>{{title}}</span>
                 <hr style="height:0.2px;border:none;border-top:1px solid #a7a7a7; width: 800px;" />
@@ -64,26 +66,19 @@ created: function() {
     flex-direction: column;
     align-items: center;
 }
-.tsI-head{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: 200px;
-}
-.tsI-head-bgimg{
-    height: 200px;
-    min-width: 1300px;
+.td-head{
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.td-head-logo{
     position: absolute;
-    z-index: -1;
+    z-index: 1;
 }
-.tsI-head-logo{
-    height: 100px;
-    width: 100px;
-    margin-top: 50px;
-}
+
 .tsI-main-head{
-    margin-top: 20px;
+    margin-top: 50px;
     text-align: center;
 }
 .tsI-main-body{
