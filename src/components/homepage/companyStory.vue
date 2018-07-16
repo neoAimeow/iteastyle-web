@@ -11,6 +11,7 @@
     </div>
 
     <video v-if="info.videoUrl != null" :src="info.videoUrl" controls></video>
+    <div v-else style="height:600px;"></div>
 </div>
 </template>
 
