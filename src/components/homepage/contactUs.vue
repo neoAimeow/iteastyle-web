@@ -6,7 +6,7 @@
                 <span class="title-english">CONTACT US</span>
                 <img src="http://pa74otoy6.bkt.clouddn.com/plus.png" alt="">
                 <span class="titile-chinese">联系我们</span>
-                <span style="margin-top:20px;">{{info.contactUsTitle}}</span>
+                <span style="margin-top:10px;">{{info.contactUsTitle}}</span>
             </div>
             <div class="cu-main-content">
                 <span>{{info.companyName}}</span>
@@ -106,7 +106,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 20px;
+  margin-top: 10px;
   font-size: 14px;
   line-height: 2;
 }
@@ -116,7 +116,7 @@ export default {
   align-items: center;
   justify-content: center;
   height: 230px;
-  margin-top: 40px;
+  margin-top: 20px;
   margin-left: 100px;
 }
 .cu-foot-left {
