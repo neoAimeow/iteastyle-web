@@ -12,7 +12,12 @@
                 <span>{{info.companyName}}</span>
                 <span>地址：{{info.companyAddress}}</span>
                 <span>电话：{{info.telephoneNumber}}</span>
-                <div>手机：<span v-for="(number,key) in info.phoneNumber" :key="key">{{number}}<br></span></div>
+                <div style="display:flex;flex-direction:row;">
+                  <div>手机：</div>
+                  <div>
+                    <span v-for="(number,key) in info.phoneNumber" :key="key">{{number}}<br></span>
+                  </div>
+                </div>
                 <span>邮箱：{{info.mailAddress}}</span>
                 <span>网址：{{info.siteAddress}}</span>
             </div>
