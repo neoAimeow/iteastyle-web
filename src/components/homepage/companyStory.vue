@@ -10,7 +10,8 @@
     <span class="story-ct" v-html="info.storyContent"></span>
     </div>
 
-    <video v-if="isVideoShown" :src="info.videoUrl" controls></video>
+    <video v-if="info.videoUrl != null" :src="info.videoUrl" controls></video>
+    <div v-else style="height:600px;"></div>
 </div>
 </template>
 
@@ -47,7 +48,7 @@ export default {
         margin:0;
         padding:0;
         color:white;
-        height:1000px;
+        height:900px;
         display: flex;
         flex-direction: column;
         justify-content:center;
@@ -55,13 +56,13 @@ export default {
         border-bottom:2px solid #9dc135;
     }
     .companystory-background{
-        height:1000px;
+        height:900px;
         position:absolute;
         z-index: -1;
         margin-left:0px;
         margin-top:0px;
         width: 100%;
-        min-width: 1440px;
+  min-width: 1270px;
        
     }
     .story{    
@@ -89,7 +90,7 @@ export default {
         margin-top:20px;
         padding-left:125px;
         padding-right:125px;
-        margin-bottom:70px;
+        margin-bottom:50px;
         
         
     }

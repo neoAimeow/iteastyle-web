@@ -1,67 +1,59 @@
 <template>
-<div class="productDisplay">
+<div class="pd-container">
+    <div class="pd-head">
+        <img src="http://pa74otoy6.bkt.clouddn.com/pd-title-background.png" alt="" class="pd-head-bg">
+        <img src="http://pa74otoy6.bkt.clouddn.com/opaque-logo.png" alt="" class="pd-head-logo">
+    </div>
+    <div class="pd-main" v-for="(item , key) in items" :key="key">
 
-    <div class="pd-title">
-        <progressive-img class="pd-title-picture" :src="headerImageUrl" />
-        <div class="title-logo"><img src="http://pa74otoy6.bkt.clouddn.com/opaque-logo.png"></div>
+        <div class="pd-title">
+            <hr style="width:260px;border:0.5px solid #9dc135;" />
+            <div class="pd-title-name">
+                <span style="letter-spacing:10px;">{{item.caseType.typeName}}</span>
+                <span style="font-size:10px;">{{item.caseType.typeNameEn}}</span>
+            </div>
+            <hr style="width:260px;border:0.5px solid #9dc135;" />
+        </div>
+        <div class="pd-content">
+            <div v-if="inKey<6" class="pd-content-img" v-for="(cell , inKey) in item.cases" :key="inKey">
+                    <silentbox-group>
+                        <silentbox-item v-for="(image,imageKey) in cell.imageArr" :key="imageKey" :src="image">
+                            <img v-if="imageKey===0" class="content-picture" :src="cell.imageArr[0]" alt="">
+                        </silentbox-item>
+                    </silentbox-group>
+                <div class="pd-content-img-title"><span>{{cell.title}}</span></div>
+            </div>
+        </div>
+
+        <router-link :to="{path:'../display/teaDessert',query:{type:item.caseType.type}}">
+        <div class="pd-more">
+            <span>MORE</span>
+        </div>
+        </router-link>
     </div>
-    <div class="pd-ct">           
-                <div class="product-name" v-for="(item,key) in items" :key="key">
-                    <router-link :to="{path:'/homepage/productInside',query: {id: item.id}}">
-                        <div class="pd-picture-border">
-                            <img class="pd-img" :src="item.imageArr[0]">
-                        </div>
-                        <span>{{item.title}}</span>
-                    </router-link>
-                </div>
-    </div>
-   <div class="pd-page">
-        <el-pagination
-            layout="prev, pager, next"
-            :total="totalCount" :page-size="pageSize" :current-page="currentPage" @current-change="currentPageChanged"
-        >
-        </el-pagination>
-   </div>
 
 </div>
 </template>
 
 <script>
-export default {
+ export default {
     data() {
         return {
-            items:[
-
-            ],
-            headerImageUrl:'',
-            currentPage:1,
-            totalCount:0,
-            pageSize:6
+            items:[],
         }
  },
 created: function() {
     this.request();
   },
   methods: {
-      currentPageChanged(val) {
-          this.currentPage = val;
-              this.request();
-        console.log(`当前页: ${val}`);
-      },
-      request() {
-              var that = this;
-            this.$ajax.get('/productShower', {
-                params: {
-                    page:this.currentPage,
-                    pageSize:this.pageSize
-                }
 
+        request: function() {
+          var that = this;
+            this.$ajax.get('/getCasesHomeData', {
             })
             .then(function (response) {
-            console.log(response);
-            that.items = response.data.model.products;
-            that.totalCount = response.data.model.totalCount
-            that.headerImageUrl = response.data.model.headerImageUrl
+                console.log(response);
+                that.items = response.data.model;
             })
             .catch(function (response) {
             console.log(response);
@@ -71,74 +63,109 @@ created: function() {
 }
 </script>
 
-
-<style scoped>
-a{
-    color:black;
-}
-.productDisplay {
-    margin: 0;
-    padding: 0;
+<style lang="scss">
+// .pd-more a:link{
+//     color: #9dc135;
+// }
+// .pd-more a:visited{
+//     color: #9dc135;
+// }
+.pd-container{
+    width: 100%;
     border-bottom:2px solid #9dc135;
 }
-
-.pd-title {
-    height: 150px;
+.pd-head{
+    width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-
-.pd-title-picture {
-    min-width: 1300px;
+.pd-head-bg{
     width: 100%;
-    height: 150px;
+    height: 160px;
+  min-width: 1270px;
+}
+.pd-head-logo{
+    width: 80px;
+    height: 80px;
     position: absolute;
-    z-index: -1;
+    z-index: 1;
+}
+.pd-main{
+    width: 900px;
+    // background: red;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pd-title{
+    width: 720px;
+    //background: yellow;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.pd-title-name{
+    width: 200px;
+    color: #9dc135;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pd-content{
+    width: 900px;
+    //background: blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    margin-top: 40px;
 }
 
-.pd-title-logo {
-  text-align: center;
+.pd-content-img{
+    margin-top: 40px;
+    width: 270px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
-.pd-ct {
-  margin: 0 auto;
-  max-width: 1000px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; 
-  margin-top: 40px;
-  margin-bottom: 20px;
+.content-picture{
+    width: 270px;
+    height: 200px;
+} 
+
+.content-picture:hover{
+    box-shadow: 0px 0px 10px 0px black;
 }
 
-.pd-picture-border {
-  border: 1px solid #e0e0e0;
-  margin-bottom: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 275px;
-  height: 180px;
+.pd-content-img-title{
+    position: relative;
+    background-color: rgba(180, 218, 44, 0.5);
+    width: 270px;
+    color: white;
+    line-height: 35px;
+    bottom: 50px;
+    text-align: center;
+}
+.pd-more{
+    width: 100px;
+    height:30px;
+    margin-top: 10px;
+    border: dashed 1px #9dc135;
+    border-radius: 15px;
+    text-align: center;
+    line-height:30px;
+    color: #9dc135;
 }
 
-.pd-img {
-  width: 265px;
-  height: 170px;
-  
+.pd-more:hover{
+    color:#fff;
+    background-color: #9dc135;
 }
-
-.product-name {
-  width:265px;
-  text-align: center;
-  margin: 15px;
-  color: #626262;
-}
-
-.pd-page {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 40px;
-}
-
-
 </style>

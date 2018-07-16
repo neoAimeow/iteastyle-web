@@ -15,11 +15,11 @@ Vue.config.productionTip = false
 Vue.use(ElementUI)
 Vue.use(VueProgressiveImage)
 Vue.use(VueAMap)
-Vue.use(require('vue-moment'));
-Vue.use(VueSilentbox);
+Vue.use(VueSilentbox)
+Vue.use(require('vue-moment'))
 
 let request = axios.create({
-  baseURL: 'https://iteastyle-api.aimeow.com/service',
+  baseURL: 'https://iteastyle-api-test.aimeow.com/service/',
   timeout: 1000
 });
 
