@@ -131,7 +131,7 @@ body,
   flex-direction: column;
   align-items: flex-end;
   color: #626262;
-  margin-left:220px;
+  margin-left:80px;
   margin-top: 50px;
 }
 .home-btm-foot{
