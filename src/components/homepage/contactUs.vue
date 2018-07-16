@@ -6,7 +6,7 @@
                 <span class="title-english">CONTACT US</span>
                 <img src="http://pa74otoy6.bkt.clouddn.com/plus.png" alt="">
                 <span class="titile-chinese">联系我们</span>
-                <span style="margin-top:20px">{{info.contactUsTitle}}</span>
+                <span style="margin-top:20px;letter-spacing:3px">{{info.contactUsTitle}}</span>
             </div>
             <div class="cu-main-content">
                 <span>{{info.companyName}}</span>
