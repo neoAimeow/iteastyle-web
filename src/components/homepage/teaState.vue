@@ -105,7 +105,7 @@
 
     .ts-head-bg {
         width: 100%;
-  min-width: 1350px;
+  min-width: 1270px;
     }
 
     .ts-title {
