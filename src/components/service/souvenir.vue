@@ -10,7 +10,7 @@
             </div>
             <div class="souvenir-main-souvenir">
                 <div class="souvenir-main-souvenir-introduce">
-                    <span>{{items.souvenir.content}}</span>
+                    <span v-html="items.souvenir.content"></span>
                 </div>
                 <img class="souvenir-main-souvenir-img" :src="items.souvenir.imageUrl" alt="">
             </div>
@@ -150,6 +150,8 @@
     margin-top: -23px;
 }
 .souvenir-main-souvenir{
+    width: 860px;
+    margin-left:40px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -159,6 +161,7 @@
 .souvenir-main-souvenir-introduce{
     width: 500px;
     height:250px;
+    margin-top:20px;
     background-color: aqua;
     display: flex;
     flex-direction: row;

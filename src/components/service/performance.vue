@@ -30,7 +30,7 @@ export default {
         return {
             info:{},
             currentPage:1,
-            pageSize:6,
+            pageSize:9,
             totalCount: 0
         }
     },
