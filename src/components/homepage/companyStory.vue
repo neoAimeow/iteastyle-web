@@ -44,12 +44,15 @@ export default {
         margin:0;
         padding:0;
         color:white;
-        height:1000px;
+        width:100%;
+        height:840px;
+        margin-top:80px;
         display: flex;
         flex-direction: column;
         justify-content:center;
         align-items: center;
         border-bottom:2px solid #9dc135;
+        /* background-color: red; */
     }
     .companystory-background{
         height:1000px;
