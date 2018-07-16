@@ -44,26 +44,21 @@ export default {
         margin:0;
         padding:0;
         color:white;
-        width:100%;
-        height:840px;
-        margin-top:-7px;
-        margin-bottom: -7px;
+        height:1000px;
         display: flex;
         flex-direction: column;
         justify-content:center;
         align-items: center;
-        /* border-bottom:2px solid #9dc135; */
-        /* background-color: red; */
+        border-bottom:2px solid #9dc135;
     }
     .companystory-background{
-        /* height:1000px; */
+        height:1000px;
         position:absolute;
         z-index: -1;
         margin-left:0px;
         margin-top:0px;
         width: 100%;
-        min-width: 1200px;
-        border-bottom:2px solid #9dc135;
+        min-width: 1440px;
        
     }
     .story{    

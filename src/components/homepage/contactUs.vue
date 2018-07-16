@@ -75,7 +75,7 @@ export default {
 .cu-bgimg {
   width: 100%;
   min-width: 1440px;
-  height: 680px;
+  height: auto;
   position: absolute;
   z-index: -1;
 }
