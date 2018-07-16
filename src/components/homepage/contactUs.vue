@@ -6,13 +6,13 @@
                 <span class="title-english">CONTACT US</span>
                 <img src="http://pa74otoy6.bkt.clouddn.com/plus.png" alt="">
                 <span class="titile-chinese">联系我们</span>
-                <span style="margin-top:20px;letter-spacing:3px">{{info.contactUsTitle}}</span>
+                <span style="margin-top:20px;">{{info.contactUsTitle}}</span>
             </div>
             <div class="cu-main-content">
                 <span>{{info.companyName}}</span>
                 <span>地址：{{info.companyAddress}}</span>
                 <span>电话：{{info.telephoneNumber}}</span>
-                <span>手机：{{info.phoneNumber}}</span>
+                <div>手机：<span v-for="(number,key) in info.phoneNumber" :key="key">{{number}}<br></span></div>
                 <span>邮箱：{{info.mailAddress}}</span>
                 <span>网址：{{info.siteAddress}}</span>
             </div>
@@ -21,8 +21,8 @@
               <el-amap-marker :position="center"></el-amap-marker>
             </el-amap>
             <div class="cu-foot-right">
-                <progressive-img class="cu-foot-right-img" src="http://pa74otoy6.bkt.clouddn.com/contactus-QRcode.png" alt="" />
-                <progressive-img class="cu-foot-right-img" src="http://pa74otoy6.bkt.clouddn.com/contactus-QRcode.png" alt="" />
+                <progressive-img class="cu-foot-right-img" :src="info.qrCodeImageUrl" alt="" />
+                <progressive-img class="cu-foot-right-img" :src="info.customerQrCodeImageUrl" alt="" />
             </div>
         </div>
         </div>
