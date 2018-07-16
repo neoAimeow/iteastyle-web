@@ -85,7 +85,7 @@ html,
 body,
 #app{
   margin:0;
-  min-width: 1000px;
+  min-width: 1350px;
   font-family: 14px/1.5 Helvetica, Tahoma, Arial,'Microsoft Yahei','Hiragino Sans GB';
 }
 

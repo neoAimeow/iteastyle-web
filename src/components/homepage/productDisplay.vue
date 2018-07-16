@@ -84,7 +84,7 @@ created: function() {
 .pd-head-bg{
     width: 100%;
     height: 160px;
-  min-width: 1270px;
+  min-width: 1350px;
 }
 .pd-head-logo{
     width: 80px;
