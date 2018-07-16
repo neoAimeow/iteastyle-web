@@ -15,7 +15,7 @@
             <hr style="width:260px;border:0.5px solid #9dc135;" />
         </div>
         <div class="pd-content">
-            <div v-if="inKey<3" class="pd-content-img" v-for="(cell , inKey) in item.cases" :key="inKey">
+            <div v-if="inKey<6" class="pd-content-img" v-for="(cell , inKey) in item.cases" :key="inKey">
                     <silentbox-group>
                         <silentbox-item v-for="(image,imageKey) in cell.imageArr" :key="imageKey" :src="image">
                             <img v-if="imageKey===0" class="content-picture" :src="cell.imageArr[0]" alt="">
