@@ -2,25 +2,25 @@
     <div class="souvenir-container">
         <div class="souvenir-main">
             <div class="souvenir-main-title">
-                <span style="position: relative;top:40px;left:50px;letter-spacing:5px;">{{items.souvenir.title}}</span>
+                <span style="position: relative;top:45px;left:45px;letter-spacing:2px;font-size:20px;">{{items.souvenir.title}}</span>
                 <div class="souvenir-main-title-cn"></div>
                 <div class="souvenir-main-title-hr"></div>
-                <span style="position: relative;left:40px;">{{items.souvenir.title_en}}</span>
+                <span style="position: relative;left:45px;font-size:15px;">{{items.souvenir.title_en}}</span>
                 <div class="souvenir-main-title-en"></div>
             </div>
             <div class="souvenir-main-souvenir">
-                <div class="souvenir-main-souvenir-introduce">
-                    <span v-html="items.souvenir.content"></span>
-                </div>
+                
+                <span class="souvenir-main-souvenir-introduce" v-html="items.souvenir.content"></span>
+                
                 <img class="souvenir-main-souvenir-img" :src="items.souvenir.imageUrl" alt="">
             </div>
         </div>
         <div class="souvenir-main">
             <div class="souvenir-main-title">
-                <span style="position: relative;top:40px;left:60px;letter-spacing:5px;">{{items.way.title}}</span>
+                <span style="position: relative;top:45px;left:55px;letter-spacing:2px;font-size:20px;">{{items.way.title}}</span>
                 <div class="souvenir-main-title-cn"></div>
                 <div class="souvenir-main-title-hr"></div>
-                <span style="position: relative;left:45px;">{{items.way.title_en}}</span>
+                <span style="position: relative;left:45px;font-size:15px;">{{items.way.title_en}}</span>
                 <div class="souvenir-main-title-en"></div>
             </div>
             <div class="souvenir-main-drink">
@@ -34,9 +34,9 @@
                             <span>{{info1.title}}</span>
                         </div>
                     </div>
-                        <div>
-                            <span class="souvenir-main-drink-content">{{info1.content}}</span>
-                        </div>
+                        
+                        <p class="souvenir-main-drink-content">{{info1.content}}</p>
+                        
                     </div>
                 </div>
                 <img class="souvenir-main-drink-img" :src="items.way.imageUrl" alt="">
@@ -44,10 +44,10 @@
         </div>
         <div class="souvenir-main">
             <div class="souvenir-main-title">
-                <span style="position: relative;top:40px;left:60px;letter-spacing:5px;">{{items.mind.title}}</span>
+                <span style="position: relative;top:45px;left:55px;letter-spacing:2px;font-size:20px;">{{items.mind.title}}</span>
                 <div class="souvenir-main-title-cn"></div>
                 <div class="souvenir-main-title-hr"></div>
-                <span style="position: relative;left:45px;">{{items.mind.title_en}}</span>
+                <span style="position: relative;left:45px;font-size:15px;">{{items.mind.title_en}}</span>
                 <div class="souvenir-main-title-en"></div>
             </div>
             <div class="souvenir-main-gift">
@@ -69,7 +69,7 @@
                     <div class="souvenir-main-gitf-introduce">
                         <div class="gitf-introduce">
                             <div class="gitf-introduce-title">
-                                <span style="color:#9dc135">{{info2.itemTitle}}</span>
+                                <span style="color:#9dc135;font-size:18px;">- {{info2.itemTitle}} - -</span>
                             </div>
                             <div class="gitf-introduce-content">
                                 <span v-html="info2.itemContent"></span>
@@ -160,12 +160,8 @@
 }
 .souvenir-main-souvenir-introduce{
     width: 500px;
-    height:250px;
-    margin-top:20px;
-    background-color: aqua;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    // background-color: aqua;
+    line-height:30px;
 }
 .souvenir-main-souvenir-img{
     width: 300px;
@@ -175,8 +171,15 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
 }
+
+.souvenir-main-drink-content{
+    margin-left:45px;
+    margin-top:5px;
+    margin-bottom:0px;
+}
+
 .souvenir-main-drink-img{
     width: 300px;
     height: auto;
@@ -209,11 +212,15 @@
 }
 .gitf-introduce-content{
     margin-top: 20px;
+    line-height:30px;
 }
 .souvenir-main-gitf-introduce{
     margin-top: 20px;
     margin-bottom: 40px;
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 .souvenir-main-gitf-img{
     width: 300px;
