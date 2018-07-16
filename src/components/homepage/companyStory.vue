@@ -58,7 +58,7 @@ export default {
         margin-left:0px;
         margin-top:0px;
         width: 100%;
-        min-width: 1440px;
+        min-width: 1000px;
        
     }
     .story{    
