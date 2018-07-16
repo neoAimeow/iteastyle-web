@@ -4,6 +4,7 @@
         <progressive-img class="top-background" src="http://pa74otoy6.bkt.clouddn.com/pd-case-DT-Details-background.png" alt="" />
         <img src="http://pa74otoy6.bkt.clouddn.com/case-light-logo.png" >
     </div>
+    <div v-if="items.length==0 && isLoading == false" class="nocase"><span>您访问的服务暂无案例哦！</span></div>
     <div class="case-body">
                
         <div v-for="(item,key) in items" :key="key">   
@@ -32,6 +33,7 @@
 export default {
     data() {
         return {
+            isLoading: true,
             items:[
 
             ],
@@ -61,13 +63,15 @@ created: function() {
 
             })
             .then(function (response) {
-            console.log(response);
-            that.items = response.data.model.cases;
-            that.totalCount = response.data.model.totalCount
-            
+                console.log(response);
+                that.items = response.data.model.cases;
+                that.totalCount = response.data.model.totalCount
+                that.isLoading = false;
             })
             .catch(function (response) {
-            console.log(response);
+                console.log(response);
+                that.isLoading = false;
+
             });
       }
   }
@@ -97,6 +101,11 @@ created: function() {
     width: 100%;
     position: absolute;
     z-index: -1;
+}
+.nocase{
+    text-align: center;
+    margin-top:50px;
+    color:#626262;
 }
 .case-body{
     width:1000px;

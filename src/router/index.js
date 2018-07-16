@@ -4,68 +4,88 @@ import Router from 'vue-router'
 import HomeIndex from '@/components/homepage/index.vue'
 import CompanyStory from '@/components/homepage/companyStory.vue'
 import ProductDisplay from '@/components/homepage/productDisplay.vue'
-import ClassicCase from '@/components/homepage/classicCase.vue'
+import ServiceContent from '@/components/homepage/serviceContent.vue'
 import TeaState from '@/components/homepage/teaState.vue'
 import ContactUs from '@/components/homepage/contactUs.vue'
 
-import ProductInside from '@/components/homepage/productInside.vue'
 import TeaStateInside from '@/components/homepage/teaStateInside.vue'
-import ClassicCaseInside1 from '@/components/homepage/classicCaseInside1.vue'
-import ClassicCaseInside2 from '@/components/homepage/classicCaseInside2.vue'
-
+import TeaDessert from '@/components/display/teaDessert.vue'
 
 Vue.use(Router)
-
-export default new Router({
+const router = new Router({
   routes: [
     {
       path: '/',
       name: 'homeIndex',
-      component: HomeIndex
+      component: HomeIndex,
+      meta: {
+        title: '杭式下午茶-首页'
+      }
     },
     {
       path: '/homepage/companyStory',
       name: 'companyStory',
-      component: CompanyStory
+      component: CompanyStory,
+      meta: {
+        title: '杭式下午茶-公司故事'
+      }
     },
     {
       path: '/homepage/productDisplay',
       name: 'productDisplay',
-      component: ProductDisplay
+      component: ProductDisplay,
+      meta: {
+        title: '杭式下午茶-产品展示'
+      }
     },
     {
-      path: '/homepage/classicCase',
-      name: 'classicCase',
-      component: ClassicCase
+      path: '/homepage/serviceContent',
+      name: 'serviceContent',
+      component: ServiceContent,
+      meta: {
+        title: '杭式下午茶-服务内容'
+      }
     },
     {
       path: '/homepage/teaState',
       name: 'teaState',
-      component: TeaState
+      component: TeaState,
+      meta: {
+        title: '杭式下午茶-茶式动态'
+      }
     },
     {
       path: '/homepage/contactUs',
       name: 'contactUs',
-      component: ContactUs
-    },
-    {
-      path: '/homepage/productInside',
-      name: 'productInside',
-      component: ProductInside
+      component: ContactUs,
+      meta: {
+        title: '杭式下午茶-联系我们'
+      }
     },
     {
       path: '/homepage/teaStateInside',
       name: 'teaStateInside',
-      component: TeaStateInside
+      component: TeaStateInside,
+      meta: {
+        title: '杭式下午茶-茶式动态'
+      }
     },
-    { 
-      path: '/homepage/classicCaseInside1',
-      name: 'classicCaseInside1',
-      component: ClassicCaseInside1},
     {
-      path: '/homepage/classicCaseInside2',
-      name: 'classicCaseInside2',
-      component: ClassicCaseInside2
+      path: '/display/teaDessert',
+      name: 'teaDessert',
+      component: TeaDessert,
+      meta: {
+        title: '杭式下午茶-产品展示'
+      }
     }
   ]
+})
+export default router
+
+router.beforeEach((to, from, next) => {
+  /* 路由发生变化修改页面title */
+  if (to.meta.title) {
+    document.title = to.meta.title
+  }
+  next()
 })

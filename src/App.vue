@@ -85,7 +85,7 @@ html,
 body,
 #app{
   margin:0;
-  min-width: 1000px;
+  min-width: 1270px;
   font-family: 14px/1.5 Helvetica, Tahoma, Arial,'Microsoft Yahei','Hiragino Sans GB';
 }
 
@@ -131,7 +131,7 @@ body,
   flex-direction: column;
   align-items: flex-end;
   color: #626262;
-  margin-left:220px;
+  margin-left:80px;
   margin-top: 50px;
 }
 .home-btm-foot{

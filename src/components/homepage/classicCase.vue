@@ -25,7 +25,7 @@
 export default {
   data() {
     return {
-      items:{}
+      items:[]
     }
   },
   created: function() {

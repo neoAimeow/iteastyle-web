@@ -7,19 +7,20 @@
 
     <div class="pdinside-body">
         <div style="display:flex;" v-for="(img,key) in imgs" :key="key" >          
-            <div v-if="key==1" class="body-name" >
+
+            <img  class="body-img" :src="img" alt="">
+            <div v-if="key==0" class="body-name" >
                 <div class="name-top">
                     <img class="logo" src="http://pa74otoy6.bkt.clouddn.com/opaque-logo.png" alt="">
                     <span class="name-bottom">茶饮茶点</span>
                 </div>
                 <span class="pd-name">{{title}}</span>
             </div>
-            <img  class="body-img" :src="img" alt="">
         </div>
     </div>
 
     <div class="pd-introduction">
-        <span>{{content}}</span>
+        <span v-html="content"></span>
     </div>
     
 </div>
@@ -29,9 +30,7 @@
 export default {
     data() {
         return {
-            imgs:{
-                    
-            },
+            imgs:[],
             content:'',
             title: ''
         }

@@ -1,21 +1,27 @@
 <template>
     <div class="tsI-container">
-        <div class="tsI-head">
-            <img class="tsI-head-bgimg" src="http://pa74otoy6.bkt.clouddn.com/pd-case-DT-Details-background.png" alt="" />
-            <img class="tsI-head-logo" src="http://pa74otoy6.bkt.clouddn.com/case-light-logo.png" alt="" />
+        <div class="td-head">
+            <img style="width:100%;" src="http://pa74otoy6.bkt.clouddn.com/pd-case-DT-Details-background.png" alt="">
+            <div class="td-head-logo">
+                <img style="width:100px;height:100px;" src="http://pa74otoy6.bkt.clouddn.com/title-logo.png" alt="">
+            </div>
         </div>
-        <div class="tsI-main">
+        <div>
             <div class="tsI-main-head">
                 <span>{{title}}</span>
                 <hr style="height:0.2px;border:none;border-top:1px solid #a7a7a7; width: 800px;" />
-                <span style="font-size:5px;color:#626262;">发布时间： {{ gmtModified | moment("YYYY-MM-DD HH:mm")  }}  </span>
+                <span style="font-size:5px;color:#626262;">发布时间：{{ gmtModified | moment("YYYY-MM-DD") }}</span>
             </div>
             <div class="tsI-main-body">
                 <div class="tsI-main-body-content">
-                    <span v-html='content'></span>
+                    <span v-html="content"></span>
                 </div>
             </div>
         </div>
+        <!--<div class="tsI-other-article">-->
+            <!--<router-link to="./"><span>上一篇：</span></router-link>-->
+            <!--<router-link style="margin-top:10px;" to="./"><span>下一篇：</span></router-link>-->
+        <!--</div>-->
     </div>
 </template>
 
@@ -25,7 +31,7 @@ export default {
         return {
             title:'',
             content:'',
-            gmtModified:''
+            gmtModified: ''
         }
     },
 created: function() {
@@ -40,7 +46,7 @@ created: function() {
       console.log(response);
       that.content = response.data.model.content;
       that.title = response.data.model.title;
-      that.gmtModified = response.data.model.gmtModified;
+      that.gmtModified = response.data.model.gmtModified
     })
     .catch(function (response) {
       console.log(response);
@@ -50,30 +56,29 @@ created: function() {
 </script>
 
 <style lang="scss" scoped>
+.tsI-other-article a:hover{
+    color: #9dc135;
+}
 .tsI-container{
     //height: 900px;
     border-bottom:2px solid #9dc135;
-}
-.tsI-head{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: 200px;
+    flex-direction: column;
+    align-items: center;
 }
-.tsI-head-bgimg{
-    height: 200px;
-    min-width: 1300px;
+.td-head{
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.td-head-logo{
     position: absolute;
-    z-index: -1;
+    z-index: 1;
 }
-.tsI-head-logo{
-    height: 100px;
-    width: 100px;
-    margin-top: 50px;
-}
+
 .tsI-main-head{
-    margin-top: 20px;
+    margin-top: 50px;
     text-align: center;
 }
 .tsI-main-body{
@@ -92,5 +97,11 @@ created: function() {
     width: 700px;
     font-size: 10px;
     letter-spacing:3px;
+}
+.tsI-other-article{
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
 }
 </style>

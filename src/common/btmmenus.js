@@ -7,16 +7,8 @@ const btmmenus = [
         },
         {
             title: '公司简介',
-            path: ''
+            path: '/homepage/companyStory',
         },
-        {
-            title: '联系我们',
-            path: ''
-        },
-        {
-            title: '在线预约',
-            path: ''
-        }
     ],
     [
         {
@@ -26,17 +18,29 @@ const btmmenus = [
         },
         {
             title: '茶饮茶点',
-            path: ''
+            path: '/homepage/productDisplay',
         },
         {
-            title: '摆台效果',
-            path: ''
+            title: '茶文化讲座',
+            path: '/homepage/productDisplay',
+        },
+        {
+            title: 'DIY活动',
+            path: '/homepage/productDisplay',
+        },
+        {
+            title: '茶歇定制',
+            path: '/homepage/productDisplay',
+        },
+        {
+            title: '茶艺表演',
+            path: '/homepage/productDisplay',
         }
     ],
     [
         {
-            title: '经典案例',
-            path: '/homepage/classicCase',
+            title: '服务内容',
+            path: '/homepage/servicecontent',
             style: 'color:#626262;'
         },
         {
@@ -48,15 +52,15 @@ const btmmenus = [
             path: ''
         },
         {
-            title: '茶文化讲座',
+            title: 'DIY活动',
             path: ''
         },
         {
-            title:'DIY活动',
+            title:'茶文化讲座',
             path: ''
         },
         {
-            title: '私茗定制',
+            title: '杭州伴手礼',
             path: ''
         },
     ],
@@ -70,16 +74,23 @@ const btmmenus = [
             title: '新闻动态',
             path: ''
         },
+    ],
+    [
         {
-            title: '关注我们',
+            title: '联系我们',
+            path: '/homepage/contactUs',
+            style: 'color:#626262;'
+        },
+        {
+            title: '联系方式',
             path: ''
         },
         {
-            title: '微博',
+            title: '微信公众号',
             path: ''
         },
         {
-            title: '微信',
+            title: '微信客服',
             path: ''
         }
     ]
