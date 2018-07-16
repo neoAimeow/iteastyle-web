@@ -19,7 +19,7 @@ const router = new Router({
       name: 'homeIndex',
       component: HomeIndex,
       meta: {
-        title: '首页'
+        title: '杭式下午茶-首页'
       }
     },
     {
@@ -27,7 +27,7 @@ const router = new Router({
       name: 'companyStory',
       component: CompanyStory,
       meta: {
-        title: '公司故事'
+        title: '杭式下午茶-公司故事'
       }
     },
     {
@@ -35,7 +35,7 @@ const router = new Router({
       name: 'productDisplay',
       component: ProductDisplay,
       meta: {
-        title: '产品展示'
+        title: '杭式下午茶-产品展示'
       }
     },
     {
@@ -43,7 +43,7 @@ const router = new Router({
       name: 'serviceContent',
       component: ServiceContent,
       meta: {
-        title: '服务内容'
+        title: '杭式下午茶-服务内容'
       }
     },
     {
@@ -51,7 +51,7 @@ const router = new Router({
       name: 'teaState',
       component: TeaState,
       meta: {
-        title: '茶式动态'
+        title: '杭式下午茶-茶式动态'
       }
     },
     {
@@ -59,7 +59,7 @@ const router = new Router({
       name: 'contactUs',
       component: ContactUs,
       meta: {
-        title: '联系我们'
+        title: '杭式下午茶-联系我们'
       }
     },
     {
@@ -67,7 +67,7 @@ const router = new Router({
       name: 'teaStateInside',
       component: TeaStateInside,
       meta: {
-        title: '茶式动态'
+        title: '杭式下午茶-茶式动态'
       }
     },
     {
@@ -75,7 +75,7 @@ const router = new Router({
       name: 'teaDessert',
       component: TeaDessert,
       meta: {
-        title: '产品展示'
+        title: '杭式下午茶-产品展示'
       }
     }
   ]
