@@ -18,42 +18,74 @@ export default new Router({
     {
       path: '/',
       name: 'homeIndex',
-      component: HomeIndex
+      component: HomeIndex,
+      meta: {
+        title: '首页'
+      }
     },
     {
       path: '/homepage/companyStory',
       name: 'companyStory',
-      component: CompanyStory
+      component: CompanyStory,
+      meta: {
+        title: '公司故事'
+      }
     },
     {
       path: '/homepage/productDisplay',
       name: 'productDisplay',
-      component: ProductDisplay
+      component: ProductDisplay,
+      meta: {
+        title: '产品展示'
+      }
     },
     {
       path: '/homepage/serviceContent',
       name: 'serviceContent',
-      component: ServiceContent
+      component: ServiceContent,
+      meta: {
+        title: '服务内容'
+      }
     },
     {
       path: '/homepage/teaState',
       name: 'teaState',
-      component: TeaState
+      component: TeaState,
+      meta: {
+        title: '茶式动态'
+      }
     },
     {
       path: '/homepage/contactUs',
       name: 'contactUs',
-      component: ContactUs
+      component: ContactUs,
+      meta: {
+        title: '联系我们'
+      }
     },
     {
       path: '/homepage/teaStateInside',
       name: 'teaStateInside',
-      component: TeaStateInside
+      component: TeaStateInside,
+      meta: {
+        title: '茶式动态'
+      }
     },
     {
       path: '/display/teaDessert',
       name: 'teaDessert',
-      component: TeaDessert
+      component: TeaDessert,
+      meta: {
+        title: '产品展示'
+      }
     }
   ]
+})
+
+router.beforeEach((to, from, next) => {
+  /* 路由发生变化修改页面title */
+  if (to.meta.title) {
+    document.title = to.meta.title
+  }
+  next()
 })
