@@ -20,7 +20,7 @@
                     <img style="width:300px;height:200px;margin:10px;" :src="item.imageUrl" alt="">
                     <div class="ts-main-content">
                         <div class="ts-main-content-title">
-                            <span style="color:#9dc135;">{{item.title}}</span>
+                            <span style="color:#9dc135;width:400px; overflow: hidden;text-overflow: ellipsis;white-space: nowrap;">{{item.title}}</span>
                             <span style="font-size:10px;color:#909090">{{ item.gmtModified | moment("YYYY-MM-DD")}}</span>
                         </div>
                         <div class="ts-main-content-center">{{item.summary}}</div>
