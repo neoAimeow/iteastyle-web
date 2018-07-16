@@ -12,8 +12,7 @@ import TeaStateInside from '@/components/homepage/teaStateInside.vue'
 import TeaDessert from '@/components/display/teaDessert.vue'
 
 Vue.use(Router)
-
-export default new Router({
+const router = new Router({
   routes: [
     {
       path: '/',
@@ -81,6 +80,7 @@ export default new Router({
     }
   ]
 })
+export default router
 
 router.beforeEach((to, from, next) => {
   /* 路由发生变化修改页面title */
