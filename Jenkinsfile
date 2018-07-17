@@ -39,7 +39,7 @@ pipeline {
           }
         }
 
-
+        bearychatSend 'test'
       }
     }
   }
