@@ -19,7 +19,7 @@ Vue.use(VueSilentbox)
 Vue.use(require('vue-moment'))
 
 let request = axios.create({
-  baseURL: 'https://iteastyle-api-test.aimeow.com/service/',
+  baseURL: 'https://iteastyle-api.aimeow.com/service/',
   timeout: 1000
 });
 
