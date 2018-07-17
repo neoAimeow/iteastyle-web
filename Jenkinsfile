@@ -26,6 +26,7 @@ pipeline {
           sh 'sshpass -p $PASSWORD ssh -v -o StrictHostKeyChecking=no $USERNAME@118.178.131.105 docker-compose -f /root/service/iteastyle-web-test/docker-compose.yml up -d'
         }
 
+        bearychatSend 'test'
       }
     }
   }
