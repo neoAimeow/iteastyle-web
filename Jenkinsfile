@@ -10,6 +10,7 @@ pipeline {
       }
       steps {
         echo 'Starting build the app.....'
+        sh 'printenv'
         sh 'npm config set registry https://registry.npm.taobao.org'
         sh 'npm install'
         sh 'npm run build'
