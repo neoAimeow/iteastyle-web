@@ -25,6 +25,7 @@ pipeline {
               sh 'sshpass -p $PASSWORD ssh -v -o StrictHostKeyChecking=no $USERNAME@118.178.131.105 docker-compose -f /root/service/iteastyle-web/docker-compose.yml stop '
               sh 'sshpass -p $PASSWORD ssh -v -o StrictHostKeyChecking=no $USERNAME@118.178.131.105 docker-compose -f /root/service/iteastyle-web/docker-compose.yml rm -f '
               sh 'sshpass -p $PASSWORD ssh -v -o StrictHostKeyChecking=no $USERNAME@118.178.131.105 docker-compose -f /root/service/iteastyle-web/docker-compose.yml up -d'
+              bearychatSend 'iteastyle-web开发环境发布成功，快用力操它！'
             }
           } else {
             withCredentials(bindings: [usernamePassword(credentialsId: 'server-118.178.131.105', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
@@ -35,11 +36,12 @@ pipeline {
               sh 'sshpass -p $PASSWORD ssh -v -o StrictHostKeyChecking=no $USERNAME@118.178.131.105 docker-compose -f /root/service/iteastyle-web-test/docker-compose.yml stop '
               sh 'sshpass -p $PASSWORD ssh -v -o StrictHostKeyChecking=no $USERNAME@118.178.131.105 docker-compose -f /root/service/iteastyle-web-test/docker-compose.yml rm -f '
               sh 'sshpass -p $PASSWORD ssh -v -o StrictHostKeyChecking=no $USERNAME@118.178.131.105 docker-compose -f /root/service/iteastyle-web-test/docker-compose.yml up -d'
+              bearychatSend 'iteastyle-web正式环境发布成功，开瓶红酒庆祝啊~'
+
             }
           }
         }
 
-        bearychatSend 'test'
       }
     }
   }
