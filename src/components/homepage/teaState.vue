@@ -111,8 +111,6 @@
     }
 
     .ts-title {
-        position: absolute;
-        z-index: 1;
         color: white;
         display: flex;
         flex-direction: column;
