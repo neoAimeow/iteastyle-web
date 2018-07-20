@@ -1,6 +1,5 @@
 <template>
-    <div class="cu-container">
-        <progressive-img class="cu-bgimg" :src="info.contactUsBackgroundImage" />
+    <div class="cu-container" :style="backgroundStyle">
         <div class="cu-main">
             <div class="cu-main-title">
                 <span class="title-english">CONTACT US</span>
@@ -39,9 +38,10 @@
 export default {
   data() {
     return {
-      info:{},
-      center: [0,0],
-      zoom:14
+        backgroundStyle: '',
+        info:{},
+        center: [0,0],
+        zoom:14
     }
   },
   created: function() {
@@ -50,9 +50,10 @@ export default {
 
     })
     .then(function (response) {
-      console.log(response);
+      console.log(response.data.model);
       that.info = response.data.model;
-      that.center = [response.data.model.longitude , response.data.model.latitude]
+      that.center = [response.data.model.longitude , response.data.model.latitude];
+      that.backgroundStyle = 'background:url('+ response.data.model.contactUsBackgroundImage+') no-repeat; background-size:100% auto; '
     })
     .catch(function (response) {
       console.log(response);

@@ -1,6 +1,6 @@
 <template>
-<div class="company-story">
-    <progressive-img class="companystory-background" :src="info.backgroundImageUrl" />
+<div class="company-story" :style="backgroundStyle">
+    <!-- <progressive-img class="companystory-background" :src="info.backgroundImageUrl" /> -->
     <div class="story">
         <div class="story-title">
             <span class="title-english">OUR STORY</span>
@@ -20,6 +20,7 @@ export default {
   data() {
     return {
       info:{},
+      backgroundStyle:'',
       isVideoShown: false
     }
   },
@@ -32,6 +33,7 @@ export default {
       console.log(response);
       that.info = response.data.model;
       that.center = [response.data.model.longitude , response.data.model.latitude]
+      that.backgroundStyle = 'background: url('+ response.data.model.backgroundImageUrl+')no-repeat; background-size: 100% auto;'
       if (response.data.model.videoUrl == null || response.data.model.videoUrl == "") {
           that.isVideoShown = false;
       }
@@ -54,6 +56,7 @@ export default {
         justify-content:center;
         align-items: center;
         border-bottom:2px solid #9dc135;
+
     }
     .companystory-background{
         height:900px;

@@ -1,7 +1,7 @@
 <template>
 <div class="pd-container">
     <div class="pd-head">
-        <img src="http://pa74otoy6.bkt.clouddn.com/pd-title-background.png" alt="" class="pd-head-bg">
+        <!-- <img src="http://pa74otoy6.bkt.clouddn.com/pd-title-background.png" alt="" class="pd-head-bg"> -->
         <img src="http://pa74otoy6.bkt.clouddn.com/opaque-logo.png" alt="" class="pd-head-logo">
     </div>
     <div class="pd-main" v-for="(item , key) in items" :key="key">
@@ -80,17 +80,13 @@ created: function() {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-.pd-head-bg{
-    width: 100%;
+    background: url('http://pa74otoy6.bkt.clouddn.com/pd-title-background.png') repeat-x;
     height: 160px;
-  min-width: 1270px;
 }
+
 .pd-head-logo{
     width: 80px;
     height: 80px;
-    position: absolute;
-    z-index: 1;
 }
 .pd-main{
     width: 900px;
