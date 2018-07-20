@@ -81,7 +81,6 @@ export default {
   z-index: -1;
 }
 .cu-main {
-  position: absolute;
   color: white;
   display: flex;
   flex-direction: column;
