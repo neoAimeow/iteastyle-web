@@ -84,7 +84,6 @@
   height: 400px;
 }
 .head-name-top{ 
-  position: absolute;
   z-index: 1;
   color: white;
   display: flex;

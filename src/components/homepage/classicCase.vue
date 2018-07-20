@@ -72,9 +72,6 @@ a{
     .picture{
         width:250px;
         height:400px;
-        position:absolute;
-        z-index: -1;
-   
     }
     .picture-logo{
         padding-top:280px;

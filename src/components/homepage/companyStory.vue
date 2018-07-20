@@ -58,16 +58,6 @@ export default {
         border-bottom:2px solid #9dc135;
 
     }
-    .companystory-background{
-        height:900px;
-        position:absolute;
-        z-index: -1;
-        margin-left:0px;
-        margin-top:0px;
-        width: 100%;
-  min-width: 1270px;
-       
-    }
     .story{    
         width:1000px;
         margin-top:100px;

@@ -1,7 +1,6 @@
 <template>
     <div class="tsI-container">
         <div class="td-head">
-            <img style="width:100%;" src="http://pa74otoy6.bkt.clouddn.com/pd-case-DT-Details-background.png" alt="">
             <div class="td-head-logo">
                 <img style="width:100px;height:100px;" src="http://pa74otoy6.bkt.clouddn.com/title-logo.png" alt="">
             </div>
@@ -71,6 +70,9 @@ created: function() {
     display: flex;
     align-items: center;
     justify-content: center;
+    background: url("http://pa74otoy6.bkt.clouddn.com/pd-case-DT-Details-background.png") no-repeat;
+    background-size:100% auto ;
+    height:400px;
 }
 .td-head-logo{
     position: absolute;

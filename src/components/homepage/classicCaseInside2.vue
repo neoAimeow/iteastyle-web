@@ -72,8 +72,6 @@ created: function() {
         min-width: 1300px;
         height:200px;
         width: 100%;
-        position:absolute;
-        z-index: -1;
     }
     .pd-picture{
         display: flex;
