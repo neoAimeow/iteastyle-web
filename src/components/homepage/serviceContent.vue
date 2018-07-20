@@ -10,7 +10,6 @@
           </div>
         </div>
 
-        <img style="width:100%;"  src="http://pa74otoy6.bkt.clouddn.com/service-title-bkground.png" alt="background">
       </div>
 
       
@@ -80,6 +79,9 @@
   justify-content: center;
   align-items: center;
   margin-bottom:20px;
+  background:url("http://pa74otoy6.bkt.clouddn.com/service-title-bkground.png") no-repeat;
+  background-size:100% auto ;
+  height: 400px;
 }
 .head-name-top{ 
   position: absolute;

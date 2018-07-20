@@ -1,7 +1,6 @@
 <template>
     <div class="ts-container">
         <div class="ts-head">
-            <img class="ts-head-bg" src="http://pa74otoy6.bkt.clouddn.com/teaState-title-bkground.png" alt="">
             <div class="ts-title">
                 <div class="ts-title-en">
                     <span>TEA BREAK</span>
@@ -101,6 +100,9 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        background:url("http://pa74otoy6.bkt.clouddn.com/teaState-title-bkground.png") no-repeat;
+        background-size:100% auto ;
+        height: 400px;
     }
 
     .ts-head-bg {
