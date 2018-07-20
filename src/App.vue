@@ -29,7 +29,7 @@
                     </div>
                     <div class="home-btm-top-right">
                         <p>全国订购电话</p>
-                        <p style="font-size:27px;">0571 8373 1743</p>
+                        <p style="font-size:27px; color:white;text-decoration: none">0571-8373-1743</p>
                     </div>
                 </div>
                 <hr style="height:0.5px;border:none;border-top:1px solid #c7c7c7;margin-top:40px;"/>
@@ -92,18 +92,6 @@
 
     a{
         text-decoration: none;
-    }
-    p a:link{
-        color: white;
-    }
-    p a:visited{
-        color: white;
-    }
-    p a:hover{
-        color: white;
-    }
-    p a:active{
-        color: white;
     }
 
     ul, li {
