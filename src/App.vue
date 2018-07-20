@@ -89,8 +89,21 @@
 </script>
 
 <style lang="scss">
-    a {
+
+    a{
         text-decoration: none;
+    }
+    p a:link{
+        color: white;
+    }
+    p a:visited{
+        color: white;
+    }
+    p a:hover{
+        color: white;
+    }
+    p a:active{
+        color: white;
     }
 
     ul, li {

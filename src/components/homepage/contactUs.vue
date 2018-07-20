@@ -10,7 +10,7 @@
             <div class="cu-main-content">
                 <span>{{info.companyName}}</span>
                 <span>地址：{{info.companyAddress}}</span>
-                <span>电话：<span v-html="info.telephoneNumber"></span></span>
+                <span>电话：{{info.telephoneNumber}}</span>
                 <div style="display:flex;flex-direction:row;">
                   <div>手机：</div>
                   <div>
