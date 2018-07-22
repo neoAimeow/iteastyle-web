@@ -5,11 +5,12 @@
             <div class="r-title">
                 <div class="hr"></div>
                 <div class="mid-name">
-                    <div class="border"></div>
-                    <div class="name">
+                    <div class="border">
+                      <div class="name">
                         <span class="c-title">{{responseDatas.order.title}}</span>
                         <span class="e-title">{{responseDatas.order.title_en}}</span>
-                    </div>               
+                      </div>  
+                    </div>             
                 </div>
             </div>
             
@@ -56,18 +57,20 @@
 
         </div>        
 
-        <div class="r-title">
-            <div class="hr"></div>
-            <div class="mid-name">
-                <div class="border"></div>
-                <div class="name">
+        <div class="service-scope">
+          <div class="r-title">
+              <div class="hr"></div>
+              <div class="mid-name">
+                <div class="border">
+                  <div class="name">
                     <span class="c-title">{{responseDatas.range.title}}</span>
                     <span class="e-title">{{responseDatas.range.title_en}}</span>
-                </div>               
-            </div>
-        </div>
+                  </div> 
+                </div>              
+              </div>
+          </div>
         
-        <div class="service-ct">
+          <div class="service-ct">
             <div class="service-border" v-for="(value,key) in responseDatas.range.ranges" :key="key">
                 <div class="service-ct-top">                    
                     <div class="service-ct-top-left">    
@@ -81,21 +84,23 @@
                 </div>
                 <img style="width:180px;height:120px;" :src=value.imageUrl alt="service picture">
             </div>
-
+          </div>
         </div>
-
-        <div class="r-title">
+        
+        <div class="order-process">
+          <div class="r-title">
             <div class="hr"></div>
             <div class="mid-name">
-                <div class="border"></div>
-                <div class="name">
+                <div class="border">
+                  <div class="name">
                     <span class="c-title">{{responseDatas.process.title}}</span>
                     <span class="e-title">{{responseDatas.process.title_en}}</span>
-                </div>               
+                  </div>  
+                </div>             
             </div>
-        </div>
+          </div>
 
-        <div class="order">
+          <div class="order">
             <div class="order-ct" v-for="(value,key) in responseDatas.process.processes" :key="key">
                 <div>
                     <div class="order-top">
@@ -105,18 +110,19 @@
                 </div>
                 <span class="order-arrow">&#xe631;</span>
             </div>
+          </div>
         </div>
-    
         
         <div class="order-information">
             <div class="r-title">
                 <div class="hr"></div>
                 <div class="mid-name">
-                    <div class="border"></div>
-                    <div class="name">
+                    <div class="border">
+                      <div class="name">
                         <span class="c-title">{{responseDatas.note.title}}</span>
                         <span class="e-title">{{responseDatas.note.title_en}}</span>
-                    </div>               
+                      </div>  
+                    </div>             
                 </div>
             </div>
 
@@ -134,11 +140,12 @@
             <div class="r-title">
                 <div class="hr"></div>
                 <div class="mid-name">
-                    <div class="border"></div>
-                    <div class="name">
+                    <div class="border">
+                      <div class="name">
                         <span class="c-title">{{responseDatas.orderMode.title}}</span>
                         <span class="e-title">{{responseDatas.orderMode.title_en}}</span>
-                    </div>               
+                      </div>  
+                    </div>             
                 </div>
             </div>
 
@@ -166,48 +173,46 @@
 
 <script>
 export default {
-    data() {
-        return {
-            responseDatas: {}
-        }
-    },
-    created() {
-        var that = this;
-        this.$ajax.get('/getTeaBreakService', {
-
-        }).then(function (response) {
-            // console.log(response)
-            that.responseDatas = response.data.model;
-            console.log(that.responseDatas);
-        })
-        .catch(function (response) {
-            console.log(response);
-        });
-    }
-
+  data() {
+    return {
+      responseDatas: {}
+    };
+  },
+  created() {
+    var that = this;
+    this.$ajax
+      .get("/getTeaBreakService", {})
+      .then(function(response) {
+        // console.log(response)
+        that.responseDatas = response.data.model;
+        console.log(that.responseDatas);
+      })
+      .catch(function(response) {
+        console.log(response);
+      });
+  }
 };
-
 </script>
 
 <style scoped>
 @font-face {
-  font-family: 'iconfont';  /* project id 721549 */
-  src: url('//at.alicdn.com/t/font_721549_gv2tbnt6yt8.eot');
-  src: url('//at.alicdn.com/t/font_721549_gv2tbnt6yt8.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_721549_gv2tbnt6yt8.woff') format('woff'),
-  url('//at.alicdn.com/t/font_721549_gv2tbnt6yt8.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_721549_gv2tbnt6yt8.svg#iconfont') format('svg');
+  font-family: "iconfont"; /* project id 721549 */
+  src: url("//at.alicdn.com/t/font_721549_gv2tbnt6yt8.eot");
+  src: url("//at.alicdn.com/t/font_721549_gv2tbnt6yt8.eot?#iefix")
+      format("embedded-opentype"),
+    url("//at.alicdn.com/t/font_721549_gv2tbnt6yt8.woff") format("woff"),
+    url("//at.alicdn.com/t/font_721549_gv2tbnt6yt8.ttf") format("truetype"),
+    url("//at.alicdn.com/t/font_721549_gv2tbnt6yt8.svg#iconfont") format("svg");
 }
 
 .service {
   margin: 0;
   padding: 0;
-  border-bottom:2px solid #9dc135;
+  border-bottom: 2px solid #9dc135;
 }
 
 .name {
-  text-align: center;
-  /* background-color: blue; */
+  /* text-align: center;
   width: 160px;
   color: #9dc135;
   position: absolute;
@@ -215,7 +220,18 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
+  text-align: center;
+    /* background-color: blue; */
+    width: 160px;
+    color: #9dc135;
+    /* position:absolute;
+                              z-index: 1; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -25px;
 }
 
 .c-title {
@@ -231,45 +247,71 @@ export default {
 }
 
 .border {
-  border: 2px solid #9dc135;
+  /* border: 2px solid #9dc135;
   width: 180px;
   height: 30px;
   background-color: #fff;
-  margin-top: 20px;
+  margin-top: 20px; */
+  border: 2px solid #9dc135;
+    width: 180px;
+    height: 30px;
+    background-color: #fff;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .mid-name {
-  width: 180px;
+  /* width: 180px;
   display: block;
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
+  width: 180px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
 }
 
 .hr {
-  border: 0.5px dashed #9dc135;
+  /* border: 0.5px dashed #9dc135;
   width: 400px;
   position: absolute;
   z-index: -1;
-  margin-top: 10px;
+  margin-top: 10px; */
+  border: 0.5px dashed #9dc135;
+    width: 300px;
+    margin-bottom: -36px;
+    margin-top: 30px;
 }
 
 .r-title {
-  display: flex;
+  /* display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 50px;
-  margin-bottom: 30px;
+  margin-bottom: 30px; */
+  display: flex;
+    flex-direction: column;
+  
+    align-items: center;
+   
+    width: 300px;
 }
 
 .reservation {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top:30px;
 }
 
-.re-title2{
+.re-title2 {
   margin-top: 30px;
   color: #9dc135;
   font-size: 20px;
@@ -277,7 +319,8 @@ export default {
   font-family: iconfont;
 }
 
-.ct1,.ct-bottom{
+.ct1,
+.ct-bottom {
   width: 200px;
 }
 
@@ -314,8 +357,8 @@ export default {
   margin-bottom: 10px;
 }
 
-.top-icon{
-  margin-right:10px;
+.top-icon {
+  margin-right: 10px;
 }
 
 .menu-bottom > li {
@@ -359,6 +402,21 @@ export default {
   left: 50px;
 }
 
+.service-scope{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:30px;
+}
+.order-process{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: yellow; */
+    width:100%;
+  }
 .service-ct-top {
   display: flex;
   flex-direction: row;
@@ -366,10 +424,10 @@ export default {
   margin-bottom: 5px;
 }
 
-.service-ct-top-no{
-  width:30px;
-  height:30px;
-  margin-left:5px;
+.service-ct-top-no {
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
 }
 .service-c-name {
   display: flex;
@@ -400,7 +458,7 @@ export default {
   justify-content: center;
   align-items: center;
   box-shadow: 0px 0px 10px 0px #e0e0e0;
-  margin-bottom:30px;
+  margin-bottom: 30px;
 }
 
 .s-c-name-bottom {
@@ -429,7 +487,7 @@ export default {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-bottom:30px;
+  margin-bottom: 30px;
 }
 
 .order-top {
@@ -476,7 +534,7 @@ export default {
 }
 
 .in-no1 {
-  width:25px;
+  width: 25px;
   height: 25px;
   line-height: 25px;
   display: block;
