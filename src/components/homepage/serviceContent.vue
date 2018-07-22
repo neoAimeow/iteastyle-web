@@ -81,7 +81,7 @@
   margin-bottom:20px;
   background:url("http://pa74otoy6.bkt.clouddn.com/service-title-bkground.png") no-repeat;
   background-size:100% auto ;
-  height: 400px;
+  height: 300px;
 }
 .head-name-top{ 
   z-index: 1;
