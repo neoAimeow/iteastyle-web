@@ -207,9 +207,6 @@
     width: 500px;
     //background: red;
 }
-.souvenir-main-gift{
-    border-bottom:2px solid #9dc135;
-}
 .gitf-introduce-content{
     margin-top: 20px;
     line-height:30px;
