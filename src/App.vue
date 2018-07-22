@@ -157,7 +157,7 @@
         flex-direction: column;
         align-items: flex-end;
         color: #626262;
-        margin-left: 80px;
+        margin-left: 280px;
         margin-top: 50px;
     }
 
