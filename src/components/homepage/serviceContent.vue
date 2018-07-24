@@ -53,6 +53,9 @@
         activeName2: 'first'
       };
     },
+      created: function () {
+          this.activeName2 = this.$route.query.name;
+      },
     methods: {
       handleClick(tab, event) {
         console.log(tab, event);
