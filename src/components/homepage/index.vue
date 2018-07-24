@@ -8,9 +8,7 @@
             </el-carousel>
         </div>
         <div class="index-main">
-          <div v-for="(item2,key) in items.serviceImages" :key="key">
-            <progressive-img class="index-main-img" :src="item2" />
-          </div>
+            <router-link :to="{path:'/homepage/serviceContent', query: {'name': 'second'}}"><progressive-img class="index-main-img" src="http://pa74otoy6.bkt.clouddn.com/Tea%20%20art%20%20service-web.png" /></router-link>
         </div>
         <div class="index-foot">
             <div class="index-foot-left" v-for="(item3,key) in items.showerImages" :key="key">
