@@ -15,7 +15,7 @@
         <div class="index-foot">
             <div class="index-foot-left" v-for="(item3,key) in items.showerImages" :key="key">
                 <img class="index-foot-img" :src="item3" />
-                <a href="#"><div class="mask"></div></a>
+                <a href="javascript:;"><div class="mask"></div></a>
             </div>
             <div class="index-foot-right">
               <span style="letter-spacing:3px;font-size:18px;word-break:keep-all;white-space:nowrap;">杭式下午茶，有初恋的温度</span>
