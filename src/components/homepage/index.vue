@@ -8,14 +8,14 @@
             </el-carousel>
         </div>
         <div class="index-main">
-          <div v-for="(item2,key) in items.serviceImages" :key="key">
-            <progressive-img class="index-main-img" :src="item2" />
-          </div>
+            <router-link :to="{path:'/homepage/serviceContent', query: {'name': 'second'}}"><progressive-img class="index-main-img" src="http://pa74otoy6.bkt.clouddn.com/Tea%20%20art%20%20service-web.png" /></router-link>
+            <router-link :to="{path:'/homepage/serviceContent', query: {'name': 'first'}}"><progressive-img class="index-main-img" src="http://pa74otoy6.bkt.clouddn.com/Tea%20break%20service-web.png" /></router-link>
+            <router-link :to="{path:'/homepage/serviceContent', query: {'name': 'fifth'}}"><progressive-img class="index-main-img" src="http://pa74otoy6.bkt.clouddn.com/Tea%20gift%20service-web.png" /></router-link>
         </div>
         <div class="index-foot">
             <div class="index-foot-left" v-for="(item3,key) in items.showerImages" :key="key">
                 <img class="index-foot-img" :src="item3" />
-                <a href="#"><div class="mask"></div></a>
+                <a href="javascript:;"><div class="mask"></div></a>
             </div>
             <div class="index-foot-right">
               <span style="letter-spacing:3px;font-size:18px;word-break:keep-all;white-space:nowrap;">杭式下午茶，有初恋的温度</span>

@@ -102,12 +102,12 @@
         align-items: center;
         background:url("http://pa74otoy6.bkt.clouddn.com/teaState-title-bkground.png") no-repeat;
         background-size:100% auto ;
-        height: 400px;
+        height: 300px;
     }
 
     .ts-head-bg {
         width: 100%;
-  min-width: 1270px;
+        min-width: 1270px;
     }
 
     .ts-title {
