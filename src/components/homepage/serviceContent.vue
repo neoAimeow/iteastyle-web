@@ -54,7 +54,9 @@
       };
     },
       created: function () {
-          this.activeName2 = this.$route.query.name;
+        if (this.$route.query.name != null && this.$route.query.name != '') {
+            this.activeName2 = this.$route.query.name;
+        }
       },
     methods: {
       handleClick(tab, event) {
