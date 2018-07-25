@@ -3,7 +3,7 @@
         <div class="home-container">
             <div class="home-head">
                 <div class="home-head-left">
-                    <img class="home-head-left-img" src="http://pa74otoy6.bkt.clouddn.com/logo.png" alt="公司logo">
+                    <a href="www.iteastyle.cn"><img class="home-head-left-img" src="http://pa74otoy6.bkt.clouddn.com/logo.png" alt="公司logo"></a>
                 </div>
                 <el-menu class="el-menu-demo" active-text-color="#81b316" background-color="#ffffff" default-active="首页"
                          :router="true" mode="horizontal">
