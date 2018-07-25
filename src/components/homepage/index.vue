@@ -8,9 +8,9 @@
             </el-carousel>
         </div>
         <div class="index-main">
-            <router-link :to="{path:'/homepage/serviceContent', query: {'name': 'second'}}"><progressive-img class="index-main-img" src="http://pa74otoy6.bkt.clouddn.com/Tea%20%20art%20%20service-web.png" /></router-link>
+            <router-link :to="{path:'/homepage/serviceContent', query: {'name': 'third'}}"><progressive-img class="index-main-img" src="http://pa74otoy6.bkt.clouddn.com/Tea%20%20art%20%20service-web.png" /></router-link>
             <router-link :to="{path:'/homepage/serviceContent', query: {'name': 'first'}}"><progressive-img class="index-main-img" src="http://pa74otoy6.bkt.clouddn.com/Tea%20break%20service-web.png" /></router-link>
-            <router-link :to="{path:'/homepage/serviceContent', query: {'name': 'fifth'}}"><progressive-img class="index-main-img" src="http://pa74otoy6.bkt.clouddn.com/Tea%20gift%20service-web.png" /></router-link>
+            <router-link :to="{path:'/homepage/serviceContent', query: {'name': 'second'}}"><progressive-img class="index-main-img" src="http://pa74otoy6.bkt.clouddn.com/Tea%20gift%20service-web.png" /></router-link>
         </div>
         <div class="index-foot">
             <div class="index-foot-left" v-for="(item3,key) in items.showerImages" :key="key">

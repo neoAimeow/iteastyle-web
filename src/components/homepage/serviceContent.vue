@@ -19,20 +19,16 @@
           <TeaBreakService></TeaBreakService>
         </el-tab-pane>
 
-        <el-tab-pane label="茶艺表演" name="second">
-          <Performance></Performance>
+        <el-tab-pane label="杭州伴手礼" name="second">
+          <Souvenir></Souvenir>
         </el-tab-pane>
 
-        <el-tab-pane label="DIY活动" name="third">
-          <DIYActivites></DIYActivites>
-        </el-tab-pane>
-        
-        <el-tab-pane label="茶文化讲座" name="fourth">
+        <el-tab-pane label="茶事活动" name="third">
           <Seminar></Seminar>
         </el-tab-pane>
-
-        <el-tab-pane label="杭州伴手礼" name="fifth">
-          <Souvenir></Souvenir>
+        
+        <el-tab-pane label="DIY活动" name="fourth">
+          <DIYActivites></DIYActivites>
         </el-tab-pane>
 
       </el-tabs> 
@@ -42,7 +38,7 @@
 
 <script>
  import TeaBreakService from '../service/teaBreakService.vue';
- import Performance from '../service/performance.vue';
+ //import Performance from '../service/performance.vue';
  import DIYActivites from '../service/diyActivites.vue';
  import Seminar from '../service/seminar.vue';
  import Souvenir from '../service/souvenir.vue';
