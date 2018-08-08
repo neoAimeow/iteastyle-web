@@ -10,6 +10,7 @@ pipeline {
       }
       steps {
         echo 'Starting build the app.....'
+        sh 'apk add --update procps'
         sh 'npm config set registry https://registry.npm.taobao.org'
         sh 'npm config set sass_binary_site https://npm.taobao.org/mirrors/node-sass/'
         sh 'npm install'
