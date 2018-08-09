@@ -1,13 +1,22 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
+const homeIndex = r => require.ensure([], () => r(require('@/components/homepage/index.vue')), 'homeIndex');
+const companyStory = r => require.ensure([], () => r(require('@/components/homepage/companyStory.vue')), 'companyStory');
+const productDisplay = r => require.ensure([], () => r(require('@/components/homepage/productDisplay.vue')), 'productDisplay');
+const serviceContent = r => require.ensure([], () => r(require('@/components/homepage/serviceContent.vue')), 'serviceContent');
+const teaState = r => require.ensure([], () => r(require('@/components/homepage/teaState.vue')), 'teaState');
+const contactUs = r => require.ensure([], () => r(require('@/components/homepage/contactUs.vue')), 'contactUs');
+const teaStateInside = r => require.ensure([], () => r(require('@/components/homepage/teaStateInside.vue')), 'teaStateInside');
+const teaDessert = r => require.ensure([], () => r(require('@/components/display/teaDessert.vue')), 'teaDessert');
+
 Vue.use(Router)
 const router = new Router({
     routes: [
         {
             path: '/',
             name: 'homeIndex',
-            component: resolve => require(['@/components/homepage/index.vue'], resolve),
+            component: homeIndex,
             meta: {
                 title: '杭式下午茶-首页'
             }
@@ -15,7 +24,7 @@ const router = new Router({
         {
             path: '/homepage/companyStory',
             name: 'companyStory',
-            component: resolve => require(['@/components/homepage/companyStory.vue'], resolve),
+            component: companyStory,
             meta: {
                 title: '杭式下午茶-公司故事'
             }
@@ -23,7 +32,7 @@ const router = new Router({
         {
             path: '/homepage/productDisplay',
             name: 'productDisplay',
-            component: resolve => require(['@/components/homepage/productDisplay.vue'], resolve),
+            component: productDisplay,
             meta: {
                 title: '杭式下午茶-产品展示'
             }
@@ -31,7 +40,7 @@ const router = new Router({
         {
             path: '/homepage/serviceContent',
             name: 'serviceContent',
-            component: resolve => require(['@/components/homepage/serviceContent.vue'], resolve),
+            component: serviceContent,
             meta: {
                 title: '杭式下午茶-服务内容'
             }
@@ -39,7 +48,7 @@ const router = new Router({
         {
             path: '/homepage/teaState',
             name: 'teaState',
-            component: resolve => require(['@/components/homepage/teaState.vue'], resolve),
+            component: teaState,
 
             meta: {
                 title: '杭式下午茶-茶式动态'
@@ -48,7 +57,7 @@ const router = new Router({
         {
             path: '/homepage/contactUs',
             name: 'contactUs',
-            component: resolve => require(['@/components/homepage/contactUs.vue'], resolve),
+            component: contactUs,
 
             meta: {
                 title: '杭式下午茶-联系我们'
@@ -57,7 +66,7 @@ const router = new Router({
         {
             path: '/homepage/teaStateInside',
             name: 'teaStateInside',
-            component: resolve => require(['@/components/homepage/teaStateInside.vue'], resolve),
+            component: teaStateInside,
 
             meta: {
                 title: '杭式下午茶-茶式动态'
@@ -66,7 +75,7 @@ const router = new Router({
         {
             path: '/display/teaDessert',
             name: 'teaDessert',
-            component: resolve => require(['@/components/display/teaDessert.vue'], resolve),
+            component: teaDessert,
 
             meta: {
                 title: '杭式下午茶-产品展示'
