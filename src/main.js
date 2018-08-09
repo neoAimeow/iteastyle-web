@@ -3,6 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css';
 import axios from 'axios'
 
@@ -11,7 +12,7 @@ import VueAMap from 'vue-amap';
 import VueSilentbox from 'vue-silentbox'
 
 Vue.config.productionTip = false
-// Vue.use(ElementUI)
+Vue.use(ElementUI)
 Vue.use(VueProgressiveImage)
 Vue.use(VueAMap)
 Vue.use(VueSilentbox)
@@ -26,8 +27,11 @@ Vue.prototype.$ajax = request
 
 /* eslint-disable no-new */
 VueAMap.initAMapApiLoader({
+  // 高德的key
   key: '4566198fcdceda0404a449781377549e',
+  // 插件集合
   plugin: ['AMap.Autocomplete', 'AMap.PlaceSearch', 'AMap.Scale', 'AMap.OverView', 'AMap.ToolBar', 'AMap.MapType', 'AMap.PolyEditor', 'AMap.CircleEditor'],
+  // 高德 sdk 版本，默认为 1.4.4
   v: '1.4.4'
 });
 

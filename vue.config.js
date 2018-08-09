@@ -5,9 +5,7 @@ var CompressionWebpackPlugin = require('compression-webpack-plugin')
 module.exports = {
     configureWebpack: {
         externals: {
-            'vue': 'Vue',
-            // 'vue-router': 'router',
-            'axios': 'axios',
+
             'element-ui': 'element-ui'
         },
         plugins: [
