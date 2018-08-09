@@ -8,7 +8,7 @@ module.exports = {
             'vue': 'Vue',
             'vue-router': 'VueRouter',
             'axios': 'axios',
-            'moment': 'moment'
+            'element-ui': 'element-ui'
         },
         plugins: [
             new CompressionWebpackPlugin({
