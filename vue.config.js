@@ -5,8 +5,7 @@ var CompressionWebpackPlugin = require('compression-webpack-plugin')
 module.exports = {
     configureWebpack: {
         externals: {
-
-            'element-ui': 'element-ui'
+            // 'element-ui': 'element-ui'
         },
         plugins: [
             new CompressionWebpackPlugin({
