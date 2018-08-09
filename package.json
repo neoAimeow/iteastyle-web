@@ -10,8 +10,6 @@
   "dependencies": {
     "axios": "^0.18.0",
     "element-ui": "^2.4.1",
-    "node-sass": "^4.9.0",
-    "sass-loader": "^7.0.3",
     "vue": "^2.5.16",
     "vue-amap": "^0.5.7",
     "vue-moment": "^4.0.0",
@@ -24,6 +22,8 @@
     "@vue/cli-plugin-eslint": "^3.0.0-beta.15",
     "@vue/cli-service": "^3.0.0-beta.15",
     "compression-webpack-plugin": "^1.1.11",
+    "sass-loader": "^7.1.0",
+    "node-sass": "^4.9.0",
     "vue-template-compiler": "^2.5.16"
   },
   "eslintConfig": {
