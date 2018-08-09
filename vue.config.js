@@ -4,6 +4,12 @@ var CompressionWebpackPlugin = require('compression-webpack-plugin')
 
 module.exports = {
     configureWebpack: {
+        externals: {
+            'vue': 'Vue',
+            'vue-router': 'VueRouter',
+            'axios': 'axios',
+            'moment': 'moment'
+        },
         plugins: [
             new CompressionWebpackPlugin({
                 asset: '[path].gz[query]',
