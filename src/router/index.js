@@ -1,91 +1,85 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import HomeIndex from '@/components/homepage/index.vue'
-import CompanyStory from '@/components/homepage/companyStory.vue'
-import ProductDisplay from '@/components/homepage/productDisplay.vue'
-import ServiceContent from '@/components/homepage/serviceContent.vue'
-import TeaState from '@/components/homepage/teaState.vue'
-import ContactUs from '@/components/homepage/contactUs.vue'
-
-import TeaStateInside from '@/components/homepage/teaStateInside.vue'
-import TeaDessert from '@/components/display/teaDessert.vue'
-
 Vue.use(Router)
 const router = new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'homeIndex',
-      component: HomeIndex,
-      meta: {
-        title: '杭式下午茶-首页'
-      }
-    },
-    {
-      path: '/homepage/companyStory',
-      name: 'companyStory',
-      component: CompanyStory,
-      meta: {
-        title: '杭式下午茶-公司故事'
-      }
-    },
-    {
-      path: '/homepage/productDisplay',
-      name: 'productDisplay',
-      component: ProductDisplay,
-      meta: {
-        title: '杭式下午茶-产品展示'
-      }
-    },
-    {
-      path: '/homepage/serviceContent',
-      name: 'serviceContent',
-      component: ServiceContent,
-      meta: {
-        title: '杭式下午茶-服务内容'
-      }
-    },
-    {
-      path: '/homepage/teaState',
-      name: 'teaState',
-      component: TeaState,
-      meta: {
-        title: '杭式下午茶-茶式动态'
-      }
-    },
-    {
-      path: '/homepage/contactUs',
-      name: 'contactUs',
-      component: ContactUs,
-      meta: {
-        title: '杭式下午茶-联系我们'
-      }
-    },
-    {
-      path: '/homepage/teaStateInside',
-      name: 'teaStateInside',
-      component: TeaStateInside,
-      meta: {
-        title: '杭式下午茶-茶式动态'
-      }
-    },
-    {
-      path: '/display/teaDessert',
-      name: 'teaDessert',
-      component: TeaDessert,
-      meta: {
-        title: '杭式下午茶-产品展示'
-      }
-    }
-  ]
+    routes: [
+        {
+            path: '/',
+            name: 'homeIndex',
+            component: resolve => require(['@/components/homepage/index.vue'], resolve),
+            meta: {
+                title: '杭式下午茶-首页'
+            }
+        },
+        {
+            path: '/homepage/companyStory',
+            name: 'companyStory',
+            component: resolve => require(['@/components/homepage/companyStory.vue'], resolve),
+            meta: {
+                title: '杭式下午茶-公司故事'
+            }
+        },
+        {
+            path: '/homepage/productDisplay',
+            name: 'productDisplay',
+            component: resolve => require(['@/components/homepage/productDisplay.vue'], resolve),
+            meta: {
+                title: '杭式下午茶-产品展示'
+            }
+        },
+        {
+            path: '/homepage/serviceContent',
+            name: 'serviceContent',
+            component: resolve => require(['@/components/homepage/serviceContent.vue'], resolve),
+            meta: {
+                title: '杭式下午茶-服务内容'
+            }
+        },
+        {
+            path: '/homepage/teaState',
+            name: 'teaState',
+            component: resolve => require(['@/components/homepage/teaState.vue'], resolve),
+
+            meta: {
+                title: '杭式下午茶-茶式动态'
+            }
+        },
+        {
+            path: '/homepage/contactUs',
+            name: 'contactUs',
+            component: resolve => require(['@/components/homepage/contactUs.vue'], resolve),
+
+            meta: {
+                title: '杭式下午茶-联系我们'
+            }
+        },
+        {
+            path: '/homepage/teaStateInside',
+            name: 'teaStateInside',
+            component: resolve => require(['@/components/homepage/teaStateInside.vue'], resolve),
+
+            meta: {
+                title: '杭式下午茶-茶式动态'
+            }
+        },
+        {
+            path: '/display/teaDessert',
+            name: 'teaDessert',
+            component: resolve => require(['@/components/display/teaDessert.vue'], resolve),
+
+            meta: {
+                title: '杭式下午茶-产品展示'
+            }
+        }
+    ]
 })
 export default router
 
 router.beforeEach((to, from, next) => {
-  /* 路由发生变化修改页面title */
-  if (to.meta.title) {
-    document.title = to.meta.title
-  }
-  next()
+    /* 路由发生变化修改页面title */
+    if (to.meta.title) {
+        document.title = to.meta.title
+    }
+    next()
 })
