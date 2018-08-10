@@ -1,5 +1,4 @@
-import Vue from 'vue'
-import Router from 'vue-router'
+import VueRouter from 'vue-router'
 
 const homeIndex = r => require.ensure([], () => r(require('@/components/homepage/index.vue')), 'homeIndex');
 const companyStory = r => require.ensure([], () => r(require('@/components/homepage/companyStory.vue')), 'companyStory');
@@ -10,8 +9,8 @@ const contactUs = r => require.ensure([], () => r(require('@/components/homepage
 const teaStateInside = r => require.ensure([], () => r(require('@/components/homepage/teaStateInside.vue')), 'teaStateInside');
 const teaDessert = r => require.ensure([], () => r(require('@/components/display/teaDessert.vue')), 'teaDessert');
 
-Vue.use(Router)
-const router = new Router({
+// Vue.use(Router)
+const router = new VueRouter({
     routes: [
         {
             path: '/',

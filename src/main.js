@@ -3,7 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import ElementUI from 'element-ui'
+import ELEMENT from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css';
 import axios from 'axios'
 
@@ -12,7 +12,7 @@ import VueAMap from 'vue-amap';
 import VueSilentbox from 'vue-silentbox'
 
 Vue.config.productionTip = false
-Vue.use(ElementUI)
+Vue.use(ELEMENT)
 Vue.use(VueProgressiveImage)
 Vue.use(VueAMap)
 Vue.use(VueSilentbox)
