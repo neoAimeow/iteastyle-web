@@ -8,7 +8,7 @@ module.exports = {
             'vue': 'Vue',
             'vue-router': 'VueRouter',
             'element-ui': 'ELEMENT',
-            'vue-moment': 'moment',
+            'moment': 'moment',
             'axios':'axios'
         },
         plugins: [

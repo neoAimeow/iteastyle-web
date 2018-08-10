@@ -10,7 +10,7 @@ import axios from 'axios'
 import VueProgressiveImage from 'vue-progressive-image'
 import VueAMap from 'vue-amap';
 import VueSilentbox from 'vue-silentbox'
-import moment from 'vue-moment'
+import moment from 'moment'
 
 Vue.config.productionTip = false
 Vue.use(ELEMENT)
@@ -23,6 +23,10 @@ let request = axios.create({
   baseURL: 'https://iteastyle-api.aimeow.com/service/',
   timeout: 1000
 });
+
+Vue.filter('dateFormat', function(dataStr, pattern = 'YYYY-MM-DD HH:mm:ss') {
+    return moment(dataStr).format(pattern)
+})
 
 Vue.prototype.$ajax = request
 

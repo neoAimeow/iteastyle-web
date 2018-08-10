@@ -20,7 +20,7 @@
                     <div class="ts-main-content">
                         <div class="ts-main-content-title">
                             <span style="color:#9dc135;width:400px; overflow: hidden;text-overflow: ellipsis;white-space: nowrap;">{{item.title}}</span>
-                            <span style="font-size:10px;color:#909090">{{ item.gmtModified | moment("YYYY-MM-DD")}}</span>
+                            <span style="font-size:10px;color:#909090">{{ item.gmtModified | dateFormat("YYYY-MM-DD")}}</span>
                         </div>
                         <div class="ts-main-content-center">{{item.summary}}</div>
                         <div class="ts-main-content-more">MORE</div>

@@ -9,7 +9,7 @@
             <div class="tsI-main-head">
                 <span>{{title}}</span>
                 <hr style="height:0.2px;border:none;border-top:1px solid #a7a7a7; width: 800px;" />
-                <span style="font-size:5px;color:#626262;">发布时间：{{ gmtModified | moment("YYYY-MM-DD") }}</span>
+                <span style="font-size:5px;color:#626262;">发布时间：{{ gmtModified | dateFormat("YYYY-MM-DD") }}</span>
             </div>
             <div class="tsI-main-body">
                 <div class="tsI-main-body-content">
