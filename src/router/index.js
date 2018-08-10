@@ -9,7 +9,9 @@ const contactUs = r => require.ensure([], () => r(require('@/components/homepage
 const teaStateInside = r => require.ensure([], () => r(require('@/components/homepage/teaStateInside.vue')), 'teaStateInside');
 const teaDessert = r => require.ensure([], () => r(require('@/components/display/teaDessert.vue')), 'teaDessert');
 
-// Vue.use(Router)
+if (process.env.NODE_ENV === 'development') {
+    Vue.use(VueRouter)
+}
 const router = new VueRouter({
     routes: [
         {
