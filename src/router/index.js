@@ -1,4 +1,5 @@
 import VueRouter from 'vue-router'
+import Vue from 'vue'
 
 const homeIndex = r => require.ensure([], () => r(require('@/components/homepage/index.vue')), 'homeIndex');
 const companyStory = r => require.ensure([], () => r(require('@/components/homepage/companyStory.vue')), 'companyStory');
