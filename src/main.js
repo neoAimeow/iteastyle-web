@@ -3,21 +3,23 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+
 import ELEMENT from 'element-ui'
-import 'element-ui/lib/theme-chalk/index.css';
 import axios from 'axios'
 
 import VueProgressiveImage from 'vue-progressive-image'
 import VueAMap from 'vue-amap';
 import VueSilentbox from 'vue-silentbox'
 import moment from 'moment'
-
+if (process.env.NODE_ENV === 'development') {
+    require('element-ui/lib/theme-chalk/index.css')
+    Vue.use(moment)
+    Vue.use(ELEMENT)
+}
 Vue.config.productionTip = false
-Vue.use(ELEMENT)
 Vue.use(VueProgressiveImage)
 Vue.use(VueAMap)
 Vue.use(VueSilentbox)
-Vue.use(moment)
 
 let request = axios.create({
   baseURL: 'https://iteastyle-api.aimeow.com/service/',
