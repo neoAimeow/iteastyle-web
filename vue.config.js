@@ -8,6 +8,7 @@ module.exports = {
             'vue': 'Vue',
             'vue-router': 'VueRouter',
             'element-ui': 'ELEMENT',
+            'vue-moment': 'moment',
             'axios':'axios'
         },
         plugins: [
@@ -19,7 +20,7 @@ module.exports = {
                     ['js', 'css'].join('|') +
                     ')$'
                 ),
-                threshold: 10240,
+                threshold: 1024,
                 minRatio: 0.8
             })
         ]
