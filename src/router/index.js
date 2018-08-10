@@ -20,7 +20,7 @@ const router = new VueRouter({
             name: 'homeIndex',
             component: homeIndex,
             meta: {
-                title: '杭式下午茶-首页'
+                title: '杭式下午茶'
             }
         },
         {
