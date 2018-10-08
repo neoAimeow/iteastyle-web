@@ -129,6 +129,7 @@ span {
     width: 180px;
     background: rgba(142, 192, 24, 0.4);
     opacity: 0;
+    cursor: default;
 }
 .index-foot-left a:hover .mask{
   opacity: 1;
