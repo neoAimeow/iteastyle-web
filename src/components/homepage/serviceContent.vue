@@ -75,7 +75,7 @@
         justify-content: center;
         align-items: center;
         margin-bottom: 20px;
-        background: url("http://pa74otoy6.bkt.clouddn.com/service-title-bkground.png") no-repeat;
+        background: url("http://pazp3d0xt.bkt.clouddn.com/service-title-bkground.png") no-repeat;
         background-size: 100% auto;
         height: 300px;
     }
