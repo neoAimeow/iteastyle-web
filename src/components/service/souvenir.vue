@@ -9,9 +9,9 @@
                 <div class="souvenir-main-title-en"></div>
             </div>
             <div class="souvenir-main-souvenir">
-                
+
                 <span class="souvenir-main-souvenir-introduce" v-html="items.souvenir.content"></span>
-                
+
                 <img class="souvenir-main-souvenir-img" :src="items.souvenir.imageUrl" alt="">
             </div>
         </div>
@@ -25,18 +25,18 @@
             </div>
             <div class="souvenir-main-drink">
                 <div class="souvenir-main-drink-introduce">
-                    <div  v-for="(info1 , key1) in items.way.ways" :key="key1">
-                    <div class="souvenir-main-drink-subtitle">
-                        <div class="souvenir-main-drink-subtitle1">
-                            <span style="height:25px; line-height:25px; display:block; color:#FFF; text-align:center">{{key1+1}}</span>
+                    <div v-for="(info1 , key1) in items.way.ways" :key="key1">
+                        <div class="souvenir-main-drink-subtitle">
+                            <div class="souvenir-main-drink-subtitle1">
+                                <span style="height:25px; line-height:25px; display:block; color:#FFF; text-align:center">{{key1+1}}</span>
+                            </div>
+                            <div class="souvenir-main-drink-subtitle2">
+                                <span>{{info1.title}}</span>
+                            </div>
                         </div>
-                        <div class="souvenir-main-drink-subtitle2">
-                            <span>{{info1.title}}</span>
-                        </div>
-                    </div>
-                        
+
                         <p class="souvenir-main-drink-content">{{info1.content}}</p>
-                        
+
                     </div>
                 </div>
                 <img class="souvenir-main-drink-img" :src="items.way.imageUrl" alt="">
@@ -75,7 +75,7 @@
                                 <span v-html="info2.itemContent"></span>
                             </div>
                         </div>
-                        <img :src="info2.itemImageUrl" alt="" />
+                        <img :src="info2.itemImageUrl" alt=""/>
                     </div>
                 </div>
             </div>
@@ -84,146 +84,162 @@
 </template>
 
 <script>
-  export default {
-    data() {
-      return {
-            items:{},
-        }
-    },
-    created: function() {
-        this.request();
-    },
-    methods: {
+    export default {
+        data() {
+            return {
+                items: {},
+            }
+        },
+        created: function () {
+            this.request();
+        },
+        methods: {
 
-        request: function() {
-            var that = this;
-            this.$ajax.get('/getTeaGiftService',{
-            })
-            .then(function (response) {
-                console.log(response);
-                that.items = response.data.model;
-            })
-            .catch(function (response) {
-                console.log(response);
-            });
-      }
+            request: function () {
+                var that = this;
+                this.$ajax.get('/getData', {params: {key: 'teaGift'}})
+                    .then(function (response) {
+                        console.log(response);
+                        that.items = response.data.model;
+                    })
+                    .catch(function (response) {
+                        console.log(response);
+                    });
+            }
+        }
     }
-  }
 </script>
 
 <style lang="scss">
-.souvenir-container{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-bottom:2px solid #9dc135;
-}
-.souvenir-main{
-    width: 900px;
-}
-.souvenir-main-title{
-    display: flex;
-    flex-direction: column;
-    width: 600px;
-    color: white;
-}
-.souvenir-main-title-hr{
-    width:600px;
-    height:1px;
-    border:none;
-    border-top:2px solid #9dc135;
-}
-.souvenir-main-title-cn{
-    width: 140px;
-    margin-left: 30px;
-    border-top: 50px solid #9dc135;
-    border-top-left-radius: 10px;
-    border-top-right-radius:10px;
-}
-.souvenir-main-title-en{
-    width: 140px;
-    border-top: 30px solid #9dc135;
-    border-right: 30px solid transparent;
-    border-left: 30px solid transparent;
-    margin-top: -23px;
-}
-.souvenir-main-souvenir{
-    width: 860px;
-    margin-left:40px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    //background: red;
-}
-.souvenir-main-souvenir-introduce{
-    width: 500px;
-    // background-color: aqua;
-    line-height:30px;
-}
-.souvenir-main-souvenir-img{
-    width: 300px;
-    height: auto;
-}
-.souvenir-main-drink{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
+    .souvenir-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 2px solid #9dc135;
+    }
 
-.souvenir-main-drink-content{
-    margin-left:45px;
-    margin-top:5px;
-    margin-bottom:0px;
-}
+    .souvenir-main {
+        width: 900px;
+    }
 
-.souvenir-main-drink-img{
-    width: 300px;
-    height: auto;
-}
-.souvenir-main-drink-subtitle{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
-.souvenir-main-drink-subtitle1{
-    width:25px; 
-    height:25px; 
-    background-color: #9dc135; 
-    border-radius:12.5px;
-}
-.souvenir-main-drink-subtitle2{
-    margin-left: 20px;
-    color: #9dc135;
-}
-.souvenir-main-drink-introduce{
-    display: flex;
-    flex-direction: column;
-    margin-left: 40px;
-    width: 500px;
-    //background: red;
-}
-.gitf-introduce-content{
-    margin-top: 20px;
-    line-height:30px;
-}
-.souvenir-main-gitf-introduce{
-    margin-top: 20px;
-    margin-bottom: 40px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-.souvenir-main-gitf-img{
-    width: 300px;
-    height: 200px;
-}
-.souvenir-main-gift{
-    margin-bottom: 150px;
-}
+    .souvenir-main-title {
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+        color: white;
+    }
+
+    .souvenir-main-title-hr {
+        width: 600px;
+        height: 1px;
+        border: none;
+        border-top: 2px solid #9dc135;
+    }
+
+    .souvenir-main-title-cn {
+        width: 140px;
+        margin-left: 30px;
+        border-top: 50px solid #9dc135;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .souvenir-main-title-en {
+        width: 140px;
+        border-top: 30px solid #9dc135;
+        border-right: 30px solid transparent;
+        border-left: 30px solid transparent;
+        margin-top: -23px;
+    }
+
+    .souvenir-main-souvenir {
+        width: 860px;
+        margin-left: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        //background: red;
+    }
+
+    .souvenir-main-souvenir-introduce {
+        width: 500px;
+        // background-color: aqua;
+        line-height: 30px;
+    }
+
+    .souvenir-main-souvenir-img {
+        width: 300px;
+        height: auto;
+    }
+
+    .souvenir-main-drink {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .souvenir-main-drink-content {
+        margin-left: 45px;
+        margin-top: 5px;
+        margin-bottom: 0px;
+    }
+
+    .souvenir-main-drink-img {
+        width: 300px;
+        height: auto;
+    }
+
+    .souvenir-main-drink-subtitle {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+
+    .souvenir-main-drink-subtitle1 {
+        width: 25px;
+        height: 25px;
+        background-color: #9dc135;
+        border-radius: 12.5px;
+    }
+
+    .souvenir-main-drink-subtitle2 {
+        margin-left: 20px;
+        color: #9dc135;
+    }
+
+    .souvenir-main-drink-introduce {
+        display: flex;
+        flex-direction: column;
+        margin-left: 40px;
+        width: 500px;
+        //background: red;
+    }
+
+    .gitf-introduce-content {
+        margin-top: 20px;
+        line-height: 30px;
+    }
+
+    .souvenir-main-gitf-introduce {
+        margin-top: 20px;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .souvenir-main-gitf-img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .souvenir-main-gift {
+        margin-bottom: 150px;
+    }
 </style>

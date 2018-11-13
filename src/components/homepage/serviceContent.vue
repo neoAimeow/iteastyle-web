@@ -54,11 +54,21 @@
             }
         },
         components: {
-            TeaBreakService: resolve => {require(['../service/teaBreakService.vue'], resolve)},
-            Performance: resolve => {require(['../service/performance.vue'], resolve)},
-            DIYActivites: resolve => {require(['../service/diyActivites.vue'], resolve)},
-            Seminar: resolve => {require(['../service/seminar.vue'], resolve)},
-            Souvenir: resolve => {require(['../service/souvenir.vue'], resolve)}
+            TeaBreakService: resolve => {
+                require(['../service/teaBreakService.vue'], resolve)
+            },
+            Performance: resolve => {
+                require(['../service/performance.vue'], resolve)
+            },
+            DIYActivites: resolve => {
+                require(['../service/diyActivites.vue'], resolve)
+            },
+            Seminar: resolve => {
+                require(['../service/seminar.vue'], resolve)
+            },
+            Souvenir: resolve => {
+                require(['../service/souvenir.vue'], resolve)
+            }
         }
     };
 </script>

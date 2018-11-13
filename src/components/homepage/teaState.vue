@@ -100,8 +100,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background:url("http://pazp3d0xt.bkt.clouddn.com/teaState-title-bkground.jpg") no-repeat;
-        background-size:100% auto ;
+        background: url("http://pazp3d0xt.bkt.clouddn.com/teaState-title-bkground.jpg") no-repeat;
+        background-size: 100% auto;
         height: 300px;
     }
 
