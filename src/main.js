@@ -11,6 +11,7 @@ import VueProgressiveImage from 'vue-progressive-image'
 import VueAMap from 'vue-amap';
 import VueSilentbox from 'vue-silentbox'
 import moment from 'moment'
+import qiniu_domain from './common/config.js'
 
 if (process.env.NODE_ENV === 'development') {
     require('element-ui/lib/theme-chalk/index.css')
@@ -32,6 +33,7 @@ Vue.filter('dateFormat', function (dataStr, pattern = 'YYYY-MM-DD HH:mm:ss') {
 })
 
 Vue.prototype.$ajax = request
+Vue.prototype.$imageDomain = qiniu_domain
 
 /* eslint-disable no-new */
 VueAMap.initAMapApiLoader({

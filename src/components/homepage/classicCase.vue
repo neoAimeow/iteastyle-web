@@ -6,10 +6,10 @@
                 <div class="case">
                     <div class="case-picture">
                         <img class="picture" :src="item.typeImage">
-                        <img class="picture-logo" src="http://pa74otoy6.bkt.clouddn.com/title-logo.png">
+                        <img class="picture-logo" :src='$imageDomain+"/title-logo.png"'>
                     </div>
                     <div class="case-name">
-                        <img class="logo" :src="item.typeIcon">
+                        <img class="logo" :src="$imageDomain+item.typeIcon">
                         <div class="title">
                             <span class="C-title">{{item.typeName}}</span>
                             <span class="E-title">{{item.typeNameEn}}</span>

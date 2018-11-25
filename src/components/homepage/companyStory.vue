@@ -4,7 +4,7 @@
         <div class="story">
             <div class="story-title">
                 <span class="title-english">OUR STORY</span>
-                <img src="http://pa74otoy6.bkt.clouddn.com/plus.png">
+                <img :src='$imageDomain+"/plus.png"' />
                 <span class="titile-chinese">{{info.storyTitle}}</span>
             </div>
             <span class="story-ct" v-html="info.storyContent"></span>
@@ -31,7 +31,9 @@
                     console.log(response);
                     that.info = response.data.model;
                     that.center = [response.data.model.longitude, response.data.model.latitude]
-                    that.backgroundStyle = 'background: url(' + response.data.model.companyStoryBgUrl + ')no-repeat; background-size: 100% auto;'
+
+                    let imageUrl = that.$imageDomain + response.data.model.companyStoryBgUrl;
+                    that.backgroundStyle = 'background: url(' + imageUrl + ')no-repeat; background-size: 100% auto;'
                     if (response.data.model.videoUrl == null || response.data.model.videoUrl == "") {
                         that.isVideoShown = false;
                     }

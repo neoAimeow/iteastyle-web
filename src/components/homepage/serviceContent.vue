@@ -1,15 +1,14 @@
 <template>
     <div class="sc-container">
-        <div class="sc-head">
+        <div class="sc-head" :style="scHeadBackgroundStyle">
             <div class="head-name-top">
                 <span>TEA BREAK WITH<br>IMAGINATIVE AND HEALTHY</span>
                 <div class="head-name-bottom">
                     <span class="C-name">创意茶歇</span>
-                    <img class="title-logo" src="http://pa74otoy6.bkt.clouddn.com/opaque-logo.png" alt="logo">
+                    <img class="title-logo" :src='$imageDomain+"/opaque-logo.png"' alt="logo">
                     <span class="C-name" style="margin-left:10px;">健康时尚</span>
                 </div>
             </div>
-
         </div>
 
 
@@ -40,10 +39,14 @@
     export default {
         data() {
             return {
-                activeName2: 'first'
+                activeName2: 'first',
+                scHeadBackgroundStyle: ''
+
             };
         },
         created: function () {
+            let imageUrl = this.$imageDomain + '/service-title-bkground.jpg';
+            this.scHeadBackgroundStyle = 'background: url(' + imageUrl + ')no-repeat; background-size: 100% auto;'
             if (this.$route.query.name != null && this.$route.query.name != '') {
                 this.activeName2 = this.$route.query.name;
             }
@@ -85,7 +88,6 @@
         justify-content: center;
         align-items: center;
         margin-bottom: 20px;
-        background: url("http://pazp3d0xt.bkt.clouddn.com/service-title-bkground.jpg") no-repeat;
         background-size: 100% auto;
         height: 300px;
     }

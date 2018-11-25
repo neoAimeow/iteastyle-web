@@ -2,16 +2,16 @@
     <div class="productinside">
         <div class="introduction-title">
             <progressive-img class="title-background"
-                             src="http://pa74otoy6.bkt.clouddn.com/pd-case-DT-Details-background.png" alt=""/>
-            <img src="http://pa74otoy6.bkt.clouddn.com/%E6%A0%87%E9%A2%98%E5%9B%BE%E4%B8%8A%E7%9A%84logo.png">
+                             :src='$imageDomain+"/pd-case-DT-Details-background.png"' alt=""/>
+            <img :src='$imageDomain+"/%E6%A0%87%E9%A2%98%E5%9B%BE%E4%B8%8A%E7%9A%84logo.png"' />
         </div>
 
         <div class="pd-picture">
             <div style="display:flex;" v-for="(img,key) in imgs" :key="key">
-                <img class="pd-img" :src="img" alt="">
+                <img class="pd-img" :src="$imageDomain+img" alt="">
                 <div v-if="key==0" class="pd-name">
                     <div class="title">
-                        <img src="http://pa74otoy6.bkt.clouddn.com/opaque-logo.png" alt="" class="logo">
+                        <img :src='$imageDomain+"/opaque-logo.png"' alt="" class="logo">
                         <span>{{typeName}}</span>
                     </div>
                     <span class="name">{{title}}</span>

@@ -1,13 +1,13 @@
 <template>
     <div class="ts-container">
-        <div class="ts-head">
+        <div class="ts-head" :style="tsHeadBackgroundStyle">
             <div class="ts-title">
                 <div class="ts-title-en">
                     <span>TEA BREAK</span>
                     <span>INFORMATION</span>
                 </div>
                 <div class="ts-title-logo">
-                    <img style="width:60px;height:60px;" src="http://pa74otoy6.bkt.clouddn.com/150.png" alt="">
+                    <img style="width:60px;height:60px;" :src='$imageDomain+"/150.png"' alt="">
                     <span style="letter-spacing:10px;margin-left:30px;">茶式动态</span>
                 </div>
             </div>
@@ -16,7 +16,7 @@
             <router-link :to="{path:'./teaStateInside',query:{id:item.id}}">
 
                 <div class="ts-main">
-                    <img style="width:300px;height:200px;margin:10px;" :src="item.imageUrl" alt="">
+                    <img style="width:300px;height:200px;margin:10px;" :src="$imageDomain+item.imageUrl" alt="">
                     <div class="ts-main-content">
                         <div class="ts-main-content-title">
                             <span style="color:#9dc135;width:400px; overflow: hidden;text-overflow: ellipsis;white-space: nowrap;">{{item.title}}</span>
@@ -51,10 +51,13 @@
                 items: [],
                 currentPage: 1,
                 totalCount: 0,
-                pageSize: 5
+                pageSize: 5,
+                tsHeadBackgroundStyle: ''
             }
         },
         created: function () {
+            let imageUrl = this.$imageDomain + '/teaState-title-bkground.jpg';
+            this.tsHeadBackgroundStyle = 'background: url(' + imageUrl + ')no-repeat; background-size: 100% auto;'
             this.request();
         },
         methods: {
@@ -100,7 +103,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background: url("http://pazp3d0xt.bkt.clouddn.com/teaState-title-bkground.jpg") no-repeat;
         background-size: 100% auto;
         height: 300px;
     }

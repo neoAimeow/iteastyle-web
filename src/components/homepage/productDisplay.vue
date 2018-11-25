@@ -1,8 +1,7 @@
 <template>
     <div class="pd-container">
-        <div class="pd-head">
-            <!-- <img src="http://pa74otoy6.bkt.clouddn.com/pd-title-background.png" alt="" class="pd-head-bg"> -->
-            <img src="http://pa74otoy6.bkt.clouddn.com/opaque-logo.png" alt="" class="pd-head-logo">
+        <div class="pd-head" :style="headBackgroundStyle">
+            <img class="pd-head-logo" :src='$imageDomain+"/opaque-logo.png"' />
         </div>
         <div class="pd-main" v-for="(item , key) in items" :key="key">
 
@@ -17,8 +16,8 @@
             <div class="pd-content">
                 <div v-if="inKey<6" class="pd-content-img" v-for="(cell , inKey) in item.cases" :key="inKey">
                     <silentbox-group>
-                        <silentbox-item v-for="(image,imageKey) in cell.imageArr" :key="imageKey" :src="image">
-                            <img v-if="imageKey===0" class="content-picture" :src="cell.imageArr[0]" alt="">
+                        <silentbox-item v-for="(image,imageKey) in cell.imageArr" :key="imageKey" :src="$imageDomain+image">
+                            <img v-if="imageKey===0" class="content-picture" :src="$imageDomain+cell.imageArr[0]" alt="">
                         </silentbox-item>
                     </silentbox-group>
                     <div class="pd-content-img-title"><span>{{cell.title}}</span></div>
@@ -40,9 +39,12 @@
         data() {
             return {
                 items: [],
+                headBackgroundStyle: ''
             }
         },
         created: function () {
+            let imageUrl = this.$imageDomain + '/pd-title-background.png';
+            this.tsHeadBackgroundStyle = 'background: url(' + imageUrl + ')no-repeat; background-size: 100% auto;'
             this.request();
         },
         methods: {
@@ -80,7 +82,6 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background: url('http://pa74otoy6.bkt.clouddn.com/pd-title-background.png') repeat-x;
         height: 160px;
     }
 

@@ -12,7 +12,7 @@
 
                 <span class="souvenir-main-souvenir-introduce" v-html="items.souvenir.content"></span>
 
-                <img class="souvenir-main-souvenir-img" :src="items.souvenir.imageUrl" alt="">
+                <img class="souvenir-main-souvenir-img" :src="$imageDomain+items.souvenir.imageUrl" alt="">
             </div>
         </div>
         <div class="souvenir-main">
@@ -39,7 +39,7 @@
 
                     </div>
                 </div>
-                <img class="souvenir-main-drink-img" :src="items.way.imageUrl" alt="">
+                <img class="souvenir-main-drink-img" :src="$imageDomain+items.way.imageUrl" alt="">
             </div>
         </div>
         <div class="souvenir-main">
@@ -75,7 +75,7 @@
                                 <span v-html="info2.itemContent"></span>
                             </div>
                         </div>
-                        <img :src="info2.itemImageUrl" alt=""/>
+                        <img :src="$imageDomain+info2.itemImageUrl" alt=""/>
                     </div>
                 </div>
             </div>

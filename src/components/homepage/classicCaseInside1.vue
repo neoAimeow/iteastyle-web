@@ -2,8 +2,8 @@
     <div class="classinside-one">
         <div class="case-top">
             <progressive-img class="top-background"
-                             src="http://pa74otoy6.bkt.clouddn.com/pd-case-DT-Details-background.png" alt=""/>
-            <img src="http://pa74otoy6.bkt.clouddn.com/case-light-logo.png">
+                             :src='$imageDomain+"/pd-case-DT-Details-background.png"' alt=""/>
+            <img :src='$imageDomain+"/case-light-logo.png"'>
         </div>
         <div v-if="items.length==0 && isLoading == false" class="nocase"><span>您访问的服务暂无案例哦！</span></div>
         <div class="case-body">
@@ -11,7 +11,7 @@
             <div v-for="(item,key) in items" :key="key">
                 <router-link :to="{path:'/homepage/classicCaseInside2',query: {id: item.id}}">
                     <div class="picture">
-                        <img class="case-picture" :src="item.imageArr[0]" alt="">
+                        <img class="case-picture" :src="$imageDomain+item.imageArr[0]" alt="">
                         <div class="case-title">
                             <span>{{item.title}}</span>
                         </div>

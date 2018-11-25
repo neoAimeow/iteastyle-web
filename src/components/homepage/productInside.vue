@@ -2,17 +2,17 @@
     <div class="productinside">
         <div class="pdinside-title">
             <progressive-img class="title-background"
-                             src="http://pa74otoy6.bkt.clouddn.com/pd-case-DT-Details-background.png" alt=""/>
-            <img src="http://pa74otoy6.bkt.clouddn.com/case-light-logo.png">
+                             :src='$imageDomain+"/pd-case-DT-Details-background.png"' alt=""/>
+            <img :src='$imageDomain+"/case-light-logo.png"'/>
         </div>
 
         <div class="pdinside-body">
             <div style="display:flex;" v-for="(img,key) in imgs" :key="key">
 
-                <img class="body-img" :src="img" alt="">
+                <img class="body-img" :src="$imageDomain+img" alt="">
                 <div v-if="key==0" class="body-name">
                     <div class="name-top">
-                        <img class="logo" src="http://pa74otoy6.bkt.clouddn.com/opaque-logo.png" alt="">
+                        <img class="logo" :src='$imageDomain+"/opaque-logo.png"' alt="">
                         <span class="name-bottom">茶饮茶点</span>
                     </div>
                     <span class="pd-name">{{title}}</span>

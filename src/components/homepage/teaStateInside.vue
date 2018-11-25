@@ -1,8 +1,8 @@
 <template>
     <div class="tsI-container">
-        <div class="td-head">
+        <div class="td-head" :style="teaBackgroundImageStyle">
             <div class="td-head-logo">
-                <img style="width:100px;height:100px;" src="http://pa74otoy6.bkt.clouddn.com/title-logo.png" alt="">
+                <img style="width:100px;height:100px;" :src='$imageDomain+"/title-logo.png"' alt="">
             </div>
         </div>
         <div>
@@ -30,11 +30,15 @@
             return {
                 title: '',
                 content: '',
-                gmtModified: ''
+                gmtModified: '',
+                teaBackgroundImageStyle: '',
             }
         },
         created: function () {
-            console.log(this.$route.query.id);
+
+            let imageUrl = this.$imageDomain + '/pd-case-DT-Details-background.png';
+            this.teaBackgroundImageStyle = 'background: url(' + imageUrl + ')no-repeat; background-size: 100% auto;'
+
             var that = this;
             this.$ajax.get('/getPostById', {
                 params: {
@@ -72,7 +76,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background: url("http://pa74otoy6.bkt.clouddn.com/pd-case-DT-Details-background.png") no-repeat;
         background-size: 100% auto;
         height: 400px;
     }

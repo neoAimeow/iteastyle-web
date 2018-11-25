@@ -3,12 +3,12 @@
         <div class="ps-main">
             <div class="ps-content" v-for="(info1 , key1) in info.items" :key="key1">
                 <silentbox-group>
-                    <silentbox-item v-for="(image,imageKey) in info1.imageUrls" :key="imageKey" :src="image">
-                        <img v-if="imageKey===0" :src="image" alt="" class="ps-content-img">
+                    <silentbox-item v-for="(image,imageKey) in info1.imageUrls" :key="imageKey" :src="$imageDomain+image">
+                        <img v-if="imageKey===0" :src="$imageDomain+image" alt="" class="ps-content-img">
                     </silentbox-item>
                 </silentbox-group>
                 <div class="ps-content-title">
-                    <img :src="info1.iconImageUrl" alt="" class="ps-content-logo">
+                    <img :src="$imageDomain+info1.iconImageUrl" alt="" class="ps-content-logo">
                     <div class="ps-content-name">
                         <span style="color:#9dc135;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width:110px;">{{info1.title}}</span>
                         <span style=" color: rgb(228, 227, 227);">{{info1.title_en}}</span>

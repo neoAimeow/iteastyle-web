@@ -19,7 +19,7 @@
             <div class="way-ct">
                 <div class="ct1" v-for="(value,key) in responseDatas.order.orderWay.items" :key="key">
                     <div class="ct-title">
-                        <img style="width:30px;height:auto;" :src=value.imageUrl alt="">
+                        <img style="width:30px;height:auto;" :src=$imageDomain+value.imageUrl alt="">
                         <span class="ct-title-name">{{value.title}}</span>
                     </div>
                     <span class="ct-bottom">{{value.content}}</span>
@@ -74,7 +74,7 @@
                 <div class="service-border" v-for="(value,key) in responseDatas.range.ranges" :key="key">
                     <div class="service-ct-top">
                         <div class="service-ct-top-left">
-                            <img class="service-ct-top-no" :src=value.titleImageUrl alt="logo">
+                            <img class="service-ct-top-no" :src=$imageDomain+value.titleImageUrl alt="logo">
                             <div class="service-e-name">{{value.title_en}}</div>
                         </div>
                         <div class="service-c-name">
@@ -82,7 +82,7 @@
                             <span class="s-c-name-bottom">{{value.subTitle}}</span>
                         </div>
                     </div>
-                    <img style="width:180px;height:120px;" :src=value.imageUrl alt="service picture">
+                    <img style="width:180px;height:120px;" :src=$imageDomain+value.imageUrl alt="service picture">
                 </div>
             </div>
         </div>
@@ -156,7 +156,7 @@
                     <div class="ways-ver"></div>
                 </div>
                 <div class="ways-bottom">
-                    <img class="ways-bottom-left" :src=responseDatas.orderMode.qrImageUrl alt="QR Code">
+                    <img class="ways-bottom-left" :src=$imageDomain+responseDatas.orderMode.qrImageUrl alt="QR Code">
                     <div class="ways-bottom-mid"></div>
                     <div class="ways-bottom-right">
                         <span>长按二维码关注</span>

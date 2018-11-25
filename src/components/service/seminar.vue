@@ -3,12 +3,12 @@
         <div class="ss-main">
             <div class="ss-content" v-for="(info1 , key1) in info.items" :key="key1">
                 <silentbox-group>
-                    <silentbox-item v-for="(image,imageKey) in info1.imageUrls" :key="imageKey" :src="image">
-                        <img v-if="imageKey===0" :src="image" alt="" class="ss-content-img">
+                    <silentbox-item v-for="(image,imageKey) in info1.imageUrls" :key="imageKey" :src="$imageDomain+image">
+                        <img v-if="imageKey===0" :src="$imageDomain+image" alt="" class="ss-content-img">
                     </silentbox-item>
                 </silentbox-group>
                 <div class="ss-content-title">
-                    <img :src="info1.iconImageUrl" alt="" class="ss-content-logo">
+                    <img :src="$imageDomain+info1.iconImageUrl" alt="" class="ss-content-logo">
                     <div class="ss-content-name">
                         <span style="color:#9dc135;">{{info1.title}}</span>
                         <span style=" color: rgb(228, 227, 227);">{{info1.title_en}}</span>

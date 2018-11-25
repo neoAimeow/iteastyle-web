@@ -3,27 +3,27 @@
         <div class="index-head">
             <el-carousel :height="screenWidth/3+'px'">
                 <el-carousel-item v-for="(item1,key) in items.homepageBannerUrls" :key="key">
-                    <progressive-img :src="item1"/>
+                    <progressive-img :src="$imageDomain+item1"/>
                 </el-carousel-item>
             </el-carousel>
         </div>
         <div class="index-main">
             <router-link :to="{path:'/homepage/serviceContent', query: {'name': 'third'}}">
                 <progressive-img class="index-main-img"
-                                 src="http://pa74otoy6.bkt.clouddn.com/Tea%20%20art%20%20service-web.png"/>
+                                 :src='$imageDomain+"/Tea%20%20art%20%20service-web.png"' />
             </router-link>
             <router-link :to="{path:'/homepage/serviceContent', query: {'name': 'first'}}">
                 <progressive-img class="index-main-img"
-                                 src="http://pa74otoy6.bkt.clouddn.com/Tea%20break%20service-web.png"/>
+                                 :src='$imageDomain+"/Tea%20break%20service-web.png"' />
             </router-link>
             <router-link :to="{path:'/homepage/serviceContent', query: {'name': 'second'}}">
                 <progressive-img class="index-main-img"
-                                 src="http://pa74otoy6.bkt.clouddn.com/Tea%20gift%20service-web.png"/>
+                                 :src='$imageDomain+"/Tea%20gift%20service-web.png"' />
             </router-link>
         </div>
         <div class="index-foot">
             <div class="index-foot-left" v-for="(item3,key) in items.showerImages" :key="key">
-                <img class="index-foot-img" :src="item3"/>
+                <img class="index-foot-img" :src="$imageDomain+item3"/>
                 <a href="javascript:;">
                     <div class="mask"></div>
                 </a>

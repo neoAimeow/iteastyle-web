@@ -3,7 +3,7 @@
         <div class="cu-main">
             <div class="cu-main-title">
                 <span class="title-english">CONTACT US</span>
-                <img src="http://pa74otoy6.bkt.clouddn.com/plus.png" alt="">
+                <img :src='$imageDomain+"/plus.png"' alt="">
                 <span class="titile-chinese">联系我们</span>
                 <span style="margin-top:10px;">{{info.contactUsTitle}}</span>
             </div>
@@ -25,8 +25,8 @@
                     <el-amap-marker :position="center"></el-amap-marker>
                 </el-amap>
                 <div class="cu-foot-right">
-                    <progressive-img class="cu-foot-right-img" :src="info.qrCodeImageUrl" alt=""/>
-                    <progressive-img class="cu-foot-right-img" :src="info.customerQrCodeImageUrl" alt=""/>
+                    <progressive-img class="cu-foot-right-img" :src="$imageDomain+info.qrCodeImageUrl" alt=""/>
+                    <progressive-img class="cu-foot-right-img" :src="$imageDomain+info.customerQrCodeImageUrl" alt=""/>
                 </div>
             </div>
         </div>
@@ -52,7 +52,8 @@
                     console.log(response.data.model);
                     that.info = response.data.model;
                     that.center = [response.data.model.longitude, response.data.model.latitude];
-                    that.backgroundStyle = 'background:url(' + response.data.model.contactUsBgUrl + ') no-repeat; background-size:100% auto; '
+                    let imageUrl = that.$imageDomain + response.data.model.contactUsBgUrl;
+                    that.backgroundStyle = 'background:url(' + imageUrl + ') no-repeat; background-size:100% auto; '
                 })
                 .catch(function (response) {
                     console.log(response);
