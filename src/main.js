@@ -25,7 +25,7 @@ Vue.use(VueSilentbox)
 
 let request = axios.create({
     baseURL: 'https://iteastyle-api.aimeow.com/service/',
-    timeout: 1000
+    timeout: 5000
 });
 
 Vue.filter('dateFormat', function (dataStr, pattern = 'YYYY-MM-DD HH:mm:ss') {
