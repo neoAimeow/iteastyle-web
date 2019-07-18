@@ -45,7 +45,12 @@
     export default {
         data() {
             return {
-                items: {},
+                items: {
+
+                    "homepageBannerUrls": [
+                        "/AfternoonTea.jpeg"
+                    ]
+                },
                 screenWidth: document.body.clientWidth
             };
         },
@@ -72,15 +77,7 @@
             }
         },
         created: function () {
-            var that = this;
-            this.$ajax.get('/getData', {params: {key: 'common'}})
-                .then(function (response) {
-                    that.items = response.data.model;
-                    console.log(that.items)
-                })
-                .catch(function (response) {
-                    console.log(response);
-                });
+
         }
     };
 </script>

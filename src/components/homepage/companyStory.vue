@@ -19,28 +19,18 @@
     export default {
         data() {
             return {
-                info: {},
+                info: {
+                    "storyContent": "&emsp;&emsp;执贝科技，立足杭州，以吃茶、喝茶为切入点，借助时尚、新颖的主题方式，让更多的年轻人了解茶文化，享受食尚茶歇，从而逐步打造属于我们自己的“杭式下午茶”。目前公司主要以“茶歇服务”为主体业务，茶礼茶具、器皿租赁、糕点供应为辅，提供全方位的特色服务。<br><br>&emsp;&emsp;HangZhou Afternoon Tea is a compositive organization which is devoted to Tea Break one-stop service. It really takes tea elements as the core.  Using pure natural tea powder tea with drinks , cakes  and fashion together . It aims to lead a healthy lifestyle and concept of life.",
+                    "storyTitle": "杭式下午茶",
+                    "companyStoryBgUrl": "/compamy-bk-1500-1133.jpg"
+                },
                 backgroundStyle: '',
                 isVideoShown: false
             }
         },
         created: function () {
-            var that = this;
-            this.$ajax.get('/getData', {params: {key: 'common'}})
-                .then(function (response) {
-                    console.log(response);
-                    that.info = response.data.model;
-                    that.center = [response.data.model.longitude, response.data.model.latitude]
-
-                    let imageUrl = that.$imageDomain + response.data.model.companyStoryBgUrl;
-                    that.backgroundStyle = 'background: url(' + imageUrl + ')no-repeat; background-size: 100% auto;'
-                    if (response.data.model.videoUrl == null || response.data.model.videoUrl == "") {
-                        that.isVideoShown = false;
-                    }
-                })
-                .catch(function (response) {
-                    console.log(response);
-                });
+            let imageUrl = this.$imageDomain + this.info.companyStoryBgUrl;
+            this.backgroundStyle = 'background: url(' + imageUrl + ')no-repeat; background-size: 100% auto;'
         }
     }
 </script>

@@ -175,7 +175,284 @@
     export default {
         data() {
             return {
-                responseDatas: {}
+                responseDatas: {
+                    "gmtCreate": 1531662132259,
+                    "gmtModified": 1531662132259,
+                    "id": "5b4b4f34aeb2a141262e41ca",
+                    "note": {
+                        "notes": [
+                            "杭式下午茶<span style='color:#9dc135'>目前支持杭州地区订购</span>，全国其他地区暂未开通；",
+                            "订单金额<span style='color:#9dc135'>1500元起订</span>，所有订单请<span style='color:#9dc135'>提前48小时预约</span>并支付预定金；",
+                            "高端个性化定制请<span style='color:#9dc135'>提前7天预约</span>；",
+                            "<span style='color:#9dc135'>杭州市区内免费送货</span>，其他地区（余杭、萧山等）交通费另计；",
+                            "杭式下午茶提供<span style='color:#9dc135'>茶歇现场服务人员</span>，并提供现场摆盘服务、装饰布置等服务；",
+                            "活动结束后，现场器具如有丢失损坏，100元金额以内属正常损耗，无须赔偿，100元金额以上需按器具价格进行赔偿；",
+                            "如在订购后解除订购，我们将按照实际制作量按比例扣除预定订金。"
+                        ],
+                        "title": "订购须知",
+                        "title_en": "ORDER INSTRUCTIONS"
+                    },
+                    "order": {
+                        "menu": {
+                            "menus": [
+                                {
+                                    "gmtCreate": 1531659011135,
+                                    "gmtModified": 1531659011135,
+                                    "id": "5b4b4303aeb2a109aafacc97",
+                                    "items": [
+                                        {
+                                            "desserts": [
+                                                "特色茶曲奇",
+                                                "抹茶慕斯",
+                                                "水果布丁",
+                                                "抹茶泡芙",
+                                                "双色巧克力蛋糕"
+                                            ],
+                                            "icon": "&#xe9ea;",
+                                            "title": "点 心"
+                                        },
+                                        {
+                                            "desserts": [
+                                                "西瓜",
+                                                "橙子",
+                                                "圣女果"
+                                            ],
+                                            "icon": "&#xe9ec;",
+                                            "title": "水果拼盘"
+                                        },
+                                        {
+                                            "desserts": [
+                                                "抹茶拿铁",
+                                                "桂花龙井茶"
+                                            ],
+                                            "icon": "&#xe9eb;",
+                                            "title": "饮 料"
+                                        }
+                                    ],
+                                    "sort": 0,
+                                    "title": "A款茶歇/48元人均"
+                                },
+                                {
+                                    "gmtCreate": 1531659007214,
+                                    "gmtModified": 1531659007214,
+                                    "id": "5b4b42ffaeb2a109913f5b6d",
+                                    "items": [
+                                        {
+                                            "desserts": [
+                                                "抹茶慕斯",
+                                                "水果布丁",
+                                                "抹茶泡芙",
+                                                "纸杯蛋糕",
+                                                "特色茶曲奇",
+                                                "抹茶瑞士卷",
+                                                "双色巧克力蛋糕"
+                                            ],
+                                            "icon": "&#xe9ea;",
+                                            "title": "点 心"
+                                        },
+                                        {
+                                            "desserts": [
+                                                "西瓜",
+                                                "橙子",
+                                                "哈密瓜",
+                                                "火龙果"
+                                            ],
+                                            "icon": "&#xe9ec;",
+                                            "title": "水果拼盘"
+                                        },
+                                        {
+                                            "desserts": [
+                                                "抹茶拿铁",
+                                                "洛神花茶",
+                                                "水果茶"
+                                            ],
+                                            "icon": "&#xe9eb;",
+                                            "title": "饮 料"
+                                        }
+                                    ],
+                                    "sort": 1,
+                                    "title": "B款茶歇/68元人均 <span style='color:red'>&#xe7a8;</span>"
+                                },
+                                {
+                                    "gmtCreate": 1531659004217,
+                                    "gmtModified": 1531659004217,
+                                    "id": "5b4b42fcaeb2a10979c1a73e",
+                                    "items": [
+                                        {
+                                            "desserts": [
+                                                "蓝莓挞",
+                                                "栗子蛋糕",
+                                                "抹茶慕斯",
+                                                "水果布丁",
+                                                "抹茶泡芙",
+                                                "盆栽蛋糕",
+                                                "抹茶瑞士卷",
+                                                "特色茶曲奇",
+                                                "双色巧克力蛋糕",
+                                                "芒果抹茶慕斯球"
+                                            ],
+                                            "icon": "&#xe9ea;",
+                                            "title": "点 心"
+                                        },
+                                        {
+                                            "desserts": [
+                                                "西瓜",
+                                                "橙子",
+                                                "圣女果",
+                                                "哈密瓜",
+                                                "火龙果",
+                                                "时令果串"
+                                            ],
+                                            "icon": "&#xe9ec;",
+                                            "title": "水果拼盘"
+                                        },
+                                        {
+                                            "desserts": [
+                                                "抹茶拿铁",
+                                                "玫瑰红茶拿铁",
+                                                "洛神花茶",
+                                                "水果茶"
+                                            ],
+                                            "icon": "&#xe9eb;",
+                                            "title": "饮 料"
+                                        }
+                                    ],
+                                    "sort": 2,
+                                    "title": "C款茶歇/88元人均"
+                                }
+                            ],
+                            "title": "&#xe9e7; 茶歇菜单"
+                        },
+                        "orderWay": {
+                            "items": [
+                                {
+                                    "content": "按照您的个性化需求，茶歇师会为您制定独一无二的产品，预算金额将根据工作量进行相应预算。",
+                                    "imageUrl": "/no-one.png",
+                                    "title": "高端个性化定制"
+                                },
+                                {
+                                    "content": "按照您提供的人数，选择菜单，立刻生成预算。",
+                                    "imageUrl": "/no-two.png",
+                                    "title": "人数标准化菜单"
+                                },
+                                {
+                                    "content": "每人平均分配，人手一份，同样根据人数，快速生成预算。",
+                                    "imageUrl": "/no-three.png",
+                                    "title": "一人一份"
+                                }
+                            ],
+                            "title": "&#xe9e7; 预定方式"
+                        },
+                        "title": "茶歇预定",
+                        "title_en": "RESERVATION"
+                    },
+                    "orderMode": {
+                        "qrImageUrl": "/contactus-QRcode.png",
+                        "qrTitle": "公众号预定",
+                        "title": "订购方式",
+                        "title_en": "ORDERING WAYS"
+                    },
+                    "process": {
+                        "processes": [
+                            {
+                                "content": "茶歇服务完成后请于当日内支付尾款",
+                                "title": "售前咨询"
+                            },
+                            {
+                                "content": "确认选择的产品和服务清单",
+                                "title": "确认订单"
+                            },
+                            {
+                                "content": "线上预定",
+                                "title": "线上预定"
+                            },
+                            {
+                                "content": "根据合同的产品清单制作新鲜茶歇产品",
+                                "title": "接单合作"
+                            },
+                            {
+                                "content": "按合同上约定的送达时间准时送达产品",
+                                "title": "订单配送"
+                            },
+                            {
+                                "content": "现场服务人员布置茶歇摆台与装饰",
+                                "title": "摆台服务"
+                            },
+                            {
+                                "content": "对产品及服务有不满意对地方请及时联系客服小tea",
+                                "title": "售后服务"
+                            },
+                            {
+                                "content": "电话或微信联络杭式下午茶小tea，了解产品及服务",
+                                "title": "支付尾款"
+                            }
+                        ],
+                        "title": "订购流程",
+                        "title_en": "ORDER PROCESS"
+                    },
+                    "range": {
+                        "ranges": [
+                            {
+                                "imageUrl": "/company afternoon tea.jpg",
+                                "mainTitle": "公司",
+                                "subTitle": "下午茶",
+                                "titleImageUrl": "/no-one.png",
+                                "title_en": "Afternoon Tea"
+                            },
+                            {
+                                "imageUrl": "/staff birthday party.jpg",
+                                "mainTitle": "员工",
+                                "subTitle": "生日会",
+                                "titleImageUrl": "/no-two.png",
+                                "title_en": "Staff Birthday Party"
+                            },
+                            {
+                                "imageUrl": "/Annual Meeting.jpg",
+                                "mainTitle": "公司",
+                                "subTitle": "年会",
+                                "titleImageUrl": "/no-three.png",
+                                "title_en": "Annual Meeting"
+                            },
+                            {
+                                "imageUrl": "/Festival Celebration.jpg",
+                                "mainTitle": "节日",
+                                "subTitle": "庆典",
+                                "titleImageUrl": "/no-four.png",
+                                "title_en": "Festival Celebration"
+                            },
+                            {
+                                "imageUrl": "/High-end Reception.jpg",
+                                "mainTitle": "高端",
+                                "subTitle": "酒会",
+                                "titleImageUrl": "/no-five.png",
+                                "title_en": "High-end Reception"
+                            },
+                            {
+                                "imageUrl": "/Business Reception.jpg",
+                                "mainTitle": "商务",
+                                "subTitle": "接待会",
+                                "titleImageUrl": "/no-six.png",
+                                "title_en": "Business Reception"
+                            },
+                            {
+                                "imageUrl": "/Product Launch.jpg",
+                                "mainTitle": "产品",
+                                "subTitle": "发布会",
+                                "titleImageUrl": "/no-seven.png",
+                                "title_en": "Product Launch"
+                            },
+                            {
+                                "imageUrl": "/Opening Ceremony.jpg",
+                                "mainTitle": "开业",
+                                "subTitle": "庆典",
+                                "titleImageUrl": "/no-eight.png",
+                                "title_en": "Opening Ceremony"
+                            }
+                        ],
+                        "title": "服务范围",
+                        "title_en": "SERVICE SCOPE"
+                    }
+                }
             };
         },
         created() {

@@ -39,25 +39,34 @@
         data() {
             return {
                 backgroundStyle: '',
-                info: {},
+                info: {
+                    "companyAddress": "杭州民和路525号三宏国际8楼",
+                    "companyName": "杭州执贝科技有限公司",
+                    "customerQrCodeImageUrl": "/Customer service-QR code.png",
+                    "latitude": 30.2312,
+                    "longitude": 120.25479,
+                    "mail": "iteastyle@126.com",
+                    "phoneNumber": [
+                        "15906631121",
+                        "15858232263"
+                    ],
+                    "postCode": "300000",
+                    "qrCodeImageUrl": "/contactus-QRcode.png",
+                    "telephoneNumber": "(86)0571-83731743",
+                    "webUrl": "https://www.iteastyle.cn",
+                    "companyStoryBgUrl": "/compamy-bk-1500-1133.jpg",
+                    "contactUsBgUrl": "/ct-us-1700-930.jpg",
+                    "contactUsTitle": "杭式下午茶 创意茶歇 健康食尚",
+                    "logoUrl": "/logo.png"
+                },
                 center: [0, 0],
                 zoom: 14
             }
         },
         created: function () {
-            var that = this;
-            this.$ajax.get('/getData', {params: {key: 'common'}})
-
-                .then(function (response) {
-                    console.log(response.data.model);
-                    that.info = response.data.model;
-                    that.center = [response.data.model.longitude, response.data.model.latitude];
-                    let imageUrl = that.$imageDomain + response.data.model.contactUsBgUrl;
-                    that.backgroundStyle = 'background:url(' + imageUrl + ') no-repeat; background-size:100% auto; '
-                })
-                .catch(function (response) {
-                    console.log(response);
-                });
+            this.center = [this.info.longitude, this.info.latitude];
+            let imageUrl = this.$imageDomain + this.info.contactUsBgUrl;
+            this.backgroundStyle = 'background:url(' + imageUrl + ') no-repeat; background-size:100% auto; '
         }
     }
 </script>
